@@ -59,9 +59,11 @@ Apps. Abra `00_setup.py`, mostre widgets e duas amostras sem executar tudo.
 **Demo (3).** Catalog Explorer, propriedades de uma tabela e grants do schema.
 
 **Exercício (10).** Abrir `02_unity_catalog.sql`; ajustar widgets; criar/verificar
-schema e volume; executar `00_setup.py`; localizar CSVs e checkpoints no Explorer.
+schema e volume; executar `00_setup.py`; abrir `02_read_csvs.py`; ler os dois diretórios
+CSV, conferir schemas, amostras e contagens; localizar arquivos e checkpoints no Explorer.
 
-**Recap (2).** `SHOW VOLUMES` deve retornar `raw_data`; checkpoints devem ter 5.000 e 500 linhas.
+**Recap (2).** `SHOW VOLUMES` deve retornar `raw_data`; a leitura dos CSVs e os
+checkpoints devem retornar 5.000 métricas, 500 tickets e 50 torres.
 
 **Artefato.** Volume e duas tabelas de checkpoint.
 
@@ -195,4 +197,3 @@ incremental; previsão de anomalias; job programado.
 
 Não corte o lançamento do desafio. Use os checkpoints para saltar etapas técnicas sem
 quebrar a narrativa ponta a ponta.
-
