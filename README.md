@@ -24,9 +24,9 @@ UC Volume → Lakeflow bronze/silver → DQX validated/quarantine
 ## Execução recomendada
 
 1. Leia `docs/TECHNICAL_VALIDATION.md` e `docs/PREWORKSHOP_CHECKLIST.md`.
-2. Autentique o profile: `databricks auth login --profile vibe-coding`.
-3. Valide: `databricks bundle validate -t dev --profile vibe-coding`.
-4. Faça deploy: `databricks bundle deploy -t dev --profile vibe-coding`.
+2. Autentique um profile: `databricks auth login --profile <profile>`.
+3. Valide: `databricks bundle validate -t dev --profile <profile>`.
+4. Faça deploy: `databricks bundle deploy -t dev --profile <profile>`.
 5. Execute o job `prepare_workshop` ou o notebook `00_setup.py`.
 6. Execute `02_read_csvs.py` para validar caminhos, schemas e contagens dos CSVs.
 7. Rode o pipeline `Telco - Qualidade de Rede`.

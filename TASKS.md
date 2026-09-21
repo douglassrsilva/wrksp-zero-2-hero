@@ -8,7 +8,7 @@
 - [x] Guia AI/BI Dashboard
 - [x] Configuração Genie Space
 - [x] Databricks App com modo local
-- [x] Bundle para profile `vibe-coding`
+- [x] Bundle parametrizado, sem profile ou workspace fixo
 - [x] Guia do instrutor, trial, checklist e validação técnica
 - [x] Gerar e validar os CSVs versionados
 - [x] Validar bundle contra workspace autenticado

@@ -27,10 +27,5 @@ targets:
   dev:
     default: true
     mode: development
-    workspace:
-      profile: vibe-coding
   shared:
     mode: production
-    workspace:
-      profile: vibe-coding
-
