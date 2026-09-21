@@ -1,0 +1,17 @@
+resources:
+  pipelines:
+    telco_network_quality:
+      name: "[${bundle.target}] Telco - Qualidade de Rede"
+      catalog: ${var.catalog}
+      target: ${var.schema}
+      serverless: true
+      continuous: false
+      development: true
+      channel: CURRENT
+      libraries:
+        - notebook:
+            path: ../notebooks/03_lakeflow_pipeline.py
+      configuration:
+        telco.catalog: ${var.catalog}
+        telco.schema: ${var.schema}
+

@@ -1,0 +1,30 @@
+[project]
+name = "telco-zero-to-hero-workshop"
+version = "0.1.0"
+description = "Materiais executaveis do workshop Databricks Zero to Hero para telecom"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+  "pyspark>=3.5,<4.1",
+  "pyyaml>=6.0,<7",
+]
+app = [
+  "streamlit>=1.42,<2",
+  "pandas>=2.1,<3",
+  "plotly>=5.24,<7",
+  "databricks-sdk>=0.40,<1",
+  "databricks-sql-connector>=4,<5",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

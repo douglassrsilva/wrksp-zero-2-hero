@@ -1,0 +1,36 @@
+bundle:
+  name: telco-zero-to-hero
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: Catalogo Unity Catalog do workshop
+    default: telco_workshop
+  schema:
+    description: Schema do workshop
+    default: red_calidad
+
+workspace:
+  root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+
+sync:
+  include:
+    - notebooks/**
+    - src/**
+    - config/**
+    - apps/**
+    - data/generated/**
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      profile: vibe-coding
+  shared:
+    mode: production
+    workspace:
+      profile: vibe-coding
+

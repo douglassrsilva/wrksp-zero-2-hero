@@ -1,0 +1,501 @@
+ticket_id,tower_id,region,commune,created_at,category,severity,status,channel,customer_segment,resolution_hours
+TKT-00001,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T00:00:00.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,8.88
+TKT-00002,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T00:20:07.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,19.31
+TKT-00003,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T00:40:14.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,38.04
+TKT-00004,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T01:00:21.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,3.23
+TKT-00005,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T01:20:28.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,30.75
+TKT-00006,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T01:40:35.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,11.28
+TKT-00007,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T02:00:42.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00008,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T02:20:49.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00009,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T02:40:56.000-03:00,Cobertura,Critica,Abierto,App,Postpago,
+TKT-00010,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T03:01:03.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00011,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T03:21:10.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,29.34
+TKT-00012,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T03:41:17.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,33.42
+TKT-00013,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T04:01:24.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,37.35
+TKT-00014,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T04:21:31.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,16.6
+TKT-00015,TWR-001,Región Metropolitana de Santiago,Santiago,2026-08-01T04:41:38.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,42.78
+TKT-00016,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T05:01:45.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,38.01
+TKT-00017,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T05:21:52.000-03:00,Cobertura,Critica,En progreso,App,Postpago,
+TKT-00018,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T05:41:59.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00019,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T06:02:06.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00020,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T06:22:13.000-03:00,Cobertura,Alta,Abierto,Tienda,Postpago,
+TKT-00021,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T06:42:20.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,7.74
+TKT-00022,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T07:02:27.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,36.79
+TKT-00023,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T07:22:34.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,10.36
+TKT-00024,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T07:42:41.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,13.24
+TKT-00025,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T08:02:48.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,36.09
+TKT-00026,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T08:22:55.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,14.66
+TKT-00027,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T08:43:02.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00028,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T09:03:09.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00029,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T09:23:16.000-03:00,Cobertura,Critica,Abierto,App,Postpago,
+TKT-00030,TWR-002,Región Metropolitana de Santiago,Santiago,2026-08-01T09:43:23.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00031,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T10:03:30.000-03:00,Señal,Alta,Resuelto,Web,Prepago,28.02
+TKT-00032,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T10:23:37.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,16.46
+TKT-00033,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T10:43:44.000-03:00,Señal,Critica,Resuelto,App,Postpago,25.25
+TKT-00034,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T11:03:51.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,41.04
+TKT-00035,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T11:23:58.000-03:00,Señal,Alta,Resuelto,Web,Prepago,42.01
+TKT-00036,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T11:44:05.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,18.95
+TKT-00037,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T12:04:12.000-03:00,Señal,Critica,En progreso,App,Postpago,
+TKT-00038,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T12:24:19.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00039,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T12:44:26.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00040,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T13:04:33.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00041,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T13:24:40.000-03:00,Señal,Critica,Resuelto,App,Postpago,16.5
+TKT-00042,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T13:44:47.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,5.13
+TKT-00043,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T14:04:54.000-03:00,Señal,Alta,Resuelto,Web,Prepago,12.43
+TKT-00044,TWR-003,Región Metropolitana de Santiago,Santiago,2026-08-01T14:25:01.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,27.86
+TKT-00045,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T14:45:08.000-03:00,Señal,Critica,Resuelto,App,Postpago,27.83
+TKT-00046,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T15:05:15.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,8.85
+TKT-00047,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T15:25:22.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00048,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T15:45:29.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00049,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T16:05:36.000-03:00,Señal,Critica,Abierto,App,Postpago,
+TKT-00050,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T16:25:43.000-03:00,Señal,Alta,Abierto,Call center,Empresas,
+TKT-00051,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T16:45:50.000-03:00,Señal,Alta,Resuelto,Web,Prepago,8.87
+TKT-00052,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T17:05:57.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,13.59
+TKT-00053,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T17:26:04.000-03:00,Señal,Critica,Resuelto,App,Postpago,28.59
+TKT-00054,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T17:46:11.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,20.82
+TKT-00055,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T18:06:18.000-03:00,Señal,Alta,Resuelto,Web,Prepago,39.1
+TKT-00056,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T18:26:25.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,35.82
+TKT-00057,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T18:46:32.000-03:00,Señal,Critica,En progreso,App,Postpago,
+TKT-00058,TWR-004,Región Metropolitana de Santiago,Santiago,2026-08-01T19:06:39.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00059,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T19:26:46.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00060,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T19:46:53.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00061,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T20:07:00.000-03:00,Señal,Critica,Resuelto,App,Postpago,6.73
+TKT-00062,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T20:27:07.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,16.66
+TKT-00063,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T20:47:14.000-03:00,Señal,Alta,Resuelto,Web,Prepago,38.08
+TKT-00064,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T21:07:21.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,45.19
+TKT-00065,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T21:27:28.000-03:00,Señal,Critica,Resuelto,App,Postpago,8.74
+TKT-00066,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T21:47:35.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,26.21
+TKT-00067,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T22:07:42.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00068,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T22:27:49.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00069,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T22:47:56.000-03:00,Señal,Critica,Abierto,App,Postpago,
+TKT-00070,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T23:08:03.000-03:00,Señal,Alta,Abierto,Call center,Empresas,
+TKT-00071,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T23:28:10.000-03:00,Señal,Alta,Resuelto,Web,Prepago,25.49
+TKT-00072,TWR-005,Región Metropolitana de Santiago,Santiago,2026-08-01T23:48:17.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,16.53
+TKT-00073,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T00:08:24.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,33.23
+TKT-00074,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T00:28:31.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,36.92
+TKT-00075,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T00:48:38.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,8.87
+TKT-00076,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T01:08:45.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,31.38
+TKT-00077,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T01:28:52.000-03:00,Cobertura,Critica,En progreso,App,Postpago,
+TKT-00078,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T01:48:59.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00079,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T02:09:06.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00080,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T02:29:13.000-03:00,Cobertura,Alta,Abierto,Tienda,Postpago,
+TKT-00081,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T02:49:20.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,45.19
+TKT-00082,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T03:09:27.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,36.16
+TKT-00083,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T03:29:34.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,37.66
+TKT-00084,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T03:49:41.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,19.38
+TKT-00085,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T04:09:48.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,7.17
+TKT-00086,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T04:29:55.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,19.67
+TKT-00087,TWR-006,Región Metropolitana de Santiago,Puente Alto,2026-08-02T04:50:02.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00088,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T05:10:09.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00089,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T05:30:16.000-03:00,Cobertura,Critica,Abierto,App,Postpago,
+TKT-00090,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T05:50:23.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00091,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T06:10:30.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,33.86
+TKT-00092,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T06:30:37.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,42.52
+TKT-00093,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T06:50:44.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,10.63
+TKT-00094,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T07:10:51.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,12.93
+TKT-00095,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T07:30:58.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,23.91
+TKT-00096,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T07:51:05.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,29.93
+TKT-00097,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T08:11:12.000-03:00,Cobertura,Critica,En progreso,App,Postpago,
+TKT-00098,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T08:31:19.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00099,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T08:51:26.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00100,TWR-007,Región Metropolitana de Santiago,Puente Alto,2026-08-02T09:11:33.000-03:00,Cobertura,Alta,Abierto,Tienda,Postpago,
+TKT-00101,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T09:31:40.000-03:00,Señal,Critica,Resuelto,App,Postpago,4.76
+TKT-00102,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T09:51:47.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,39.68
+TKT-00103,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T10:11:54.000-03:00,Señal,Alta,Resuelto,Web,Prepago,25.7
+TKT-00104,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T10:32:01.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,13.42
+TKT-00105,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T10:52:08.000-03:00,Señal,Critica,Resuelto,App,Postpago,24.91
+TKT-00106,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T11:12:15.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,4.0
+TKT-00107,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T11:32:22.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00108,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T11:52:29.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00109,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T12:12:36.000-03:00,Señal,Critica,Abierto,App,Postpago,
+TKT-00110,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T12:32:43.000-03:00,Señal,Alta,Abierto,Call center,Empresas,
+TKT-00111,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T12:52:50.000-03:00,Señal,Alta,Resuelto,Web,Prepago,11.95
+TKT-00112,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T13:12:57.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,44.61
+TKT-00113,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T13:33:04.000-03:00,Señal,Critica,Resuelto,App,Postpago,22.88
+TKT-00114,TWR-008,Región Metropolitana de Santiago,Puente Alto,2026-08-02T13:53:11.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,5.23
+TKT-00115,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T14:13:18.000-03:00,Señal,Alta,Resuelto,Web,Prepago,15.6
+TKT-00116,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T14:33:25.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,35.41
+TKT-00117,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T14:53:32.000-03:00,Señal,Alta,En progreso,App,Postpago,
+TKT-00118,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T15:13:39.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00119,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T15:33:46.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00120,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T15:53:53.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00121,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T16:14:00.000-03:00,Señal,Alta,Resuelto,App,Postpago,35.23
+TKT-00122,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T16:34:07.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,4.38
+TKT-00123,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T16:54:14.000-03:00,Señal,Alta,Resuelto,Web,Prepago,22.45
+TKT-00124,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T17:14:21.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,33.23
+TKT-00125,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T17:34:28.000-03:00,Señal,Alta,Resuelto,App,Postpago,4.39
+TKT-00126,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T17:54:35.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,38.25
+TKT-00127,TWR-009,Región Metropolitana de Santiago,Puente Alto,2026-08-02T18:14:42.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00128,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T18:34:49.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00129,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T18:54:56.000-03:00,Señal,Alta,Abierto,App,Postpago,
+TKT-00130,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T19:15:03.000-03:00,Señal,Alta,Abierto,Call center,Empresas,
+TKT-00131,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T19:35:10.000-03:00,Señal,Alta,Resuelto,Web,Prepago,18.95
+TKT-00132,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T19:55:17.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,40.16
+TKT-00133,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T20:15:24.000-03:00,Señal,Alta,Resuelto,App,Postpago,40.52
+TKT-00134,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T20:35:31.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,19.62
+TKT-00135,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T20:55:38.000-03:00,Señal,Alta,Resuelto,Web,Prepago,6.18
+TKT-00136,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T21:15:45.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,2.2
+TKT-00137,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T21:35:52.000-03:00,Señal,Alta,En progreso,App,Postpago,
+TKT-00138,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T21:55:59.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00139,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T22:16:06.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00140,TWR-010,Región Metropolitana de Santiago,Puente Alto,2026-08-02T22:36:13.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00141,TWR-011,Valparaíso,Valparaíso,2026-08-02T22:56:20.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,28.67
+TKT-00142,TWR-011,Valparaíso,Valparaíso,2026-08-02T23:16:27.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,20.47
+TKT-00143,TWR-011,Valparaíso,Valparaíso,2026-08-02T23:36:34.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,11.77
+TKT-00144,TWR-011,Valparaíso,Valparaíso,2026-08-02T23:56:41.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,32.93
+TKT-00145,TWR-011,Valparaíso,Valparaíso,2026-08-03T00:16:48.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,42.79
+TKT-00146,TWR-011,Valparaíso,Valparaíso,2026-08-03T00:36:55.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,23.22
+TKT-00147,TWR-011,Valparaíso,Valparaíso,2026-08-03T00:57:02.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00148,TWR-011,Valparaíso,Valparaíso,2026-08-03T01:17:09.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00149,TWR-011,Valparaíso,Valparaíso,2026-08-03T01:37:16.000-03:00,Cobertura,Alta,Abierto,App,Postpago,
+TKT-00150,TWR-011,Valparaíso,Valparaíso,2026-08-03T01:57:23.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00151,TWR-011,Valparaíso,Valparaíso,2026-08-03T02:17:30.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,12.04
+TKT-00152,TWR-011,Valparaíso,Valparaíso,2026-08-03T02:37:37.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,30.31
+TKT-00153,TWR-012,Valparaíso,Valparaíso,2026-08-03T02:57:44.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,5.14
+TKT-00154,TWR-012,Valparaíso,Valparaíso,2026-08-03T03:17:51.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,23.55
+TKT-00155,TWR-012,Valparaíso,Valparaíso,2026-08-03T03:37:58.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,37.55
+TKT-00156,TWR-012,Valparaíso,Valparaíso,2026-08-03T03:58:05.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,26.77
+TKT-00157,TWR-012,Valparaíso,Valparaíso,2026-08-03T04:18:12.000-03:00,Cobertura,Alta,En progreso,App,Postpago,
+TKT-00158,TWR-012,Valparaíso,Valparaíso,2026-08-03T04:38:19.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00159,TWR-012,Valparaíso,Valparaíso,2026-08-03T04:58:26.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00160,TWR-012,Valparaíso,Valparaíso,2026-08-03T05:18:33.000-03:00,Cobertura,Alta,Abierto,Tienda,Postpago,
+TKT-00161,TWR-012,Valparaíso,Valparaíso,2026-08-03T05:38:40.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,28.47
+TKT-00162,TWR-012,Valparaíso,Valparaíso,2026-08-03T05:58:47.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,29.59
+TKT-00163,TWR-012,Valparaíso,Valparaíso,2026-08-03T06:18:54.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,12.31
+TKT-00164,TWR-012,Valparaíso,Valparaíso,2026-08-03T06:39:01.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,15.54
+TKT-00165,TWR-012,Valparaíso,Valparaíso,2026-08-03T06:59:08.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,21.03
+TKT-00166,TWR-013,Valparaíso,Valparaíso,2026-08-03T07:19:15.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,15.34
+TKT-00167,TWR-013,Valparaíso,Valparaíso,2026-08-03T07:39:22.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00168,TWR-013,Valparaíso,Valparaíso,2026-08-03T07:59:29.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00169,TWR-013,Valparaíso,Valparaíso,2026-08-03T08:19:36.000-03:00,Cobertura,Critica,Abierto,App,Postpago,
+TKT-00170,TWR-013,Valparaíso,Valparaíso,2026-08-03T08:39:43.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00171,TWR-013,Valparaíso,Valparaíso,2026-08-03T08:59:50.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,27.04
+TKT-00172,TWR-013,Valparaíso,Valparaíso,2026-08-03T09:19:57.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,7.75
+TKT-00173,TWR-013,Valparaíso,Valparaíso,2026-08-03T09:40:04.000-03:00,Cobertura,Critica,Resuelto,App,Postpago,30.34
+TKT-00174,TWR-013,Valparaíso,Valparaíso,2026-08-03T10:00:11.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,34.06
+TKT-00175,TWR-013,Valparaíso,Valparaíso,2026-08-03T10:20:18.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,38.77
+TKT-00176,TWR-013,Valparaíso,Valparaíso,2026-08-03T10:40:25.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,17.11
+TKT-00177,TWR-013,Valparaíso,Valparaíso,2026-08-03T11:00:32.000-03:00,Cobertura,Critica,En progreso,App,Postpago,
+TKT-00178,TWR-013,Valparaíso,Valparaíso,2026-08-03T11:20:39.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00179,TWR-013,Valparaíso,Valparaíso,2026-08-03T11:40:46.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00180,TWR-014,Valparaíso,Valparaíso,2026-08-03T12:00:53.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00181,TWR-014,Valparaíso,Valparaíso,2026-08-03T12:21:00.000-03:00,Señal,Media,Resuelto,App,Postpago,5.8
+TKT-00182,TWR-014,Valparaíso,Valparaíso,2026-08-03T12:41:07.000-03:00,Señal,Media,Resuelto,Call center,Empresas,17.87
+TKT-00183,TWR-014,Valparaíso,Valparaíso,2026-08-03T13:01:14.000-03:00,Señal,Media,Resuelto,Web,Prepago,13.38
+TKT-00184,TWR-014,Valparaíso,Valparaíso,2026-08-03T13:21:21.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,17.29
+TKT-00185,TWR-014,Valparaíso,Valparaíso,2026-08-03T13:41:28.000-03:00,Señal,Media,Resuelto,App,Postpago,11.18
+TKT-00186,TWR-014,Valparaíso,Valparaíso,2026-08-03T14:01:35.000-03:00,Señal,Media,Resuelto,Call center,Empresas,24.05
+TKT-00187,TWR-014,Valparaíso,Valparaíso,2026-08-03T14:21:42.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00188,TWR-014,Valparaíso,Valparaíso,2026-08-03T14:41:49.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00189,TWR-015,Valparaíso,Valparaíso,2026-08-03T15:01:56.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00190,TWR-015,Valparaíso,Valparaíso,2026-08-03T15:22:03.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00191,TWR-015,Valparaíso,Valparaíso,2026-08-03T15:42:10.000-03:00,Señal,Baja,Resuelto,Web,Prepago,21.71
+TKT-00192,TWR-015,Valparaíso,Valparaíso,2026-08-03T16:02:17.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,29.65
+TKT-00193,TWR-015,Valparaíso,Valparaíso,2026-08-03T16:22:24.000-03:00,Señal,Baja,Resuelto,App,Postpago,21.48
+TKT-00194,TWR-015,Valparaíso,Valparaíso,2026-08-03T16:42:31.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,6.06
+TKT-00195,TWR-015,Valparaíso,Valparaíso,2026-08-03T17:02:38.000-03:00,Señal,Baja,Resuelto,Web,Prepago,43.57
+TKT-00196,TWR-016,Valparaíso,Viña del Mar,2026-08-03T17:22:45.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,2.3
+TKT-00197,TWR-016,Valparaíso,Viña del Mar,2026-08-03T17:42:52.000-03:00,Señal,Alta,En progreso,App,Postpago,
+TKT-00198,TWR-016,Valparaíso,Viña del Mar,2026-08-03T18:02:59.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00199,TWR-016,Valparaíso,Viña del Mar,2026-08-03T18:23:06.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00200,TWR-016,Valparaíso,Viña del Mar,2026-08-03T18:43:13.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00201,TWR-016,Valparaíso,Viña del Mar,2026-08-03T19:03:20.000-03:00,Señal,Alta,Resuelto,App,Postpago,27.89
+TKT-00202,TWR-016,Valparaíso,Viña del Mar,2026-08-03T19:23:27.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,18.89
+TKT-00203,TWR-016,Valparaíso,Viña del Mar,2026-08-03T19:43:34.000-03:00,Señal,Alta,Resuelto,Web,Prepago,28.9
+TKT-00204,TWR-016,Valparaíso,Viña del Mar,2026-08-03T20:03:41.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,14.67
+TKT-00205,TWR-016,Valparaíso,Viña del Mar,2026-08-03T20:23:48.000-03:00,Señal,Alta,Resuelto,App,Postpago,40.51
+TKT-00206,TWR-016,Valparaíso,Viña del Mar,2026-08-03T20:43:55.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,45.23
+TKT-00207,TWR-016,Valparaíso,Viña del Mar,2026-08-03T21:04:02.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00208,TWR-017,Valparaíso,Viña del Mar,2026-08-03T21:24:09.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00209,TWR-017,Valparaíso,Viña del Mar,2026-08-03T21:44:16.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00210,TWR-017,Valparaíso,Viña del Mar,2026-08-03T22:04:23.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00211,TWR-017,Valparaíso,Viña del Mar,2026-08-03T22:24:30.000-03:00,Señal,Media,Resuelto,Web,Prepago,27.81
+TKT-00212,TWR-017,Valparaíso,Viña del Mar,2026-08-03T22:44:37.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,28.34
+TKT-00213,TWR-017,Valparaíso,Viña del Mar,2026-08-03T23:04:44.000-03:00,Señal,Media,Resuelto,App,Postpago,39.97
+TKT-00214,TWR-017,Valparaíso,Viña del Mar,2026-08-03T23:24:51.000-03:00,Señal,Media,Resuelto,Call center,Empresas,34.93
+TKT-00215,TWR-017,Valparaíso,Viña del Mar,2026-08-03T23:44:58.000-03:00,Señal,Media,Resuelto,Web,Prepago,27.66
+TKT-00216,TWR-017,Valparaíso,Viña del Mar,2026-08-04T00:05:05.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,15.53
+TKT-00217,TWR-017,Valparaíso,Viña del Mar,2026-08-04T00:25:12.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00218,TWR-017,Valparaíso,Viña del Mar,2026-08-04T00:45:19.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00219,TWR-018,Valparaíso,Viña del Mar,2026-08-04T01:05:26.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00220,TWR-018,Valparaíso,Viña del Mar,2026-08-04T01:25:33.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00221,TWR-018,Valparaíso,Viña del Mar,2026-08-04T01:45:40.000-03:00,Señal,Media,Resuelto,App,Postpago,22.35
+TKT-00222,TWR-018,Valparaíso,Viña del Mar,2026-08-04T02:05:47.000-03:00,Señal,Media,Resuelto,Call center,Empresas,17.03
+TKT-00223,TWR-018,Valparaíso,Viña del Mar,2026-08-04T02:25:54.000-03:00,Señal,Media,Resuelto,Web,Prepago,11.7
+TKT-00224,TWR-018,Valparaíso,Viña del Mar,2026-08-04T02:46:01.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,28.98
+TKT-00225,TWR-018,Valparaíso,Viña del Mar,2026-08-04T03:06:08.000-03:00,Señal,Media,Resuelto,App,Postpago,26.52
+TKT-00226,TWR-018,Valparaíso,Viña del Mar,2026-08-04T03:26:15.000-03:00,Señal,Media,Resuelto,Call center,Empresas,18.49
+TKT-00227,TWR-018,Valparaíso,Viña del Mar,2026-08-04T03:46:22.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00228,TWR-019,Valparaíso,Viña del Mar,2026-08-04T04:06:29.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00229,TWR-019,Valparaíso,Viña del Mar,2026-08-04T04:26:36.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00230,TWR-019,Valparaíso,Viña del Mar,2026-08-04T04:46:43.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00231,TWR-019,Valparaíso,Viña del Mar,2026-08-04T05:06:50.000-03:00,Señal,Media,Resuelto,Web,Prepago,22.24
+TKT-00232,TWR-019,Valparaíso,Viña del Mar,2026-08-04T05:26:57.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,6.41
+TKT-00233,TWR-019,Valparaíso,Viña del Mar,2026-08-04T05:47:04.000-03:00,Señal,Media,Resuelto,App,Postpago,19.31
+TKT-00234,TWR-019,Valparaíso,Viña del Mar,2026-08-04T06:07:11.000-03:00,Señal,Media,Resuelto,Call center,Empresas,18.99
+TKT-00235,TWR-019,Valparaíso,Viña del Mar,2026-08-04T06:27:18.000-03:00,Señal,Media,Resuelto,Web,Prepago,40.6
+TKT-00236,TWR-019,Valparaíso,Viña del Mar,2026-08-04T06:47:25.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,10.57
+TKT-00237,TWR-019,Valparaíso,Viña del Mar,2026-08-04T07:07:32.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00238,TWR-020,Valparaíso,Viña del Mar,2026-08-04T07:27:39.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00239,TWR-020,Valparaíso,Viña del Mar,2026-08-04T07:47:46.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00240,TWR-020,Valparaíso,Viña del Mar,2026-08-04T08:07:53.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00241,TWR-020,Valparaíso,Viña del Mar,2026-08-04T08:28:00.000-03:00,Señal,Media,Resuelto,App,Postpago,9.18
+TKT-00242,TWR-020,Valparaíso,Viña del Mar,2026-08-04T08:48:07.000-03:00,Señal,Media,Resuelto,Call center,Empresas,35.87
+TKT-00243,TWR-020,Valparaíso,Viña del Mar,2026-08-04T09:08:14.000-03:00,Señal,Media,Resuelto,Web,Prepago,25.53
+TKT-00244,TWR-020,Valparaíso,Viña del Mar,2026-08-04T09:28:21.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,17.82
+TKT-00245,TWR-020,Valparaíso,Viña del Mar,2026-08-04T09:48:28.000-03:00,Señal,Media,Resuelto,App,Postpago,26.36
+TKT-00246,TWR-020,Valparaíso,Viña del Mar,2026-08-04T10:08:35.000-03:00,Señal,Media,Resuelto,Call center,Empresas,28.52
+TKT-00247,TWR-021,Biobío,Concepción,2026-08-04T10:28:42.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00248,TWR-021,Biobío,Concepción,2026-08-04T10:48:49.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00249,TWR-021,Biobío,Concepción,2026-08-04T11:08:56.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00250,TWR-021,Biobío,Concepción,2026-08-04T11:29:03.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00251,TWR-021,Biobío,Concepción,2026-08-04T11:49:10.000-03:00,Señal,Media,Resuelto,Web,Prepago,38.45
+TKT-00252,TWR-021,Biobío,Concepción,2026-08-04T12:09:17.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,2.01
+TKT-00253,TWR-021,Biobío,Concepción,2026-08-04T12:29:24.000-03:00,Señal,Media,Resuelto,App,Postpago,12.27
+TKT-00254,TWR-021,Biobío,Concepción,2026-08-04T12:49:31.000-03:00,Señal,Media,Resuelto,Call center,Empresas,43.74
+TKT-00255,TWR-021,Biobío,Concepción,2026-08-04T13:09:38.000-03:00,Señal,Media,Resuelto,Web,Prepago,14.22
+TKT-00256,TWR-021,Biobío,Concepción,2026-08-04T13:29:45.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,2.13
+TKT-00257,TWR-021,Biobío,Concepción,2026-08-04T13:49:52.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00258,TWR-022,Biobío,Concepción,2026-08-04T14:09:59.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00259,TWR-022,Biobío,Concepción,2026-08-04T14:30:06.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00260,TWR-022,Biobío,Concepción,2026-08-04T14:50:13.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00261,TWR-022,Biobío,Concepción,2026-08-04T15:10:20.000-03:00,Señal,Alta,Resuelto,App,Postpago,29.85
+TKT-00262,TWR-022,Biobío,Concepción,2026-08-04T15:30:27.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,41.21
+TKT-00263,TWR-022,Biobío,Concepción,2026-08-04T15:50:34.000-03:00,Señal,Alta,Resuelto,Web,Prepago,28.86
+TKT-00264,TWR-022,Biobío,Concepción,2026-08-04T16:10:41.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,43.06
+TKT-00265,TWR-022,Biobío,Concepción,2026-08-04T16:30:48.000-03:00,Señal,Alta,Resuelto,App,Postpago,38.88
+TKT-00266,TWR-022,Biobío,Concepción,2026-08-04T16:50:55.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,18.94
+TKT-00267,TWR-022,Biobío,Concepción,2026-08-04T17:11:02.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00268,TWR-022,Biobío,Concepción,2026-08-04T17:31:09.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00269,TWR-022,Biobío,Concepción,2026-08-04T17:51:16.000-03:00,Señal,Alta,Abierto,App,Postpago,
+TKT-00270,TWR-023,Biobío,Concepción,2026-08-04T18:11:23.000-03:00,Señal,Alta,Abierto,Call center,Empresas,
+TKT-00271,TWR-023,Biobío,Concepción,2026-08-04T18:31:30.000-03:00,Señal,Alta,Resuelto,Web,Prepago,32.6
+TKT-00272,TWR-023,Biobío,Concepción,2026-08-04T18:51:37.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,13.7
+TKT-00273,TWR-023,Biobío,Concepción,2026-08-04T19:11:44.000-03:00,Señal,Alta,Resuelto,App,Postpago,28.73
+TKT-00274,TWR-023,Biobío,Concepción,2026-08-04T19:31:51.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,14.79
+TKT-00275,TWR-023,Biobío,Concepción,2026-08-04T19:51:58.000-03:00,Señal,Alta,Resuelto,Web,Prepago,40.89
+TKT-00276,TWR-023,Biobío,Concepción,2026-08-04T20:12:05.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,5.69
+TKT-00277,TWR-023,Biobío,Concepción,2026-08-04T20:32:12.000-03:00,Señal,Alta,En progreso,App,Postpago,
+TKT-00278,TWR-023,Biobío,Concepción,2026-08-04T20:52:19.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00279,TWR-023,Biobío,Concepción,2026-08-04T21:12:26.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00280,TWR-023,Biobío,Concepción,2026-08-04T21:32:33.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00281,TWR-023,Biobío,Concepción,2026-08-04T21:52:40.000-03:00,Señal,Alta,Resuelto,App,Postpago,21.53
+TKT-00282,TWR-024,Biobío,Concepción,2026-08-04T22:12:47.000-03:00,Señal,Media,Resuelto,Call center,Empresas,30.84
+TKT-00283,TWR-024,Biobío,Concepción,2026-08-04T22:32:54.000-03:00,Señal,Media,Resuelto,Web,Prepago,11.86
+TKT-00284,TWR-024,Biobío,Concepción,2026-08-04T22:53:01.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,34.02
+TKT-00285,TWR-024,Biobío,Concepción,2026-08-04T23:13:08.000-03:00,Señal,Media,Resuelto,App,Postpago,22.15
+TKT-00286,TWR-024,Biobío,Concepción,2026-08-04T23:33:15.000-03:00,Señal,Media,Resuelto,Call center,Empresas,19.79
+TKT-00287,TWR-024,Biobío,Concepción,2026-08-04T23:53:22.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00288,TWR-024,Biobío,Concepción,2026-08-05T00:13:29.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00289,TWR-024,Biobío,Concepción,2026-08-05T00:33:36.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00290,TWR-024,Biobío,Concepción,2026-08-05T00:53:43.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00291,TWR-025,Biobío,Concepción,2026-08-05T01:13:50.000-03:00,Señal,Media,Resuelto,Web,Prepago,39.46
+TKT-00292,TWR-025,Biobío,Concepción,2026-08-05T01:33:57.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,45.56
+TKT-00293,TWR-025,Biobío,Concepción,2026-08-05T01:54:04.000-03:00,Señal,Media,Resuelto,App,Postpago,36.01
+TKT-00294,TWR-025,Biobío,Concepción,2026-08-05T02:14:11.000-03:00,Señal,Media,Resuelto,Call center,Empresas,31.19
+TKT-00295,TWR-025,Biobío,Concepción,2026-08-05T02:34:18.000-03:00,Señal,Media,Resuelto,Web,Prepago,12.89
+TKT-00296,TWR-025,Biobío,Concepción,2026-08-05T02:54:25.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,18.37
+TKT-00297,TWR-025,Biobío,Concepción,2026-08-05T03:14:32.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00298,TWR-025,Biobío,Concepción,2026-08-05T03:34:39.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00299,TWR-025,Biobío,Concepción,2026-08-05T03:54:46.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00300,TWR-025,Biobío,Concepción,2026-08-05T04:14:53.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00301,TWR-026,Biobío,Talcahuano,2026-08-05T04:35:00.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,19.96
+TKT-00302,TWR-026,Biobío,Talcahuano,2026-08-05T04:55:07.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,10.4
+TKT-00303,TWR-026,Biobío,Talcahuano,2026-08-05T05:15:14.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,35.75
+TKT-00304,TWR-026,Biobío,Talcahuano,2026-08-05T05:35:21.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,8.14
+TKT-00305,TWR-026,Biobío,Talcahuano,2026-08-05T05:55:28.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,45.15
+TKT-00306,TWR-026,Biobío,Talcahuano,2026-08-05T06:15:35.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,26.36
+TKT-00307,TWR-026,Biobío,Talcahuano,2026-08-05T06:35:42.000-03:00,Cobertura,Alta,En progreso,Web,Prepago,
+TKT-00308,TWR-026,Biobío,Talcahuano,2026-08-05T06:55:49.000-03:00,Cobertura,Alta,En progreso,Tienda,Postpago,
+TKT-00309,TWR-026,Biobío,Talcahuano,2026-08-05T07:15:56.000-03:00,Cobertura,Alta,Abierto,App,Postpago,
+TKT-00310,TWR-026,Biobío,Talcahuano,2026-08-05T07:36:03.000-03:00,Cobertura,Alta,Abierto,Call center,Empresas,
+TKT-00311,TWR-026,Biobío,Talcahuano,2026-08-05T07:56:10.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,24.27
+TKT-00312,TWR-026,Biobío,Talcahuano,2026-08-05T08:16:17.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,18.31
+TKT-00313,TWR-027,Biobío,Talcahuano,2026-08-05T08:36:24.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,23.12
+TKT-00314,TWR-027,Biobío,Talcahuano,2026-08-05T08:56:31.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,9.63
+TKT-00315,TWR-027,Biobío,Talcahuano,2026-08-05T09:16:38.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,3.49
+TKT-00316,TWR-027,Biobío,Talcahuano,2026-08-05T09:36:45.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,27.02
+TKT-00317,TWR-027,Biobío,Talcahuano,2026-08-05T09:56:52.000-03:00,Cobertura,Alta,En progreso,App,Postpago,
+TKT-00318,TWR-027,Biobío,Talcahuano,2026-08-05T10:16:59.000-03:00,Cobertura,Alta,En progreso,Call center,Empresas,
+TKT-00319,TWR-027,Biobío,Talcahuano,2026-08-05T10:37:06.000-03:00,Cobertura,Alta,Abierto,Web,Prepago,
+TKT-00320,TWR-027,Biobío,Talcahuano,2026-08-05T10:57:13.000-03:00,Cobertura,Alta,Abierto,Tienda,Postpago,
+TKT-00321,TWR-027,Biobío,Talcahuano,2026-08-05T11:17:20.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,23.82
+TKT-00322,TWR-027,Biobío,Talcahuano,2026-08-05T11:37:27.000-03:00,Cobertura,Alta,Resuelto,Call center,Empresas,33.78
+TKT-00323,TWR-027,Biobío,Talcahuano,2026-08-05T11:57:34.000-03:00,Cobertura,Alta,Resuelto,Web,Prepago,6.44
+TKT-00324,TWR-027,Biobío,Talcahuano,2026-08-05T12:17:41.000-03:00,Cobertura,Alta,Resuelto,Tienda,Postpago,42.81
+TKT-00325,TWR-027,Biobío,Talcahuano,2026-08-05T12:37:48.000-03:00,Cobertura,Alta,Resuelto,App,Postpago,39.11
+TKT-00326,TWR-028,Biobío,Talcahuano,2026-08-05T12:57:55.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,45.28
+TKT-00327,TWR-028,Biobío,Talcahuano,2026-08-05T13:18:02.000-03:00,Señal,Baja,En progreso,Web,Prepago,
+TKT-00328,TWR-028,Biobío,Talcahuano,2026-08-05T13:38:09.000-03:00,Señal,Baja,En progreso,Tienda,Postpago,
+TKT-00329,TWR-028,Biobío,Talcahuano,2026-08-05T13:58:16.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00330,TWR-028,Biobío,Talcahuano,2026-08-05T14:18:23.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00331,TWR-028,Biobío,Talcahuano,2026-08-05T14:38:30.000-03:00,Señal,Baja,Resuelto,Web,Prepago,42.28
+TKT-00332,TWR-028,Biobío,Talcahuano,2026-08-05T14:58:37.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,41.91
+TKT-00333,TWR-029,Biobío,Talcahuano,2026-08-05T15:18:44.000-03:00,Señal,Baja,Resuelto,App,Postpago,29.3
+TKT-00334,TWR-029,Biobío,Talcahuano,2026-08-05T15:38:51.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,12.74
+TKT-00335,TWR-029,Biobío,Talcahuano,2026-08-05T15:58:58.000-03:00,Señal,Baja,Resuelto,Web,Prepago,6.75
+TKT-00336,TWR-029,Biobío,Talcahuano,2026-08-05T16:19:05.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,26.96
+TKT-00337,TWR-029,Biobío,Talcahuano,2026-08-05T16:39:12.000-03:00,Señal,Baja,En progreso,App,Postpago,
+TKT-00338,TWR-029,Biobío,Talcahuano,2026-08-05T16:59:19.000-03:00,Señal,Baja,En progreso,Call center,Empresas,
+TKT-00339,TWR-029,Biobío,Talcahuano,2026-08-05T17:19:26.000-03:00,Señal,Baja,Abierto,Web,Prepago,
+TKT-00340,TWR-029,Biobío,Talcahuano,2026-08-05T17:39:33.000-03:00,Señal,Baja,Abierto,Tienda,Postpago,
+TKT-00341,TWR-030,Biobío,Talcahuano,2026-08-05T17:59:40.000-03:00,Señal,Baja,Resuelto,App,Postpago,5.06
+TKT-00342,TWR-030,Biobío,Talcahuano,2026-08-05T18:19:47.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,22.31
+TKT-00343,TWR-030,Biobío,Talcahuano,2026-08-05T18:39:54.000-03:00,Señal,Baja,Resuelto,Web,Prepago,36.81
+TKT-00344,TWR-030,Biobío,Talcahuano,2026-08-05T19:00:01.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,40.78
+TKT-00345,TWR-030,Biobío,Talcahuano,2026-08-05T19:20:08.000-03:00,Señal,Baja,Resuelto,App,Postpago,27.71
+TKT-00346,TWR-030,Biobío,Talcahuano,2026-08-05T19:40:15.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,45.16
+TKT-00347,TWR-031,La Araucanía,Temuco,2026-08-05T20:00:22.000-03:00,Señal,Baja,En progreso,Web,Prepago,
+TKT-00348,TWR-031,La Araucanía,Temuco,2026-08-05T20:20:29.000-03:00,Señal,Baja,En progreso,Tienda,Postpago,
+TKT-00349,TWR-031,La Araucanía,Temuco,2026-08-05T20:40:36.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00350,TWR-031,La Araucanía,Temuco,2026-08-05T21:00:43.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00351,TWR-031,La Araucanía,Temuco,2026-08-05T21:20:50.000-03:00,Señal,Baja,Resuelto,Web,Prepago,16.45
+TKT-00352,TWR-031,La Araucanía,Temuco,2026-08-05T21:40:57.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,28.36
+TKT-00353,TWR-031,La Araucanía,Temuco,2026-08-05T22:01:04.000-03:00,Señal,Baja,Resuelto,App,Postpago,19.15
+TKT-00354,TWR-032,La Araucanía,Temuco,2026-08-05T22:21:11.000-03:00,Señal,Media,Resuelto,Call center,Empresas,22.17
+TKT-00355,TWR-032,La Araucanía,Temuco,2026-08-05T22:41:18.000-03:00,Señal,Media,Resuelto,Web,Prepago,25.68
+TKT-00356,TWR-032,La Araucanía,Temuco,2026-08-05T23:01:25.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,14.99
+TKT-00357,TWR-032,La Araucanía,Temuco,2026-08-05T23:21:32.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00358,TWR-032,La Araucanía,Temuco,2026-08-05T23:41:39.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00359,TWR-032,La Araucanía,Temuco,2026-08-06T00:01:46.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00360,TWR-032,La Araucanía,Temuco,2026-08-06T00:21:53.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00361,TWR-032,La Araucanía,Temuco,2026-08-06T00:42:00.000-03:00,Señal,Media,Resuelto,App,Postpago,25.32
+TKT-00362,TWR-032,La Araucanía,Temuco,2026-08-06T01:02:07.000-03:00,Señal,Media,Resuelto,Call center,Empresas,10.7
+TKT-00363,TWR-033,La Araucanía,Temuco,2026-08-06T01:22:14.000-03:00,Señal,Media,Resuelto,Web,Prepago,13.81
+TKT-00364,TWR-033,La Araucanía,Temuco,2026-08-06T01:42:21.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,32.3
+TKT-00365,TWR-033,La Araucanía,Temuco,2026-08-06T02:02:28.000-03:00,Señal,Media,Resuelto,App,Postpago,27.39
+TKT-00366,TWR-033,La Araucanía,Temuco,2026-08-06T02:22:35.000-03:00,Señal,Media,Resuelto,Call center,Empresas,19.96
+TKT-00367,TWR-033,La Araucanía,Temuco,2026-08-06T02:42:42.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00368,TWR-033,La Araucanía,Temuco,2026-08-06T03:02:49.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00369,TWR-033,La Araucanía,Temuco,2026-08-06T03:22:56.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00370,TWR-033,La Araucanía,Temuco,2026-08-06T03:43:03.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00371,TWR-034,La Araucanía,Temuco,2026-08-06T04:03:10.000-03:00,Señal,Media,Resuelto,Web,Prepago,22.02
+TKT-00372,TWR-034,La Araucanía,Temuco,2026-08-06T04:23:17.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,21.1
+TKT-00373,TWR-034,La Araucanía,Temuco,2026-08-06T04:43:24.000-03:00,Señal,Media,Resuelto,App,Postpago,23.14
+TKT-00374,TWR-034,La Araucanía,Temuco,2026-08-06T05:03:31.000-03:00,Señal,Media,Resuelto,Call center,Empresas,22.58
+TKT-00375,TWR-034,La Araucanía,Temuco,2026-08-06T05:23:38.000-03:00,Señal,Media,Resuelto,Web,Prepago,12.48
+TKT-00376,TWR-034,La Araucanía,Temuco,2026-08-06T05:43:45.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,14.6
+TKT-00377,TWR-034,La Araucanía,Temuco,2026-08-06T06:03:52.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00378,TWR-034,La Araucanía,Temuco,2026-08-06T06:23:59.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00379,TWR-034,La Araucanía,Temuco,2026-08-06T06:44:06.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00380,TWR-034,La Araucanía,Temuco,2026-08-06T07:04:13.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00381,TWR-034,La Araucanía,Temuco,2026-08-06T07:24:20.000-03:00,Señal,Media,Resuelto,App,Postpago,18.7
+TKT-00382,TWR-035,La Araucanía,Temuco,2026-08-06T07:44:27.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,10.79
+TKT-00383,TWR-035,La Araucanía,Temuco,2026-08-06T08:04:34.000-03:00,Señal,Baja,Resuelto,Web,Prepago,35.9
+TKT-00384,TWR-035,La Araucanía,Temuco,2026-08-06T08:24:41.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,25.49
+TKT-00385,TWR-035,La Araucanía,Temuco,2026-08-06T08:44:48.000-03:00,Señal,Baja,Resuelto,App,Postpago,11.02
+TKT-00386,TWR-035,La Araucanía,Temuco,2026-08-06T09:04:55.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,25.72
+TKT-00387,TWR-035,La Araucanía,Temuco,2026-08-06T09:25:02.000-03:00,Señal,Baja,En progreso,Web,Prepago,
+TKT-00388,TWR-035,La Araucanía,Temuco,2026-08-06T09:45:09.000-03:00,Señal,Baja,En progreso,Tienda,Postpago,
+TKT-00389,TWR-036,La Araucanía,Padre Las Casas,2026-08-06T10:05:16.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00390,TWR-036,La Araucanía,Padre Las Casas,2026-08-06T10:25:23.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00391,TWR-036,La Araucanía,Padre Las Casas,2026-08-06T10:45:30.000-03:00,Señal,Baja,Resuelto,Web,Prepago,39.84
+TKT-00392,TWR-036,La Araucanía,Padre Las Casas,2026-08-06T11:05:37.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,44.26
+TKT-00393,TWR-036,La Araucanía,Padre Las Casas,2026-08-06T11:25:44.000-03:00,Señal,Baja,Resuelto,App,Postpago,29.18
+TKT-00394,TWR-037,La Araucanía,Padre Las Casas,2026-08-06T11:45:51.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,12.63
+TKT-00395,TWR-037,La Araucanía,Padre Las Casas,2026-08-06T12:05:58.000-03:00,Señal,Baja,Resuelto,Web,Prepago,25.71
+TKT-00396,TWR-037,La Araucanía,Padre Las Casas,2026-08-06T12:26:05.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,19.37
+TKT-00397,TWR-037,La Araucanía,Padre Las Casas,2026-08-06T12:46:12.000-03:00,Señal,Baja,En progreso,App,Postpago,
+TKT-00398,TWR-037,La Araucanía,Padre Las Casas,2026-08-06T13:06:19.000-03:00,Señal,Baja,En progreso,Call center,Empresas,
+TKT-00399,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T13:26:26.000-03:00,Señal,Baja,Abierto,Web,Prepago,
+TKT-00400,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T13:46:33.000-03:00,Señal,Baja,Abierto,Tienda,Postpago,
+TKT-00401,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T14:06:40.000-03:00,Señal,Baja,Resuelto,App,Postpago,15.26
+TKT-00402,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T14:26:47.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,9.78
+TKT-00403,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T14:46:54.000-03:00,Señal,Baja,Resuelto,Web,Prepago,5.89
+TKT-00404,TWR-038,La Araucanía,Padre Las Casas,2026-08-06T15:07:01.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,6.34
+TKT-00405,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T15:27:08.000-03:00,Señal,Baja,Resuelto,App,Postpago,20.03
+TKT-00406,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T15:47:15.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,28.87
+TKT-00407,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T16:07:22.000-03:00,Señal,Baja,En progreso,Web,Prepago,
+TKT-00408,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T16:27:29.000-03:00,Señal,Baja,En progreso,Tienda,Postpago,
+TKT-00409,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T16:47:36.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00410,TWR-039,La Araucanía,Padre Las Casas,2026-08-06T17:07:43.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00411,TWR-040,La Araucanía,Padre Las Casas,2026-08-06T17:27:50.000-03:00,Señal,Baja,Resuelto,Web,Prepago,31.72
+TKT-00412,TWR-040,La Araucanía,Padre Las Casas,2026-08-06T17:47:57.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,45.9
+TKT-00413,TWR-040,La Araucanía,Padre Las Casas,2026-08-06T18:08:04.000-03:00,Señal,Baja,Resuelto,App,Postpago,21.28
+TKT-00414,TWR-040,La Araucanía,Padre Las Casas,2026-08-06T18:28:11.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,13.56
+TKT-00415,TWR-040,La Araucanía,Padre Las Casas,2026-08-06T18:48:18.000-03:00,Señal,Baja,Resuelto,Web,Prepago,22.54
+TKT-00416,TWR-041,Antofagasta,Antofagasta,2026-08-06T19:08:25.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,28.73
+TKT-00417,TWR-041,Antofagasta,Antofagasta,2026-08-06T19:28:32.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00418,TWR-041,Antofagasta,Antofagasta,2026-08-06T19:48:39.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00419,TWR-041,Antofagasta,Antofagasta,2026-08-06T20:08:46.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00420,TWR-041,Antofagasta,Antofagasta,2026-08-06T20:28:53.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00421,TWR-041,Antofagasta,Antofagasta,2026-08-06T20:49:00.000-03:00,Señal,Media,Resuelto,App,Postpago,21.97
+TKT-00422,TWR-041,Antofagasta,Antofagasta,2026-08-06T21:09:07.000-03:00,Señal,Media,Resuelto,Call center,Empresas,30.69
+TKT-00423,TWR-041,Antofagasta,Antofagasta,2026-08-06T21:29:14.000-03:00,Señal,Media,Resuelto,Web,Prepago,19.25
+TKT-00424,TWR-041,Antofagasta,Antofagasta,2026-08-06T21:49:21.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,6.43
+TKT-00425,TWR-041,Antofagasta,Antofagasta,2026-08-06T22:09:28.000-03:00,Señal,Media,Resuelto,App,Postpago,24.8
+TKT-00426,TWR-042,Antofagasta,Antofagasta,2026-08-06T22:29:35.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,35.14
+TKT-00427,TWR-042,Antofagasta,Antofagasta,2026-08-06T22:49:42.000-03:00,Señal,Baja,En progreso,Web,Prepago,
+TKT-00428,TWR-042,Antofagasta,Antofagasta,2026-08-06T23:09:49.000-03:00,Señal,Baja,En progreso,Tienda,Postpago,
+TKT-00429,TWR-042,Antofagasta,Antofagasta,2026-08-06T23:29:56.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00430,TWR-042,Antofagasta,Antofagasta,2026-08-06T23:50:03.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00431,TWR-042,Antofagasta,Antofagasta,2026-08-07T00:10:10.000-03:00,Señal,Baja,Resuelto,Web,Prepago,32.32
+TKT-00432,TWR-042,Antofagasta,Antofagasta,2026-08-07T00:30:17.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,16.63
+TKT-00433,TWR-043,Antofagasta,Antofagasta,2026-08-07T00:50:24.000-03:00,Señal,Baja,Resuelto,App,Postpago,28.87
+TKT-00434,TWR-043,Antofagasta,Antofagasta,2026-08-07T01:10:31.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,16.46
+TKT-00435,TWR-043,Antofagasta,Antofagasta,2026-08-07T01:30:38.000-03:00,Señal,Baja,Resuelto,Web,Prepago,14.25
+TKT-00436,TWR-043,Antofagasta,Antofagasta,2026-08-07T01:50:45.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,42.3
+TKT-00437,TWR-043,Antofagasta,Antofagasta,2026-08-07T02:10:52.000-03:00,Señal,Baja,En progreso,App,Postpago,
+TKT-00438,TWR-043,Antofagasta,Antofagasta,2026-08-07T02:30:59.000-03:00,Señal,Baja,En progreso,Call center,Empresas,
+TKT-00439,TWR-043,Antofagasta,Antofagasta,2026-08-07T02:51:06.000-03:00,Señal,Baja,Abierto,Web,Prepago,
+TKT-00440,TWR-043,Antofagasta,Antofagasta,2026-08-07T03:11:13.000-03:00,Señal,Baja,Abierto,Tienda,Postpago,
+TKT-00441,TWR-044,Antofagasta,Antofagasta,2026-08-07T03:31:20.000-03:00,Señal,Media,Resuelto,App,Postpago,12.84
+TKT-00442,TWR-044,Antofagasta,Antofagasta,2026-08-07T03:51:27.000-03:00,Señal,Media,Resuelto,Call center,Empresas,25.31
+TKT-00443,TWR-044,Antofagasta,Antofagasta,2026-08-07T04:11:34.000-03:00,Señal,Media,Resuelto,Web,Prepago,26.4
+TKT-00444,TWR-044,Antofagasta,Antofagasta,2026-08-07T04:31:41.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,16.39
+TKT-00445,TWR-044,Antofagasta,Antofagasta,2026-08-07T04:51:48.000-03:00,Señal,Media,Resuelto,App,Postpago,7.18
+TKT-00446,TWR-044,Antofagasta,Antofagasta,2026-08-07T05:11:55.000-03:00,Señal,Media,Resuelto,Call center,Empresas,36.15
+TKT-00447,TWR-044,Antofagasta,Antofagasta,2026-08-07T05:32:02.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00448,TWR-044,Antofagasta,Antofagasta,2026-08-07T05:52:09.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00449,TWR-045,Antofagasta,Antofagasta,2026-08-07T06:12:16.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00450,TWR-045,Antofagasta,Antofagasta,2026-08-07T06:32:23.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00451,TWR-045,Antofagasta,Antofagasta,2026-08-07T06:52:30.000-03:00,Señal,Media,Resuelto,Web,Prepago,12.86
+TKT-00452,TWR-045,Antofagasta,Antofagasta,2026-08-07T07:12:37.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,20.02
+TKT-00453,TWR-045,Antofagasta,Antofagasta,2026-08-07T07:32:44.000-03:00,Señal,Media,Resuelto,App,Postpago,7.36
+TKT-00454,TWR-045,Antofagasta,Antofagasta,2026-08-07T07:52:51.000-03:00,Señal,Media,Resuelto,Call center,Empresas,45.55
+TKT-00455,TWR-045,Antofagasta,Antofagasta,2026-08-07T08:12:58.000-03:00,Señal,Media,Resuelto,Web,Prepago,37.41
+TKT-00456,TWR-045,Antofagasta,Antofagasta,2026-08-07T08:33:05.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,14.98
+TKT-00457,TWR-046,Antofagasta,Calama,2026-08-07T08:53:12.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00458,TWR-046,Antofagasta,Calama,2026-08-07T09:13:19.000-03:00,Señal,Media,En progreso,Call center,Empresas,
+TKT-00459,TWR-046,Antofagasta,Calama,2026-08-07T09:33:26.000-03:00,Señal,Media,Abierto,Web,Prepago,
+TKT-00460,TWR-046,Antofagasta,Calama,2026-08-07T09:53:33.000-03:00,Señal,Media,Abierto,Tienda,Postpago,
+TKT-00461,TWR-046,Antofagasta,Calama,2026-08-07T10:13:40.000-03:00,Señal,Media,Resuelto,App,Postpago,32.3
+TKT-00462,TWR-046,Antofagasta,Calama,2026-08-07T10:33:47.000-03:00,Señal,Media,Resuelto,Call center,Empresas,13.45
+TKT-00463,TWR-046,Antofagasta,Calama,2026-08-07T10:53:54.000-03:00,Señal,Media,Resuelto,Web,Prepago,42.3
+TKT-00464,TWR-046,Antofagasta,Calama,2026-08-07T11:14:01.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,12.01
+TKT-00465,TWR-046,Antofagasta,Calama,2026-08-07T11:34:08.000-03:00,Señal,Media,Resuelto,App,Postpago,39.02
+TKT-00466,TWR-046,Antofagasta,Calama,2026-08-07T11:54:15.000-03:00,Señal,Media,Resuelto,Call center,Empresas,7.21
+TKT-00467,TWR-047,Antofagasta,Calama,2026-08-07T12:14:22.000-03:00,Señal,Media,En progreso,Web,Prepago,
+TKT-00468,TWR-047,Antofagasta,Calama,2026-08-07T12:34:29.000-03:00,Señal,Media,En progreso,Tienda,Postpago,
+TKT-00469,TWR-047,Antofagasta,Calama,2026-08-07T12:54:36.000-03:00,Señal,Media,Abierto,App,Postpago,
+TKT-00470,TWR-047,Antofagasta,Calama,2026-08-07T13:14:43.000-03:00,Señal,Media,Abierto,Call center,Empresas,
+TKT-00471,TWR-047,Antofagasta,Calama,2026-08-07T13:34:50.000-03:00,Señal,Media,Resuelto,Web,Prepago,14.45
+TKT-00472,TWR-047,Antofagasta,Calama,2026-08-07T13:54:57.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,39.88
+TKT-00473,TWR-047,Antofagasta,Calama,2026-08-07T14:15:04.000-03:00,Señal,Media,Resuelto,App,Postpago,26.29
+TKT-00474,TWR-047,Antofagasta,Calama,2026-08-07T14:35:11.000-03:00,Señal,Media,Resuelto,Call center,Empresas,3.11
+TKT-00475,TWR-047,Antofagasta,Calama,2026-08-07T14:55:18.000-03:00,Señal,Media,Resuelto,Web,Prepago,26.34
+TKT-00476,TWR-047,Antofagasta,Calama,2026-08-07T15:15:25.000-03:00,Señal,Media,Resuelto,Tienda,Postpago,21.85
+TKT-00477,TWR-047,Antofagasta,Calama,2026-08-07T15:35:32.000-03:00,Señal,Media,En progreso,App,Postpago,
+TKT-00478,TWR-048,Antofagasta,Calama,2026-08-07T15:55:39.000-03:00,Señal,Alta,En progreso,Call center,Empresas,
+TKT-00479,TWR-048,Antofagasta,Calama,2026-08-07T16:15:46.000-03:00,Señal,Alta,Abierto,Web,Prepago,
+TKT-00480,TWR-048,Antofagasta,Calama,2026-08-07T16:35:53.000-03:00,Señal,Alta,Abierto,Tienda,Postpago,
+TKT-00481,TWR-048,Antofagasta,Calama,2026-08-07T16:56:00.000-03:00,Señal,Alta,Resuelto,App,Postpago,30.01
+TKT-00482,TWR-048,Antofagasta,Calama,2026-08-07T17:16:07.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,15.96
+TKT-00483,TWR-048,Antofagasta,Calama,2026-08-07T17:36:14.000-03:00,Señal,Alta,Resuelto,Web,Prepago,10.84
+TKT-00484,TWR-048,Antofagasta,Calama,2026-08-07T17:56:21.000-03:00,Señal,Alta,Resuelto,Tienda,Postpago,30.53
+TKT-00485,TWR-048,Antofagasta,Calama,2026-08-07T18:16:28.000-03:00,Señal,Alta,Resuelto,App,Postpago,43.19
+TKT-00486,TWR-048,Antofagasta,Calama,2026-08-07T18:36:35.000-03:00,Señal,Alta,Resuelto,Call center,Empresas,33.96
+TKT-00487,TWR-048,Antofagasta,Calama,2026-08-07T18:56:42.000-03:00,Señal,Alta,En progreso,Web,Prepago,
+TKT-00488,TWR-048,Antofagasta,Calama,2026-08-07T19:16:49.000-03:00,Señal,Alta,En progreso,Tienda,Postpago,
+TKT-00489,TWR-049,Antofagasta,Calama,2026-08-07T19:36:56.000-03:00,Señal,Baja,Abierto,App,Postpago,
+TKT-00490,TWR-049,Antofagasta,Calama,2026-08-07T19:57:03.000-03:00,Señal,Baja,Abierto,Call center,Empresas,
+TKT-00491,TWR-049,Antofagasta,Calama,2026-08-07T20:17:10.000-03:00,Señal,Baja,Resuelto,Web,Prepago,27.97
+TKT-00492,TWR-049,Antofagasta,Calama,2026-08-07T20:37:17.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,18.86
+TKT-00493,TWR-049,Antofagasta,Calama,2026-08-07T20:57:24.000-03:00,Señal,Baja,Resuelto,App,Postpago,36.63
+TKT-00494,TWR-049,Antofagasta,Calama,2026-08-07T21:17:31.000-03:00,Señal,Baja,Resuelto,Call center,Empresas,25.75
+TKT-00495,TWR-050,Antofagasta,Calama,2026-08-07T21:37:38.000-03:00,Señal,Baja,Resuelto,Web,Prepago,18.41
+TKT-00496,TWR-050,Antofagasta,Calama,2026-08-07T21:57:45.000-03:00,Señal,Baja,Resuelto,Tienda,Postpago,19.28
+TKT-00497,TWR-050,Antofagasta,Calama,2026-08-07T22:17:52.000-03:00,Señal,Baja,En progreso,App,Postpago,
+TKT-00498,TWR-050,Antofagasta,Calama,2026-08-07T22:37:59.000-03:00,Señal,Baja,En progreso,Call center,Empresas,
+TKT-00499,TWR-050,Antofagasta,Calama,2026-08-07T22:58:06.000-03:00,Señal,Baja,Abierto,Web,Prepago,
+TKT-00500,TWR-050,Antofagasta,Calama,2026-08-07T23:18:13.000-03:00,Señal,Baja,Abierto,Tienda,Postpago,

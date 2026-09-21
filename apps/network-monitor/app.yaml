@@ -1,0 +1,14 @@
+command:
+  - streamlit
+  - run
+  - app.py
+  - --server.address=0.0.0.0
+  - --server.port=8000
+  - --server.headless=true
+
+env:
+  - name: TELCO_CATALOG
+    value: telco_workshop
+  - name: TELCO_SCHEMA
+    value: red_calidad
+

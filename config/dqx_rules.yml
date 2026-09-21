@@ -1,0 +1,59 @@
+# Regras oficiais do exercicio DQX. Formato: metadata list[dict].
+- name: tower_id_required
+  criticality: error
+  check:
+    function: is_not_null_and_not_empty
+    arguments:
+      column: tower_id
+
+- name: timestamp_required
+  criticality: error
+  check:
+    function: is_not_null
+    arguments:
+      column: timestamp
+
+- name: signal_in_physical_range
+  criticality: error
+  check:
+    function: is_in_range
+    arguments:
+      column: signal_strength_dbm
+      min_limit: -120
+      max_limit: -40
+
+- name: latency_in_physical_range
+  criticality: error
+  check:
+    function: is_in_range
+    arguments:
+      column: latency_ms
+      min_limit: 0
+      max_limit: 500
+
+- name: throughput_required
+  criticality: error
+  check:
+    function: is_not_null
+    arguments:
+      column: throughput_mbps
+
+- name: throughput_above_workshop_sla
+  criticality: warn
+  check:
+    function: is_in_range
+    arguments:
+      column: throughput_mbps
+      min_limit: 1.0
+      max_limit: 150
+
+- name: technology_allowed
+  criticality: error
+  check:
+    function: is_in_list
+    arguments:
+      column: technology
+      allowed:
+        - "'4G'"
+        - "'5G'"
+
