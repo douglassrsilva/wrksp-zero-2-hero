@@ -14,7 +14,6 @@ from typing import Any
 
 from databricks.sdk import WorkspaceClient
 
-
 TITLE = "Analista 360 de Red y Clientes"
 
 

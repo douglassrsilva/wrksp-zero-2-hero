@@ -28,3 +28,7 @@
 - [x] Publicar la revisión en GitHub
 - [x] Impedir por preflight que la muestra PySpark sea consumida por etapas downstream
 - [x] Ejecutar la muestra PySpark en serverless y confirmar exactamente tres tablas demo
+- [x] Ejecutar el dry run remoto completo y documentar evidencia sanitizada
+- [x] Alinear deduplicación SDP, DQX y contingencias SQL
+- [x] Ejecutar los cuatro datasets del dashboard y corregir la normalización SQL
+- [ ] Autorizar e inspeccionar visualmente la App remota, sujeto a consentimiento OAuth explícito

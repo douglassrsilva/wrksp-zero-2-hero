@@ -28,3 +28,10 @@ app = [
 [tool.ruff]
 line-length = 110
 target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# `spark`, `dbutils` y `display` son globals inyectados por Databricks Runtime.
+"notebooks/*.py" = ["E402", "F821"]

@@ -13,6 +13,7 @@
 # COMMAND ----------
 
 from pyspark import pipelines as dp
+from pyspark.sql import Window
 from pyspark.sql import functions as F
 from pyspark.sql.types import (
     BooleanType,
@@ -33,6 +34,13 @@ raw_root = f"/Volumes/{catalog}/{schema}/raw_data"
 
 def fields(*items):
     return StructType([StructField(name, data_type, True) for name, data_type in items])
+
+
+def keep_latest(frame, keys, *ordering):
+    """Deduplica de forma determinista para que SDP y el checkpoint produzcan lo mismo."""
+
+    window = Window.partitionBy(*keys).orderBy(*ordering)
+    return frame.withColumn("_dedup_rank", F.row_number().over(window)).where("_dedup_rank = 1").drop("_dedup_rank")
 
 
 DATASET_SCHEMAS = {
@@ -163,7 +171,7 @@ for source_name, source_schema in DATASET_SCHEMAS.items():
     "coordinates_valid": "latitude BETWEEN -56 AND -17 AND longitude BETWEEN -76 AND -66",
 })
 def network_sites_silver():
-    return spark.read.table("network_sites_bronze").dropDuplicates(["site_id"])
+    return keep_latest(spark.read.table("network_sites_bronze"), ["site_id"], F.col("commissioned_date").desc())
 
 
 @dp.materialized_view(name="radio_cells_silver", comment="Celdas deduplicadas con contrato tecnológico")
@@ -174,7 +182,7 @@ def network_sites_silver():
     "technology_band_consistent": "(technology = '4G' AND frequency_band LIKE 'B%') OR (technology = '5G' AND frequency_band LIKE 'n%')",
 })
 def radio_cells_silver():
-    return spark.read.table("radio_cells_bronze").dropDuplicates(["cell_id"])
+    return keep_latest(spark.read.table("radio_cells_bronze"), ["cell_id"], F.col("site_id").asc())
 
 
 @dp.materialized_view(name="products_silver", comment="Catálogo de productos deduplicado")
@@ -184,7 +192,7 @@ def radio_cells_silver():
     "unlimited_data_consistent": "(unlimited_data AND data_allowance_gb IS NULL) OR (NOT unlimited_data AND data_allowance_gb IS NOT NULL)",
 })
 def products_silver():
-    return spark.read.table("products_bronze").dropDuplicates(["product_id"])
+    return keep_latest(spark.read.table("products_bronze"), ["product_id"], F.col("valid_from").desc())
 
 
 @dp.materialized_view(name="customers_silver", comment="Clientes seudónimos deduplicados, sin PII")
@@ -195,8 +203,7 @@ def products_silver():
 })
 def customers_silver():
     return (
-        spark.read.table("customers_bronze")
-        .dropDuplicates(["customer_id"])
+        keep_latest(spark.read.table("customers_bronze"), ["customer_id"], F.col("created_date").desc())
         .withColumn("tenure_months", F.floor(F.months_between(F.lit("2026-08-14"), "created_date")).cast("int"))
     )
 
@@ -218,7 +225,9 @@ def customers_silver():
     "downlink_required": "downlink_mbps IS NOT NULL AND downlink_mbps >= 0",
 })
 def cell_tower_metrics_silver():
-    metrics = spark.read.table("cell_tower_metrics_bronze").dropDuplicates(["measurement_id"]).alias("m")
+    metrics = keep_latest(
+        spark.read.table("cell_tower_metrics_bronze"), ["measurement_id"], F.col("event_ts").desc()
+    ).alias("m")
     cells = spark.read.table("radio_cells_silver").alias("c")
     sites = spark.read.table("network_sites_silver").alias("s")
     return (
@@ -248,7 +257,9 @@ def cell_tower_metrics_silver():
     "dates_consistent": "closed_at IS NULL OR closed_at >= opened_at",
 })
 def network_alarms_silver():
-    alarms = spark.read.table("network_alarms_bronze").dropDuplicates(["alarm_id"]).alias("a")
+    alarms = keep_latest(
+        spark.read.table("network_alarms_bronze"), ["alarm_id"], F.col("opened_at").desc()
+    ).alias("a")
     cells = spark.read.table("radio_cells_silver").alias("c")
     sites = spark.read.table("network_sites_silver").alias("s")
     return (
@@ -268,7 +279,9 @@ def network_alarms_silver():
     "dates_consistent": "completed_at IS NULL OR completed_at >= created_at",
 })
 def maintenance_orders_silver():
-    orders = spark.read.table("maintenance_orders_bronze").dropDuplicates(["work_order_id"]).alias("o")
+    orders = keep_latest(
+        spark.read.table("maintenance_orders_bronze"), ["work_order_id"], F.col("created_at").desc()
+    ).alias("o")
     sites = spark.read.table("network_sites_silver").alias("s")
     return (
         orders.join(sites, F.col("o.site_id") == F.col("s.site_id"), "left")
@@ -286,7 +299,9 @@ def maintenance_orders_silver():
     "monthly_fee_non_negative": "monthly_fee_clp >= 0",
 })
 def subscriptions_silver():
-    subscriptions = spark.read.table("subscriptions_bronze").dropDuplicates(["subscription_id"]).alias("sub")
+    subscriptions = keep_latest(
+        spark.read.table("subscriptions_bronze"), ["subscription_id"], F.col("start_date").desc()
+    ).alias("sub")
     customers = spark.read.table("customers_silver").alias("cus")
     products = spark.read.table("products_silver").alias("pro")
     return (
@@ -309,7 +324,11 @@ def subscriptions_silver():
     "data_5g_range": "data_5g_pct BETWEEN 0 AND 100",
 })
 def usage_daily_silver():
-    usage = spark.read.table("usage_daily_bronze").dropDuplicates(["usage_date", "subscription_id"]).alias("u")
+    usage = keep_latest(
+        spark.read.table("usage_daily_bronze"),
+        ["usage_date", "subscription_id"],
+        F.col("ingestion_batch_id").desc(),
+    ).alias("u")
     subscriptions = spark.read.table("subscriptions_silver").alias("sub")
     cells = spark.read.table("radio_cells_silver").alias("c")
     sites = spark.read.table("network_sites_silver").alias("s")
@@ -338,7 +357,9 @@ def usage_daily_silver():
     "resolution_non_negative": "resolution_hours IS NULL OR resolution_hours >= 0",
 })
 def support_tickets_silver():
-    tickets = spark.read.table("support_tickets_bronze").dropDuplicates(["ticket_id"]).alias("t")
+    tickets = keep_latest(
+        spark.read.table("support_tickets_bronze"), ["ticket_id"], F.col("created_at").desc()
+    ).alias("t")
     subscriptions = spark.read.table("subscriptions_silver").alias("sub")
     cells = spark.read.table("radio_cells_silver").alias("c")
     sites = spark.read.table("network_sites_silver").alias("s")
@@ -366,7 +387,9 @@ def support_tickets_silver():
     "csat_range": "csat_score BETWEEN 1 AND 5",
 })
 def customer_surveys_silver():
-    surveys = spark.read.table("customer_surveys_bronze").dropDuplicates(["survey_id"]).alias("e")
+    surveys = keep_latest(
+        spark.read.table("customer_surveys_bronze"), ["survey_id"], F.col("response_date").desc()
+    ).alias("e")
     subscriptions = spark.read.table("subscriptions_silver").alias("sub")
     return (
         surveys.join(subscriptions, F.col("e.subscription_id") == F.col("sub.subscription_id"), "left")

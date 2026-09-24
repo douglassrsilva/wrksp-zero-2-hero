@@ -9,14 +9,17 @@ cell_tower_metrics:
   - {name: signal_range, criticality: error, check: {function: is_in_range, arguments: {column: signal_strength_dbm, min_limit: -120, max_limit: -40}}}
   - {name: latency_range, criticality: error, check: {function: is_in_range, arguments: {column: latency_ms, min_limit: 0, max_limit: 500}}}
   - {name: downlink_required, criticality: error, check: {function: is_not_null, arguments: {column: downlink_mbps}}}
+  - {name: technology_allowed, criticality: error, check: {function: is_in_list, arguments: {column: technology, allowed: ["'4G'", "'5G'"]}}}
 
 subscriptions:
   - {name: subscription_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: subscription_id}}}
   - {name: customer_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: customer_segment}}}
   - {name: product_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: product_name}}}
   - {name: monthly_fee_non_negative, criticality: error, check: {function: is_in_range, arguments: {column: monthly_fee_clp, min_limit: 0, max_limit: 1000000}}}
+  - {name: status_allowed, criticality: error, check: {function: is_in_list, arguments: {column: subscription_status, allowed: ["'Activa'", "'Suspendida'", "'Baja'"]}}}
 
 usage_daily:
+  - {name: usage_date_required, criticality: error, check: {function: is_not_null, arguments: {column: usage_date}}}
   - {name: subscription_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: customer_id}}}
   - {name: cell_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: site_id}}}
   - {name: network_region_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: network_region}}}
@@ -27,6 +30,7 @@ support_tickets:
   - {name: ticket_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: ticket_id}}}
   - {name: category_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: category}}}
   - {name: subscription_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: product_name}}}
+  - {name: status_allowed, criticality: error, check: {function: is_in_list, arguments: {column: ticket_status, allowed: ["'Abierto'", "'En progreso'", "'Resuelto'", "'Cerrado'"]}}}
 
 network_alarms:
   - {name: alarm_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: alarm_id}}}

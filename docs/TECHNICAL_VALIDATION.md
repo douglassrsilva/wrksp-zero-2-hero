@@ -25,9 +25,20 @@ las referencia. Las contingencias operacionales usan checkpoints independientes,
 preparados por el instructor. La validación posterior completó un full refresh del
 DAG ampliado con once Bronze, once Silver y Gold preliminares.
 
+El dry run final también sustituyó `dropDuplicates` por ventanas con orden explícito.
+Así, los duplicados se resuelven de forma determinista y SDP produce las mismas
+cantidades `validated/quarantine` que el checkpoint SQL.
+
 Una segunda validación detectó que `input_file_name()` no está soportado en esta ruta
 de Unity Catalog. Las tablas Bronze ahora obtienen la procedencia desde
 `_metadata.file_path`, que es la interfaz compatible con Auto Loader y UC.
+
+## Validación final ejecutada
+
+El informe sanitizado con conteos, contingencias y limitaciones se encuentra en
+`DRY_RUN_REPORT.md`. El resultado técnico fue PASS. La inspección visual de la App
+remota requiere aceptar un consentimiento OAuth persistente y, por seguridad, quedó
+pendiente hasta contar con autorización explícita.
 
 ## Validación de la muestra PySpark aislada
 

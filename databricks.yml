@@ -29,5 +29,7 @@ targets:
   dev:
     default: true
     mode: development
+  smoke:
+    mode: development
   shared:
     mode: production

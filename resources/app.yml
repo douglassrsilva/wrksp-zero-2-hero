@@ -24,3 +24,28 @@ resources:
           sql_warehouse:
             id: ${var.warehouse_id}
             permission: CAN_USE
+        - name: gold-network-hourly
+          uc_securable:
+            securable_type: TABLE
+            securable_full_name: ${var.catalog}.${var.schema}.gold_network_hourly
+            permission: SELECT
+        - name: gold-site-daily-360
+          uc_securable:
+            securable_type: TABLE
+            securable_full_name: ${var.catalog}.${var.schema}.gold_site_daily_360
+            permission: SELECT
+        - name: gold-customer-360
+          uc_securable:
+            securable_type: TABLE
+            securable_full_name: ${var.catalog}.${var.schema}.gold_customer_360
+            permission: SELECT
+        - name: gold-customer-product-daily
+          uc_securable:
+            securable_type: TABLE
+            securable_full_name: ${var.catalog}.${var.schema}.gold_customer_product_daily
+            permission: SELECT
+        - name: gold-incident-impact
+          uc_securable:
+            securable_type: TABLE
+            securable_full_name: ${var.catalog}.${var.schema}.gold_incident_impact
+            permission: SELECT

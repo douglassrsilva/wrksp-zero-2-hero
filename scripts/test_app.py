@@ -4,7 +4,6 @@ from pathlib import Path
 
 from streamlit.testing.v1 import AppTest
 
-
 ROOT = Path(__file__).resolve().parents[1]
 app = AppTest.from_file(str(ROOT / "apps/network-monitor/app.py"), default_timeout=60)
 app.run()

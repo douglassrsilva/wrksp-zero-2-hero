@@ -4,11 +4,11 @@ from __future__ import annotations
 
 import ast
 import csv
+import importlib.util
 import json
 from pathlib import Path
 
 import yaml
-
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -142,6 +142,31 @@ def validate_demo_isolation() -> None:
         assert not any(table_name in source for table_name in expected_tables), path
 
 
+def validate_dashboard_queries() -> None:
+    """Evita que Lakeview una fragmentos SQL sin espacios entre palabras clave."""
+
+    path = ROOT / "scripts" / "create_dashboard.py"
+    spec = importlib.util.spec_from_file_location("workshop_dashboard_builder", path)
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+
+    dashboard = module.build_serialized_dashboard("catalog_demo", "schema_demo")
+    assert len(dashboard["datasets"]) == 4
+    forbidden_fragments = {
+        "customersFROM",
+        "pctFROM",
+        "experienceGROUP",
+        "subscriptionsFROM",
+        "360ORDER",
+        "DESCLIMIT",
+    }
+    for dataset in dashboard["datasets"]:
+        assert len(dataset["queryLines"]) == 1, dataset["name"]
+        statement = dataset["queryLines"][0]
+        assert not any(fragment in statement for fragment in forbidden_fragments), dataset["name"]
+
+
 def main() -> None:
     validate_python()
     validate_yaml()
@@ -149,6 +174,7 @@ def main() -> None:
     validate_data()
     validate_impurities()
     validate_demo_isolation()
+    validate_dashboard_queries()
     print("Preflight local del repositorio finalizado correctamente.")
 
 

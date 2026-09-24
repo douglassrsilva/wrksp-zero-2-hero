@@ -9,7 +9,6 @@ from pyspark.sql import SparkSession
 
 from telco_workshop.generator import DATASET_COUNTS, build_all_datasets
 
-
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "generated"
 STAGING = ROOT / ".data_staging"

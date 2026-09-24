@@ -16,7 +16,6 @@ from pathlib import Path
 
 from databricks.sdk import WorkspaceClient
 
-
 CELL_SEPARATOR = "-- COMMAND ----------"
 WIDGET_PATTERN = re.compile(
     r'CREATE\s+WIDGET\s+TEXT\s+(\w+)\s+DEFAULT\s+"([^"]*)"\s*;',
@@ -41,6 +40,49 @@ def parse_overrides(items: list[str]) -> dict[str, str]:
     return overrides
 
 
+def split_sql_statements(source: str) -> list[str]:
+    """Separa sentencias por `;` sin romper literales, identificadores ni bloques `$$`."""
+
+    statements: list[str] = []
+    current: list[str] = []
+    quote: str | None = None
+    dollar_quoted = False
+    index = 0
+    while index < len(source):
+        pair = source[index : index + 2]
+        character = source[index]
+
+        if quote is None and pair == "$$":
+            dollar_quoted = not dollar_quoted
+            current.append(pair)
+            index += 2
+            continue
+
+        if not dollar_quoted:
+            if quote is None and character in {"'", '"', "`"}:
+                quote = character
+            elif quote == character:
+                if index + 1 < len(source) and source[index + 1] == character:
+                    current.extend((character, character))
+                    index += 2
+                    continue
+                quote = None
+
+        if character == ";" and quote is None and not dollar_quoted:
+            statement = "".join(current).strip()
+            if statement:
+                statements.append(statement)
+            current = []
+        else:
+            current.append(character)
+        index += 1
+
+    statement = "".join(current).strip()
+    if statement:
+        statements.append(statement)
+    return statements
+
+
 def prepare_cells(path: Path, overrides: dict[str, str]) -> tuple[list[str], dict[str, str]]:
     source = path.read_text(encoding="utf-8")
     widgets = {name: default for name, default in WIDGET_PATTERN.findall(source)}
@@ -56,10 +98,6 @@ def prepare_cells(path: Path, overrides: dict[str, str]) -> tuple[list[str], dic
         cell = "\n".join(lines).strip()
         if not cell:
             continue
-        if re.search(r"\bCREATE\s+WIDGET\b", cell, flags=re.IGNORECASE):
-            continue
-        if re.match(r"^(USE\s+CATALOG|USE\s+SCHEMA)\b", cell, flags=re.IGNORECASE):
-            continue
 
         def replace_identifier(match: re.Match[str]) -> str:
             name = match.group(1)
@@ -68,7 +106,12 @@ def prepare_cells(path: Path, overrides: dict[str, str]) -> tuple[list[str], dic
             return _quoted_identifier(widgets[name])
 
         cell = IDENTIFIER_PATTERN.sub(replace_identifier, cell)
-        cells.append(cell)
+        for statement in split_sql_statements(cell):
+            if re.match(r"^CREATE\s+WIDGET\b", statement, flags=re.IGNORECASE):
+                continue
+            if re.match(r"^(USE\s+CATALOG|USE\s+SCHEMA)\b", statement, flags=re.IGNORECASE):
+                continue
+            cells.append(statement)
     return cells, widgets
 
 

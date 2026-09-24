@@ -11,9 +11,7 @@ import os
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-
 from data_access import load_local_gold, load_remote_gold, remote_configuration
-
 
 st.set_page_config(page_title="Monitor de experiencia móvil", page_icon="📡", layout="wide")
 

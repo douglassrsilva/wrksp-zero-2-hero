@@ -23,7 +23,6 @@ from pyspark.sql.types import (
     StructType,
 )
 
-
 SEED = 42
 START_TS = "2026-08-01 00:00:00"
 

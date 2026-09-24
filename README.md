@@ -80,3 +80,4 @@ uv run --extra app streamlit run apps/network-monitor/app.py
 - [Construcción del AI/BI Dashboard](docs/DASHBOARD_GUIDE.md)
 - [App inicial y reto de modernización](apps/network-monitor/README.md)
 - [Índice de capturas sanitizadas](docs/images/README.md)
+- [Informe del dry run técnico](docs/DRY_RUN_REPORT.md)

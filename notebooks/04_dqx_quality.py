@@ -262,13 +262,15 @@ for dataset_name in datasets_to_run:
     quarantine_df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(quarantine_table)
 
     evaluated = dq.apply_checks_by_metadata(source_df, checks)
+    error_count = F.coalesce(F.size("_errors"), F.lit(0))
+    warning_count = F.coalesce(F.size("_warnings"), F.lit(0))
     summary_frames.append(
         evaluated.agg(
             F.count("*").alias("input_rows"),
-            F.sum(F.when(F.size("_errors") > 0, 1).otherwise(0)).alias("rows_with_errors"),
-            F.sum(F.when(F.size("_warnings") > 0, 1).otherwise(0)).alias("rows_with_warnings"),
+            F.sum(F.when(error_count > 0, 1).otherwise(0)).alias("rows_with_errors"),
+            F.sum(F.when(warning_count > 0, 1).otherwise(0)).alias("rows_with_warnings"),
             F.sum(
-                F.when((F.size("_errors") == 0) & (F.size("_warnings") == 0), 1).otherwise(0)
+                F.when((error_count == 0) & (warning_count == 0), 1).otherwise(0)
             ).alias("rows_without_findings"),
         ).withColumn("dataset", F.lit(dataset_name))
     )
