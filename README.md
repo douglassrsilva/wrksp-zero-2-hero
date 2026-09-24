@@ -50,19 +50,23 @@ El catálogo predeterminado es `telco_workshop.red_calidad`. En entornos sin
 `CREATE CATALOG`, use un catálogo compartido y cambie la variable `catalog` del
 bundle y los widgets.
 
-## Contingencia sin colisiones con el SDP
+## Muestra PySpark aislada
 
-Los notebooks alternativos crean `tower_metrics_silver_fallback` y
-`support_tickets_silver_fallback`. Nunca crean las tablas que pertenecen al pipeline.
-Si usa la contingencia:
+`03_alt_spark_etl.py` sirve exclusivamente para comparar código PySpark imperativo
+con SDP. Crea una muestra determinista en tres tablas descartables:
 
-1. En `04_dqx_quality.py`, defina `source_table=tower_metrics_silver_fallback`.
-2. En `05_sql_queries.sql`, defina `tickets_table=support_tickets_silver_fallback`.
-3. Si ejecuta `05_checkpoint_if_needed.sql`, use los mismos parámetros en SQL.
+- `demo_spark_network_sample`
+- `demo_spark_customer_product_sample`
+- `demo_spark_kpis`
 
-Así se puede volver a ejecutar el SDP sin eliminar tablas manualmente.
+Ningún artefacto posterior las consume. Si SDP no está disponible, use checkpoints
+preparados por el instructor; no continúe DQX o Gold desde esta muestra.
 
-## Validación local
+## Preflight del repositorio — solo instructor/CI
+
+Este preflight verifica archivos, contratos, impurezas, sintaxis y aislamiento de la
+muestra. No forma parte de los 150 minutos y no valida SDP, DQX, SQL Warehouse,
+Metric Views, Genie, permisos ni la App desplegada.
 
 ```bash
 uv run --extra dev python scripts/generate_repo_data.py

@@ -121,14 +121,15 @@ el DAG y centraliza métricas.
 ejecute un update y recorra las once Bronze, once Silver y Gold preliminares. Abra
 las métricas de expectations y el detalle de una dependencia.
 
-**Tell final (2).** Los participantes explican una ventaja operacional y un caso en
-que ejecutar Spark tradicional como contingencia es suficiente.
+**Tell final (2).** Los participantes explican una ventaja operacional de SDP y qué
+coordinación adicional exige la misma muestra en Spark imperativo.
 
 **Artefacto y verificación.** Update exitoso y DAG Bronze–Silver–Gold sin nodos
 fallidos.
 
-**Contingencia.** Ejecute `03_alt_spark_etl.py`. Si Auto Loader no accede al volume,
-use las tablas checkpoint ya creadas.
+**Contingencia.** Si Lakeflow no está disponible, use las tablas checkpoint preparadas
+por el instructor. `03_alt_spark_etl.py` es solamente una comparación aislada y sus
+tres tablas `demo_spark_*` nunca alimentan DQX, Gold u otros módulos.
 
 ## 4. DQX — 15 minutos
 
@@ -269,7 +270,7 @@ responsividad, accesibilidad, estados vacíos, registro de actualización y obse
 |---|---|---|
 | Permiso de UC | Schema compartido y checkpoints | Primera denegación de creación |
 | Compute atrasado | Serverless/warehouse y demo | No disponible en el minuto 10 |
-| Lakeflow no disponible | `03_alt_spark_etl.py` | Error de entitlement o provisionamiento |
+| Lakeflow no disponible | Checkpoints preparados; `03_alt_spark_etl.py` solo como demo | Error de entitlement o provisionamiento |
 | DQX no instala | `04_alt_sql_quality.sql` | Instalación supera dos minutos |
 | Warehouse no disponible | Notebook Spark SQL | Inicio supera tres minutos |
 | Dashboard o Genie no disponible | Artefacto del instructor y SQL | Función ausente en la interfaz |

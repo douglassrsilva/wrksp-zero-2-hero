@@ -19,15 +19,30 @@ MANAGED `tower_metrics_silver` y `support_tickets_silver` ya existían cuando el
 pipeline intentó materializarlas. Los notebooks de contingencia usaban los mismos
 nombres que el SDP.
 
-La corrección reserva al pipeline los nombres de sus objetos. Las rutas alternativas
-crean objetos `_fallback`, y DQX/SQL reciben el nombre de la tabla fuente mediante
-widgets. Esto permite ejecutar la contingencia y luego volver al SDP sin borrar
-objetos. La validación posterior completó un full refresh del DAG ampliado con once
-Bronze, once Silver y Gold preliminares.
+La corrección reserva al pipeline los nombres de sus objetos. La comparación PySpark
+ahora crea únicamente tres tablas descartables `demo_spark_*`; ninguna etapa posterior
+las referencia. Las contingencias operacionales usan checkpoints independientes,
+preparados por el instructor. La validación posterior completó un full refresh del
+DAG ampliado con once Bronze, once Silver y Gold preliminares.
 
 Una segunda validación detectó que `input_file_name()` no está soportado en esta ruta
 de Unity Catalog. Las tablas Bronze ahora obtienen la procedencia desde
 `_metadata.file_path`, que es la interfaz compatible con Auto Loader y UC.
+
+## Validación de la muestra PySpark aislada
+
+`03_alt_spark_etl.py` se ejecutó como tarea serverless independiente. La ejecución
+finalizó correctamente y registró exactamente tres tablas:
+
+| Tabla | Filas |
+|---|---:|
+| `demo_spark_network_sample` | 1.981 |
+| `demo_spark_customer_product_sample` | 2.970 |
+| `demo_spark_kpis` | 18 |
+
+Los límites solicitados son 2.000 y 3.000; las cantidades finales son menores por la
+deduplicación intencional. El preflight falla si cualquiera de estas tablas aparece
+como fuente de DQX, checkpoint, Gold, Metric Views, Genie o App.
 
 ## Arquitectura FY27
 

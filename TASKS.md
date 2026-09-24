@@ -2,7 +2,7 @@
 
 - [x] Generador PySpark determinista y realista
 - [x] Notebook de Unity Catalog y datos de contingencia
-- [x] Pipeline Lakeflow y alternativa PySpark sin colisiones de nombres
+- [x] Pipeline Lakeflow y muestra PySpark aislada en tres tablas `demo_spark_*`
 - [x] DQX actual y alternativa SQL
 - [x] Vistas SQL compartidas
 - [x] Guía del AI/BI Dashboard
@@ -26,3 +26,5 @@
 - [x] Capturar e incorporar screenshots sanitizados de la App y del DAG Lakeflow
 - [x] Ejecutar la revisión final de seguridad
 - [x] Publicar la revisión en GitHub
+- [x] Impedir por preflight que la muestra PySpark sea consumida por etapas downstream
+- [x] Ejecutar la muestra PySpark en serverless y confirmar exactamente tres tablas demo

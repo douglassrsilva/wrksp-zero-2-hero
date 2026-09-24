@@ -13,3 +13,6 @@ y coordenadas públicas aproximadas; visual neutro en azul, verde, ámbar y rojo
 
 El Dashboard se construye durante la sesión. La App entregada es intencionalmente
 simple; modernizar su navegación, diseño e interacciones es el reto posterior.
+
+`03_alt_spark_etl.py` es una comparación didáctica aislada. Sus tres tablas
+`demo_spark_*` no forman parte de la arquitectura ni alimentan etapas posteriores.

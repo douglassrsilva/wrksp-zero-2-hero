@@ -17,7 +17,8 @@
 - [ ] Preparar Dashboard, Genie Space y la App inicial.
 - [ ] Validar dos preguntas Chat y preparar capturas para Deep Research.
 - [ ] Asociar el SQL Warehouse a la App y conceder acceso a su service principal.
-- [ ] Probar los notebooks alternativos y confirmar que solo crean tablas `_fallback`.
+- [ ] Probar `03_alt_spark_etl.py` y confirmar que crea solamente tres tablas
+  `demo_spark_*`, sin referencias desde DQX, Gold, Metric Views, Genie o App.
 - [ ] Realizar un dry run cronometrado con una cuenta sin privilegios administrativos.
 - [ ] Iniciar el compute 30 minutos antes y pausar los recursos después de la sesión.
 

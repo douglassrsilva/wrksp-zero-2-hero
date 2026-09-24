@@ -1,4 +1,4 @@
-"""Validaciones rápidas sin acceso a un workspace de Databricks."""
+"""Preflight del repositorio para instructores/CI, sin validar servicios remotos."""
 
 from __future__ import annotations
 
@@ -113,13 +113,43 @@ def validate_impurities() -> None:
     assert any(not row["category"] for row in tickets)
 
 
+def validate_demo_isolation() -> None:
+    """Impide que la muestra PySpark se convierta en una ruta downstream."""
+
+    demo_path = ROOT / "notebooks" / "03_alt_spark_etl.py"
+    demo_source = demo_path.read_text(encoding="utf-8")
+    expected_tables = {
+        "demo_spark_network_sample",
+        "demo_spark_customer_product_sample",
+        "demo_spark_kpis",
+    }
+
+    assert "_fallback" not in demo_source
+    assert demo_source.count(".saveAsTable(") == 3
+    assert all(table_name in demo_source for table_name in expected_tables)
+
+    downstream_paths = [
+        ROOT / "notebooks" / "04_dqx_quality.py",
+        ROOT / "notebooks" / "04_alt_sql_quality.sql",
+        ROOT / "notebooks" / "05_checkpoint_if_needed.sql",
+        ROOT / "notebooks" / "05_sql_queries.sql",
+        ROOT / "notebooks" / "06_metric_views.sql",
+        ROOT / "config" / "genie_space_instructions.md",
+        ROOT / "apps" / "network-monitor" / "data_access.py",
+    ]
+    for path in downstream_paths:
+        source = path.read_text(encoding="utf-8")
+        assert not any(table_name in source for table_name in expected_tables), path
+
+
 def main() -> None:
     validate_python()
     validate_yaml()
     validate_json()
     validate_data()
     validate_impurities()
-    print("Validación local finalizada correctamente.")
+    validate_demo_isolation()
+    print("Preflight local del repositorio finalizado correctamente.")
 
 
 if __name__ == "__main__":
