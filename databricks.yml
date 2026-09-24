@@ -6,11 +6,13 @@ include:
 
 variables:
   catalog:
-    description: Catalogo Unity Catalog do workshop
+    description: Catálogo de Unity Catalog para el workshop
     default: telco_workshop
   schema:
-    description: Schema do workshop
+    description: Schema del workshop
     default: red_calidad
+  warehouse_id:
+    description: ID del SQL Warehouse usado por SQL, Genie y Databricks Apps
 
 workspace:
   root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}

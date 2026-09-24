@@ -1,59 +1,41 @@
-# Regras oficiais do exercicio DQX. Formato: metadata list[dict].
-- name: tower_id_required
-  criticality: error
-  check:
-    function: is_not_null_and_not_empty
-    arguments:
-      column: tower_id
+# Referencia de las reglas DQX aplicadas por 04_dqx_quality.py.
+# El notebook inyecta dinámicamente el umbral de downlink del ejercicio.
+cell_tower_metrics:
+  - {name: measurement_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: measurement_id}}}
+  - {name: cell_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: cell_id}}}
+  - {name: cell_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: site_id}}}
+  - {name: region_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: region}}}
+  - {name: availability_range, criticality: error, check: {function: is_in_range, arguments: {column: availability_pct, min_limit: 0, max_limit: 100}}}
+  - {name: signal_range, criticality: error, check: {function: is_in_range, arguments: {column: signal_strength_dbm, min_limit: -120, max_limit: -40}}}
+  - {name: latency_range, criticality: error, check: {function: is_in_range, arguments: {column: latency_ms, min_limit: 0, max_limit: 500}}}
+  - {name: downlink_required, criticality: error, check: {function: is_not_null, arguments: {column: downlink_mbps}}}
 
-- name: timestamp_required
-  criticality: error
-  check:
-    function: is_not_null
-    arguments:
-      column: timestamp
+subscriptions:
+  - {name: subscription_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: subscription_id}}}
+  - {name: customer_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: customer_segment}}}
+  - {name: product_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: product_name}}}
+  - {name: monthly_fee_non_negative, criticality: error, check: {function: is_in_range, arguments: {column: monthly_fee_clp, min_limit: 0, max_limit: 1000000}}}
 
-- name: signal_in_physical_range
-  criticality: error
-  check:
-    function: is_in_range
-    arguments:
-      column: signal_strength_dbm
-      min_limit: -120
-      max_limit: -40
+usage_daily:
+  - {name: subscription_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: customer_id}}}
+  - {name: cell_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: site_id}}}
+  - {name: network_region_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: network_region}}}
+  - {name: data_non_negative, criticality: error, check: {function: is_in_range, arguments: {column: data_gb, min_limit: 0, max_limit: 1000}}}
+  - {name: data_5g_range, criticality: error, check: {function: is_in_range, arguments: {column: data_5g_pct, min_limit: 0, max_limit: 100}}}
 
-- name: latency_in_physical_range
-  criticality: error
-  check:
-    function: is_in_range
-    arguments:
-      column: latency_ms
-      min_limit: 0
-      max_limit: 500
+support_tickets:
+  - {name: ticket_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: ticket_id}}}
+  - {name: category_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: category}}}
+  - {name: subscription_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: product_name}}}
 
-- name: throughput_required
-  criticality: error
-  check:
-    function: is_not_null
-    arguments:
-      column: throughput_mbps
+network_alarms:
+  - {name: alarm_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: alarm_id}}}
+  - {name: cell_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: site_id}}}
+  - {name: region_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: region}}}
+  - {name: severity_allowed, criticality: error, check: {function: is_in_list, arguments: {column: severity, allowed: ["'Crítica'", "'Alta'", "'Media'", "'Baja'"]}}}
 
-- name: throughput_above_workshop_sla
-  criticality: warn
-  check:
-    function: is_in_range
-    arguments:
-      column: throughput_mbps
-      min_limit: 1.0
-      max_limit: 150
-
-- name: technology_allowed
-  criticality: error
-  check:
-    function: is_in_list
-    arguments:
-      column: technology
-      allowed:
-        - "'4G'"
-        - "'5G'"
-
+customer_surveys:
+  - {name: survey_id_required, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: survey_id}}}
+  - {name: subscription_resolved, criticality: error, check: {function: is_not_null_and_not_empty, arguments: {column: product_name}}}
+  - {name: nps_range, criticality: error, check: {function: is_in_range, arguments: {column: nps_score, min_limit: 0, max_limit: 10}}}
+  - {name: csat_range, criticality: error, check: {function: is_in_range, arguments: {column: csat_score, min_limit: 1, max_limit: 5}}}

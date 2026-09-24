@@ -1,7 +1,7 @@
 [project]
 name = "telco-zero-to-hero-workshop"
 version = "0.1.0"
-description = "Materiais executaveis do workshop Databricks Zero to Hero para telecom"
+description = "Materiales ejecutables del workshop Databricks Zero to Hero para telecomunicaciones"
 requires-python = ">=3.11"
 dependencies = []
 

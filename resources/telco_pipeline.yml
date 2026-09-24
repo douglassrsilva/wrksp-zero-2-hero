@@ -1,7 +1,7 @@
 resources:
   pipelines:
     telco_network_quality:
-      name: "[${bundle.target}] Telco - Qualidade de Rede"
+      name: "[${bundle.target}] Telco - Calidad de Red"
       catalog: ${var.catalog}
       target: ${var.schema}
       serverless: true
@@ -14,4 +14,3 @@ resources:
       configuration:
         telco.catalog: ${var.catalog}
         telco.schema: ${var.schema}
-

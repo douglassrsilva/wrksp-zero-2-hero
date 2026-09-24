@@ -1,0 +1,21 @@
+resources:
+  jobs:
+    validate_data_quality:
+      name: "[${bundle.target}] Telco Workshop - DQX"
+      tasks:
+        - task_key: run_dqx
+          notebook_task:
+            notebook_path: ../notebooks/04_dqx_quality.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+              scope: all
+              min_downlink: "1.0"
+          environment_key: dqx_env
+      environments:
+        - environment_key: dqx_env
+          spec:
+            client: "4"
+            dependencies:
+              - "databricks-labs-dqx>=0.9,<1"
+              - "pyyaml>=6,<7"

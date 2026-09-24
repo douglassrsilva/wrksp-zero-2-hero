@@ -1,0 +1,19 @@
+product_id,product_name,product_family,customer_type,data_allowance_gb,unlimited_data,voice_minutes,unlimited_voice,sms_allowance,monthly_price_clp,overage_price_per_gb_clp,is_5g_enabled,product_status,valid_from,valid_to
+PRD-001,Prepago 10 GB,Prepago,Persona,10.0,false,300,false,100,5990.00,2500.00,false,Activo,2024-01-01,
+PRD-002,Prepago 25 GB,Prepago,Persona,25.0,false,500,false,200,7990.00,2200.00,true,Activo,2024-01-01,
+PRD-003,Prepago 50 GB,Prepago,Persona,50.0,false,800,false,300,9990.00,1900.00,true,Activo,2024-01-01,
+PRD-004,Prepago 80 GB,Prepago,Persona,80.0,false,1200,false,500,12990.00,1500.00,true,Activo,2024-01-01,
+PRD-005,Plan Móvil 20 GB,Postpago,Persona,20.0,false,,true,1000,9990.00,1800.00,false,Activo,2024-01-01,
+PRD-006,Plan Móvil 40 GB,Postpago,Persona,40.0,false,,true,1000,12990.00,1500.00,true,Activo,2024-01-01,
+PRD-007,Plan Móvil 80 GB,Postpago,Persona,80.0,false,,true,1500,15990.00,1200.00,true,Activo,2024-01-01,
+PRD-008,Plan Móvil 120 GB,Postpago,Persona,120.0,false,,true,1500,18990.00,1000.00,true,Activo,2024-01-01,
+PRD-009,Plan Móvil 150 GB,Postpago,Persona,150.0,false,,true,2000,21990.00,800.00,true,Activo,2024-01-01,
+PRD-010,Plan Móvil 200 GB,Postpago,Persona,200.0,false,,true,2000,25990.00,600.00,true,Activo,2024-01-01,
+PRD-011,Plan Móvil 300 GB,Postpago,Persona,300.0,false,,true,2000,29990.00,500.00,true,Activo,2024-01-01,
+PRD-012,Plan Móvil Ilimitado,Postpago,Persona,,true,,true,2000,34990.00,0.00,true,Activo,2024-01-01,
+PRD-013,Empresa 100 GB,Empresa,Empresa,100.0,false,,true,2000,19990.00,900.00,true,Activo,2024-01-01,
+PRD-014,Empresa 200 GB,Empresa,Empresa,200.0,false,,true,2000,27990.00,600.00,true,Activo,2024-01-01,
+PRD-015,Empresa 500 GB,Empresa,Empresa,500.0,false,,true,2000,44990.00,300.00,true,Activo,2024-01-01,
+PRD-016,Empresa Datos Ilimitados,Empresa,Empresa,,true,,true,2000,69990.00,0.00,true,Activo,2024-01-01,
+PRD-017,Plan Histórico 15 GB,Postpago,Persona,15.0,false,500,false,500,-9990.00,1500.00,false,Retirado,2022-01-01,2024-12-31
+PRD-018,Plan Histórico Ilimitado,Postpago,Persona,30.0,true,,true,1000,14990.00,0.00,false,Retirado,2022-01-01,2025-06-30

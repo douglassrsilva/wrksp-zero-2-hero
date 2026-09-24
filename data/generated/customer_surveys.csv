@@ -1,0 +1,801 @@
+survey_id,customer_id,subscription_id,response_date,survey_trigger,nps_score,csat_score,experience_area,feedback_category,survey_channel
+ENC-000001,CLI-999999,SUB-999999,2026-08-01,Periódica,12,7,Red,Cobertura insuficiente,App
+ENC-000002,CLI-000024,SUB-000024,2026-08-04,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000003,CLI-000047,SUB-000047,2026-08-07,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000004,CLI-000070,SUB-000070,2026-08-10,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000005,CLI-000093,SUB-000093,2026-08-13,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000006,CLI-000116,SUB-000116,2026-08-02,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000007,CLI-000139,SUB-000139,2026-08-05,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000008,CLI-000162,SUB-000162,2026-08-08,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000009,CLI-000185,SUB-000185,2026-08-11,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000010,CLI-000208,SUB-000208,2026-08-14,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000011,CLI-000231,SUB-000231,2026-08-03,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000012,CLI-000254,SUB-000254,2026-08-06,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000013,CLI-000277,SUB-000277,2026-08-09,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000014,CLI-000300,SUB-000300,2026-08-12,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000015,CLI-000323,SUB-000323,2026-08-01,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000016,CLI-000346,SUB-000346,2026-08-04,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000017,CLI-000369,SUB-000369,2026-08-07,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000018,CLI-000392,SUB-000392,2026-08-10,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000019,CLI-000415,SUB-000415,2026-08-13,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000020,CLI-000438,SUB-000438,2026-08-02,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000021,CLI-000461,SUB-000461,2026-08-05,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000022,CLI-000484,SUB-000484,2026-08-08,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000023,CLI-000507,SUB-000507,2026-08-11,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000024,CLI-000530,SUB-000530,2026-08-14,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000025,CLI-000553,SUB-000553,2026-08-03,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000026,CLI-000576,SUB-000576,2026-08-06,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000027,CLI-000599,SUB-000599,2026-08-09,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000028,CLI-000622,SUB-000622,2026-08-12,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000029,CLI-000645,SUB-000645,2026-08-01,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000030,CLI-000668,SUB-000668,2026-08-04,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000031,CLI-000691,SUB-000691,2026-08-07,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000032,CLI-000714,SUB-000714,2026-08-10,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000033,CLI-000737,SUB-000737,2026-08-13,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000034,CLI-000760,SUB-000760,2026-08-02,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000035,CLI-000783,SUB-000783,2026-08-05,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000036,CLI-000806,SUB-000806,2026-08-08,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000037,CLI-000829,SUB-000829,2026-08-11,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000038,CLI-000852,SUB-000852,2026-08-14,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000039,CLI-000875,SUB-000875,2026-08-03,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000040,CLI-000898,SUB-000898,2026-08-06,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000041,CLI-000921,SUB-000921,2026-08-09,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000042,CLI-000944,SUB-000944,2026-08-12,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000043,CLI-000967,SUB-000967,2026-08-01,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000044,CLI-000990,SUB-000990,2026-08-04,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000045,CLI-001013,SUB-001013,2026-08-07,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000046,CLI-001036,SUB-001036,2026-08-10,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000047,CLI-001059,SUB-001059,2026-08-13,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000048,CLI-001082,SUB-001082,2026-08-02,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000049,CLI-001105,SUB-001105,2026-08-05,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000050,CLI-001128,SUB-001128,2026-08-08,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000051,CLI-001151,SUB-001151,2026-08-11,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000052,CLI-001174,SUB-001174,2026-08-14,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000053,CLI-001197,SUB-001197,2026-08-03,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000054,CLI-001220,SUB-001220,2026-08-06,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000055,CLI-001243,SUB-001243,2026-08-09,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000056,CLI-001266,SUB-001266,2026-08-12,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000057,CLI-001289,SUB-001289,2026-08-01,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000058,CLI-001312,SUB-001312,2026-08-04,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000059,CLI-001335,SUB-001335,2026-08-07,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000060,CLI-001358,SUB-001358,2026-08-10,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000061,CLI-001381,SUB-001381,2026-08-13,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000062,CLI-001404,SUB-001404,2026-08-02,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000063,CLI-001427,SUB-001427,2026-08-05,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000064,CLI-001450,SUB-001450,2026-08-08,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000065,CLI-001473,SUB-001473,2026-08-11,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000066,CLI-001496,SUB-001496,2026-08-14,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000067,CLI-001519,SUB-001519,2026-08-03,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000068,CLI-001542,SUB-001542,2026-08-06,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000069,CLI-001565,SUB-001565,2026-08-09,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000070,CLI-001588,SUB-001588,2026-08-12,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000071,CLI-001611,SUB-001611,2026-08-01,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000072,CLI-001634,SUB-001634,2026-08-04,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000073,CLI-001657,SUB-001657,2026-08-07,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000074,CLI-001680,SUB-001680,2026-08-10,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000075,CLI-001703,SUB-001703,2026-08-13,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000076,CLI-001726,SUB-001726,2026-08-02,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000077,CLI-001749,SUB-001749,2026-08-05,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000078,CLI-001772,SUB-001772,2026-08-08,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000079,CLI-001795,SUB-001795,2026-08-11,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000080,CLI-001818,SUB-001818,2026-08-14,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000081,CLI-001841,SUB-001841,2026-08-03,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000082,CLI-001864,SUB-001864,2026-08-06,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000083,CLI-001887,SUB-001887,2026-08-09,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000084,CLI-001910,SUB-001910,2026-08-12,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000085,CLI-001933,SUB-001933,2026-08-01,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000086,CLI-001956,SUB-001956,2026-08-04,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000087,CLI-001979,SUB-001979,2026-08-07,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000088,CLI-002002,SUB-002002,2026-08-10,Cambio de plan,6,4,Producto,Plan adecuado,App
+ENC-000089,CLI-002025,SUB-002025,2026-08-13,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000090,CLI-002048,SUB-002048,2026-08-02,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000091,CLI-002071,SUB-002071,2026-08-05,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000092,CLI-002094,SUB-002094,2026-08-08,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000093,CLI-002117,SUB-002117,2026-08-11,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000094,CLI-002140,SUB-002140,2026-08-14,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000095,CLI-002163,SUB-002163,2026-08-03,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000096,CLI-002186,SUB-002186,2026-08-06,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000097,CLI-002209,SUB-002209,2026-08-09,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000098,CLI-002232,SUB-002232,2026-08-12,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000099,CLI-002255,SUB-002255,2026-08-01,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000100,CLI-002278,SUB-002278,2026-08-04,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000101,CLI-002301,SUB-002301,2026-08-07,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000102,CLI-002324,SUB-002324,2026-08-10,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000103,CLI-002347,SUB-002347,2026-08-13,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000104,CLI-002370,SUB-002370,2026-08-02,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000105,CLI-002393,SUB-002393,2026-08-05,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000106,CLI-002416,SUB-002416,2026-08-08,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000107,CLI-002439,SUB-002439,2026-08-11,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000108,CLI-002462,SUB-002462,2026-08-14,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000109,CLI-002485,SUB-002485,2026-08-03,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000110,CLI-002508,SUB-002508,2026-08-06,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000111,CLI-002531,SUB-002531,2026-08-09,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000112,CLI-002554,SUB-002554,2026-08-12,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000113,CLI-002577,SUB-002577,2026-08-01,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000114,CLI-002600,SUB-002600,2026-08-04,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000115,CLI-002623,SUB-002623,2026-08-07,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000116,CLI-002646,SUB-002646,2026-08-10,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000117,CLI-002669,SUB-002669,2026-08-13,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000118,CLI-002692,SUB-002692,2026-08-02,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000119,CLI-002715,SUB-002715,2026-08-05,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000120,CLI-002738,SUB-002738,2026-08-08,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000121,CLI-002761,SUB-002761,2026-08-11,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000122,CLI-002784,SUB-002784,2026-08-14,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000123,CLI-002807,SUB-002807,2026-08-03,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000124,CLI-002830,SUB-002830,2026-08-06,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000125,CLI-002853,SUB-002853,2026-08-09,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000126,CLI-002876,SUB-002876,2026-08-12,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000127,CLI-002899,SUB-002899,2026-08-01,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000128,CLI-002922,SUB-002922,2026-08-04,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000129,CLI-002945,SUB-002945,2026-08-07,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000130,CLI-002968,SUB-002968,2026-08-10,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000131,CLI-002991,SUB-002991,2026-08-13,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000132,CLI-000014,SUB-003014,2026-08-02,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000133,CLI-000037,SUB-003037,2026-08-05,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000134,CLI-000060,SUB-003060,2026-08-08,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000135,CLI-000083,SUB-003083,2026-08-11,Alta,6,4,Atención,Atención satisfactoria,SMS
+ENC-000136,CLI-000106,SUB-003106,2026-08-14,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000137,CLI-000129,SUB-003129,2026-08-03,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000138,CLI-000152,SUB-003152,2026-08-06,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000139,CLI-000175,SUB-003175,2026-08-09,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000140,CLI-000198,SUB-003198,2026-08-12,Cambio de plan,8,5,Red,Velocidad variable,Web
+ENC-000141,CLI-000221,SUB-003221,2026-08-01,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000142,CLI-000244,SUB-003244,2026-08-04,Cierre de ticket,1,1,Producto,Plan adecuado,App
+ENC-000143,CLI-000267,SUB-003267,2026-08-07,Alta,6,4,Facturación,Cobro claro,Web
+ENC-000144,CLI-000290,SUB-003290,2026-08-10,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000145,CLI-000313,SUB-003313,2026-08-13,Periódica,10,5,Red,Cobertura insuficiente,App
+ENC-000146,CLI-000336,SUB-003336,2026-08-02,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000147,CLI-000359,SUB-003359,2026-08-05,Alta,3,2,Atención,Atención satisfactoria,SMS
+ENC-000148,CLI-000382,SUB-003382,2026-08-08,Cambio de plan,8,5,Producto,Plan adecuado,App
+ENC-000149,CLI-000405,SUB-003405,2026-08-11,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000150,CLI-000428,SUB-003428,2026-08-14,Cierre de ticket,1,1,App,App fácil de usar,SMS
+ENC-000151,CLI-000451,SUB-003451,2026-08-03,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000152,CLI-000474,SUB-003474,2026-08-06,Cambio de plan,5,3,Red,Velocidad variable,Web
+ENC-000153,CLI-000497,SUB-003497,2026-08-09,Periódica,10,5,Atención,Atención satisfactoria,SMS
+ENC-000154,CLI-000520,SUB-003520,2026-08-12,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000155,CLI-000543,SUB-003543,2026-08-01,Alta,3,2,Facturación,Cobro claro,Web
+ENC-000156,CLI-000566,SUB-003566,2026-08-04,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000157,CLI-000589,SUB-003589,2026-08-07,Periódica,7,4,Red,Cobertura insuficiente,App
+ENC-000158,CLI-000612,SUB-003612,2026-08-10,Cierre de ticket,1,1,Red,Velocidad variable,Web
+ENC-000159,CLI-000635,SUB-003635,2026-08-13,Alta,6,4,Atención,Atención satisfactoria,SMS
+ENC-000160,CLI-000658,SUB-003658,2026-08-02,Cambio de plan,5,3,Producto,Plan adecuado,App
+ENC-000161,CLI-000681,SUB-003681,2026-08-05,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000162,CLI-000704,SUB-003704,2026-08-08,Cierre de ticket,9,5,App,App fácil de usar,SMS
+ENC-000163,CLI-000727,SUB-003727,2026-08-11,Alta,3,2,Red,Cobertura insuficiente,App
+ENC-000164,CLI-000750,SUB-003750,2026-08-14,Cambio de plan,8,5,Red,Velocidad variable,Web
+ENC-000165,CLI-000773,SUB-003773,2026-08-03,Periódica,7,4,Atención,Atención satisfactoria,SMS
+ENC-000166,CLI-000796,SUB-003796,2026-08-06,Cierre de ticket,1,1,Producto,Plan adecuado,App
+ENC-000167,CLI-000819,SUB-003819,2026-08-09,Alta,0,1,Facturación,Cobro claro,Web
+ENC-000168,CLI-000842,SUB-003842,2026-08-12,Cambio de plan,5,3,App,App fácil de usar,SMS
+ENC-000169,CLI-000865,SUB-003865,2026-08-01,Periódica,10,5,Red,Cobertura insuficiente,App
+ENC-000170,CLI-000888,SUB-003888,2026-08-04,Cierre de ticket,9,5,Red,Velocidad variable,Web
+ENC-000171,CLI-000911,SUB-003911,2026-08-07,Alta,3,2,Atención,Atención satisfactoria,SMS
+ENC-000172,CLI-000934,SUB-003934,2026-08-10,Cambio de plan,2,2,Producto,Plan adecuado,App
+ENC-000173,CLI-000957,SUB-003957,2026-08-13,Periódica,7,4,Facturación,Cobro claro,Web
+ENC-000174,CLI-000980,SUB-003980,2026-08-02,Cierre de ticket,1,1,App,App fácil de usar,SMS
+ENC-000175,CLI-001003,SUB-004003,2026-08-05,Alta,0,1,Red,Cobertura insuficiente,App
+ENC-000176,CLI-001026,SUB-004026,2026-08-08,Cambio de plan,5,3,Red,Velocidad variable,Web
+ENC-000177,CLI-001049,SUB-004049,2026-08-11,Periódica,4,3,Atención,Atención satisfactoria,SMS
+ENC-000178,CLI-001072,SUB-004072,2026-08-14,Cierre de ticket,9,5,Producto,Plan adecuado,App
+ENC-000179,CLI-001095,SUB-004095,2026-08-03,Alta,3,2,Facturación,Cobro claro,Web
+ENC-000180,CLI-001118,SUB-004118,2026-08-06,Cambio de plan,2,7,App,App fácil de usar,SMS
+ENC-000181,CLI-001141,SUB-004141,2026-08-09,Periódica,7,4,Red,Cobertura insuficiente,App
+ENC-000182,CLI-001164,SUB-004164,2026-08-12,Cierre de ticket,12,4,Red,Velocidad variable,Web
+ENC-000183,CLI-001187,SUB-004187,2026-08-01,Alta,0,1,Atención,Atención satisfactoria,SMS
+ENC-000184,CLI-000010,SUB-000010,2026-08-04,Cambio de plan,5,3,Producto,Plan adecuado,App
+ENC-000185,CLI-000033,SUB-000033,2026-08-07,Periódica,4,3,Facturación,Cobro claro,Web
+ENC-000186,CLI-000056,SUB-000056,2026-08-10,Cierre de ticket,9,5,App,App fácil de usar,SMS
+ENC-000187,CLI-000079,SUB-000079,2026-08-13,Alta,8,5,Red,Cobertura insuficiente,App
+ENC-000188,CLI-000102,SUB-000102,2026-08-02,Cambio de plan,2,2,Red,Velocidad variable,Web
+ENC-000189,CLI-000125,SUB-000125,2026-08-05,Periódica,7,4,Atención,Atención satisfactoria,SMS
+ENC-000190,CLI-000148,SUB-000148,2026-08-08,Cierre de ticket,6,4,Producto,Plan adecuado,App
+ENC-000191,CLI-000171,SUB-000171,2026-08-11,Alta,0,1,Facturación,Cobro claro,Web
+ENC-000192,CLI-000194,SUB-000194,2026-08-14,Cambio de plan,10,5,App,App fácil de usar,SMS
+ENC-000193,CLI-000217,SUB-000217,2026-08-03,Periódica,4,3,Red,Cobertura insuficiente,App
+ENC-000194,CLI-000240,SUB-999999,2026-08-06,Cierre de ticket,9,5,Red,Velocidad variable,Web
+ENC-000195,CLI-000263,SUB-000263,2026-08-09,Alta,8,5,Atención,Atención satisfactoria,SMS
+ENC-000196,CLI-000286,SUB-000286,2026-08-12,Cambio de plan,2,2,Producto,Plan adecuado,App
+ENC-000197,CLI-000309,SUB-000309,2026-08-01,Periódica,1,1,Facturación,Cobro claro,Web
+ENC-000198,CLI-000332,SUB-000332,2026-08-04,Cierre de ticket,6,4,App,App fácil de usar,SMS
+ENC-000199,CLI-000355,SUB-000355,2026-08-07,Alta,0,1,Red,Cobertura insuficiente,App
+ENC-000200,CLI-999999,SUB-000378,2026-08-10,Cambio de plan,10,5,Red,Velocidad variable,Web
+ENC-000201,CLI-000401,SUB-000401,2026-08-13,Periódica,4,3,Atención,Atención satisfactoria,SMS
+ENC-000202,CLI-000424,SUB-000424,2026-08-02,Cierre de ticket,3,2,Producto,Plan adecuado,App
+ENC-000203,CLI-000447,SUB-000447,2026-08-05,Alta,8,5,Facturación,Cobro claro,Web
+ENC-000204,CLI-000470,SUB-000470,2026-08-08,Cambio de plan,2,2,App,App fácil de usar,SMS
+ENC-000205,CLI-000493,SUB-000493,2026-08-11,Periódica,1,1,Red,Cobertura insuficiente,App
+ENC-000206,CLI-000516,SUB-000516,2026-08-14,Cierre de ticket,6,4,Red,Velocidad variable,Web
+ENC-000207,CLI-000539,SUB-000539,2026-08-03,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000208,CLI-000562,SUB-000562,2026-08-06,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000209,CLI-000585,SUB-000585,2026-08-09,Periódica,4,3,Facturación,Cobro claro,Web
+ENC-000210,CLI-000608,SUB-000608,2026-08-12,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000211,CLI-000631,SUB-000631,2026-08-01,Alta,8,5,Red,Cobertura insuficiente,App
+ENC-000211,CLI-000654,SUB-000654,2026-08-04,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000213,CLI-000677,SUB-000677,2026-08-07,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000214,CLI-000700,SUB-000700,2026-08-10,Cierre de ticket,6,4,Producto,Plan adecuado,App
+ENC-000215,CLI-000723,SUB-000723,2026-08-13,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000216,CLI-000746,SUB-000746,2026-08-02,Cambio de plan,10,5,App,App fácil de usar,SMS
+ENC-000217,CLI-000769,SUB-000769,2026-08-05,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000218,CLI-000792,SUB-000792,2026-08-08,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000219,CLI-000815,SUB-000815,2026-08-11,Alta,8,5,Atención,Atención satisfactoria,SMS
+ENC-000220,CLI-000838,SUB-000838,2026-08-14,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000221,CLI-000861,SUB-000861,2026-08-03,Periódica,1,1,Facturación,Cobro claro,Web
+ENC-000222,CLI-000884,SUB-000884,2026-08-06,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000223,CLI-000907,SUB-000907,2026-08-09,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000224,CLI-000930,SUB-000930,2026-08-12,Cambio de plan,10,5,Red,Velocidad variable,Web
+ENC-000225,CLI-000953,SUB-000953,2026-08-01,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000226,CLI-000976,SUB-000976,2026-08-04,Cierre de ticket,3,2,Producto,Plan adecuado,App
+ENC-000227,CLI-000999,SUB-000999,2026-08-07,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000228,CLI-001022,SUB-001022,2026-08-10,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000229,CLI-001045,SUB-001045,2026-08-13,Periódica,1,1,Red,Cobertura insuficiente,App
+ENC-000230,CLI-001068,SUB-001068,2026-08-02,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000231,CLI-001091,SUB-001091,2026-08-05,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000232,CLI-001114,SUB-001114,2026-08-08,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000233,CLI-001137,SUB-001137,2026-08-11,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000234,CLI-001160,SUB-001160,2026-08-14,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000235,CLI-001183,SUB-001183,2026-08-03,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000236,CLI-001206,SUB-001206,2026-08-06,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000237,CLI-001229,SUB-001229,2026-08-09,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000238,CLI-001252,SUB-001252,2026-08-12,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000239,CLI-001275,SUB-001275,2026-08-01,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000240,CLI-001298,SUB-001298,2026-08-04,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000241,CLI-001321,SUB-001321,2026-08-07,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000242,CLI-001344,SUB-001344,2026-08-10,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000243,CLI-001367,SUB-001367,2026-08-13,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000244,CLI-001390,SUB-001390,2026-08-02,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000245,CLI-001413,SUB-001413,2026-08-05,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000246,CLI-001436,SUB-001436,2026-08-08,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000247,CLI-001459,SUB-001459,2026-08-11,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000248,CLI-001482,SUB-001482,2026-08-14,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000249,CLI-001505,SUB-001505,2026-08-03,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000250,CLI-001528,SUB-001528,2026-08-06,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000251,CLI-001551,SUB-001551,2026-08-09,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000252,CLI-001574,SUB-001574,2026-08-12,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000253,CLI-001597,SUB-001597,2026-08-01,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000254,CLI-001620,SUB-001620,2026-08-04,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000255,CLI-001643,SUB-001643,2026-08-07,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000256,CLI-001666,SUB-001666,2026-08-10,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000257,CLI-001689,SUB-001689,2026-08-13,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000258,CLI-001712,SUB-001712,2026-08-02,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000259,CLI-001735,SUB-001735,2026-08-05,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000260,CLI-001758,SUB-001758,2026-08-08,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000261,CLI-001781,SUB-001781,2026-08-11,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000262,CLI-001804,SUB-001804,2026-08-14,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000263,CLI-001827,SUB-001827,2026-08-03,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000264,CLI-001850,SUB-001850,2026-08-06,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000265,CLI-001873,SUB-001873,2026-08-09,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000266,CLI-001896,SUB-001896,2026-08-12,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000267,CLI-001919,SUB-001919,2026-08-01,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000268,CLI-001942,SUB-001942,2026-08-04,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000269,CLI-001965,SUB-001965,2026-08-07,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000270,CLI-001988,SUB-001988,2026-08-10,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000271,CLI-002011,SUB-002011,2026-08-13,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000272,CLI-002034,SUB-002034,2026-08-02,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000273,CLI-002057,SUB-002057,2026-08-05,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000274,CLI-002080,SUB-002080,2026-08-08,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000275,CLI-002103,SUB-002103,2026-08-11,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000276,CLI-002126,SUB-002126,2026-08-14,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000277,CLI-002149,SUB-002149,2026-08-03,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000278,CLI-002172,SUB-002172,2026-08-06,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000279,CLI-002195,SUB-002195,2026-08-09,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000280,CLI-002218,SUB-002218,2026-08-12,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000281,CLI-002241,SUB-002241,2026-08-01,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000282,CLI-002264,SUB-002264,2026-08-04,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000283,CLI-002287,SUB-002287,2026-08-07,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000284,CLI-002310,SUB-002310,2026-08-10,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000285,CLI-002333,SUB-002333,2026-08-13,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000286,CLI-002356,SUB-002356,2026-08-02,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000287,CLI-002379,SUB-002379,2026-08-05,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000288,CLI-002402,SUB-002402,2026-08-08,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000289,CLI-002425,SUB-002425,2026-08-11,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000290,CLI-002448,SUB-002448,2026-08-14,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000291,CLI-002471,SUB-002471,2026-08-03,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000292,CLI-002494,SUB-002494,2026-08-06,Cambio de plan,6,4,Producto,Plan adecuado,App
+ENC-000293,CLI-002517,SUB-002517,2026-08-09,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000294,CLI-002540,SUB-002540,2026-08-12,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000295,CLI-002563,SUB-002563,2026-08-01,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000296,CLI-002586,SUB-002586,2026-08-04,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000297,CLI-002609,SUB-002609,2026-08-07,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000298,CLI-002632,SUB-002632,2026-08-10,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000299,CLI-002655,SUB-002655,2026-08-13,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000300,CLI-002678,SUB-002678,2026-08-02,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000301,CLI-002701,SUB-002701,2026-08-05,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000302,CLI-002724,SUB-002724,2026-08-08,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000303,CLI-002747,SUB-002747,2026-08-11,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000304,CLI-002770,SUB-002770,2026-08-14,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000305,CLI-002793,SUB-002793,2026-08-03,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000306,CLI-002816,SUB-002816,2026-08-06,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000307,CLI-002839,SUB-002839,2026-08-09,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000308,CLI-002862,SUB-002862,2026-08-12,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000309,CLI-002885,SUB-002885,2026-08-01,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000310,CLI-002908,SUB-002908,2026-08-04,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000311,CLI-002931,SUB-002931,2026-08-07,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000312,CLI-002954,SUB-002954,2026-08-10,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000313,CLI-002977,SUB-002977,2026-08-13,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000314,CLI-003000,SUB-003000,2026-08-02,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000315,CLI-000023,SUB-003023,2026-08-05,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000316,CLI-000046,SUB-003046,2026-08-08,Cambio de plan,6,4,Producto,Plan adecuado,App
+ENC-000317,CLI-000069,SUB-003069,2026-08-11,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000318,CLI-000092,SUB-003092,2026-08-14,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000319,CLI-000115,SUB-003115,2026-08-03,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000320,CLI-000138,SUB-003138,2026-08-06,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000321,CLI-000161,SUB-003161,2026-08-09,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000322,CLI-000184,SUB-003184,2026-08-12,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000323,CLI-000207,SUB-003207,2026-08-01,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000324,CLI-000230,SUB-003230,2026-08-04,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000325,CLI-000253,SUB-003253,2026-08-07,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000326,CLI-000276,SUB-003276,2026-08-10,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000327,CLI-000299,SUB-003299,2026-08-13,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000328,CLI-000322,SUB-003322,2026-08-02,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000329,CLI-000345,SUB-003345,2026-08-05,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000330,CLI-000368,SUB-003368,2026-08-08,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000331,CLI-000391,SUB-003391,2026-08-11,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000332,CLI-000414,SUB-003414,2026-08-14,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000333,CLI-000437,SUB-003437,2026-08-03,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000334,CLI-000460,SUB-003460,2026-08-06,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000335,CLI-000483,SUB-003483,2026-08-09,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000336,CLI-000506,SUB-003506,2026-08-12,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000337,CLI-000529,SUB-003529,2026-08-01,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000338,CLI-000552,SUB-003552,2026-08-04,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000339,CLI-000575,SUB-003575,2026-08-07,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000340,CLI-000598,SUB-003598,2026-08-10,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000341,CLI-000621,SUB-003621,2026-08-13,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000342,CLI-000644,SUB-003644,2026-08-02,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000343,CLI-000667,SUB-003667,2026-08-05,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000344,CLI-000690,SUB-003690,2026-08-08,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000345,CLI-000713,SUB-003713,2026-08-11,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000346,CLI-000736,SUB-003736,2026-08-14,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000347,CLI-000759,SUB-003759,2026-08-03,Alta,6,4,Facturación,Cobro claro,Web
+ENC-000348,CLI-000782,SUB-003782,2026-08-06,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000349,CLI-000805,SUB-003805,2026-08-09,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000350,CLI-000828,SUB-003828,2026-08-12,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000351,CLI-000851,SUB-003851,2026-08-01,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000352,CLI-000874,SUB-003874,2026-08-04,Cambio de plan,8,5,Producto,Plan adecuado,App
+ENC-000353,CLI-000897,SUB-003897,2026-08-07,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000354,CLI-000920,SUB-003920,2026-08-10,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000355,CLI-000943,SUB-003943,2026-08-13,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000356,CLI-000966,SUB-003966,2026-08-02,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000357,CLI-000989,SUB-003989,2026-08-05,Periódica,10,5,Atención,Atención satisfactoria,SMS
+ENC-000358,CLI-001012,SUB-004012,2026-08-08,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000359,CLI-001035,SUB-004035,2026-08-11,Alta,9,7,Facturación,Cobro claro,Web
+ENC-000360,CLI-001058,SUB-004058,2026-08-14,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000361,CLI-001081,SUB-004081,2026-08-03,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000362,CLI-001104,SUB-004104,2026-08-06,Cierre de ticket,1,1,Red,Velocidad variable,Web
+ENC-000363,CLI-001127,SUB-004127,2026-08-09,Alta,12,4,Atención,Atención satisfactoria,SMS
+ENC-000364,CLI-001150,SUB-004150,2026-08-12,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000365,CLI-001173,SUB-004173,2026-08-01,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000366,CLI-001196,SUB-004196,2026-08-04,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000367,CLI-000019,SUB-000019,2026-08-07,Alta,3,2,Red,Cobertura insuficiente,App
+ENC-000368,CLI-000042,SUB-000042,2026-08-10,Cambio de plan,8,5,Red,Velocidad variable,Web
+ENC-000369,CLI-000065,SUB-000065,2026-08-13,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000370,CLI-000088,SUB-000088,2026-08-02,Cierre de ticket,1,1,Producto,Plan adecuado,App
+ENC-000371,CLI-000111,SUB-000111,2026-08-05,Alta,6,4,Facturación,Cobro claro,Web
+ENC-000372,CLI-000134,SUB-000134,2026-08-08,Cambio de plan,5,3,App,App fácil de usar,SMS
+ENC-000373,CLI-000157,SUB-000157,2026-08-11,Periódica,10,5,Red,Cobertura insuficiente,App
+ENC-000374,CLI-000180,SUB-000180,2026-08-14,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000375,CLI-000203,SUB-000203,2026-08-03,Alta,3,2,Atención,Atención satisfactoria,SMS
+ENC-000376,CLI-000226,SUB-000226,2026-08-06,Cambio de plan,8,5,Producto,Plan adecuado,App
+ENC-000377,CLI-000249,SUB-000249,2026-08-09,Periódica,7,4,Facturación,Cobro claro,Web
+ENC-000378,CLI-000272,SUB-000272,2026-08-12,Cierre de ticket,1,1,App,App fácil de usar,SMS
+ENC-000379,CLI-000295,SUB-000295,2026-08-01,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000380,CLI-000318,SUB-000318,2026-08-04,Cambio de plan,5,3,Red,Velocidad variable,Web
+ENC-000381,CLI-000341,SUB-000341,2026-08-07,Periódica,10,5,Atención,Atención satisfactoria,SMS
+ENC-000382,CLI-000364,SUB-000364,2026-08-10,Cierre de ticket,9,5,Producto,Plan adecuado,App
+ENC-000383,CLI-000387,SUB-000387,2026-08-13,Alta,3,2,Facturación,Cobro claro,Web
+ENC-000384,CLI-000410,SUB-000410,2026-08-02,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000385,CLI-000433,SUB-000433,2026-08-05,Periódica,7,4,Red,Cobertura insuficiente,App
+ENC-000386,CLI-000456,SUB-000456,2026-08-08,Cierre de ticket,1,1,Red,Velocidad variable,Web
+ENC-000387,CLI-000479,SUB-999999,2026-08-11,Alta,0,1,Atención,Atención satisfactoria,SMS
+ENC-000388,CLI-000502,SUB-000502,2026-08-14,Cambio de plan,5,3,Producto,Plan adecuado,App
+ENC-000389,CLI-000525,SUB-000525,2026-08-03,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000390,CLI-000548,SUB-000548,2026-08-06,Cierre de ticket,9,5,App,App fácil de usar,SMS
+ENC-000391,CLI-000571,SUB-000571,2026-08-09,Alta,3,2,Red,Cobertura insuficiente,App
+ENC-000392,CLI-000594,SUB-000594,2026-08-12,Cambio de plan,2,2,Red,Velocidad variable,Web
+ENC-000393,CLI-000617,SUB-000617,2026-08-01,Periódica,7,4,Atención,Atención satisfactoria,SMS
+ENC-000394,CLI-000640,SUB-000640,2026-08-04,Cierre de ticket,1,1,Producto,Plan adecuado,App
+ENC-000395,CLI-000663,SUB-000663,2026-08-07,Alta,0,1,Facturación,Cobro claro,Web
+ENC-000396,CLI-000686,SUB-000686,2026-08-10,Cambio de plan,5,3,App,App fácil de usar,SMS
+ENC-000397,CLI-000709,SUB-000709,2026-08-13,Periódica,4,3,Red,Cobertura insuficiente,App
+ENC-000398,CLI-000732,SUB-000732,2026-08-02,Cierre de ticket,9,5,Red,Velocidad variable,Web
+ENC-000399,CLI-999999,SUB-000755,2026-08-05,Alta,3,2,Atención,Atención satisfactoria,SMS
+ENC-000400,CLI-000778,SUB-000778,2026-08-08,Cambio de plan,2,2,Producto,Plan adecuado,App
+ENC-000401,CLI-000801,SUB-000801,2026-08-11,Periódica,7,4,Facturación,Cobro claro,Web
+ENC-000402,CLI-000824,SUB-000824,2026-08-14,Cierre de ticket,6,4,App,App fácil de usar,SMS
+ENC-000403,CLI-000847,SUB-000847,2026-08-03,Alta,0,1,Red,Cobertura insuficiente,App
+ENC-000404,CLI-000870,SUB-000870,2026-08-06,Cambio de plan,5,3,Red,Velocidad variable,Web
+ENC-000405,CLI-000893,SUB-000893,2026-08-09,Periódica,4,3,Atención,Atención satisfactoria,SMS
+ENC-000406,CLI-000916,SUB-000916,2026-08-12,Cierre de ticket,9,5,Producto,Plan adecuado,App
+ENC-000407,CLI-000939,SUB-000939,2026-08-01,Alta,8,5,Facturación,Cobro claro,Web
+ENC-000408,CLI-000962,SUB-000962,2026-08-04,Cambio de plan,2,2,App,App fácil de usar,SMS
+ENC-000409,CLI-000985,SUB-000985,2026-08-07,Periódica,7,4,Red,Cobertura insuficiente,App
+ENC-000410,CLI-001008,SUB-001008,2026-08-10,Cierre de ticket,6,4,Red,Velocidad variable,Web
+ENC-000411,CLI-001031,SUB-001031,2026-08-13,Alta,0,1,Atención,Atención satisfactoria,SMS
+ENC-000412,CLI-001054,SUB-001054,2026-08-02,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000413,CLI-001077,SUB-001077,2026-08-05,Periódica,4,3,Facturación,Cobro claro,Web
+ENC-000414,CLI-001100,SUB-001100,2026-08-08,Cierre de ticket,9,5,App,App fácil de usar,SMS
+ENC-000415,CLI-001123,SUB-001123,2026-08-11,Alta,8,5,Red,Cobertura insuficiente,App
+ENC-000416,CLI-001146,SUB-001146,2026-08-14,Cambio de plan,2,2,Red,Velocidad variable,Web
+ENC-000417,CLI-001169,SUB-001169,2026-08-03,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000418,CLI-001192,SUB-001192,2026-08-06,Cierre de ticket,6,4,Producto,Plan adecuado,App
+ENC-000419,CLI-001215,SUB-001215,2026-08-09,Alta,0,1,Facturación,Cobro claro,Web
+ENC-000420,CLI-001238,SUB-001238,2026-08-12,Cambio de plan,10,5,App,App fácil de usar,SMS
+ENC-000421,CLI-001261,SUB-001261,2026-08-01,Periódica,4,3,Red,Cobertura insuficiente,App
+ENC-000422,CLI-001284,SUB-001284,2026-08-04,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000422,CLI-001307,SUB-001307,2026-08-07,Alta,8,5,Atención,Atención satisfactoria,SMS
+ENC-000424,CLI-001330,SUB-001330,2026-08-10,Cambio de plan,2,2,Producto,Plan adecuado,App
+ENC-000425,CLI-001353,SUB-001353,2026-08-13,Periódica,1,1,Facturación,Cobro claro,Web
+ENC-000426,CLI-001376,SUB-001376,2026-08-02,Cierre de ticket,6,4,App,App fácil de usar,SMS
+ENC-000427,CLI-001399,SUB-001399,2026-08-05,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000428,CLI-001422,SUB-001422,2026-08-08,Cambio de plan,10,5,Red,Velocidad variable,Web
+ENC-000429,CLI-001445,SUB-001445,2026-08-11,Periódica,4,3,Atención,Atención satisfactoria,SMS
+ENC-000430,CLI-001468,SUB-001468,2026-08-14,Cierre de ticket,3,2,Producto,Plan adecuado,App
+ENC-000431,CLI-001491,SUB-001491,2026-08-03,Alta,8,5,Facturación,Cobro claro,Web
+ENC-000432,CLI-001514,SUB-001514,2026-08-06,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000433,CLI-001537,SUB-001537,2026-08-09,Periódica,1,1,Red,Cobertura insuficiente,App
+ENC-000434,CLI-001560,SUB-001560,2026-08-12,Cierre de ticket,6,4,Red,Velocidad variable,Web
+ENC-000435,CLI-001583,SUB-001583,2026-08-01,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000436,CLI-001606,SUB-001606,2026-08-04,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000437,CLI-001629,SUB-001629,2026-08-07,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000438,CLI-001652,SUB-001652,2026-08-10,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000439,CLI-001675,SUB-001675,2026-08-13,Alta,8,5,Red,Cobertura insuficiente,App
+ENC-000440,CLI-001698,SUB-001698,2026-08-02,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000441,CLI-001721,SUB-001721,2026-08-05,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000442,CLI-001744,SUB-001744,2026-08-08,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000443,CLI-001767,SUB-001767,2026-08-11,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000444,CLI-001790,SUB-001790,2026-08-14,Cambio de plan,10,5,App,App fácil de usar,SMS
+ENC-000445,CLI-001813,SUB-001813,2026-08-03,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000446,CLI-001836,SUB-001836,2026-08-06,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000447,CLI-001859,SUB-001859,2026-08-09,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000448,CLI-001882,SUB-001882,2026-08-12,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000449,CLI-001905,SUB-001905,2026-08-01,Periódica,1,1,Facturación,Cobro claro,Web
+ENC-000450,CLI-001928,SUB-001928,2026-08-04,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000451,CLI-001951,SUB-001951,2026-08-07,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000452,CLI-001974,SUB-001974,2026-08-10,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000453,CLI-001997,SUB-001997,2026-08-13,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000454,CLI-002020,SUB-002020,2026-08-02,Cierre de ticket,3,2,Producto,Plan adecuado,App
+ENC-000455,CLI-002043,SUB-002043,2026-08-05,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000456,CLI-002066,SUB-002066,2026-08-08,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000457,CLI-002089,SUB-002089,2026-08-11,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000458,CLI-002112,SUB-002112,2026-08-14,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000459,CLI-002135,SUB-002135,2026-08-03,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000460,CLI-002158,SUB-002158,2026-08-06,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000461,CLI-002181,SUB-002181,2026-08-09,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000462,CLI-002204,SUB-002204,2026-08-12,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000463,CLI-002227,SUB-002227,2026-08-01,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000464,CLI-002250,SUB-002250,2026-08-04,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000465,CLI-002273,SUB-002273,2026-08-07,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000466,CLI-002296,SUB-002296,2026-08-10,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000467,CLI-002319,SUB-002319,2026-08-13,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000468,CLI-002342,SUB-002342,2026-08-02,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000469,CLI-002365,SUB-002365,2026-08-05,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000470,CLI-002388,SUB-002388,2026-08-08,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000471,CLI-002411,SUB-002411,2026-08-11,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000472,CLI-002434,SUB-002434,2026-08-14,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000473,CLI-002457,SUB-002457,2026-08-03,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000474,CLI-002480,SUB-002480,2026-08-06,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000475,CLI-002503,SUB-002503,2026-08-09,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000476,CLI-002526,SUB-002526,2026-08-12,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000477,CLI-002549,SUB-002549,2026-08-01,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000478,CLI-002572,SUB-002572,2026-08-04,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000479,CLI-002595,SUB-002595,2026-08-07,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000480,CLI-002618,SUB-002618,2026-08-10,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000481,CLI-002641,SUB-002641,2026-08-13,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000482,CLI-002664,SUB-002664,2026-08-02,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000483,CLI-002687,SUB-002687,2026-08-05,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000484,CLI-002710,SUB-002710,2026-08-08,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000485,CLI-002733,SUB-002733,2026-08-11,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000486,CLI-002756,SUB-002756,2026-08-14,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000487,CLI-002779,SUB-002779,2026-08-03,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000488,CLI-002802,SUB-002802,2026-08-06,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000489,CLI-002825,SUB-002825,2026-08-09,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000490,CLI-002848,SUB-002848,2026-08-12,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000491,CLI-002871,SUB-002871,2026-08-01,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000492,CLI-002894,SUB-002894,2026-08-04,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000493,CLI-002917,SUB-002917,2026-08-07,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000494,CLI-002940,SUB-002940,2026-08-10,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000495,CLI-002963,SUB-002963,2026-08-13,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000496,CLI-002986,SUB-002986,2026-08-02,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000497,CLI-000009,SUB-003009,2026-08-05,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000498,CLI-000032,SUB-003032,2026-08-08,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000499,CLI-000055,SUB-003055,2026-08-11,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000500,CLI-000078,SUB-003078,2026-08-14,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000501,CLI-000101,SUB-003101,2026-08-03,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000502,CLI-000124,SUB-003124,2026-08-06,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000503,CLI-000147,SUB-003147,2026-08-09,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000504,CLI-000170,SUB-003170,2026-08-12,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000505,CLI-000193,SUB-003193,2026-08-01,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000506,CLI-000216,SUB-003216,2026-08-04,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000507,CLI-000239,SUB-003239,2026-08-07,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000508,CLI-000262,SUB-003262,2026-08-10,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000509,CLI-000285,SUB-003285,2026-08-13,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000510,CLI-000308,SUB-003308,2026-08-02,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000511,CLI-000331,SUB-003331,2026-08-05,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000512,CLI-000354,SUB-003354,2026-08-08,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000513,CLI-000377,SUB-003377,2026-08-11,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000514,CLI-000400,SUB-003400,2026-08-14,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000515,CLI-000423,SUB-003423,2026-08-03,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000516,CLI-000446,SUB-003446,2026-08-06,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000517,CLI-000469,SUB-003469,2026-08-09,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000518,CLI-000492,SUB-003492,2026-08-12,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000519,CLI-000515,SUB-003515,2026-08-01,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000520,CLI-000538,SUB-003538,2026-08-04,Cambio de plan,6,4,Producto,Plan adecuado,App
+ENC-000521,CLI-000561,SUB-003561,2026-08-07,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000522,CLI-000584,SUB-003584,2026-08-10,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000523,CLI-000607,SUB-003607,2026-08-13,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000524,CLI-000630,SUB-003630,2026-08-02,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000525,CLI-000653,SUB-003653,2026-08-05,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000526,CLI-000676,SUB-003676,2026-08-08,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000527,CLI-000699,SUB-003699,2026-08-11,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000528,CLI-000722,SUB-003722,2026-08-14,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000529,CLI-000745,SUB-003745,2026-08-03,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000530,CLI-000768,SUB-003768,2026-08-06,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000531,CLI-000791,SUB-003791,2026-08-09,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000532,CLI-000814,SUB-003814,2026-08-12,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000533,CLI-000837,SUB-003837,2026-08-01,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000534,CLI-000860,SUB-003860,2026-08-04,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000535,CLI-000883,SUB-003883,2026-08-07,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000536,CLI-000906,SUB-003906,2026-08-10,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000537,CLI-000929,SUB-003929,2026-08-13,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000538,CLI-000952,SUB-003952,2026-08-02,Cierre de ticket,10,7,Producto,Plan adecuado,App
+ENC-000539,CLI-000975,SUB-003975,2026-08-05,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000540,CLI-000998,SUB-003998,2026-08-08,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000541,CLI-001021,SUB-004021,2026-08-11,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000542,CLI-001044,SUB-004044,2026-08-14,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000543,CLI-001067,SUB-004067,2026-08-03,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000544,CLI-001090,SUB-004090,2026-08-06,Cambio de plan,12,4,Producto,Plan adecuado,App
+ENC-000545,CLI-001113,SUB-004113,2026-08-09,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000546,CLI-001136,SUB-004136,2026-08-12,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000547,CLI-001159,SUB-004159,2026-08-01,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000548,CLI-001182,SUB-004182,2026-08-04,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000549,CLI-000005,SUB-000005,2026-08-07,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000550,CLI-000028,SUB-000028,2026-08-10,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000551,CLI-000051,SUB-000051,2026-08-13,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000552,CLI-000074,SUB-000074,2026-08-02,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000553,CLI-000097,SUB-000097,2026-08-05,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000554,CLI-000120,SUB-000120,2026-08-08,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000555,CLI-000143,SUB-000143,2026-08-11,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000556,CLI-000166,SUB-000166,2026-08-14,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000557,CLI-000189,SUB-000189,2026-08-03,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000558,CLI-000212,SUB-000212,2026-08-06,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000559,CLI-000235,SUB-000235,2026-08-09,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000560,CLI-000258,SUB-000258,2026-08-12,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000561,CLI-000281,SUB-000281,2026-08-01,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000562,CLI-000304,SUB-000304,2026-08-04,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000563,CLI-000327,SUB-000327,2026-08-07,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000564,CLI-000350,SUB-000350,2026-08-10,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000565,CLI-000373,SUB-000373,2026-08-13,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000566,CLI-000396,SUB-000396,2026-08-02,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000567,CLI-000419,SUB-000419,2026-08-05,Alta,6,4,Atención,Atención satisfactoria,SMS
+ENC-000568,CLI-000442,SUB-000442,2026-08-08,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000569,CLI-000465,SUB-000465,2026-08-11,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000570,CLI-000488,SUB-000488,2026-08-14,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000571,CLI-000511,SUB-000511,2026-08-03,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000572,CLI-000534,SUB-000534,2026-08-06,Cambio de plan,8,5,Red,Velocidad variable,Web
+ENC-000573,CLI-000557,SUB-000557,2026-08-09,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000574,CLI-000580,SUB-000580,2026-08-12,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000575,CLI-000603,SUB-000603,2026-08-01,Alta,6,4,Facturación,Cobro claro,Web
+ENC-000576,CLI-000626,SUB-000626,2026-08-04,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000577,CLI-000649,SUB-000649,2026-08-07,Periódica,10,5,Red,Cobertura insuficiente,App
+ENC-000578,CLI-000672,SUB-000672,2026-08-10,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000579,CLI-000695,SUB-000695,2026-08-13,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000580,CLI-000718,SUB-999999,2026-08-02,Cambio de plan,8,5,Producto,Plan adecuado,App
+ENC-000581,CLI-000741,SUB-000741,2026-08-05,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000582,CLI-000764,SUB-000764,2026-08-08,Cierre de ticket,1,1,App,App fácil de usar,SMS
+ENC-000583,CLI-000787,SUB-000787,2026-08-11,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000584,CLI-000810,SUB-000810,2026-08-14,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000585,CLI-000833,SUB-000833,2026-08-03,Periódica,10,5,Atención,Atención satisfactoria,SMS
+ENC-000586,CLI-000856,SUB-000856,2026-08-06,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000587,CLI-000879,SUB-000879,2026-08-09,Alta,3,2,Facturación,Cobro claro,Web
+ENC-000588,CLI-000902,SUB-000902,2026-08-12,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000589,CLI-000925,SUB-000925,2026-08-01,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000590,CLI-000948,SUB-000948,2026-08-04,Cierre de ticket,1,1,Red,Velocidad variable,Web
+ENC-000591,CLI-000971,SUB-000971,2026-08-07,Alta,6,4,Atención,Atención satisfactoria,SMS
+ENC-000592,CLI-000994,SUB-000994,2026-08-10,Cambio de plan,5,3,Producto,Plan adecuado,App
+ENC-000593,CLI-001017,SUB-001017,2026-08-13,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000594,CLI-001040,SUB-001040,2026-08-02,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000595,CLI-001063,SUB-001063,2026-08-05,Alta,3,2,Red,Cobertura insuficiente,App
+ENC-000596,CLI-001086,SUB-001086,2026-08-08,Cambio de plan,8,5,Red,Velocidad variable,Web
+ENC-000597,CLI-001109,SUB-001109,2026-08-11,Periódica,7,4,Atención,Atención satisfactoria,SMS
+ENC-000598,CLI-999999,SUB-001132,2026-08-14,Cierre de ticket,1,1,Producto,Plan adecuado,App
+ENC-000599,CLI-001155,SUB-001155,2026-08-03,Alta,6,4,Facturación,Cobro claro,Web
+ENC-000600,CLI-001178,SUB-001178,2026-08-06,Cambio de plan,5,3,App,App fácil de usar,SMS
+ENC-000601,CLI-001201,SUB-001201,2026-08-09,Periódica,10,5,Red,Cobertura insuficiente,App
+ENC-000602,CLI-001224,SUB-001224,2026-08-12,Cierre de ticket,9,5,Red,Velocidad variable,Web
+ENC-000603,CLI-001247,SUB-001247,2026-08-01,Alta,3,2,Atención,Atención satisfactoria,SMS
+ENC-000604,CLI-001270,SUB-001270,2026-08-04,Cambio de plan,8,5,Producto,Plan adecuado,App
+ENC-000605,CLI-001293,SUB-001293,2026-08-07,Periódica,7,4,Facturación,Cobro claro,Web
+ENC-000606,CLI-001316,SUB-001316,2026-08-10,Cierre de ticket,1,1,App,App fácil de usar,SMS
+ENC-000607,CLI-001339,SUB-001339,2026-08-13,Alta,0,1,Red,Cobertura insuficiente,App
+ENC-000608,CLI-001362,SUB-001362,2026-08-02,Cambio de plan,5,3,Red,Velocidad variable,Web
+ENC-000609,CLI-001385,SUB-001385,2026-08-05,Periódica,10,5,Atención,Atención satisfactoria,SMS
+ENC-000610,CLI-001408,SUB-001408,2026-08-08,Cierre de ticket,9,5,Producto,Plan adecuado,App
+ENC-000611,CLI-001431,SUB-001431,2026-08-11,Alta,3,2,Facturación,Cobro claro,Web
+ENC-000612,CLI-001454,SUB-001454,2026-08-14,Cambio de plan,2,2,App,App fácil de usar,SMS
+ENC-000613,CLI-001477,SUB-001477,2026-08-03,Periódica,7,4,Red,Cobertura insuficiente,App
+ENC-000614,CLI-001500,SUB-001500,2026-08-06,Cierre de ticket,1,1,Red,Velocidad variable,Web
+ENC-000615,CLI-001523,SUB-001523,2026-08-09,Alta,0,1,Atención,Atención satisfactoria,SMS
+ENC-000616,CLI-001546,SUB-001546,2026-08-12,Cambio de plan,5,3,Producto,Plan adecuado,App
+ENC-000617,CLI-001569,SUB-001569,2026-08-01,Periódica,4,3,Facturación,Cobro claro,Web
+ENC-000618,CLI-001592,SUB-001592,2026-08-04,Cierre de ticket,9,5,App,App fácil de usar,SMS
+ENC-000619,CLI-001615,SUB-001615,2026-08-07,Alta,3,2,Red,Cobertura insuficiente,App
+ENC-000620,CLI-001638,SUB-001638,2026-08-10,Cambio de plan,2,2,Red,Velocidad variable,Web
+ENC-000621,CLI-001661,SUB-001661,2026-08-13,Periódica,7,4,Atención,Atención satisfactoria,SMS
+ENC-000622,CLI-001684,SUB-001684,2026-08-02,Cierre de ticket,6,4,Producto,Plan adecuado,App
+ENC-000623,CLI-001707,SUB-001707,2026-08-05,Alta,0,1,Facturación,Cobro claro,Web
+ENC-000624,CLI-001730,SUB-001730,2026-08-08,Cambio de plan,5,3,App,App fácil de usar,SMS
+ENC-000625,CLI-001753,SUB-001753,2026-08-11,Periódica,4,3,Red,Cobertura insuficiente,App
+ENC-000626,CLI-001776,SUB-001776,2026-08-14,Cierre de ticket,9,5,Red,Velocidad variable,Web
+ENC-000627,CLI-001799,SUB-001799,2026-08-03,Alta,8,5,Atención,Atención satisfactoria,SMS
+ENC-000628,CLI-001822,SUB-001822,2026-08-06,Cambio de plan,2,2,Producto,Plan adecuado,App
+ENC-000629,CLI-001845,SUB-001845,2026-08-09,Periódica,7,4,Facturación,Cobro claro,Web
+ENC-000630,CLI-001868,SUB-001868,2026-08-12,Cierre de ticket,6,4,App,App fácil de usar,SMS
+ENC-000631,CLI-001891,SUB-001891,2026-08-01,Alta,0,1,Red,Cobertura insuficiente,App
+ENC-000632,CLI-001914,SUB-001914,2026-08-04,Cambio de plan,10,5,Red,Velocidad variable,Web
+ENC-000633,CLI-001937,SUB-001937,2026-08-07,Periódica,4,3,Atención,Atención satisfactoria,SMS
+ENC-000633,CLI-001960,SUB-001960,2026-08-10,Cierre de ticket,9,5,Producto,Plan adecuado,App
+ENC-000635,CLI-001983,SUB-001983,2026-08-13,Alta,8,5,Facturación,Cobro claro,Web
+ENC-000636,CLI-002006,SUB-002006,2026-08-02,Cambio de plan,2,2,App,App fácil de usar,SMS
+ENC-000637,CLI-002029,SUB-002029,2026-08-05,Periódica,1,1,Red,Cobertura insuficiente,App
+ENC-000638,CLI-002052,SUB-002052,2026-08-08,Cierre de ticket,6,4,Red,Velocidad variable,Web
+ENC-000639,CLI-002075,SUB-002075,2026-08-11,Alta,0,1,Atención,Atención satisfactoria,SMS
+ENC-000640,CLI-002098,SUB-002098,2026-08-14,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000641,CLI-002121,SUB-002121,2026-08-03,Periódica,4,3,Facturación,Cobro claro,Web
+ENC-000642,CLI-002144,SUB-002144,2026-08-06,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000643,CLI-002167,SUB-002167,2026-08-09,Alta,8,5,Red,Cobertura insuficiente,App
+ENC-000644,CLI-002190,SUB-002190,2026-08-12,Cambio de plan,2,2,Red,Velocidad variable,Web
+ENC-000645,CLI-002213,SUB-002213,2026-08-01,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000646,CLI-002236,SUB-002236,2026-08-04,Cierre de ticket,6,4,Producto,Plan adecuado,App
+ENC-000647,CLI-002259,SUB-002259,2026-08-07,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000648,CLI-002282,SUB-002282,2026-08-10,Cambio de plan,10,5,App,App fácil de usar,SMS
+ENC-000649,CLI-002305,SUB-002305,2026-08-13,Periódica,4,3,Red,Cobertura insuficiente,App
+ENC-000650,CLI-002328,SUB-002328,2026-08-02,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000651,CLI-002351,SUB-002351,2026-08-05,Alta,8,5,Atención,Atención satisfactoria,SMS
+ENC-000652,CLI-002374,SUB-002374,2026-08-08,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000653,CLI-002397,SUB-002397,2026-08-11,Periódica,1,1,Facturación,Cobro claro,Web
+ENC-000654,CLI-002420,SUB-002420,2026-08-14,Cierre de ticket,6,4,App,App fácil de usar,SMS
+ENC-000655,CLI-002443,SUB-002443,2026-08-03,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000656,CLI-002466,SUB-002466,2026-08-06,Cambio de plan,10,5,Red,Velocidad variable,Web
+ENC-000657,CLI-002489,SUB-002489,2026-08-09,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000658,CLI-002512,SUB-002512,2026-08-12,Cierre de ticket,3,2,Producto,Plan adecuado,App
+ENC-000659,CLI-002535,SUB-002535,2026-08-01,Alta,8,5,Facturación,Cobro claro,Web
+ENC-000660,CLI-002558,SUB-002558,2026-08-04,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000661,CLI-002581,SUB-002581,2026-08-07,Periódica,1,1,Red,Cobertura insuficiente,App
+ENC-000662,CLI-002604,SUB-002604,2026-08-10,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000663,CLI-002627,SUB-002627,2026-08-13,Alta,5,3,Atención,Atención satisfactoria,SMS
+ENC-000664,CLI-002650,SUB-002650,2026-08-02,Cambio de plan,10,5,Producto,Plan adecuado,App
+ENC-000665,CLI-002673,SUB-002673,2026-08-05,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000666,CLI-002696,SUB-002696,2026-08-08,Cierre de ticket,3,2,App,App fácil de usar,SMS
+ENC-000667,CLI-002719,SUB-002719,2026-08-11,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000668,CLI-002742,SUB-002742,2026-08-14,Cambio de plan,7,4,Red,Velocidad variable,Web
+ENC-000669,CLI-002765,SUB-002765,2026-08-03,Periódica,1,1,Atención,Atención satisfactoria,SMS
+ENC-000670,CLI-002788,SUB-002788,2026-08-06,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000671,CLI-002811,SUB-002811,2026-08-09,Alta,5,3,Facturación,Cobro claro,Web
+ENC-000672,CLI-002834,SUB-002834,2026-08-12,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000673,CLI-002857,SUB-002857,2026-08-01,Periódica,9,5,Red,Cobertura insuficiente,App
+ENC-000674,CLI-002880,SUB-002880,2026-08-04,Cierre de ticket,3,2,Red,Velocidad variable,Web
+ENC-000675,CLI-002903,SUB-002903,2026-08-07,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000676,CLI-002926,SUB-002926,2026-08-10,Cambio de plan,7,4,Producto,Plan adecuado,App
+ENC-000677,CLI-002949,SUB-002949,2026-08-13,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000678,CLI-002972,SUB-002972,2026-08-02,Cierre de ticket,0,1,App,App fácil de usar,SMS
+ENC-000679,CLI-002995,SUB-002995,2026-08-05,Alta,5,3,Red,Cobertura insuficiente,App
+ENC-000680,CLI-000018,SUB-003018,2026-08-08,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000681,CLI-000041,SUB-003041,2026-08-11,Periódica,9,5,Atención,Atención satisfactoria,SMS
+ENC-000682,CLI-000064,SUB-003064,2026-08-14,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000683,CLI-000087,SUB-003087,2026-08-03,Alta,2,2,Facturación,Cobro claro,Web
+ENC-000684,CLI-000110,SUB-003110,2026-08-06,Cambio de plan,7,4,App,App fácil de usar,SMS
+ENC-000685,CLI-000133,SUB-003133,2026-08-09,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000686,CLI-000156,SUB-003156,2026-08-12,Cierre de ticket,0,1,Red,Velocidad variable,Web
+ENC-000687,CLI-000179,SUB-003179,2026-08-01,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000688,CLI-000202,SUB-003202,2026-08-04,Cambio de plan,4,3,Producto,Plan adecuado,App
+ENC-000689,CLI-000225,SUB-003225,2026-08-07,Periódica,9,5,Facturación,Cobro claro,Web
+ENC-000690,CLI-000248,SUB-003248,2026-08-10,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000691,CLI-000271,SUB-003271,2026-08-13,Alta,2,2,Red,Cobertura insuficiente,App
+ENC-000692,CLI-000294,SUB-003294,2026-08-02,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000693,CLI-000317,SUB-003317,2026-08-05,Periódica,6,4,Atención,Atención satisfactoria,SMS
+ENC-000694,CLI-000340,SUB-003340,2026-08-08,Cierre de ticket,0,1,Producto,Plan adecuado,App
+ENC-000695,CLI-000363,SUB-003363,2026-08-11,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000696,CLI-000386,SUB-003386,2026-08-14,Cambio de plan,4,3,App,App fácil de usar,SMS
+ENC-000697,CLI-000409,SUB-003409,2026-08-03,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000698,CLI-000432,SUB-003432,2026-08-06,Cierre de ticket,8,5,Red,Velocidad variable,Web
+ENC-000699,CLI-000455,SUB-003455,2026-08-09,Alta,2,2,Atención,Atención satisfactoria,SMS
+ENC-000700,CLI-000478,SUB-003478,2026-08-12,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000701,CLI-000501,SUB-003501,2026-08-01,Periódica,6,4,Facturación,Cobro claro,Web
+ENC-000702,CLI-000524,SUB-003524,2026-08-04,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000703,CLI-000547,SUB-003547,2026-08-07,Alta,10,5,Red,Cobertura insuficiente,App
+ENC-000704,CLI-000570,SUB-003570,2026-08-10,Cambio de plan,4,3,Red,Velocidad variable,Web
+ENC-000705,CLI-000593,SUB-003593,2026-08-13,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000706,CLI-000616,SUB-003616,2026-08-02,Cierre de ticket,8,5,Producto,Plan adecuado,App
+ENC-000707,CLI-000639,SUB-003639,2026-08-05,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000708,CLI-000662,SUB-003662,2026-08-08,Cambio de plan,1,1,App,App fácil de usar,SMS
+ENC-000709,CLI-000685,SUB-003685,2026-08-11,Periódica,6,4,Red,Cobertura insuficiente,App
+ENC-000710,CLI-000708,SUB-003708,2026-08-14,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000711,CLI-000731,SUB-003731,2026-08-03,Alta,10,5,Atención,Atención satisfactoria,SMS
+ENC-000712,CLI-000754,SUB-003754,2026-08-06,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000713,CLI-000777,SUB-003777,2026-08-09,Periódica,3,2,Facturación,Cobro claro,Web
+ENC-000714,CLI-000800,SUB-003800,2026-08-12,Cierre de ticket,8,5,App,App fácil de usar,SMS
+ENC-000715,CLI-000823,SUB-003823,2026-08-01,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000716,CLI-000846,SUB-003846,2026-08-04,Cambio de plan,1,1,Red,Velocidad variable,Web
+ENC-000717,CLI-000869,SUB-003869,2026-08-07,Periódica,0,7,Atención,Atención satisfactoria,SMS
+ENC-000718,CLI-000892,SUB-003892,2026-08-10,Cierre de ticket,5,3,Producto,Plan adecuado,App
+ENC-000719,CLI-000915,SUB-003915,2026-08-13,Alta,10,5,Facturación,Cobro claro,Web
+ENC-000720,CLI-000938,SUB-003938,2026-08-02,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000721,CLI-000961,SUB-003961,2026-08-05,Periódica,3,2,Red,Cobertura insuficiente,App
+ENC-000722,CLI-000984,SUB-003984,2026-08-08,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000723,CLI-001007,SUB-004007,2026-08-11,Alta,7,4,Atención,Atención satisfactoria,SMS
+ENC-000724,CLI-001030,SUB-004030,2026-08-14,Cambio de plan,1,1,Producto,Plan adecuado,App
+ENC-000725,CLI-001053,SUB-004053,2026-08-03,Periódica,12,1,Facturación,Cobro claro,Web
+ENC-000726,CLI-001076,SUB-004076,2026-08-06,Cierre de ticket,5,3,App,App fácil de usar,SMS
+ENC-000727,CLI-001099,SUB-004099,2026-08-09,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000728,CLI-001122,SUB-004122,2026-08-12,Cambio de plan,9,5,Red,Velocidad variable,Web
+ENC-000729,CLI-001145,SUB-004145,2026-08-01,Periódica,3,2,Atención,Atención satisfactoria,SMS
+ENC-000730,CLI-001168,SUB-004168,2026-08-04,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000731,CLI-001191,SUB-004191,2026-08-07,Alta,7,4,Facturación,Cobro claro,Web
+ENC-000732,CLI-000014,SUB-000014,2026-08-10,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000733,CLI-000037,SUB-000037,2026-08-13,Periódica,0,1,Red,Cobertura insuficiente,App
+ENC-000734,CLI-000060,SUB-000060,2026-08-02,Cierre de ticket,5,3,Red,Velocidad variable,Web
+ENC-000735,CLI-000083,SUB-000083,2026-08-05,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000736,CLI-000106,SUB-000106,2026-08-08,Cambio de plan,9,5,Producto,Plan adecuado,App
+ENC-000737,CLI-000129,SUB-000129,2026-08-11,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000738,CLI-000152,SUB-000152,2026-08-14,Cierre de ticket,2,2,App,App fácil de usar,SMS
+ENC-000739,CLI-000175,SUB-000175,2026-08-03,Alta,7,4,Red,Cobertura insuficiente,App
+ENC-000740,CLI-000198,SUB-000198,2026-08-06,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000741,CLI-000221,SUB-000221,2026-08-09,Periódica,0,1,Atención,Atención satisfactoria,SMS
+ENC-000742,CLI-000244,SUB-000244,2026-08-12,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000743,CLI-000267,SUB-000267,2026-08-01,Alta,4,3,Facturación,Cobro claro,Web
+ENC-000744,CLI-000290,SUB-000290,2026-08-04,Cambio de plan,9,5,App,App fácil de usar,SMS
+ENC-000745,CLI-000313,SUB-000313,2026-08-07,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000746,CLI-000336,SUB-000336,2026-08-10,Cierre de ticket,2,2,Red,Velocidad variable,Web
+ENC-000747,CLI-000359,SUB-000359,2026-08-13,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000748,CLI-000382,SUB-000382,2026-08-02,Cambio de plan,6,4,Producto,Plan adecuado,App
+ENC-000749,CLI-000405,SUB-000405,2026-08-05,Periódica,0,1,Facturación,Cobro claro,Web
+ENC-000750,CLI-000428,SUB-000428,2026-08-08,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000751,CLI-000451,SUB-000451,2026-08-11,Alta,4,3,Red,Cobertura insuficiente,App
+ENC-000752,CLI-000474,SUB-000474,2026-08-14,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000753,CLI-000497,SUB-000497,2026-08-03,Periódica,8,5,Atención,Atención satisfactoria,SMS
+ENC-000754,CLI-000520,SUB-000520,2026-08-06,Cierre de ticket,2,2,Producto,Plan adecuado,App
+ENC-000755,CLI-000543,SUB-000543,2026-08-09,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000756,CLI-000566,SUB-000566,2026-08-12,Cambio de plan,6,4,App,App fácil de usar,SMS
+ENC-000757,CLI-000589,SUB-000589,2026-08-01,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000758,CLI-000612,SUB-000612,2026-08-04,Cierre de ticket,10,5,Red,Velocidad variable,Web
+ENC-000759,CLI-000635,SUB-000635,2026-08-07,Alta,4,3,Atención,Atención satisfactoria,SMS
+ENC-000760,CLI-000658,SUB-000658,2026-08-10,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000761,CLI-000681,SUB-000681,2026-08-13,Periódica,8,5,Facturación,Cobro claro,Web
+ENC-000762,CLI-000704,SUB-000704,2026-08-02,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000763,CLI-000727,SUB-000727,2026-08-05,Alta,1,1,Red,Cobertura insuficiente,App
+ENC-000764,CLI-000750,SUB-000750,2026-08-08,Cambio de plan,6,4,Red,Velocidad variable,Web
+ENC-000765,CLI-000773,SUB-000773,2026-08-11,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000766,CLI-000796,SUB-000796,2026-08-14,Cierre de ticket,10,5,Producto,Plan adecuado,App
+ENC-000767,CLI-000819,SUB-000819,2026-08-03,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000768,CLI-000842,SUB-000842,2026-08-06,Cambio de plan,3,2,App,App fácil de usar,SMS
+ENC-000769,CLI-000865,SUB-000865,2026-08-09,Periódica,8,5,Red,Cobertura insuficiente,App
+ENC-000770,CLI-000888,SUB-000888,2026-08-12,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000771,CLI-000911,SUB-000911,2026-08-01,Alta,1,1,Atención,Atención satisfactoria,SMS
+ENC-000772,CLI-000934,SUB-000934,2026-08-04,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000773,CLI-000957,SUB-999999,2026-08-07,Periódica,5,3,Facturación,Cobro claro,Web
+ENC-000774,CLI-000980,SUB-000980,2026-08-10,Cierre de ticket,10,5,App,App fácil de usar,SMS
+ENC-000775,CLI-001003,SUB-001003,2026-08-13,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000776,CLI-001026,SUB-001026,2026-08-02,Cambio de plan,3,2,Red,Velocidad variable,Web
+ENC-000777,CLI-001049,SUB-001049,2026-08-05,Periódica,2,2,Atención,Atención satisfactoria,SMS
+ENC-000778,CLI-001072,SUB-001072,2026-08-08,Cierre de ticket,7,4,Producto,Plan adecuado,App
+ENC-000779,CLI-001095,SUB-001095,2026-08-11,Alta,1,1,Facturación,Cobro claro,Web
+ENC-000780,CLI-001118,SUB-001118,2026-08-14,Cambio de plan,0,1,App,App fácil de usar,SMS
+ENC-000781,CLI-001141,SUB-001141,2026-08-03,Periódica,5,3,Red,Cobertura insuficiente,App
+ENC-000782,CLI-001164,SUB-001164,2026-08-06,Cierre de ticket,4,3,Red,Velocidad variable,Web
+ENC-000783,CLI-001187,SUB-001187,2026-08-09,Alta,9,5,Atención,Atención satisfactoria,SMS
+ENC-000784,CLI-001210,SUB-001210,2026-08-12,Cambio de plan,3,2,Producto,Plan adecuado,App
+ENC-000785,CLI-001233,SUB-001233,2026-08-01,Periódica,2,2,Facturación,Cobro claro,Web
+ENC-000786,CLI-001256,SUB-001256,2026-08-04,Cierre de ticket,7,4,App,App fácil de usar,SMS
+ENC-000787,CLI-001279,SUB-001279,2026-08-07,Alta,6,4,Red,Cobertura insuficiente,App
+ENC-000788,CLI-001302,SUB-001302,2026-08-10,Cambio de plan,0,1,Red,Velocidad variable,Web
+ENC-000789,CLI-001325,SUB-001325,2026-08-13,Periódica,5,3,Atención,Atención satisfactoria,SMS
+ENC-000790,CLI-001348,SUB-001348,2026-08-02,Cierre de ticket,4,3,Producto,Plan adecuado,App
+ENC-000791,CLI-001371,SUB-001371,2026-08-05,Alta,9,5,Facturación,Cobro claro,Web
+ENC-000792,CLI-001394,SUB-001394,2026-08-08,Cambio de plan,8,5,App,App fácil de usar,SMS
+ENC-000793,CLI-001417,SUB-001417,2026-08-11,Periódica,2,2,Red,Cobertura insuficiente,App
+ENC-000794,CLI-001440,SUB-001440,2026-08-14,Cierre de ticket,7,4,Red,Velocidad variable,Web
+ENC-000795,CLI-001463,SUB-001463,2026-08-03,Alta,6,4,Atención,Atención satisfactoria,SMS
+ENC-000796,CLI-001486,SUB-001486,2026-08-06,Cambio de plan,0,1,Producto,Plan adecuado,App
+ENC-000797,CLI-999999,SUB-001509,2026-08-09,Periódica,10,5,Facturación,Cobro claro,Web
+ENC-000798,CLI-001532,SUB-001532,2026-08-12,Cierre de ticket,4,3,App,App fácil de usar,SMS
+ENC-000799,CLI-001555,SUB-001555,2026-08-01,Alta,9,5,Red,Cobertura insuficiente,App
+ENC-000800,CLI-001578,SUB-001578,2026-08-04,Cambio de plan,8,5,Red,Velocidad variable,Web

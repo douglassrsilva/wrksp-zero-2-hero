@@ -1,0 +1,1201 @@
+alarm_id,cell_id,opened_at,closed_at,alarm_type,severity,alarm_status,probable_cause,service_impact,affected_users_est,source_system
+ALM-000001,CEL-99999,2026-08-01 00:00:00,2026-07-31 22:00:00,Energía,Urgente,Cerrada,Falla de suministro,true,900,NMS
+ALM-000002,CEL-00018,2026-08-01 00:13:11,2026-08-01 14:13:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,449,RAN Monitor
+ALM-000003,CEL-00035,2026-08-01 00:26:22,2026-08-02 03:26:22,Radio,Alta,Cerrada,Interferencia,true,478,Energy Monitor
+ALM-000004,CEL-00052,2026-08-01 00:39:33,2026-08-02 16:39:33,Saturación,Media,Cerrada,Alta demanda,false,207,NMS
+ALM-000005,CEL-00069,2026-08-01 00:52:44,2026-08-03 05:52:44,Hardware,Media,Cerrada,Módulo degradado,false,236,RAN Monitor
+ALM-000006,CEL-00086,2026-08-01 01:05:55,2026-08-03 19:05:55,Software,Baja,Cerrada,Error de configuración,false,170,Energy Monitor
+ALM-000007,CEL-00103,2026-08-01 01:19:06,2026-08-01 08:19:06,Energía,Crítica,Cerrada,Falla de suministro,true,1074,NMS
+ALM-000008,CEL-00120,2026-08-01 01:32:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,423,RAN Monitor
+ALM-000009,CEL-00137,2026-08-01 01:45:28,,Radio,Alta,Reconocida,Interferencia,true,452,Energy Monitor
+ALM-000010,CEL-00154,2026-08-01 01:58:39,,Saturación,Media,Abierta,Alta demanda,false,181,NMS
+ALM-000011,CEL-00171,2026-08-01 02:11:50,2026-08-03 13:11:50,Hardware,Media,Cerrada,Módulo degradado,false,210,RAN Monitor
+ALM-000012,CEL-00008,2026-08-01 02:25:01,2026-08-04 02:25:01,Software,Baja,Cerrada,Error de configuración,false,144,Energy Monitor
+ALM-000013,CEL-00025,2026-08-01 02:38:12,2026-08-01 15:38:12,Energía,Crítica,Cerrada,Falla de suministro,true,1048,NMS
+ALM-000014,CEL-00042,2026-08-01 02:51:23,2026-08-02 04:51:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,597,RAN Monitor
+ALM-000015,CEL-00059,2026-08-01 03:04:34,2026-08-02 18:04:34,Radio,Alta,Cerrada,Interferencia,true,426,Energy Monitor
+ALM-000016,CEL-00076,2026-08-01 03:17:45,2026-08-03 07:17:45,Saturación,Media,Cerrada,Alta demanda,false,155,NMS
+ALM-000017,CEL-00093,2026-08-01 03:30:56,2026-08-03 20:30:56,Hardware,Media,Cerrada,Módulo degradado,false,184,RAN Monitor
+ALM-000018,CEL-00110,2026-08-01 03:44:07,,Software,Baja,Reconocida,Error de configuración,false,118,Energy Monitor
+ALM-000019,CEL-00127,2026-08-01 03:57:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1022,NMS
+ALM-000020,CEL-00144,2026-08-01 04:10:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,571,RAN Monitor
+ALM-000021,CEL-00161,2026-08-01 04:23:40,2026-08-03 01:23:40,Radio,Alta,Cerrada,Interferencia,true,600,Energy Monitor
+ALM-000022,CEL-00178,2026-08-01 04:36:51,2026-08-03 14:36:51,Saturación,Media,Cerrada,Alta demanda,true,129,NMS
+ALM-000023,CEL-00015,2026-08-01 04:50:02,2026-08-04 03:50:02,Hardware,Media,Cerrada,Módulo degradado,false,158,RAN Monitor
+ALM-000024,CEL-00032,2026-08-01 05:03:13,2026-08-01 17:03:13,Software,Baja,Cerrada,Error de configuración,false,92,Energy Monitor
+ALM-000025,CEL-00049,2026-08-01 05:16:24,2026-08-02 06:16:24,Energía,Crítica,Cerrada,Falla de suministro,true,996,NMS
+ALM-000026,CEL-00066,2026-08-01 05:29:35,2026-08-02 19:29:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,545,RAN Monitor
+ALM-000027,CEL-00083,2026-08-01 05:42:46,2026-08-03 08:42:46,Radio,Alta,Cerrada,Interferencia,true,574,Energy Monitor
+ALM-000028,CEL-00100,2026-08-01 05:55:57,,Saturación,Media,Reconocida,Alta demanda,false,303,NMS
+ALM-000029,CEL-00117,2026-08-01 06:09:08,,Hardware,Media,Reconocida,Módulo degradado,true,132,RAN Monitor
+ALM-000030,CEL-00134,2026-08-01 06:22:19,,Software,Baja,Abierta,Error de configuración,false,66,Energy Monitor
+ALM-000031,CEL-00151,2026-08-01 06:35:30,2026-08-02 13:35:30,Energía,Crítica,Cerrada,Falla de suministro,true,970,NMS
+ALM-000032,CEL-00168,2026-08-01 06:48:41,2026-08-03 02:48:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,519,RAN Monitor
+ALM-000033,CEL-00005,2026-08-01 07:01:52,2026-08-03 16:01:52,Radio,Alta,Cerrada,Interferencia,true,548,Energy Monitor
+ALM-000034,CEL-00022,2026-08-01 07:15:03,2026-08-04 05:15:03,Saturación,Media,Cerrada,Alta demanda,false,277,NMS
+ALM-000035,CEL-00039,2026-08-01 07:28:14,2026-08-01 18:28:14,Hardware,Media,Cerrada,Módulo degradado,false,306,RAN Monitor
+ALM-000036,CEL-00056,2026-08-01 07:41:25,2026-08-02 07:41:25,Software,Baja,Cerrada,Error de configuración,true,40,Energy Monitor
+ALM-000037,CEL-00073,2026-08-01 07:54:36,2026-08-02 20:54:36,Energía,Crítica,Cerrada,Falla de suministro,true,944,NMS
+ALM-000038,CEL-00090,2026-08-01 08:07:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,493,RAN Monitor
+ALM-000039,CEL-00107,2026-08-01 08:20:58,,Radio,Alta,Reconocida,Interferencia,true,522,Energy Monitor
+ALM-000040,CEL-00124,2026-08-01 08:34:09,,Saturación,Media,Abierta,Alta demanda,false,251,NMS
+ALM-000041,CEL-00141,2026-08-01 08:47:20,2026-08-02 01:47:20,Hardware,Media,Cerrada,Módulo degradado,false,280,RAN Monitor
+ALM-000042,CEL-00158,2026-08-01 09:00:31,2026-08-02 15:00:31,Software,Baja,Cerrada,Error de configuración,false,214,Energy Monitor
+ALM-000043,CEL-00175,2026-08-01 09:13:42,2026-08-03 04:13:42,Energía,Crítica,Cerrada,Falla de suministro,true,918,NMS
+ALM-000044,CEL-00012,2026-08-01 09:26:53,2026-08-03 17:26:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,467,RAN Monitor
+ALM-000045,CEL-00029,2026-08-01 09:40:04,2026-08-04 06:40:04,Radio,Alta,Cerrada,Interferencia,true,496,Energy Monitor
+ALM-000046,CEL-00046,2026-08-01 09:53:15,2026-08-01 19:53:15,Saturación,Media,Cerrada,Alta demanda,false,225,NMS
+ALM-000047,CEL-00063,2026-08-01 10:06:26,2026-08-02 09:06:26,Hardware,Media,Cerrada,Módulo degradado,false,254,RAN Monitor
+ALM-000048,CEL-00080,2026-08-01 10:19:37,,Software,Baja,Reconocida,Error de configuración,false,188,Energy Monitor
+ALM-000049,CEL-00097,2026-08-01 10:32:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1092,NMS
+ALM-000050,CEL-00114,2026-08-01 10:45:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,441,RAN Monitor
+ALM-000051,CEL-00131,2026-08-01 10:59:10,2026-08-01 13:59:10,Radio,Alta,Cerrada,Interferencia,true,470,Energy Monitor
+ALM-000052,CEL-00148,2026-08-01 11:12:21,2026-08-02 03:12:21,Saturación,Media,Cerrada,Alta demanda,false,199,NMS
+ALM-000053,CEL-00165,2026-08-01 11:25:32,2026-08-02 16:25:32,Hardware,Media,Cerrada,Módulo degradado,false,228,RAN Monitor
+ALM-000054,CEL-00002,2026-08-01 11:38:43,2026-08-03 05:38:43,Software,Baja,Cerrada,Error de configuración,false,162,Energy Monitor
+ALM-000055,CEL-00019,2026-08-01 11:51:54,2026-08-03 18:51:54,Energía,Crítica,Cerrada,Falla de suministro,true,1066,NMS
+ALM-000056,CEL-00036,2026-08-01 12:05:05,2026-08-04 08:05:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,615,RAN Monitor
+ALM-000057,CEL-00053,2026-08-01 12:18:16,2026-08-01 21:18:16,Radio,Alta,Cerrada,Interferencia,true,444,Energy Monitor
+ALM-000058,CEL-00070,2026-08-01 12:31:27,,Saturación,Media,Reconocida,Alta demanda,false,173,NMS
+ALM-000059,CEL-00087,2026-08-01 12:44:38,,Hardware,Media,Reconocida,Módulo degradado,false,202,RAN Monitor
+ALM-000060,CEL-00104,2026-08-01 12:57:49,,Software,Baja,Abierta,Error de configuración,false,136,Energy Monitor
+ALM-000061,CEL-00121,2026-08-01 13:11:00,2026-08-04 02:11:00,Energía,Crítica,Cerrada,Falla de suministro,true,1040,NMS
+ALM-000062,CEL-00138,2026-08-01 13:24:11,2026-08-01 15:24:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,589,RAN Monitor
+ALM-000063,CEL-00155,2026-08-01 13:37:22,2026-08-02 04:37:22,Radio,Alta,Cerrada,Interferencia,true,618,Energy Monitor
+ALM-000064,CEL-00172,2026-08-01 13:50:33,2026-08-02 17:50:33,Saturación,Media,Cerrada,Alta demanda,true,147,NMS
+ALM-000065,CEL-00009,2026-08-01 14:03:44,2026-08-03 07:03:44,Hardware,Media,Cerrada,Módulo degradado,false,176,RAN Monitor
+ALM-000066,CEL-00026,2026-08-01 14:16:55,2026-08-03 20:16:55,Software,Baja,Cerrada,Error de configuración,false,110,Energy Monitor
+ALM-000067,CEL-00043,2026-08-01 14:30:06,2026-08-04 09:30:06,Energía,Crítica,Cerrada,Falla de suministro,true,1014,NMS
+ALM-000068,CEL-00060,2026-08-01 14:43:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,563,RAN Monitor
+ALM-000069,CEL-00077,2026-08-01 14:56:28,,Radio,Alta,Reconocida,Interferencia,true,592,Energy Monitor
+ALM-000070,CEL-00094,2026-08-01 15:09:39,,Saturación,Media,Abierta,Alta demanda,false,121,NMS
+ALM-000071,CEL-00111,2026-08-01 15:22:50,2026-08-03 14:22:50,Hardware,Media,Cerrada,Módulo degradado,true,150,RAN Monitor
+ALM-000072,CEL-00128,2026-08-01 15:36:01,2026-08-04 03:36:01,Software,Baja,Cerrada,Error de configuración,false,84,Energy Monitor
+ALM-000073,CEL-00145,2026-08-01 15:49:12,2026-08-01 16:49:12,Energía,Crítica,Cerrada,Falla de suministro,true,988,NMS
+ALM-000074,CEL-00162,2026-08-01 16:02:23,2026-08-02 06:02:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,537,RAN Monitor
+ALM-000075,CEL-00179,2026-08-01 16:15:34,2026-08-02 19:15:34,Radio,Alta,Cerrada,Interferencia,true,566,Energy Monitor
+ALM-000076,CEL-00016,2026-08-01 16:28:45,2026-08-03 08:28:45,Saturación,Media,Cerrada,Alta demanda,false,295,NMS
+ALM-000077,CEL-00033,2026-08-01 16:41:56,2026-08-03 21:41:56,Hardware,Media,Cerrada,Módulo degradado,false,124,RAN Monitor
+ALM-000078,CEL-00050,2026-08-01 16:55:07,,Software,Baja,Reconocida,Error de configuración,true,58,Energy Monitor
+ALM-000079,CEL-00067,2026-08-01 17:08:18,,Energía,Crítica,Reconocida,Falla de suministro,true,962,NMS
+ALM-000080,CEL-00084,2026-08-01 17:21:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,511,RAN Monitor
+ALM-000081,CEL-00101,2026-08-01 17:34:40,2026-08-03 02:34:40,Radio,Alta,Cerrada,Interferencia,true,540,Energy Monitor
+ALM-000082,CEL-00118,2026-08-01 17:47:51,2026-08-03 15:47:51,Saturación,Media,Cerrada,Alta demanda,false,269,NMS
+ALM-000083,CEL-00135,2026-08-01 18:01:02,2026-08-04 05:01:02,Hardware,Media,Cerrada,Módulo degradado,false,298,RAN Monitor
+ALM-000084,CEL-00152,2026-08-01 18:14:13,2026-08-04 18:14:13,Software,Baja,Cerrada,Error de configuración,false,32,Energy Monitor
+ALM-000085,CEL-00169,2026-08-01 18:27:24,2026-08-02 07:27:24,Energía,Crítica,Cerrada,Falla de suministro,true,936,NMS
+ALM-000086,CEL-00006,2026-08-01 18:40:35,2026-08-02 20:40:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,485,RAN Monitor
+ALM-000087,CEL-00023,2026-08-01 18:53:46,2026-08-03 09:53:46,Radio,Alta,Cerrada,Interferencia,true,514,Energy Monitor
+ALM-000088,CEL-00040,2026-08-01 19:06:57,,Saturación,Media,Reconocida,Alta demanda,false,243,NMS
+ALM-000089,CEL-00057,2026-08-01 19:20:08,,Hardware,Media,Reconocida,Módulo degradado,false,272,RAN Monitor
+ALM-000090,CEL-00074,2026-08-01 19:33:19,,Software,Baja,Abierta,Error de configuración,false,206,Energy Monitor
+ALM-000091,CEL-00091,2026-08-01 19:46:30,2026-08-02 14:46:30,Energía,Crítica,Cerrada,Falla de suministro,true,910,NMS
+ALM-000092,CEL-00108,2026-08-01 19:59:41,2026-08-03 03:59:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,459,RAN Monitor
+ALM-000093,CEL-00125,2026-08-01 20:12:52,2026-08-03 17:12:52,Radio,Alta,Cerrada,Interferencia,true,488,Energy Monitor
+ALM-000094,CEL-00142,2026-08-01 20:26:03,2026-08-04 06:26:03,Saturación,Media,Cerrada,Alta demanda,false,217,NMS
+ALM-000095,CEL-00159,2026-08-01 20:39:14,2026-08-04 19:39:14,Hardware,Media,Cerrada,Módulo degradado,false,246,RAN Monitor
+ALM-000096,CEL-00176,2026-08-01 20:52:25,2026-08-02 08:52:25,Software,Baja,Cerrada,Error de configuración,false,180,Energy Monitor
+ALM-000097,CEL-00013,2026-08-01 21:05:36,2026-08-02 22:05:36,Energía,Crítica,Cerrada,Falla de suministro,true,1084,NMS
+ALM-000098,CEL-00030,2026-08-01 21:18:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,433,RAN Monitor
+ALM-000099,CEL-00047,2026-08-01 21:31:58,,Radio,Alta,Reconocida,Interferencia,true,462,Energy Monitor
+ALM-000100,CEL-00064,2026-08-01 21:45:09,,Saturación,Media,Abierta,Alta demanda,false,191,NMS
+ALM-000101,CEL-00081,2026-08-01 21:58:20,2026-08-02 02:58:20,Hardware,Media,Cerrada,Módulo degradado,false,220,RAN Monitor
+ALM-000102,CEL-00098,2026-08-01 22:11:31,2026-08-02 16:11:31,Software,Baja,Cerrada,Error de configuración,false,154,Energy Monitor
+ALM-000103,CEL-00115,2026-08-01 22:24:42,2026-08-03 05:24:42,Energía,Crítica,Cerrada,Falla de suministro,true,1058,NMS
+ALM-000104,CEL-00132,2026-08-01 22:37:53,2026-08-03 18:37:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,607,RAN Monitor
+ALM-000105,CEL-00149,2026-08-01 22:51:04,2026-08-04 07:51:04,Radio,Alta,Cerrada,Interferencia,true,436,Energy Monitor
+ALM-000106,CEL-00166,2026-08-01 23:04:15,2026-08-04 21:04:15,Saturación,Media,Cerrada,Alta demanda,true,165,NMS
+ALM-000107,CEL-00003,2026-08-01 23:17:26,2026-08-02 10:17:26,Hardware,Media,Cerrada,Módulo degradado,false,194,RAN Monitor
+ALM-000108,CEL-00020,2026-08-01 23:30:37,,Software,Baja,Reconocida,Error de configuración,false,128,Energy Monitor
+ALM-000109,CEL-00037,2026-08-01 23:43:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1032,NMS
+ALM-000110,CEL-00054,2026-08-01 23:56:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,581,RAN Monitor
+ALM-000111,CEL-00071,2026-08-02 00:10:10,2026-08-04 15:10:10,Radio,Alta,Cerrada,Interferencia,true,610,Energy Monitor
+ALM-000112,CEL-00088,2026-08-02 00:23:21,2026-08-02 04:23:21,Saturación,Media,Cerrada,Alta demanda,false,139,NMS
+ALM-000113,CEL-00105,2026-08-02 00:36:32,2026-08-02 17:36:32,Hardware,Media,Cerrada,Módulo degradado,true,168,RAN Monitor
+ALM-000114,CEL-00122,2026-08-02 00:49:43,2026-08-03 06:49:43,Software,Baja,Cerrada,Error de configuración,false,102,Energy Monitor
+ALM-000115,CEL-00139,2026-08-02 01:02:54,2026-08-03 20:02:54,Energía,Crítica,Cerrada,Falla de suministro,true,1006,NMS
+ALM-000116,CEL-00156,2026-08-02 01:16:05,2026-08-04 09:16:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,555,RAN Monitor
+ALM-000117,CEL-00173,2026-08-02 01:29:16,2026-08-04 22:29:16,Radio,Alta,Cerrada,Interferencia,true,584,Energy Monitor
+ALM-000118,CEL-00010,2026-08-02 01:42:27,,Saturación,Media,Reconocida,Alta demanda,false,313,NMS
+ALM-000119,CEL-00027,2026-08-02 01:55:38,,Hardware,Media,Reconocida,Módulo degradado,false,142,RAN Monitor
+ALM-000120,CEL-00044,2026-08-02 02:08:49,,Software,Baja,Abierta,Error de configuración,true,76,Energy Monitor
+ALM-000121,CEL-00061,2026-08-02 02:22:00,2026-08-04 03:22:00,Energía,Crítica,Cerrada,Falla de suministro,true,980,NMS
+ALM-000122,CEL-00078,2026-08-02 02:35:11,2026-08-04 16:35:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,529,RAN Monitor
+ALM-000123,CEL-00095,2026-08-02 02:48:22,2026-08-02 05:48:22,Radio,Alta,Cerrada,Interferencia,true,558,Energy Monitor
+ALM-000124,CEL-00112,2026-08-02 03:01:33,2026-08-02 19:01:33,Saturación,Media,Cerrada,Alta demanda,false,287,NMS
+ALM-000125,CEL-00129,2026-08-02 03:14:44,2026-08-03 08:14:44,Hardware,Media,Cerrada,Módulo degradado,false,316,RAN Monitor
+ALM-000126,CEL-00146,2026-08-02 03:27:55,2026-08-03 21:27:55,Software,Baja,Cerrada,Error de configuración,false,50,Energy Monitor
+ALM-000127,CEL-00163,2026-08-02 03:41:06,2026-08-04 10:41:06,Energía,Crítica,Cerrada,Falla de suministro,true,954,NMS
+ALM-000128,CEL-00180,2026-08-02 03:54:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,503,RAN Monitor
+ALM-000129,CEL-00017,2026-08-02 04:07:28,,Radio,Alta,Reconocida,Interferencia,true,532,Energy Monitor
+ALM-000130,CEL-00034,2026-08-02 04:20:39,,Saturación,Media,Abierta,Alta demanda,false,261,NMS
+ALM-000131,CEL-00051,2026-08-02 04:33:50,2026-08-03 15:33:50,Hardware,Media,Cerrada,Módulo degradado,false,290,RAN Monitor
+ALM-000132,CEL-00068,2026-08-02 04:47:01,2026-08-04 04:47:01,Software,Baja,Cerrada,Error de configuración,false,224,Energy Monitor
+ALM-000133,CEL-00085,2026-08-02 05:00:12,2026-08-04 18:00:12,Energía,Crítica,Cerrada,Falla de suministro,true,928,NMS
+ALM-000134,CEL-00102,2026-08-02 05:13:23,2026-08-02 07:13:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,477,RAN Monitor
+ALM-000135,CEL-00119,2026-08-02 05:26:34,2026-08-02 20:26:34,Radio,Alta,Cerrada,Interferencia,true,506,Energy Monitor
+ALM-000136,CEL-00136,2026-08-02 05:39:45,2026-08-03 09:39:45,Saturación,Media,Cerrada,Alta demanda,false,235,NMS
+ALM-000137,CEL-00153,2026-08-02 05:52:56,2026-08-03 22:52:56,Hardware,Media,Cerrada,Módulo degradado,false,264,RAN Monitor
+ALM-000138,CEL-00170,2026-08-02 06:06:07,,Software,Baja,Reconocida,Error de configuración,false,198,Energy Monitor
+ALM-000139,CEL-00007,2026-08-02 06:19:18,,Energía,Crítica,Reconocida,Falla de suministro,true,902,NMS
+ALM-000140,CEL-00024,2026-08-02 06:32:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,451,RAN Monitor
+ALM-000141,CEL-00041,2026-08-02 06:45:40,2026-08-03 03:45:40,Radio,Alta,Cerrada,Interferencia,true,480,Energy Monitor
+ALM-000142,CEL-00058,2026-08-02 06:58:51,2026-08-03 16:58:51,Saturación,Media,Cerrada,Alta demanda,false,209,NMS
+ALM-000143,CEL-00075,2026-08-02 07:12:02,2026-08-04 06:12:02,Hardware,Media,Cerrada,Módulo degradado,false,238,RAN Monitor
+ALM-000144,CEL-00092,2026-08-02 07:25:13,2026-08-04 19:25:13,Software,Baja,Cerrada,Error de configuración,false,172,Energy Monitor
+ALM-000145,CEL-00109,2026-08-02 07:38:24,2026-08-02 08:38:24,Energía,Crítica,Cerrada,Falla de suministro,true,1076,NMS
+ALM-000146,CEL-00126,2026-08-02 07:51:35,2026-08-02 21:51:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,425,RAN Monitor
+ALM-000147,CEL-00143,2026-08-02 08:04:46,2026-08-03 11:04:46,Radio,Alta,Cerrada,Interferencia,true,454,Energy Monitor
+ALM-000148,CEL-00160,2026-08-02 08:17:57,,Saturación,Media,Reconocida,Alta demanda,true,183,NMS
+ALM-000149,CEL-00177,2026-08-02 08:31:08,,Hardware,Media,Reconocida,Módulo degradado,false,212,RAN Monitor
+ALM-000150,CEL-00014,2026-08-02 08:44:19,,Software,Baja,Abierta,Error de configuración,false,146,Energy Monitor
+ALM-000151,CEL-00031,2026-08-02 08:57:30,2026-08-02 15:57:30,Energía,Crítica,Cerrada,Falla de suministro,true,1050,NMS
+ALM-000152,CEL-00048,2026-08-02 09:10:41,2026-08-03 05:10:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,599,RAN Monitor
+ALM-000153,CEL-00065,2026-08-02 09:23:52,2026-08-03 18:23:52,Radio,Alta,Cerrada,Interferencia,true,428,Energy Monitor
+ALM-000154,CEL-00082,2026-08-02 09:37:03,2026-08-04 07:37:03,Saturación,Media,Cerrada,Alta demanda,false,157,NMS
+ALM-000155,CEL-00099,2026-08-02 09:50:14,2026-08-04 20:50:14,Hardware,Media,Cerrada,Módulo degradado,true,186,RAN Monitor
+ALM-000156,CEL-00116,2026-08-02 10:03:25,2026-08-05 10:03:25,Software,Baja,Cerrada,Error de configuración,false,120,Energy Monitor
+ALM-000157,CEL-00133,2026-08-02 10:16:36,2026-08-02 23:16:36,Energía,Crítica,Cerrada,Falla de suministro,true,1024,NMS
+ALM-000158,CEL-99999,2026-08-02 10:29:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,573,RAN Monitor
+ALM-000159,CEL-00167,2026-08-02 10:42:58,,Radio,Alta,Reconocida,Interferencia,true,602,Energy Monitor
+ALM-000160,CEL-00004,2026-08-02 10:56:09,,Saturación,Media,Abierta,Alta demanda,false,131,NMS
+ALM-000161,CEL-00021,2026-08-02 11:09:20,2026-08-05 04:09:20,Hardware,Media,Cerrada,Módulo degradado,false,160,RAN Monitor
+ALM-000162,CEL-00038,2026-08-02 11:22:31,2026-08-02 17:22:31,Software,Baja,Cerrada,Error de configuración,true,94,Energy Monitor
+ALM-000163,CEL-00055,2026-08-02 11:35:42,2026-08-03 06:35:42,Energía,Crítica,Cerrada,Falla de suministro,true,998,NMS
+ALM-000164,CEL-00072,2026-08-02 11:48:53,2026-08-03 19:48:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,547,RAN Monitor
+ALM-000165,CEL-00089,2026-08-02 12:02:04,2026-08-04 09:02:04,Radio,Alta,Cerrada,Interferencia,true,576,Energy Monitor
+ALM-000166,CEL-00106,2026-08-02 12:15:15,2026-08-04 22:15:15,Saturación,Media,Cerrada,Alta demanda,false,305,NMS
+ALM-000167,CEL-00123,2026-08-02 12:28:26,2026-08-05 11:28:26,Hardware,Media,Cerrada,Módulo degradado,false,134,RAN Monitor
+ALM-000168,CEL-00140,2026-08-02 12:41:37,,Software,Baja,Reconocida,Error de configuración,false,68,Energy Monitor
+ALM-000169,CEL-00157,2026-08-02 12:54:48,,Energía,Crítica,Reconocida,Falla de suministro,true,972,NMS
+ALM-000170,CEL-00174,2026-08-02 13:07:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,521,RAN Monitor
+ALM-000171,CEL-00011,2026-08-02 13:21:10,2026-08-04 16:21:10,Radio,Alta,Cerrada,Interferencia,true,550,Energy Monitor
+ALM-000172,CEL-00028,2026-08-02 13:34:21,2026-08-05 05:34:21,Saturación,Media,Cerrada,Alta demanda,false,279,NMS
+ALM-000173,CEL-00045,2026-08-02 13:47:32,2026-08-02 18:47:32,Hardware,Media,Cerrada,Módulo degradado,false,308,RAN Monitor
+ALM-000174,CEL-00062,2026-08-02 14:00:43,2026-08-03 08:00:43,Software,Baja,Cerrada,Error de configuración,false,42,Energy Monitor
+ALM-000175,CEL-00079,2026-08-02 14:13:54,2026-08-03 21:13:54,Energía,Crítica,Cerrada,Falla de suministro,true,946,NMS
+ALM-000176,CEL-00096,2026-08-02 14:27:05,2026-08-04 10:27:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,495,RAN Monitor
+ALM-000177,CEL-00113,2026-08-02 14:40:16,2026-08-04 23:40:16,Radio,Alta,Cerrada,Interferencia,true,524,Energy Monitor
+ALM-000178,CEL-00130,2026-08-02 14:53:27,,Saturación,Media,Reconocida,Alta demanda,false,253,NMS
+ALM-000179,CEL-00147,2026-08-02 15:06:38,,Hardware,Media,Reconocida,Módulo degradado,false,282,RAN Monitor
+ALM-000180,CEL-00164,2026-08-02 15:19:49,,Software,Baja,Abierta,Error de configuración,false,216,Energy Monitor
+ALM-000181,CEL-00001,2026-08-02 15:33:00,2026-08-04 04:33:00,Energía,Crítica,Cerrada,Falla de suministro,true,920,NMS
+ALM-000182,CEL-00018,2026-08-02 15:46:11,2026-08-04 17:46:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,469,RAN Monitor
+ALM-000183,CEL-00035,2026-08-02 15:59:22,2026-08-05 06:59:22,Radio,Alta,Cerrada,Interferencia,true,498,Energy Monitor
+ALM-000184,CEL-00052,2026-08-02 16:12:33,2026-08-02 20:12:33,Saturación,Media,Cerrada,Alta demanda,false,227,NMS
+ALM-000185,CEL-00069,2026-08-02 16:25:44,2026-08-03 09:25:44,Hardware,Media,Cerrada,Módulo degradado,false,256,RAN Monitor
+ALM-000186,CEL-00086,2026-08-02 16:38:55,2026-08-03 22:38:55,Software,Baja,Cerrada,Error de configuración,false,190,Energy Monitor
+ALM-000187,CEL-00103,2026-08-02 16:52:06,2026-08-04 11:52:06,Energía,Crítica,Cerrada,Falla de suministro,true,1094,NMS
+ALM-000188,CEL-00120,2026-08-02 17:05:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,443,RAN Monitor
+ALM-000189,CEL-00137,2026-08-02 17:18:28,,Radio,Alta,Reconocida,Interferencia,true,472,Energy Monitor
+ALM-000190,CEL-00154,2026-08-02 17:31:39,,Saturación,Media,Abierta,Alta demanda,true,201,NMS
+ALM-000191,CEL-00171,2026-08-02 17:44:50,2026-08-03 16:44:50,Hardware,Media,Cerrada,Módulo degradado,false,230,RAN Monitor
+ALM-000192,CEL-00008,2026-08-02 17:58:01,2026-08-04 05:58:01,Software,Baja,Cerrada,Error de configuración,false,164,Energy Monitor
+ALM-000193,CEL-00025,2026-08-02 18:11:12,2026-08-04 19:11:12,Energía,Crítica,Cerrada,Falla de suministro,true,1068,NMS
+ALM-000194,CEL-00042,2026-08-02 18:24:23,2026-08-05 08:24:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,617,RAN Monitor
+ALM-000195,CEL-00059,2026-08-02 18:37:34,2026-08-02 21:37:34,Radio,Alta,Cerrada,Interferencia,true,446,Energy Monitor
+ALM-000196,CEL-00076,2026-08-02 18:50:45,2026-08-03 10:50:45,Saturación,Media,Cerrada,Alta demanda,false,175,NMS
+ALM-000197,CEL-00093,2026-08-02 19:03:56,2026-08-04 00:03:56,Hardware,Media,Cerrada,Módulo degradado,true,204,RAN Monitor
+ALM-000198,CEL-00110,2026-08-02 19:17:07,,Software,Baja,Reconocida,Error de configuración,false,138,Energy Monitor
+ALM-000199,CEL-00127,2026-08-02 19:30:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1042,NMS
+ALM-000200,CEL-00144,2026-08-02 19:43:29,2026-08-02 17:43:29,Transporte,Alta,Abierta,Pérdida de enlace,true,591,RAN Monitor
+ALM-000201,CEL-00161,2026-08-02 19:56:40,2026-08-03 04:56:40,Radio,Alta,Cerrada,Interferencia,true,420,Energy Monitor
+ALM-000202,CEL-00178,2026-08-02 20:09:51,2026-08-03 18:09:51,Saturación,Media,Cerrada,Alta demanda,false,149,NMS
+ALM-000203,CEL-00015,2026-08-02 20:23:02,2026-08-04 07:23:02,Hardware,Media,Cerrada,Módulo degradado,false,178,RAN Monitor
+ALM-000204,CEL-00032,2026-08-02 20:36:13,2026-08-04 20:36:13,Software,Baja,Cerrada,Error de configuración,true,112,Energy Monitor
+ALM-000205,CEL-00049,2026-08-02 20:49:24,2026-08-05 09:49:24,Energía,Crítica,Cerrada,Falla de suministro,true,1016,NMS
+ALM-000206,CEL-00066,2026-08-02 21:02:35,2026-08-02 23:02:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,565,RAN Monitor
+ALM-000207,CEL-00083,2026-08-02 21:15:46,2026-08-03 12:15:46,Radio,Alta,Cerrada,Interferencia,true,594,Energy Monitor
+ALM-000208,CEL-00100,2026-08-02 21:28:57,,Saturación,Media,Reconocida,Alta demanda,false,123,NMS
+ALM-000209,CEL-00117,2026-08-02 21:42:08,,Hardware,Media,Reconocida,Módulo degradado,false,152,RAN Monitor
+ALM-000210,CEL-00134,2026-08-02 21:55:19,,Software,Baja,Abierta,Error de configuración,false,86,Energy Monitor
+ALM-000211,CEL-00151,2026-08-02 22:08:30,2026-08-05 17:08:30,Energía,Crítica,Cerrada,Falla de suministro,true,990,NMS
+ALM-000211,CEL-00168,2026-08-02 22:21:41,2026-08-03 06:21:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,539,RAN Monitor
+ALM-000213,CEL-00005,2026-08-02 22:34:52,2026-08-03 19:34:52,Radio,Alta,Cerrada,Interferencia,true,568,Energy Monitor
+ALM-000214,CEL-00022,2026-08-02 22:48:03,2026-08-04 08:48:03,Saturación,Media,Cerrada,Alta demanda,false,297,NMS
+ALM-000215,CEL-00039,2026-08-02 23:01:14,2026-08-04 22:01:14,Hardware,Media,Cerrada,Módulo degradado,false,126,RAN Monitor
+ALM-000216,CEL-00056,2026-08-02 23:14:25,2026-08-05 11:14:25,Software,Baja,Cerrada,Error de configuración,false,60,Energy Monitor
+ALM-000217,CEL-00073,2026-08-02 23:27:36,2026-08-03 00:27:36,Energía,Crítica,Cerrada,Falla de suministro,true,964,NMS
+ALM-000218,CEL-00090,2026-08-02 23:40:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,513,RAN Monitor
+ALM-000219,CEL-00107,2026-08-02 23:53:58,,Radio,Alta,Reconocida,Interferencia,true,542,Energy Monitor
+ALM-000220,CEL-00124,2026-08-03 00:07:09,,Saturación,Media,Abierta,Alta demanda,false,271,NMS
+ALM-000221,CEL-00141,2026-08-03 00:20:20,2026-08-05 05:20:20,Hardware,Media,Cerrada,Módulo degradado,false,300,RAN Monitor
+ALM-000222,CEL-00158,2026-08-03 00:33:31,2026-08-05 18:33:31,Software,Baja,Cerrada,Error de configuración,false,34,Energy Monitor
+ALM-000223,CEL-00175,2026-08-03 00:46:42,2026-08-03 07:46:42,Energía,Crítica,Cerrada,Falla de suministro,true,938,NMS
+ALM-000224,CEL-00012,2026-08-03 00:59:53,2026-08-03 20:59:53,Transporte,Urgente,Cerrada,Pérdida de enlace,true,487,RAN Monitor
+ALM-000225,CEL-00029,2026-08-03 01:13:04,2026-08-04 10:13:04,Radio,Alta,Cerrada,Interferencia,true,516,Energy Monitor
+ALM-000226,CEL-00046,2026-08-03 01:26:15,2026-08-04 23:26:15,Saturación,Media,Cerrada,Alta demanda,false,245,NMS
+ALM-000227,CEL-00063,2026-08-03 01:39:26,2026-08-05 12:39:26,Hardware,Media,Cerrada,Módulo degradado,false,274,RAN Monitor
+ALM-000228,CEL-00080,2026-08-03 01:52:37,,Software,Baja,Reconocida,Error de configuración,false,208,Energy Monitor
+ALM-000229,CEL-00097,2026-08-03 02:05:48,,Energía,Crítica,Reconocida,Falla de suministro,true,912,NMS
+ALM-000230,CEL-00114,2026-08-03 02:18:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,461,RAN Monitor
+ALM-000231,CEL-00131,2026-08-03 02:32:10,2026-08-04 17:32:10,Radio,Alta,Cerrada,Interferencia,true,490,Energy Monitor
+ALM-000232,CEL-00148,2026-08-03 02:45:21,2026-08-05 06:45:21,Saturación,Media,Cerrada,Alta demanda,true,219,NMS
+ALM-000233,CEL-00165,2026-08-03 02:58:32,2026-08-05 19:58:32,Hardware,Media,Cerrada,Módulo degradado,false,248,RAN Monitor
+ALM-000234,CEL-00002,2026-08-03 03:11:43,2026-08-03 09:11:43,Software,Baja,Cerrada,Error de configuración,false,182,Energy Monitor
+ALM-000235,CEL-00019,2026-08-03 03:24:54,2026-08-03 22:24:54,Energía,Crítica,Cerrada,Falla de suministro,true,1086,NMS
+ALM-000236,CEL-00036,2026-08-03 03:38:05,2026-08-04 11:38:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,435,RAN Monitor
+ALM-000237,CEL-00053,2026-08-03 03:51:16,2026-08-05 00:51:16,Radio,Alta,Cerrada,Interferencia,true,464,Energy Monitor
+ALM-000238,CEL-00070,2026-08-03 04:04:27,,Saturación,Media,Reconocida,Alta demanda,false,193,NMS
+ALM-000239,CEL-00087,2026-08-03 04:17:38,,Hardware,Media,Reconocida,Módulo degradado,true,222,RAN Monitor
+ALM-000240,CEL-00104,2026-08-03 04:30:49,,Software,Baja,Abierta,Error de configuración,false,156,Energy Monitor
+ALM-000241,CEL-00121,2026-08-03 04:44:00,2026-08-04 05:44:00,Energía,Crítica,Cerrada,Falla de suministro,true,1060,NMS
+ALM-000242,CEL-00138,2026-08-03 04:57:11,2026-08-04 18:57:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,609,RAN Monitor
+ALM-000243,CEL-00155,2026-08-03 05:10:22,2026-08-05 08:10:22,Radio,Alta,Cerrada,Interferencia,true,438,Energy Monitor
+ALM-000244,CEL-00172,2026-08-03 05:23:33,2026-08-05 21:23:33,Saturación,Media,Cerrada,Alta demanda,false,167,NMS
+ALM-000245,CEL-00009,2026-08-03 05:36:44,2026-08-03 10:36:44,Hardware,Media,Cerrada,Módulo degradado,false,196,RAN Monitor
+ALM-000246,CEL-00026,2026-08-03 05:49:55,2026-08-03 23:49:55,Software,Baja,Cerrada,Error de configuración,true,130,Energy Monitor
+ALM-000247,CEL-00043,2026-08-03 06:03:06,2026-08-04 13:03:06,Energía,Crítica,Cerrada,Falla de suministro,true,1034,NMS
+ALM-000248,CEL-00060,2026-08-03 06:16:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,583,RAN Monitor
+ALM-000249,CEL-00077,2026-08-03 06:29:28,,Radio,Alta,Reconocida,Interferencia,true,612,Energy Monitor
+ALM-000250,CEL-00094,2026-08-03 06:42:39,,Saturación,Media,Abierta,Alta demanda,false,141,NMS
+ALM-000251,CEL-00111,2026-08-03 06:55:50,2026-08-03 17:55:50,Hardware,Media,Cerrada,Módulo degradado,false,170,RAN Monitor
+ALM-000252,CEL-00128,2026-08-03 07:09:01,2026-08-04 07:09:01,Software,Baja,Cerrada,Error de configuración,false,104,Energy Monitor
+ALM-000253,CEL-00145,2026-08-03 07:22:12,2026-08-04 20:22:12,Energía,Crítica,Cerrada,Falla de suministro,true,1008,NMS
+ALM-000254,CEL-00162,2026-08-03 07:35:23,2026-08-05 09:35:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,557,RAN Monitor
+ALM-000255,CEL-00179,2026-08-03 07:48:34,2026-08-05 22:48:34,Radio,Alta,Cerrada,Interferencia,true,586,Energy Monitor
+ALM-000256,CEL-00016,2026-08-03 08:01:45,2026-08-03 12:01:45,Saturación,Media,Cerrada,Alta demanda,false,315,NMS
+ALM-000257,CEL-00033,2026-08-03 08:14:56,2026-08-04 01:14:56,Hardware,Media,Cerrada,Módulo degradado,false,144,RAN Monitor
+ALM-000258,CEL-00050,2026-08-03 08:28:07,,Software,Baja,Reconocida,Error de configuración,false,78,Energy Monitor
+ALM-000259,CEL-00067,2026-08-03 08:41:18,,Energía,Crítica,Reconocida,Falla de suministro,true,982,NMS
+ALM-000260,CEL-00084,2026-08-03 08:54:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,531,RAN Monitor
+ALM-000261,CEL-00101,2026-08-03 09:07:40,2026-08-06 06:07:40,Radio,Alta,Cerrada,Interferencia,true,560,Energy Monitor
+ALM-000262,CEL-00118,2026-08-03 09:20:51,2026-08-03 19:20:51,Saturación,Media,Cerrada,Alta demanda,false,289,NMS
+ALM-000263,CEL-00135,2026-08-03 09:34:02,2026-08-04 08:34:02,Hardware,Media,Cerrada,Módulo degradado,false,318,RAN Monitor
+ALM-000264,CEL-00152,2026-08-03 09:47:13,2026-08-04 21:47:13,Software,Baja,Cerrada,Error de configuración,false,52,Energy Monitor
+ALM-000265,CEL-00169,2026-08-03 10:00:24,2026-08-05 11:00:24,Energía,Crítica,Cerrada,Falla de suministro,true,956,NMS
+ALM-000266,CEL-00006,2026-08-03 10:13:35,2026-08-06 00:13:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,505,RAN Monitor
+ALM-000267,CEL-00023,2026-08-03 10:26:46,2026-08-03 13:26:46,Radio,Alta,Cerrada,Interferencia,true,534,Energy Monitor
+ALM-000268,CEL-00040,2026-08-03 10:39:57,,Saturación,Media,Reconocida,Alta demanda,false,263,NMS
+ALM-000269,CEL-00057,2026-08-03 10:53:08,,Hardware,Media,Reconocida,Módulo degradado,false,292,RAN Monitor
+ALM-000270,CEL-00074,2026-08-03 11:06:19,,Software,Baja,Abierta,Error de configuración,false,26,Energy Monitor
+ALM-000271,CEL-00091,2026-08-03 11:19:30,2026-08-05 18:19:30,Energía,Crítica,Cerrada,Falla de suministro,true,930,NMS
+ALM-000272,CEL-00108,2026-08-03 11:32:41,2026-08-06 07:32:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,479,RAN Monitor
+ALM-000273,CEL-00125,2026-08-03 11:45:52,2026-08-03 20:45:52,Radio,Alta,Cerrada,Interferencia,true,508,Energy Monitor
+ALM-000274,CEL-00142,2026-08-03 11:59:03,2026-08-04 09:59:03,Saturación,Media,Cerrada,Alta demanda,true,237,NMS
+ALM-000275,CEL-00159,2026-08-03 12:12:14,2026-08-04 23:12:14,Hardware,Media,Cerrada,Módulo degradado,false,266,RAN Monitor
+ALM-000276,CEL-00176,2026-08-03 12:25:25,2026-08-05 12:25:25,Software,Baja,Cerrada,Error de configuración,false,200,Energy Monitor
+ALM-000277,CEL-00013,2026-08-03 12:38:36,2026-08-06 01:38:36,Energía,Crítica,Cerrada,Falla de suministro,true,904,NMS
+ALM-000278,CEL-00030,2026-08-03 12:51:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,453,RAN Monitor
+ALM-000279,CEL-00047,2026-08-03 13:04:58,,Radio,Alta,Reconocida,Interferencia,true,482,Energy Monitor
+ALM-000280,CEL-00064,2026-08-03 13:18:09,,Saturación,Media,Abierta,Alta demanda,false,211,NMS
+ALM-000281,CEL-00081,2026-08-03 13:31:20,2026-08-05 06:31:20,Hardware,Media,Cerrada,Módulo degradado,true,240,RAN Monitor
+ALM-000282,CEL-00098,2026-08-03 13:44:31,2026-08-05 19:44:31,Software,Baja,Cerrada,Error de configuración,false,174,Energy Monitor
+ALM-000283,CEL-00115,2026-08-03 13:57:42,2026-08-06 08:57:42,Energía,Crítica,Cerrada,Falla de suministro,true,1078,NMS
+ALM-000284,CEL-00132,2026-08-03 14:10:53,2026-08-03 22:10:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,427,RAN Monitor
+ALM-000285,CEL-00149,2026-08-03 14:24:04,2026-08-04 11:24:04,Radio,Alta,Cerrada,Interferencia,true,456,Energy Monitor
+ALM-000286,CEL-00166,2026-08-03 14:37:15,2026-08-05 00:37:15,Saturación,Media,Cerrada,Alta demanda,false,185,NMS
+ALM-000287,CEL-00003,2026-08-03 14:50:26,2026-08-05 13:50:26,Hardware,Media,Cerrada,Módulo degradado,false,214,RAN Monitor
+ALM-000288,CEL-00020,2026-08-03 15:03:37,,Software,Baja,Reconocida,Error de configuración,true,148,Energy Monitor
+ALM-000289,CEL-00037,2026-08-03 15:16:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1052,NMS
+ALM-000290,CEL-00054,2026-08-03 15:29:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,601,RAN Monitor
+ALM-000291,CEL-00071,2026-08-03 15:43:10,2026-08-04 18:43:10,Radio,Alta,Cerrada,Interferencia,true,430,Energy Monitor
+ALM-000292,CEL-00088,2026-08-03 15:56:21,2026-08-05 07:56:21,Saturación,Media,Cerrada,Alta demanda,false,159,NMS
+ALM-000293,CEL-00105,2026-08-03 16:09:32,2026-08-05 21:09:32,Hardware,Media,Cerrada,Módulo degradado,false,188,RAN Monitor
+ALM-000294,CEL-00122,2026-08-03 16:22:43,2026-08-06 10:22:43,Software,Baja,Cerrada,Error de configuración,false,122,Energy Monitor
+ALM-000295,CEL-00139,2026-08-03 16:35:54,2026-08-03 23:35:54,Energía,Crítica,Cerrada,Falla de suministro,true,1026,NMS
+ALM-000296,CEL-00156,2026-08-03 16:49:05,2026-08-04 12:49:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,575,RAN Monitor
+ALM-000297,CEL-00173,2026-08-03 17:02:16,2026-08-05 02:02:16,Radio,Alta,Cerrada,Interferencia,true,604,Energy Monitor
+ALM-000298,CEL-00010,2026-08-03 17:15:27,,Saturación,Media,Reconocida,Alta demanda,false,133,NMS
+ALM-000299,CEL-00027,2026-08-03 17:28:38,,Hardware,Media,Reconocida,Módulo degradado,false,162,RAN Monitor
+ALM-000300,CEL-00044,2026-08-03 17:41:49,,Software,Baja,Abierta,Error de configuración,false,96,Energy Monitor
+ALM-000301,CEL-00061,2026-08-03 17:55:00,2026-08-04 06:55:00,Energía,Crítica,Cerrada,Falla de suministro,true,1000,NMS
+ALM-000302,CEL-00078,2026-08-03 18:08:11,2026-08-04 20:08:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,549,RAN Monitor
+ALM-000303,CEL-00095,2026-08-03 18:21:22,2026-08-05 09:21:22,Radio,Alta,Cerrada,Interferencia,true,578,Energy Monitor
+ALM-000304,CEL-00112,2026-08-03 18:34:33,2026-08-05 22:34:33,Saturación,Media,Cerrada,Alta demanda,false,307,NMS
+ALM-000305,CEL-00129,2026-08-03 18:47:44,2026-08-06 11:47:44,Hardware,Media,Cerrada,Módulo degradado,false,136,RAN Monitor
+ALM-000306,CEL-00146,2026-08-03 19:00:55,2026-08-04 01:00:55,Software,Baja,Cerrada,Error de configuración,false,70,Energy Monitor
+ALM-000307,CEL-00163,2026-08-03 19:14:06,2026-08-04 14:14:06,Energía,Crítica,Cerrada,Falla de suministro,true,974,NMS
+ALM-000308,CEL-00180,2026-08-03 19:27:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,523,RAN Monitor
+ALM-000309,CEL-00017,2026-08-03 19:40:28,,Radio,Alta,Reconocida,Interferencia,true,552,Energy Monitor
+ALM-000310,CEL-00034,2026-08-03 19:53:39,,Saturación,Media,Abierta,Alta demanda,false,281,NMS
+ALM-000311,CEL-00051,2026-08-03 20:06:50,2026-08-06 19:06:50,Hardware,Media,Cerrada,Módulo degradado,false,310,RAN Monitor
+ALM-000312,CEL-00068,2026-08-03 20:20:01,2026-08-04 08:20:01,Software,Baja,Cerrada,Error de configuración,false,44,Energy Monitor
+ALM-000313,CEL-00085,2026-08-03 20:33:12,2026-08-04 21:33:12,Energía,Crítica,Cerrada,Falla de suministro,true,948,NMS
+ALM-000314,CEL-00102,2026-08-03 20:46:23,2026-08-05 10:46:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,497,RAN Monitor
+ALM-000315,CEL-99999,2026-08-03 20:59:34,2026-08-05 23:59:34,Radio,Alta,Cerrada,Interferencia,true,526,Energy Monitor
+ALM-000316,CEL-00136,2026-08-03 21:12:45,2026-08-06 13:12:45,Saturación,Media,Cerrada,Alta demanda,true,255,NMS
+ALM-000317,CEL-00153,2026-08-03 21:25:56,2026-08-04 02:25:56,Hardware,Media,Cerrada,Módulo degradado,false,284,RAN Monitor
+ALM-000318,CEL-00170,2026-08-03 21:39:07,,Software,Baja,Reconocida,Error de configuración,false,218,Energy Monitor
+ALM-000319,CEL-00007,2026-08-03 21:52:18,,Energía,Crítica,Reconocida,Falla de suministro,true,922,NMS
+ALM-000320,CEL-00024,2026-08-03 22:05:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,471,RAN Monitor
+ALM-000321,CEL-00041,2026-08-03 22:18:40,2026-08-06 07:18:40,Radio,Alta,Cerrada,Interferencia,true,500,Energy Monitor
+ALM-000322,CEL-00058,2026-08-03 22:31:51,2026-08-06 20:31:51,Saturación,Media,Cerrada,Alta demanda,false,229,NMS
+ALM-000323,CEL-00075,2026-08-03 22:45:02,2026-08-04 09:45:02,Hardware,Media,Cerrada,Módulo degradado,true,258,RAN Monitor
+ALM-000324,CEL-00092,2026-08-03 22:58:13,2026-08-04 22:58:13,Software,Baja,Cerrada,Error de configuración,false,192,Energy Monitor
+ALM-000325,CEL-00109,2026-08-03 23:11:24,2026-08-05 12:11:24,Energía,Crítica,Cerrada,Falla de suministro,true,1096,NMS
+ALM-000326,CEL-00126,2026-08-03 23:24:35,2026-08-06 01:24:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,445,RAN Monitor
+ALM-000327,CEL-00143,2026-08-03 23:37:46,2026-08-06 14:37:46,Radio,Alta,Cerrada,Interferencia,true,474,Energy Monitor
+ALM-000328,CEL-00160,2026-08-03 23:50:57,,Saturación,Media,Reconocida,Alta demanda,false,203,NMS
+ALM-000329,CEL-00177,2026-08-04 00:04:08,,Hardware,Media,Reconocida,Módulo degradado,false,232,RAN Monitor
+ALM-000330,CEL-00014,2026-08-04 00:17:19,,Software,Baja,Abierta,Error de configuración,true,166,Energy Monitor
+ALM-000331,CEL-00031,2026-08-04 00:30:30,2026-08-05 19:30:30,Energía,Crítica,Cerrada,Falla de suministro,true,1070,NMS
+ALM-000332,CEL-00048,2026-08-04 00:43:41,2026-08-06 08:43:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,619,RAN Monitor
+ALM-000333,CEL-00065,2026-08-04 00:56:52,2026-08-06 21:56:52,Radio,Alta,Cerrada,Interferencia,true,448,Energy Monitor
+ALM-000334,CEL-00082,2026-08-04 01:10:03,2026-08-04 11:10:03,Saturación,Media,Cerrada,Alta demanda,false,177,NMS
+ALM-000335,CEL-00099,2026-08-04 01:23:14,2026-08-05 00:23:14,Hardware,Media,Cerrada,Módulo degradado,false,206,RAN Monitor
+ALM-000336,CEL-00116,2026-08-04 01:36:25,2026-08-05 13:36:25,Software,Baja,Cerrada,Error de configuración,false,140,Energy Monitor
+ALM-000337,CEL-00133,2026-08-04 01:49:36,2026-08-06 02:49:36,Energía,Crítica,Cerrada,Falla de suministro,true,1044,NMS
+ALM-000338,CEL-00150,2026-08-04 02:02:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,593,RAN Monitor
+ALM-000339,CEL-00167,2026-08-04 02:15:58,,Radio,Alta,Reconocida,Interferencia,true,422,Energy Monitor
+ALM-000340,CEL-00004,2026-08-04 02:29:09,,Saturación,Media,Abierta,Alta demanda,false,151,NMS
+ALM-000341,CEL-00021,2026-08-04 02:42:20,2026-08-05 07:42:20,Hardware,Media,Cerrada,Módulo degradado,false,180,RAN Monitor
+ALM-000342,CEL-00038,2026-08-04 02:55:31,2026-08-05 20:55:31,Software,Baja,Cerrada,Error de configuración,false,114,Energy Monitor
+ALM-000343,CEL-00055,2026-08-04 03:08:42,2026-08-06 10:08:42,Energía,Crítica,Cerrada,Falla de suministro,true,1018,NMS
+ALM-000344,CEL-00072,2026-08-04 03:21:53,2026-08-06 23:21:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,567,RAN Monitor
+ALM-000345,CEL-00089,2026-08-04 03:35:04,2026-08-04 12:35:04,Radio,Alta,Cerrada,Interferencia,true,596,Energy Monitor
+ALM-000346,CEL-00106,2026-08-04 03:48:15,2026-08-05 01:48:15,Saturación,Media,Cerrada,Alta demanda,false,125,NMS
+ALM-000347,CEL-00123,2026-08-04 04:01:26,2026-08-05 15:01:26,Hardware,Media,Cerrada,Módulo degradado,false,154,RAN Monitor
+ALM-000348,CEL-00140,2026-08-04 04:14:37,,Software,Baja,Reconocida,Error de configuración,false,88,Energy Monitor
+ALM-000349,CEL-00157,2026-08-04 04:27:48,,Energía,Crítica,Reconocida,Falla de suministro,true,992,NMS
+ALM-000350,CEL-00174,2026-08-04 04:40:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,541,RAN Monitor
+ALM-000351,CEL-00011,2026-08-04 04:54:10,2026-08-04 19:54:10,Radio,Alta,Cerrada,Interferencia,true,570,Energy Monitor
+ALM-000352,CEL-00028,2026-08-04 05:07:21,2026-08-05 09:07:21,Saturación,Media,Cerrada,Alta demanda,false,299,NMS
+ALM-000353,CEL-00045,2026-08-04 05:20:32,2026-08-05 22:20:32,Hardware,Media,Cerrada,Módulo degradado,false,128,RAN Monitor
+ALM-000354,CEL-00062,2026-08-04 05:33:43,2026-08-06 11:33:43,Software,Baja,Cerrada,Error de configuración,false,62,Energy Monitor
+ALM-000355,CEL-00079,2026-08-04 05:46:54,2026-08-07 00:46:54,Energía,Crítica,Cerrada,Falla de suministro,true,966,NMS
+ALM-000356,CEL-00096,2026-08-04 06:00:05,2026-08-04 14:00:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,515,RAN Monitor
+ALM-000357,CEL-00113,2026-08-04 06:13:16,2026-08-05 03:13:16,Radio,Alta,Cerrada,Interferencia,true,544,Energy Monitor
+ALM-000358,CEL-00130,2026-08-04 06:26:27,,Saturación,Media,Reconocida,Alta demanda,true,273,NMS
+ALM-000359,CEL-00147,2026-08-04 06:39:38,,Hardware,Media,Reconocida,Módulo degradado,false,302,RAN Monitor
+ALM-000360,CEL-00164,2026-08-04 06:52:49,,Software,Baja,Abierta,Error de configuración,false,36,Energy Monitor
+ALM-000361,CEL-00001,2026-08-04 07:06:00,2026-08-04 08:06:00,Energía,Crítica,Cerrada,Falla de suministro,true,940,NMS
+ALM-000362,CEL-00018,2026-08-04 07:19:11,2026-08-04 21:19:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,489,RAN Monitor
+ALM-000363,CEL-00035,2026-08-04 07:32:22,2026-08-05 10:32:22,Radio,Alta,Cerrada,Interferencia,true,518,Energy Monitor
+ALM-000364,CEL-00052,2026-08-04 07:45:33,2026-08-05 23:45:33,Saturación,Media,Cerrada,Alta demanda,false,247,NMS
+ALM-000365,CEL-00069,2026-08-04 07:58:44,2026-08-06 12:58:44,Hardware,Media,Cerrada,Módulo degradado,true,276,RAN Monitor
+ALM-000366,CEL-00086,2026-08-04 08:11:55,2026-08-07 02:11:55,Software,Baja,Cerrada,Error de configuración,false,210,Energy Monitor
+ALM-000367,CEL-00103,2026-08-04 08:25:06,2026-08-04 15:25:06,Energía,Crítica,Cerrada,Falla de suministro,true,914,NMS
+ALM-000368,CEL-00120,2026-08-04 08:38:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,463,RAN Monitor
+ALM-000369,CEL-00137,2026-08-04 08:51:28,,Radio,Alta,Reconocida,Interferencia,true,492,Energy Monitor
+ALM-000370,CEL-00154,2026-08-04 09:04:39,,Saturación,Media,Abierta,Alta demanda,false,221,NMS
+ALM-000371,CEL-00171,2026-08-04 09:17:50,2026-08-06 20:17:50,Hardware,Media,Cerrada,Módulo degradado,false,250,RAN Monitor
+ALM-000372,CEL-00008,2026-08-04 09:31:01,2026-08-07 09:31:01,Software,Baja,Cerrada,Error de configuración,true,184,Energy Monitor
+ALM-000373,CEL-00025,2026-08-04 09:44:12,2026-08-04 22:44:12,Energía,Crítica,Cerrada,Falla de suministro,true,1088,NMS
+ALM-000374,CEL-00042,2026-08-04 09:57:23,2026-08-05 11:57:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,437,RAN Monitor
+ALM-000375,CEL-00059,2026-08-04 10:10:34,2026-08-06 01:10:34,Radio,Alta,Cerrada,Interferencia,true,466,Energy Monitor
+ALM-000376,CEL-00076,2026-08-04 10:23:45,2026-08-06 14:23:45,Saturación,Media,Cerrada,Alta demanda,false,195,NMS
+ALM-000377,CEL-00093,2026-08-04 10:36:56,2026-08-07 03:36:56,Hardware,Media,Cerrada,Módulo degradado,false,224,RAN Monitor
+ALM-000378,CEL-00110,2026-08-04 10:50:07,,Software,Baja,Reconocida,Error de configuración,false,158,Energy Monitor
+ALM-000379,CEL-00127,2026-08-04 11:03:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1062,NMS
+ALM-000380,CEL-00144,2026-08-04 11:16:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,611,RAN Monitor
+ALM-000381,CEL-00161,2026-08-04 11:29:40,2026-08-06 08:29:40,Radio,Alta,Cerrada,Interferencia,true,440,Energy Monitor
+ALM-000382,CEL-00178,2026-08-04 11:42:51,2026-08-06 21:42:51,Saturación,Media,Cerrada,Alta demanda,false,169,NMS
+ALM-000383,CEL-00015,2026-08-04 11:56:02,2026-08-07 10:56:02,Hardware,Media,Cerrada,Módulo degradado,false,198,RAN Monitor
+ALM-000384,CEL-00032,2026-08-04 12:09:13,2026-08-05 00:09:13,Software,Baja,Cerrada,Error de configuración,false,132,Energy Monitor
+ALM-000385,CEL-00049,2026-08-04 12:22:24,2026-08-05 13:22:24,Energía,Crítica,Cerrada,Falla de suministro,true,1036,NMS
+ALM-000386,CEL-00066,2026-08-04 12:35:35,2026-08-06 02:35:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,585,RAN Monitor
+ALM-000387,CEL-00083,2026-08-04 12:48:46,2026-08-06 15:48:46,Radio,Alta,Cerrada,Interferencia,true,614,Energy Monitor
+ALM-000388,CEL-00100,2026-08-04 13:01:57,,Saturación,Media,Reconocida,Alta demanda,false,143,NMS
+ALM-000389,CEL-00117,2026-08-04 13:15:08,,Hardware,Media,Reconocida,Módulo degradado,false,172,RAN Monitor
+ALM-000390,CEL-00134,2026-08-04 13:28:19,,Software,Baja,Abierta,Error de configuración,false,106,Energy Monitor
+ALM-000391,CEL-00151,2026-08-04 13:41:30,2026-08-05 20:41:30,Energía,Crítica,Cerrada,Falla de suministro,true,1010,NMS
+ALM-000392,CEL-00168,2026-08-04 13:54:41,2026-08-06 09:54:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,559,RAN Monitor
+ALM-000393,CEL-00005,2026-08-04 14:07:52,2026-08-06 23:07:52,Radio,Alta,Cerrada,Interferencia,true,588,Energy Monitor
+ALM-000394,CEL-00022,2026-08-04 14:21:03,2026-08-07 12:21:03,Saturación,Media,Cerrada,Alta demanda,false,317,NMS
+ALM-000395,CEL-00039,2026-08-04 14:34:14,2026-08-05 01:34:14,Hardware,Media,Cerrada,Módulo degradado,false,146,RAN Monitor
+ALM-000396,CEL-00056,2026-08-04 14:47:25,2026-08-05 14:47:25,Software,Baja,Cerrada,Error de configuración,false,80,Energy Monitor
+ALM-000397,CEL-00073,2026-08-04 15:00:36,2026-08-06 04:00:36,Energía,Crítica,Cerrada,Falla de suministro,true,984,NMS
+ALM-000398,CEL-00090,2026-08-04 15:13:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,533,RAN Monitor
+ALM-000399,CEL-00107,2026-08-04 15:26:58,2026-08-04 13:26:58,Radio,Alta,Reconocida,Interferencia,true,562,Energy Monitor
+ALM-000400,CEL-00124,2026-08-04 15:40:09,,Saturación,Media,Abierta,Alta demanda,true,291,NMS
+ALM-000401,CEL-00141,2026-08-04 15:53:20,2026-08-05 08:53:20,Hardware,Media,Cerrada,Módulo degradado,false,120,RAN Monitor
+ALM-000402,CEL-00158,2026-08-04 16:06:31,2026-08-05 22:06:31,Software,Baja,Cerrada,Error de configuración,false,54,Energy Monitor
+ALM-000403,CEL-00175,2026-08-04 16:19:42,2026-08-06 11:19:42,Energía,Crítica,Cerrada,Falla de suministro,true,958,NMS
+ALM-000404,CEL-00012,2026-08-04 16:32:53,2026-08-07 00:32:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,507,RAN Monitor
+ALM-000405,CEL-00029,2026-08-04 16:46:04,2026-08-07 13:46:04,Radio,Alta,Cerrada,Interferencia,true,536,Energy Monitor
+ALM-000406,CEL-00046,2026-08-04 16:59:15,2026-08-05 02:59:15,Saturación,Media,Cerrada,Alta demanda,false,265,NMS
+ALM-000407,CEL-00063,2026-08-04 17:12:26,2026-08-05 16:12:26,Hardware,Media,Cerrada,Módulo degradado,true,294,RAN Monitor
+ALM-000408,CEL-00080,2026-08-04 17:25:37,,Software,Baja,Reconocida,Error de configuración,false,28,Energy Monitor
+ALM-000409,CEL-00097,2026-08-04 17:38:48,,Energía,Crítica,Reconocida,Falla de suministro,true,932,NMS
+ALM-000410,CEL-00114,2026-08-04 17:51:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,481,RAN Monitor
+ALM-000411,CEL-00131,2026-08-04 18:05:10,2026-08-04 21:05:10,Radio,Alta,Cerrada,Interferencia,true,510,Energy Monitor
+ALM-000412,CEL-00148,2026-08-04 18:18:21,2026-08-05 10:18:21,Saturación,Media,Cerrada,Alta demanda,false,239,NMS
+ALM-000413,CEL-00165,2026-08-04 18:31:32,2026-08-05 23:31:32,Hardware,Media,Cerrada,Módulo degradado,false,268,RAN Monitor
+ALM-000414,CEL-00002,2026-08-04 18:44:43,2026-08-06 12:44:43,Software,Baja,Cerrada,Error de configuración,true,202,Energy Monitor
+ALM-000415,CEL-00019,2026-08-04 18:57:54,2026-08-07 01:57:54,Energía,Crítica,Cerrada,Falla de suministro,true,906,NMS
+ALM-000416,CEL-00036,2026-08-04 19:11:05,2026-08-07 15:11:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,455,RAN Monitor
+ALM-000417,CEL-00053,2026-08-04 19:24:16,2026-08-05 04:24:16,Radio,Alta,Cerrada,Interferencia,true,484,Energy Monitor
+ALM-000418,CEL-00070,2026-08-04 19:37:27,,Saturación,Media,Reconocida,Alta demanda,false,213,NMS
+ALM-000419,CEL-00087,2026-08-04 19:50:38,,Hardware,Media,Reconocida,Módulo degradado,false,242,RAN Monitor
+ALM-000420,CEL-00104,2026-08-04 20:03:49,,Software,Baja,Abierta,Error de configuración,false,176,Energy Monitor
+ALM-000421,CEL-00121,2026-08-04 20:17:00,2026-08-07 09:17:00,Energía,Crítica,Cerrada,Falla de suministro,true,1080,NMS
+ALM-000422,CEL-00138,2026-08-04 20:30:11,2026-08-04 22:30:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,429,RAN Monitor
+ALM-000422,CEL-00155,2026-08-04 20:43:22,2026-08-05 11:43:22,Radio,Alta,Cerrada,Interferencia,true,458,Energy Monitor
+ALM-000424,CEL-00172,2026-08-04 20:56:33,2026-08-06 00:56:33,Saturación,Media,Cerrada,Alta demanda,false,187,NMS
+ALM-000425,CEL-00009,2026-08-04 21:09:44,2026-08-06 14:09:44,Hardware,Media,Cerrada,Módulo degradado,false,216,RAN Monitor
+ALM-000426,CEL-00026,2026-08-04 21:22:55,2026-08-07 03:22:55,Software,Baja,Cerrada,Error de configuración,false,150,Energy Monitor
+ALM-000427,CEL-00043,2026-08-04 21:36:06,2026-08-07 16:36:06,Energía,Crítica,Cerrada,Falla de suministro,true,1054,NMS
+ALM-000428,CEL-00060,2026-08-04 21:49:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,603,RAN Monitor
+ALM-000429,CEL-00077,2026-08-04 22:02:28,,Radio,Alta,Reconocida,Interferencia,true,432,Energy Monitor
+ALM-000430,CEL-00094,2026-08-04 22:15:39,,Saturación,Media,Abierta,Alta demanda,false,161,NMS
+ALM-000431,CEL-00111,2026-08-04 22:28:50,2026-08-06 21:28:50,Hardware,Media,Cerrada,Módulo degradado,false,190,RAN Monitor
+ALM-000432,CEL-00128,2026-08-04 22:42:01,2026-08-07 10:42:01,Software,Baja,Cerrada,Error de configuración,false,124,Energy Monitor
+ALM-000433,CEL-00145,2026-08-04 22:55:12,2026-08-04 23:55:12,Energía,Crítica,Cerrada,Falla de suministro,true,1028,NMS
+ALM-000434,CEL-00162,2026-08-04 23:08:23,2026-08-05 13:08:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,577,RAN Monitor
+ALM-000435,CEL-00179,2026-08-04 23:21:34,2026-08-06 02:21:34,Radio,Alta,Cerrada,Interferencia,true,606,Energy Monitor
+ALM-000436,CEL-00016,2026-08-04 23:34:45,2026-08-06 15:34:45,Saturación,Media,Cerrada,Alta demanda,false,135,NMS
+ALM-000437,CEL-00033,2026-08-04 23:47:56,2026-08-07 04:47:56,Hardware,Media,Cerrada,Módulo degradado,false,164,RAN Monitor
+ALM-000438,CEL-00050,2026-08-05 00:01:07,,Software,Baja,Reconocida,Error de configuración,false,98,Energy Monitor
+ALM-000439,CEL-00067,2026-08-05 00:14:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1002,NMS
+ALM-000440,CEL-00084,2026-08-05 00:27:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,551,RAN Monitor
+ALM-000441,CEL-00101,2026-08-05 00:40:40,2026-08-06 09:40:40,Radio,Alta,Cerrada,Interferencia,true,580,Energy Monitor
+ALM-000442,CEL-00118,2026-08-05 00:53:51,2026-08-06 22:53:51,Saturación,Media,Cerrada,Alta demanda,true,309,NMS
+ALM-000443,CEL-00135,2026-08-05 01:07:02,2026-08-07 12:07:02,Hardware,Media,Cerrada,Módulo degradado,false,138,RAN Monitor
+ALM-000444,CEL-00152,2026-08-05 01:20:13,2026-08-08 01:20:13,Software,Baja,Cerrada,Error de configuración,false,72,Energy Monitor
+ALM-000445,CEL-00169,2026-08-05 01:33:24,2026-08-05 14:33:24,Energía,Crítica,Cerrada,Falla de suministro,true,976,NMS
+ALM-000446,CEL-00006,2026-08-05 01:46:35,2026-08-06 03:46:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,525,RAN Monitor
+ALM-000447,CEL-00023,2026-08-05 01:59:46,2026-08-06 16:59:46,Radio,Urgente,Cerrada,Interferencia,true,554,Energy Monitor
+ALM-000448,CEL-00040,2026-08-05 02:12:57,,Saturación,Media,Reconocida,Alta demanda,false,283,NMS
+ALM-000449,CEL-00057,2026-08-05 02:26:08,,Hardware,Media,Reconocida,Módulo degradado,true,312,RAN Monitor
+ALM-000450,CEL-00074,2026-08-05 02:39:19,,Software,Baja,Abierta,Error de configuración,false,46,Energy Monitor
+ALM-000451,CEL-00091,2026-08-05 02:52:30,2026-08-05 21:52:30,Energía,Crítica,Cerrada,Falla de suministro,true,950,NMS
+ALM-000452,CEL-00108,2026-08-05 03:05:41,2026-08-06 11:05:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,499,RAN Monitor
+ALM-000453,CEL-00125,2026-08-05 03:18:52,2026-08-07 00:18:52,Radio,Alta,Cerrada,Interferencia,true,528,Energy Monitor
+ALM-000454,CEL-00142,2026-08-05 03:32:03,2026-08-07 13:32:03,Saturación,Media,Cerrada,Alta demanda,false,257,NMS
+ALM-000455,CEL-00159,2026-08-05 03:45:14,2026-08-08 02:45:14,Hardware,Media,Cerrada,Módulo degradado,false,286,RAN Monitor
+ALM-000456,CEL-00176,2026-08-05 03:58:25,2026-08-05 15:58:25,Software,Baja,Cerrada,Error de configuración,true,220,Energy Monitor
+ALM-000457,CEL-00013,2026-08-05 04:11:36,2026-08-06 05:11:36,Energía,Crítica,Cerrada,Falla de suministro,true,924,NMS
+ALM-000458,CEL-00030,2026-08-05 04:24:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,473,RAN Monitor
+ALM-000459,CEL-00047,2026-08-05 04:37:58,,Radio,Alta,Reconocida,Interferencia,true,502,Energy Monitor
+ALM-000460,CEL-00064,2026-08-05 04:51:09,,Saturación,Media,Abierta,Alta demanda,false,231,NMS
+ALM-000461,CEL-00081,2026-08-05 05:04:20,2026-08-05 10:04:20,Hardware,Media,Cerrada,Módulo degradado,false,260,RAN Monitor
+ALM-000462,CEL-00098,2026-08-05 05:17:31,2026-08-05 23:17:31,Software,Baja,Cerrada,Error de configuración,false,194,Energy Monitor
+ALM-000463,CEL-00115,2026-08-05 05:30:42,2026-08-06 12:30:42,Energía,Crítica,Cerrada,Falla de suministro,true,1098,NMS
+ALM-000464,CEL-00132,2026-08-05 05:43:53,2026-08-07 01:43:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,447,RAN Monitor
+ALM-000465,CEL-00149,2026-08-05 05:57:04,2026-08-07 14:57:04,Radio,Alta,Cerrada,Interferencia,true,476,Energy Monitor
+ALM-000466,CEL-00166,2026-08-05 06:10:15,2026-08-08 04:10:15,Saturación,Media,Cerrada,Alta demanda,false,205,NMS
+ALM-000467,CEL-00003,2026-08-05 06:23:26,2026-08-05 17:23:26,Hardware,Media,Cerrada,Módulo degradado,false,234,RAN Monitor
+ALM-000468,CEL-00020,2026-08-05 06:36:37,,Software,Baja,Reconocida,Error de configuración,false,168,Energy Monitor
+ALM-000469,CEL-00037,2026-08-05 06:49:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1072,NMS
+ALM-000470,CEL-00054,2026-08-05 07:02:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,421,RAN Monitor
+ALM-000471,CEL-00071,2026-08-05 07:16:10,2026-08-07 22:16:10,Radio,Alta,Cerrada,Interferencia,true,450,Energy Monitor
+ALM-000472,CEL-99999,2026-08-05 07:29:21,2026-08-05 11:29:21,Saturación,Media,Cerrada,Alta demanda,false,179,NMS
+ALM-000473,CEL-00105,2026-08-05 07:42:32,2026-08-06 00:42:32,Hardware,Media,Cerrada,Módulo degradado,false,208,RAN Monitor
+ALM-000474,CEL-00122,2026-08-05 07:55:43,2026-08-06 13:55:43,Software,Baja,Cerrada,Error de configuración,false,142,Energy Monitor
+ALM-000475,CEL-00139,2026-08-05 08:08:54,2026-08-07 03:08:54,Energía,Crítica,Cerrada,Falla de suministro,true,1046,NMS
+ALM-000476,CEL-00156,2026-08-05 08:22:05,2026-08-07 16:22:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,595,RAN Monitor
+ALM-000477,CEL-00173,2026-08-05 08:35:16,2026-08-08 05:35:16,Radio,Alta,Cerrada,Interferencia,true,424,Energy Monitor
+ALM-000478,CEL-00010,2026-08-05 08:48:27,,Saturación,Media,Reconocida,Alta demanda,false,153,NMS
+ALM-000479,CEL-00027,2026-08-05 09:01:38,,Hardware,Media,Reconocida,Módulo degradado,false,182,RAN Monitor
+ALM-000480,CEL-00044,2026-08-05 09:14:49,,Software,Baja,Abierta,Error de configuración,false,116,Energy Monitor
+ALM-000481,CEL-00061,2026-08-05 09:28:00,2026-08-07 10:28:00,Energía,Crítica,Cerrada,Falla de suministro,true,1020,NMS
+ALM-000482,CEL-00078,2026-08-05 09:41:11,2026-08-07 23:41:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,569,RAN Monitor
+ALM-000483,CEL-00095,2026-08-05 09:54:22,2026-08-05 12:54:22,Radio,Alta,Cerrada,Interferencia,true,598,Energy Monitor
+ALM-000484,CEL-00112,2026-08-05 10:07:33,2026-08-06 02:07:33,Saturación,Media,Cerrada,Alta demanda,true,127,NMS
+ALM-000485,CEL-00129,2026-08-05 10:20:44,2026-08-06 15:20:44,Hardware,Media,Cerrada,Módulo degradado,false,156,RAN Monitor
+ALM-000486,CEL-00146,2026-08-05 10:33:55,2026-08-07 04:33:55,Software,Baja,Cerrada,Error de configuración,false,90,Energy Monitor
+ALM-000487,CEL-00163,2026-08-05 10:47:06,2026-08-07 17:47:06,Energía,Crítica,Cerrada,Falla de suministro,true,994,NMS
+ALM-000488,CEL-00180,2026-08-05 11:00:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,543,RAN Monitor
+ALM-000489,CEL-00017,2026-08-05 11:13:28,,Radio,Alta,Reconocida,Interferencia,true,572,Energy Monitor
+ALM-000490,CEL-00034,2026-08-05 11:26:39,,Saturación,Media,Abierta,Alta demanda,false,301,NMS
+ALM-000491,CEL-00051,2026-08-05 11:39:50,2026-08-06 22:39:50,Hardware,Media,Cerrada,Módulo degradado,true,130,RAN Monitor
+ALM-000492,CEL-00068,2026-08-05 11:53:01,2026-08-07 11:53:01,Software,Baja,Cerrada,Error de configuración,false,64,Energy Monitor
+ALM-000493,CEL-00085,2026-08-05 12:06:12,2026-08-08 01:06:12,Energía,Crítica,Cerrada,Falla de suministro,true,968,NMS
+ALM-000494,CEL-00102,2026-08-05 12:19:23,2026-08-05 14:19:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,517,RAN Monitor
+ALM-000495,CEL-00119,2026-08-05 12:32:34,2026-08-06 03:32:34,Radio,Alta,Cerrada,Interferencia,true,546,Energy Monitor
+ALM-000496,CEL-00136,2026-08-05 12:45:45,2026-08-06 16:45:45,Saturación,Media,Cerrada,Alta demanda,false,275,NMS
+ALM-000497,CEL-00153,2026-08-05 12:58:56,2026-08-07 05:58:56,Hardware,Media,Cerrada,Módulo degradado,false,304,RAN Monitor
+ALM-000498,CEL-00170,2026-08-05 13:12:07,,Software,Baja,Reconocida,Error de configuración,true,38,Energy Monitor
+ALM-000499,CEL-00007,2026-08-05 13:25:18,,Energía,Crítica,Reconocida,Falla de suministro,true,942,NMS
+ALM-000500,CEL-00024,2026-08-05 13:38:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,491,RAN Monitor
+ALM-000501,CEL-00041,2026-08-05 13:51:40,2026-08-06 10:51:40,Radio,Alta,Cerrada,Interferencia,true,520,Energy Monitor
+ALM-000502,CEL-00058,2026-08-05 14:04:51,2026-08-07 00:04:51,Saturación,Media,Cerrada,Alta demanda,false,249,NMS
+ALM-000503,CEL-00075,2026-08-05 14:18:02,2026-08-07 13:18:02,Hardware,Media,Cerrada,Módulo degradado,false,278,RAN Monitor
+ALM-000504,CEL-00092,2026-08-05 14:31:13,2026-08-08 02:31:13,Software,Baja,Cerrada,Error de configuración,false,212,Energy Monitor
+ALM-000505,CEL-00109,2026-08-05 14:44:24,2026-08-05 15:44:24,Energía,Crítica,Cerrada,Falla de suministro,true,916,NMS
+ALM-000506,CEL-00126,2026-08-05 14:57:35,2026-08-06 04:57:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,465,RAN Monitor
+ALM-000507,CEL-00143,2026-08-05 15:10:46,2026-08-06 18:10:46,Radio,Alta,Cerrada,Interferencia,true,494,Energy Monitor
+ALM-000508,CEL-00160,2026-08-05 15:23:57,,Saturación,Media,Reconocida,Alta demanda,false,223,NMS
+ALM-000509,CEL-00177,2026-08-05 15:37:08,,Hardware,Media,Reconocida,Módulo degradado,false,252,RAN Monitor
+ALM-000510,CEL-00014,2026-08-05 15:50:19,,Software,Baja,Abierta,Error de configuración,false,186,Energy Monitor
+ALM-000511,CEL-00031,2026-08-05 16:03:30,2026-08-05 23:03:30,Energía,Crítica,Cerrada,Falla de suministro,true,1090,NMS
+ALM-000512,CEL-00048,2026-08-05 16:16:41,2026-08-06 12:16:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,439,RAN Monitor
+ALM-000513,CEL-00065,2026-08-05 16:29:52,2026-08-07 01:29:52,Radio,Alta,Cerrada,Interferencia,true,468,Energy Monitor
+ALM-000514,CEL-00082,2026-08-05 16:43:03,2026-08-07 14:43:03,Saturación,Media,Cerrada,Alta demanda,false,197,NMS
+ALM-000515,CEL-00099,2026-08-05 16:56:14,2026-08-08 03:56:14,Hardware,Media,Cerrada,Módulo degradado,false,226,RAN Monitor
+ALM-000516,CEL-00116,2026-08-05 17:09:25,2026-08-08 17:09:25,Software,Baja,Cerrada,Error de configuración,false,160,Energy Monitor
+ALM-000517,CEL-00133,2026-08-05 17:22:36,2026-08-06 06:22:36,Energía,Crítica,Cerrada,Falla de suministro,true,1064,NMS
+ALM-000518,CEL-00150,2026-08-05 17:35:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,613,RAN Monitor
+ALM-000519,CEL-00167,2026-08-05 17:48:58,,Radio,Alta,Reconocida,Interferencia,true,442,Energy Monitor
+ALM-000520,CEL-00004,2026-08-05 18:02:09,,Saturación,Media,Abierta,Alta demanda,false,171,NMS
+ALM-000521,CEL-00021,2026-08-05 18:15:20,2026-08-08 11:15:20,Hardware,Media,Cerrada,Módulo degradado,false,200,RAN Monitor
+ALM-000522,CEL-00038,2026-08-05 18:28:31,2026-08-06 00:28:31,Software,Baja,Cerrada,Error de configuración,false,134,Energy Monitor
+ALM-000523,CEL-00055,2026-08-05 18:41:42,2026-08-06 13:41:42,Energía,Crítica,Cerrada,Falla de suministro,true,1038,NMS
+ALM-000524,CEL-00072,2026-08-05 18:54:53,2026-08-07 02:54:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,587,RAN Monitor
+ALM-000525,CEL-00089,2026-08-05 19:08:04,2026-08-07 16:08:04,Radio,Alta,Cerrada,Interferencia,true,616,Energy Monitor
+ALM-000526,CEL-00106,2026-08-05 19:21:15,2026-08-08 05:21:15,Saturación,Media,Cerrada,Alta demanda,true,145,NMS
+ALM-000527,CEL-00123,2026-08-05 19:34:26,2026-08-08 18:34:26,Hardware,Media,Cerrada,Módulo degradado,false,174,RAN Monitor
+ALM-000528,CEL-00140,2026-08-05 19:47:37,,Software,Baja,Reconocida,Error de configuración,false,108,Energy Monitor
+ALM-000529,CEL-00157,2026-08-05 20:00:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1012,NMS
+ALM-000530,CEL-00174,2026-08-05 20:13:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,561,RAN Monitor
+ALM-000531,CEL-00011,2026-08-05 20:27:10,2026-08-07 23:27:10,Radio,Alta,Cerrada,Interferencia,true,590,Energy Monitor
+ALM-000532,CEL-00028,2026-08-05 20:40:21,2026-08-08 12:40:21,Saturación,Media,Cerrada,Alta demanda,false,319,NMS
+ALM-000533,CEL-00045,2026-08-05 20:53:32,2026-08-06 01:53:32,Hardware,Media,Cerrada,Módulo degradado,true,148,RAN Monitor
+ALM-000534,CEL-00062,2026-08-05 21:06:43,2026-08-06 15:06:43,Software,Baja,Cerrada,Error de configuración,false,82,Energy Monitor
+ALM-000535,CEL-00079,2026-08-05 21:19:54,2026-08-07 04:19:54,Energía,Crítica,Cerrada,Falla de suministro,true,986,NMS
+ALM-000536,CEL-00096,2026-08-05 21:33:05,2026-08-07 17:33:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,535,RAN Monitor
+ALM-000537,CEL-00113,2026-08-05 21:46:16,2026-08-08 06:46:16,Radio,Alta,Cerrada,Interferencia,true,564,Energy Monitor
+ALM-000538,CEL-00130,2026-08-05 21:59:27,,Saturación,Media,Reconocida,Alta demanda,false,293,NMS
+ALM-000539,CEL-00147,2026-08-05 22:12:38,,Hardware,Media,Reconocida,Módulo degradado,false,122,RAN Monitor
+ALM-000540,CEL-00164,2026-08-05 22:25:49,,Software,Baja,Abierta,Error de configuración,true,56,Energy Monitor
+ALM-000541,CEL-00001,2026-08-05 22:39:00,2026-08-07 11:39:00,Energía,Crítica,Cerrada,Falla de suministro,true,960,NMS
+ALM-000542,CEL-00018,2026-08-05 22:52:11,2026-08-08 00:52:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,509,RAN Monitor
+ALM-000543,CEL-00035,2026-08-05 23:05:22,2026-08-08 14:05:22,Radio,Alta,Cerrada,Interferencia,true,538,Energy Monitor
+ALM-000544,CEL-00052,2026-08-05 23:18:33,2026-08-06 03:18:33,Saturación,Media,Cerrada,Alta demanda,false,267,NMS
+ALM-000545,CEL-00069,2026-08-05 23:31:44,2026-08-06 16:31:44,Hardware,Media,Cerrada,Módulo degradado,false,296,RAN Monitor
+ALM-000546,CEL-00086,2026-08-05 23:44:55,2026-08-07 05:44:55,Software,Baja,Cerrada,Error de configuración,false,30,Energy Monitor
+ALM-000547,CEL-00103,2026-08-05 23:58:06,2026-08-07 18:58:06,Energía,Crítica,Cerrada,Falla de suministro,true,934,NMS
+ALM-000548,CEL-00120,2026-08-06 00:11:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,483,RAN Monitor
+ALM-000549,CEL-00137,2026-08-06 00:24:28,,Radio,Alta,Reconocida,Interferencia,true,512,Energy Monitor
+ALM-000550,CEL-00154,2026-08-06 00:37:39,,Saturación,Media,Abierta,Alta demanda,false,241,NMS
+ALM-000551,CEL-00171,2026-08-06 00:50:50,2026-08-06 23:50:50,Hardware,Media,Cerrada,Módulo degradado,false,270,RAN Monitor
+ALM-000552,CEL-00008,2026-08-06 01:04:01,2026-08-07 13:04:01,Software,Baja,Cerrada,Error de configuración,false,204,Energy Monitor
+ALM-000553,CEL-00025,2026-08-06 01:17:12,2026-08-08 02:17:12,Energía,Crítica,Cerrada,Falla de suministro,true,908,NMS
+ALM-000554,CEL-00042,2026-08-06 01:30:23,2026-08-08 15:30:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,457,RAN Monitor
+ALM-000555,CEL-00059,2026-08-06 01:43:34,2026-08-06 04:43:34,Radio,Alta,Cerrada,Interferencia,true,486,Energy Monitor
+ALM-000556,CEL-00076,2026-08-06 01:56:45,2026-08-06 17:56:45,Saturación,Media,Cerrada,Alta demanda,false,215,NMS
+ALM-000557,CEL-00093,2026-08-06 02:09:56,2026-08-07 07:09:56,Hardware,Media,Cerrada,Módulo degradado,false,244,RAN Monitor
+ALM-000558,CEL-00110,2026-08-06 02:23:07,,Software,Baja,Reconocida,Error de configuración,false,178,Energy Monitor
+ALM-000559,CEL-00127,2026-08-06 02:36:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1082,NMS
+ALM-000560,CEL-00144,2026-08-06 02:49:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,431,RAN Monitor
+ALM-000561,CEL-00161,2026-08-06 03:02:40,2026-08-06 12:02:40,Radio,Alta,Cerrada,Interferencia,true,460,Energy Monitor
+ALM-000562,CEL-00178,2026-08-06 03:15:51,2026-08-07 01:15:51,Saturación,Media,Cerrada,Alta demanda,false,189,NMS
+ALM-000563,CEL-00015,2026-08-06 03:29:02,2026-08-07 14:29:02,Hardware,Media,Cerrada,Módulo degradado,false,218,RAN Monitor
+ALM-000564,CEL-00032,2026-08-06 03:42:13,2026-08-08 03:42:13,Software,Baja,Cerrada,Error de configuración,false,152,Energy Monitor
+ALM-000565,CEL-00049,2026-08-06 03:55:24,2026-08-08 16:55:24,Energía,Crítica,Cerrada,Falla de suministro,true,1056,NMS
+ALM-000566,CEL-00066,2026-08-06 04:08:35,2026-08-06 06:08:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,605,RAN Monitor
+ALM-000567,CEL-00083,2026-08-06 04:21:46,2026-08-06 19:21:46,Radio,Alta,Cerrada,Interferencia,true,434,Energy Monitor
+ALM-000568,CEL-00100,2026-08-06 04:34:57,,Saturación,Media,Reconocida,Alta demanda,true,163,NMS
+ALM-000569,CEL-00117,2026-08-06 04:48:08,,Hardware,Media,Reconocida,Módulo degradado,false,192,RAN Monitor
+ALM-000570,CEL-00134,2026-08-06 05:01:19,,Software,Baja,Abierta,Error de configuración,false,126,Energy Monitor
+ALM-000571,CEL-00151,2026-08-06 05:14:30,2026-08-09 00:14:30,Energía,Crítica,Cerrada,Falla de suministro,true,1030,NMS
+ALM-000572,CEL-00168,2026-08-06 05:27:41,2026-08-06 13:27:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,579,RAN Monitor
+ALM-000573,CEL-00005,2026-08-06 05:40:52,2026-08-07 02:40:52,Radio,Alta,Cerrada,Interferencia,true,608,Energy Monitor
+ALM-000574,CEL-00022,2026-08-06 05:54:03,2026-08-07 15:54:03,Saturación,Media,Cerrada,Alta demanda,false,137,NMS
+ALM-000575,CEL-00039,2026-08-06 06:07:14,2026-08-08 05:07:14,Hardware,Media,Cerrada,Módulo degradado,true,166,RAN Monitor
+ALM-000576,CEL-00056,2026-08-06 06:20:25,2026-08-08 18:20:25,Software,Baja,Cerrada,Error de configuración,false,100,Energy Monitor
+ALM-000577,CEL-00073,2026-08-06 06:33:36,2026-08-06 07:33:36,Energía,Crítica,Cerrada,Falla de suministro,true,1004,NMS
+ALM-000578,CEL-00090,2026-08-06 06:46:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,553,RAN Monitor
+ALM-000579,CEL-00107,2026-08-06 06:59:58,,Radio,Alta,Reconocida,Interferencia,true,582,Energy Monitor
+ALM-000580,CEL-00124,2026-08-06 07:13:09,,Saturación,Media,Abierta,Alta demanda,false,311,NMS
+ALM-000581,CEL-00141,2026-08-06 07:26:20,2026-08-08 12:26:20,Hardware,Media,Cerrada,Módulo degradado,false,140,RAN Monitor
+ALM-000582,CEL-00158,2026-08-06 07:39:31,2026-08-09 01:39:31,Software,Baja,Cerrada,Error de configuración,true,74,Energy Monitor
+ALM-000583,CEL-00175,2026-08-06 07:52:42,2026-08-06 14:52:42,Energía,Crítica,Cerrada,Falla de suministro,true,978,NMS
+ALM-000584,CEL-00012,2026-08-06 08:05:53,2026-08-07 04:05:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,527,RAN Monitor
+ALM-000585,CEL-00029,2026-08-06 08:19:04,2026-08-07 17:19:04,Radio,Alta,Cerrada,Interferencia,true,556,Energy Monitor
+ALM-000586,CEL-00046,2026-08-06 08:32:15,2026-08-08 06:32:15,Saturación,Media,Cerrada,Alta demanda,false,285,NMS
+ALM-000587,CEL-00063,2026-08-06 08:45:26,2026-08-08 19:45:26,Hardware,Media,Cerrada,Módulo degradado,false,314,RAN Monitor
+ALM-000588,CEL-00080,2026-08-06 08:58:37,,Software,Baja,Reconocida,Error de configuración,false,48,Energy Monitor
+ALM-000589,CEL-00097,2026-08-06 09:11:48,,Energía,Crítica,Reconocida,Falla de suministro,true,952,NMS
+ALM-000590,CEL-00114,2026-08-06 09:24:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,501,RAN Monitor
+ALM-000591,CEL-00131,2026-08-06 09:38:10,2026-08-08 00:38:10,Radio,Alta,Cerrada,Interferencia,true,530,Energy Monitor
+ALM-000592,CEL-00148,2026-08-06 09:51:21,2026-08-08 13:51:21,Saturación,Media,Cerrada,Alta demanda,false,259,NMS
+ALM-000593,CEL-00165,2026-08-06 10:04:32,2026-08-09 03:04:32,Hardware,Media,Cerrada,Módulo degradado,false,288,RAN Monitor
+ALM-000594,CEL-00002,2026-08-06 10:17:43,2026-08-06 16:17:43,Software,Baja,Cerrada,Error de configuración,false,222,Energy Monitor
+ALM-000595,CEL-00019,2026-08-06 10:30:54,2026-08-07 05:30:54,Energía,Crítica,Cerrada,Falla de suministro,true,926,NMS
+ALM-000596,CEL-00036,2026-08-06 10:44:05,2026-08-07 18:44:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,475,RAN Monitor
+ALM-000597,CEL-00053,2026-08-06 10:57:16,2026-08-08 07:57:16,Radio,Alta,Cerrada,Interferencia,true,504,Energy Monitor
+ALM-000598,CEL-00070,2026-08-06 11:10:27,2026-08-06 09:10:27,Saturación,Media,Reconocida,Alta demanda,false,233,NMS
+ALM-000599,CEL-00087,2026-08-06 11:23:38,,Hardware,Media,Reconocida,Módulo degradado,false,262,RAN Monitor
+ALM-000600,CEL-00104,2026-08-06 11:36:49,,Software,Baja,Abierta,Error de configuración,false,196,Energy Monitor
+ALM-000601,CEL-00121,2026-08-06 11:50:00,2026-08-07 12:50:00,Energía,Crítica,Cerrada,Falla de suministro,true,900,NMS
+ALM-000602,CEL-00138,2026-08-06 12:03:11,2026-08-08 02:03:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,449,RAN Monitor
+ALM-000603,CEL-00155,2026-08-06 12:16:22,2026-08-08 15:16:22,Radio,Alta,Cerrada,Interferencia,true,478,Energy Monitor
+ALM-000604,CEL-00172,2026-08-06 12:29:33,2026-08-09 04:29:33,Saturación,Media,Cerrada,Alta demanda,false,207,NMS
+ALM-000605,CEL-00009,2026-08-06 12:42:44,2026-08-06 17:42:44,Hardware,Media,Cerrada,Módulo degradado,false,236,RAN Monitor
+ALM-000606,CEL-00026,2026-08-06 12:55:55,2026-08-07 06:55:55,Software,Baja,Cerrada,Error de configuración,false,170,Energy Monitor
+ALM-000607,CEL-00043,2026-08-06 13:09:06,2026-08-07 20:09:06,Energía,Crítica,Cerrada,Falla de suministro,true,1074,NMS
+ALM-000608,CEL-00060,2026-08-06 13:22:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,423,RAN Monitor
+ALM-000609,CEL-00077,2026-08-06 13:35:28,,Radio,Alta,Reconocida,Interferencia,true,452,Energy Monitor
+ALM-000610,CEL-00094,2026-08-06 13:48:39,,Saturación,Media,Abierta,Alta demanda,true,181,NMS
+ALM-000611,CEL-00111,2026-08-06 14:01:50,2026-08-07 01:01:50,Hardware,Media,Cerrada,Módulo degradado,false,210,RAN Monitor
+ALM-000612,CEL-00128,2026-08-06 14:15:01,2026-08-07 14:15:01,Software,Baja,Cerrada,Error de configuración,false,144,Energy Monitor
+ALM-000613,CEL-00145,2026-08-06 14:28:12,2026-08-08 03:28:12,Energía,Crítica,Cerrada,Falla de suministro,true,1048,NMS
+ALM-000614,CEL-00162,2026-08-06 14:41:23,2026-08-08 16:41:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,597,RAN Monitor
+ALM-000615,CEL-00179,2026-08-06 14:54:34,2026-08-09 05:54:34,Radio,Alta,Cerrada,Interferencia,true,426,Energy Monitor
+ALM-000616,CEL-00016,2026-08-06 15:07:45,2026-08-06 19:07:45,Saturación,Media,Cerrada,Alta demanda,false,155,NMS
+ALM-000617,CEL-00033,2026-08-06 15:20:56,2026-08-07 08:20:56,Hardware,Media,Cerrada,Módulo degradado,true,184,RAN Monitor
+ALM-000618,CEL-00050,2026-08-06 15:34:07,,Software,Baja,Reconocida,Error de configuración,false,118,Energy Monitor
+ALM-000619,CEL-00067,2026-08-06 15:47:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1022,NMS
+ALM-000620,CEL-00084,2026-08-06 16:00:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,571,RAN Monitor
+ALM-000621,CEL-00101,2026-08-06 16:13:40,2026-08-09 13:13:40,Radio,Alta,Cerrada,Interferencia,true,600,Energy Monitor
+ALM-000622,CEL-00118,2026-08-06 16:26:51,2026-08-07 02:26:51,Saturación,Media,Cerrada,Alta demanda,false,129,NMS
+ALM-000623,CEL-00135,2026-08-06 16:40:02,2026-08-07 15:40:02,Hardware,Media,Cerrada,Módulo degradado,false,158,RAN Monitor
+ALM-000624,CEL-00152,2026-08-06 16:53:13,2026-08-08 04:53:13,Software,Baja,Cerrada,Error de configuración,true,92,Energy Monitor
+ALM-000625,CEL-00169,2026-08-06 17:06:24,2026-08-08 18:06:24,Energía,Crítica,Cerrada,Falla de suministro,true,996,NMS
+ALM-000626,CEL-00006,2026-08-06 17:19:35,2026-08-09 07:19:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,545,RAN Monitor
+ALM-000627,CEL-00023,2026-08-06 17:32:46,2026-08-06 20:32:46,Radio,Alta,Cerrada,Interferencia,true,574,Energy Monitor
+ALM-000628,CEL-00040,2026-08-06 17:45:57,,Saturación,Media,Reconocida,Alta demanda,false,303,NMS
+ALM-000629,CEL-99999,2026-08-06 17:59:08,,Hardware,Media,Reconocida,Módulo degradado,false,132,RAN Monitor
+ALM-000630,CEL-00074,2026-08-06 18:12:19,,Software,Baja,Abierta,Error de configuración,false,66,Energy Monitor
+ALM-000631,CEL-00091,2026-08-06 18:25:30,2026-08-09 01:25:30,Energía,Crítica,Cerrada,Falla de suministro,true,970,NMS
+ALM-000632,CEL-00108,2026-08-06 18:38:41,2026-08-09 14:38:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,519,RAN Monitor
+ALM-000633,CEL-00125,2026-08-06 18:51:52,2026-08-07 03:51:52,Radio,Alta,Cerrada,Interferencia,true,548,Energy Monitor
+ALM-000633,CEL-00142,2026-08-06 19:05:03,2026-08-07 17:05:03,Saturación,Media,Cerrada,Alta demanda,false,277,NMS
+ALM-000635,CEL-00159,2026-08-06 19:18:14,2026-08-08 06:18:14,Hardware,Media,Cerrada,Módulo degradado,false,306,RAN Monitor
+ALM-000636,CEL-00176,2026-08-06 19:31:25,2026-08-08 19:31:25,Software,Baja,Cerrada,Error de configuración,false,40,Energy Monitor
+ALM-000637,CEL-00013,2026-08-06 19:44:36,2026-08-09 08:44:36,Energía,Crítica,Cerrada,Falla de suministro,true,944,NMS
+ALM-000638,CEL-00030,2026-08-06 19:57:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,493,RAN Monitor
+ALM-000639,CEL-00047,2026-08-06 20:10:58,,Radio,Alta,Reconocida,Interferencia,true,522,Energy Monitor
+ALM-000640,CEL-00064,2026-08-06 20:24:09,,Saturación,Media,Abierta,Alta demanda,false,251,NMS
+ALM-000641,CEL-00081,2026-08-06 20:37:20,2026-08-08 13:37:20,Hardware,Media,Cerrada,Módulo degradado,false,280,RAN Monitor
+ALM-000642,CEL-00098,2026-08-06 20:50:31,2026-08-09 02:50:31,Software,Baja,Cerrada,Error de configuración,false,214,Energy Monitor
+ALM-000643,CEL-00115,2026-08-06 21:03:42,2026-08-09 16:03:42,Energía,Crítica,Cerrada,Falla de suministro,true,918,NMS
+ALM-000644,CEL-00132,2026-08-06 21:16:53,2026-08-07 05:16:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,467,RAN Monitor
+ALM-000645,CEL-00149,2026-08-06 21:30:04,2026-08-07 18:30:04,Radio,Alta,Cerrada,Interferencia,true,496,Energy Monitor
+ALM-000646,CEL-00166,2026-08-06 21:43:15,2026-08-08 07:43:15,Saturación,Media,Cerrada,Alta demanda,false,225,NMS
+ALM-000647,CEL-00003,2026-08-06 21:56:26,2026-08-08 20:56:26,Hardware,Media,Cerrada,Módulo degradado,false,254,RAN Monitor
+ALM-000648,CEL-00020,2026-08-06 22:09:37,,Software,Baja,Reconocida,Error de configuración,false,188,Energy Monitor
+ALM-000649,CEL-00037,2026-08-06 22:22:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1092,NMS
+ALM-000650,CEL-00054,2026-08-06 22:35:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,441,RAN Monitor
+ALM-000651,CEL-00071,2026-08-06 22:49:10,2026-08-08 01:49:10,Radio,Alta,Cerrada,Interferencia,true,470,Energy Monitor
+ALM-000652,CEL-00088,2026-08-06 23:02:21,2026-08-08 15:02:21,Saturación,Media,Cerrada,Alta demanda,true,199,NMS
+ALM-000653,CEL-00105,2026-08-06 23:15:32,2026-08-09 04:15:32,Hardware,Media,Cerrada,Módulo degradado,false,228,RAN Monitor
+ALM-000654,CEL-00122,2026-08-06 23:28:43,2026-08-09 17:28:43,Software,Baja,Cerrada,Error de configuración,false,162,Energy Monitor
+ALM-000655,CEL-00139,2026-08-06 23:41:54,2026-08-07 06:41:54,Energía,Crítica,Cerrada,Falla de suministro,true,1066,NMS
+ALM-000656,CEL-00156,2026-08-06 23:55:05,2026-08-07 19:55:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,615,RAN Monitor
+ALM-000657,CEL-00173,2026-08-07 00:08:16,2026-08-08 09:08:16,Radio,Alta,Cerrada,Interferencia,true,444,Energy Monitor
+ALM-000658,CEL-00010,2026-08-07 00:21:27,,Saturación,Media,Reconocida,Alta demanda,false,173,NMS
+ALM-000659,CEL-00027,2026-08-07 00:34:38,,Hardware,Media,Reconocida,Módulo degradado,true,202,RAN Monitor
+ALM-000660,CEL-00044,2026-08-07 00:47:49,,Software,Baja,Abierta,Error de configuración,false,136,Energy Monitor
+ALM-000661,CEL-00061,2026-08-07 01:01:00,2026-08-07 14:01:00,Energía,Crítica,Cerrada,Falla de suministro,true,1040,NMS
+ALM-000662,CEL-00078,2026-08-07 01:14:11,2026-08-08 03:14:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,589,RAN Monitor
+ALM-000663,CEL-00095,2026-08-07 01:27:22,2026-08-08 16:27:22,Radio,Alta,Cerrada,Interferencia,true,618,Energy Monitor
+ALM-000664,CEL-00112,2026-08-07 01:40:33,2026-08-09 05:40:33,Saturación,Media,Cerrada,Alta demanda,false,147,NMS
+ALM-000665,CEL-00129,2026-08-07 01:53:44,2026-08-09 18:53:44,Hardware,Media,Cerrada,Módulo degradado,false,176,RAN Monitor
+ALM-000666,CEL-00146,2026-08-07 02:06:55,2026-08-07 08:06:55,Software,Baja,Cerrada,Error de configuración,true,110,Energy Monitor
+ALM-000667,CEL-00163,2026-08-07 02:20:06,2026-08-07 21:20:06,Energía,Crítica,Cerrada,Falla de suministro,true,1014,NMS
+ALM-000668,CEL-00180,2026-08-07 02:33:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,563,RAN Monitor
+ALM-000669,CEL-00017,2026-08-07 02:46:28,,Radio,Alta,Reconocida,Interferencia,true,592,Energy Monitor
+ALM-000670,CEL-00034,2026-08-07 02:59:39,,Saturación,Urgente,Abierta,Alta demanda,false,121,NMS
+ALM-000671,CEL-00051,2026-08-07 03:12:50,2026-08-10 02:12:50,Hardware,Media,Cerrada,Módulo degradado,false,150,RAN Monitor
+ALM-000672,CEL-00068,2026-08-07 03:26:01,2026-08-07 15:26:01,Software,Baja,Cerrada,Error de configuración,false,84,Energy Monitor
+ALM-000673,CEL-00085,2026-08-07 03:39:12,2026-08-08 04:39:12,Energía,Crítica,Cerrada,Falla de suministro,true,988,NMS
+ALM-000674,CEL-00102,2026-08-07 03:52:23,2026-08-08 17:52:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,537,RAN Monitor
+ALM-000675,CEL-00119,2026-08-07 04:05:34,2026-08-09 07:05:34,Radio,Alta,Cerrada,Interferencia,true,566,Energy Monitor
+ALM-000676,CEL-00136,2026-08-07 04:18:45,2026-08-09 20:18:45,Saturación,Media,Cerrada,Alta demanda,false,295,NMS
+ALM-000677,CEL-00153,2026-08-07 04:31:56,2026-08-07 09:31:56,Hardware,Media,Cerrada,Módulo degradado,false,124,RAN Monitor
+ALM-000678,CEL-00170,2026-08-07 04:45:07,,Software,Baja,Reconocida,Error de configuración,false,58,Energy Monitor
+ALM-000679,CEL-00007,2026-08-07 04:58:18,,Energía,Crítica,Reconocida,Falla de suministro,true,962,NMS
+ALM-000680,CEL-00024,2026-08-07 05:11:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,511,RAN Monitor
+ALM-000681,CEL-00041,2026-08-07 05:24:40,2026-08-09 14:24:40,Radio,Alta,Cerrada,Interferencia,true,540,Energy Monitor
+ALM-000682,CEL-00058,2026-08-07 05:37:51,2026-08-10 03:37:51,Saturación,Media,Cerrada,Alta demanda,false,269,NMS
+ALM-000683,CEL-00075,2026-08-07 05:51:02,2026-08-07 16:51:02,Hardware,Media,Cerrada,Módulo degradado,false,298,RAN Monitor
+ALM-000684,CEL-00092,2026-08-07 06:04:13,2026-08-08 06:04:13,Software,Baja,Cerrada,Error de configuración,false,32,Energy Monitor
+ALM-000685,CEL-00109,2026-08-07 06:17:24,2026-08-08 19:17:24,Energía,Crítica,Cerrada,Falla de suministro,true,936,NMS
+ALM-000686,CEL-00126,2026-08-07 06:30:35,2026-08-09 08:30:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,485,RAN Monitor
+ALM-000687,CEL-00143,2026-08-07 06:43:46,2026-08-09 21:43:46,Radio,Alta,Cerrada,Interferencia,true,514,Energy Monitor
+ALM-000688,CEL-00160,2026-08-07 06:56:57,,Saturación,Media,Reconocida,Alta demanda,false,243,NMS
+ALM-000689,CEL-00177,2026-08-07 07:10:08,,Hardware,Media,Reconocida,Módulo degradado,false,272,RAN Monitor
+ALM-000690,CEL-00014,2026-08-07 07:23:19,,Software,Baja,Abierta,Error de configuración,false,206,Energy Monitor
+ALM-000691,CEL-00031,2026-08-07 07:36:30,2026-08-09 02:36:30,Energía,Crítica,Cerrada,Falla de suministro,true,910,NMS
+ALM-000692,CEL-00048,2026-08-07 07:49:41,2026-08-09 15:49:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,459,RAN Monitor
+ALM-000693,CEL-00065,2026-08-07 08:02:52,2026-08-10 05:02:52,Radio,Alta,Cerrada,Interferencia,true,488,Energy Monitor
+ALM-000694,CEL-00082,2026-08-07 08:16:03,2026-08-07 18:16:03,Saturación,Media,Cerrada,Alta demanda,true,217,NMS
+ALM-000695,CEL-00099,2026-08-07 08:29:14,2026-08-08 07:29:14,Hardware,Media,Cerrada,Módulo degradado,false,246,RAN Monitor
+ALM-000696,CEL-00116,2026-08-07 08:42:25,2026-08-08 20:42:25,Software,Baja,Cerrada,Error de configuración,false,180,Energy Monitor
+ALM-000697,CEL-00133,2026-08-07 08:55:36,2026-08-09 09:55:36,Energía,Crítica,Cerrada,Falla de suministro,true,1084,NMS
+ALM-000698,CEL-00150,2026-08-07 09:08:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,433,RAN Monitor
+ALM-000699,CEL-00167,2026-08-07 09:21:58,,Radio,Alta,Reconocida,Interferencia,true,462,Energy Monitor
+ALM-000700,CEL-00004,2026-08-07 09:35:09,,Saturación,Media,Abierta,Alta demanda,false,191,NMS
+ALM-000701,CEL-00021,2026-08-07 09:48:20,2026-08-08 14:48:20,Hardware,Media,Cerrada,Módulo degradado,true,220,RAN Monitor
+ALM-000702,CEL-00038,2026-08-07 10:01:31,2026-08-09 04:01:31,Software,Baja,Cerrada,Error de configuración,false,154,Energy Monitor
+ALM-000703,CEL-00055,2026-08-07 10:14:42,2026-08-09 17:14:42,Energía,Crítica,Cerrada,Falla de suministro,true,1058,NMS
+ALM-000704,CEL-00072,2026-08-07 10:27:53,2026-08-10 06:27:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,607,RAN Monitor
+ALM-000705,CEL-00089,2026-08-07 10:41:04,2026-08-07 19:41:04,Radio,Alta,Cerrada,Interferencia,true,436,Energy Monitor
+ALM-000706,CEL-00106,2026-08-07 10:54:15,2026-08-08 08:54:15,Saturación,Media,Cerrada,Alta demanda,false,165,NMS
+ALM-000707,CEL-00123,2026-08-07 11:07:26,2026-08-08 22:07:26,Hardware,Media,Cerrada,Módulo degradado,false,194,RAN Monitor
+ALM-000708,CEL-00140,2026-08-07 11:20:37,,Software,Baja,Reconocida,Error de configuración,true,128,Energy Monitor
+ALM-000709,CEL-00157,2026-08-07 11:33:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1032,NMS
+ALM-000710,CEL-00174,2026-08-07 11:46:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,581,RAN Monitor
+ALM-000711,CEL-00011,2026-08-07 12:00:10,2026-08-08 03:00:10,Radio,Alta,Cerrada,Interferencia,true,610,Energy Monitor
+ALM-000712,CEL-00028,2026-08-07 12:13:21,2026-08-08 16:13:21,Saturación,Media,Cerrada,Alta demanda,false,139,NMS
+ALM-000713,CEL-00045,2026-08-07 12:26:32,2026-08-09 05:26:32,Hardware,Media,Cerrada,Módulo degradado,false,168,RAN Monitor
+ALM-000714,CEL-00062,2026-08-07 12:39:43,2026-08-09 18:39:43,Software,Baja,Cerrada,Error de configuración,false,102,Energy Monitor
+ALM-000715,CEL-00079,2026-08-07 12:52:54,2026-08-10 07:52:54,Energía,Crítica,Cerrada,Falla de suministro,true,1006,NMS
+ALM-000716,CEL-00096,2026-08-07 13:06:05,2026-08-07 21:06:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,555,RAN Monitor
+ALM-000717,CEL-00113,2026-08-07 13:19:16,2026-08-08 10:19:16,Radio,Alta,Cerrada,Interferencia,true,584,Energy Monitor
+ALM-000718,CEL-00130,2026-08-07 13:32:27,,Saturación,Media,Reconocida,Alta demanda,false,313,NMS
+ALM-000719,CEL-00147,2026-08-07 13:45:38,,Hardware,Media,Reconocida,Módulo degradado,false,142,RAN Monitor
+ALM-000720,CEL-00164,2026-08-07 13:58:49,,Software,Baja,Abierta,Error de configuración,false,76,Energy Monitor
+ALM-000721,CEL-00001,2026-08-07 14:12:00,2026-08-07 15:12:00,Energía,Crítica,Cerrada,Falla de suministro,true,980,NMS
+ALM-000722,CEL-00018,2026-08-07 14:25:11,2026-08-08 04:25:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,529,RAN Monitor
+ALM-000723,CEL-00035,2026-08-07 14:38:22,2026-08-08 17:38:22,Radio,Alta,Cerrada,Interferencia,true,558,Energy Monitor
+ALM-000724,CEL-00052,2026-08-07 14:51:33,2026-08-09 06:51:33,Saturación,Media,Cerrada,Alta demanda,false,287,NMS
+ALM-000725,CEL-00069,2026-08-07 15:04:44,2026-08-09 20:04:44,Hardware,Media,Cerrada,Módulo degradado,false,316,RAN Monitor
+ALM-000726,CEL-00086,2026-08-07 15:17:55,2026-08-10 09:17:55,Software,Baja,Cerrada,Error de configuración,false,50,Energy Monitor
+ALM-000727,CEL-00103,2026-08-07 15:31:06,2026-08-07 22:31:06,Energía,Crítica,Cerrada,Falla de suministro,true,954,NMS
+ALM-000728,CEL-00120,2026-08-07 15:44:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,503,RAN Monitor
+ALM-000729,CEL-00137,2026-08-07 15:57:28,,Radio,Alta,Reconocida,Interferencia,true,532,Energy Monitor
+ALM-000730,CEL-00154,2026-08-07 16:10:39,,Saturación,Media,Abierta,Alta demanda,false,261,NMS
+ALM-000731,CEL-00171,2026-08-07 16:23:50,2026-08-10 03:23:50,Hardware,Media,Cerrada,Módulo degradado,false,290,RAN Monitor
+ALM-000732,CEL-00008,2026-08-07 16:37:01,2026-08-10 16:37:01,Software,Baja,Cerrada,Error de configuración,false,224,Energy Monitor
+ALM-000733,CEL-00025,2026-08-07 16:50:12,2026-08-08 05:50:12,Energía,Crítica,Cerrada,Falla de suministro,true,928,NMS
+ALM-000734,CEL-00042,2026-08-07 17:03:23,2026-08-08 19:03:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,477,RAN Monitor
+ALM-000735,CEL-00059,2026-08-07 17:16:34,2026-08-09 08:16:34,Radio,Alta,Cerrada,Interferencia,true,506,Energy Monitor
+ALM-000736,CEL-00076,2026-08-07 17:29:45,2026-08-09 21:29:45,Saturación,Media,Cerrada,Alta demanda,true,235,NMS
+ALM-000737,CEL-00093,2026-08-07 17:42:56,2026-08-10 10:42:56,Hardware,Media,Cerrada,Módulo degradado,false,264,RAN Monitor
+ALM-000738,CEL-00110,2026-08-07 17:56:07,,Software,Baja,Reconocida,Error de configuración,false,198,Energy Monitor
+ALM-000739,CEL-00127,2026-08-07 18:09:18,,Energía,Crítica,Reconocida,Falla de suministro,true,902,NMS
+ALM-000740,CEL-00144,2026-08-07 18:22:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,451,RAN Monitor
+ALM-000741,CEL-00161,2026-08-07 18:35:40,2026-08-09 15:35:40,Radio,Alta,Cerrada,Interferencia,true,480,Energy Monitor
+ALM-000742,CEL-00178,2026-08-07 18:48:51,2026-08-10 04:48:51,Saturación,Media,Cerrada,Alta demanda,false,209,NMS
+ALM-000743,CEL-00015,2026-08-07 19:02:02,2026-08-10 18:02:02,Hardware,Media,Cerrada,Módulo degradado,true,238,RAN Monitor
+ALM-000744,CEL-00032,2026-08-07 19:15:13,2026-08-08 07:15:13,Software,Baja,Cerrada,Error de configuración,false,172,Energy Monitor
+ALM-000745,CEL-00049,2026-08-07 19:28:24,2026-08-08 20:28:24,Energía,Crítica,Cerrada,Falla de suministro,true,1076,NMS
+ALM-000746,CEL-00066,2026-08-07 19:41:35,2026-08-09 09:41:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,425,RAN Monitor
+ALM-000747,CEL-00083,2026-08-07 19:54:46,2026-08-09 22:54:46,Radio,Alta,Cerrada,Interferencia,true,454,Energy Monitor
+ALM-000748,CEL-00100,2026-08-07 20:07:57,,Saturación,Media,Reconocida,Alta demanda,false,183,NMS
+ALM-000749,CEL-00117,2026-08-07 20:21:08,,Hardware,Media,Reconocida,Módulo degradado,false,212,RAN Monitor
+ALM-000750,CEL-00134,2026-08-07 20:34:19,,Software,Baja,Abierta,Error de configuración,true,146,Energy Monitor
+ALM-000751,CEL-00151,2026-08-07 20:47:30,2026-08-09 03:47:30,Energía,Crítica,Cerrada,Falla de suministro,true,1050,NMS
+ALM-000752,CEL-00168,2026-08-07 21:00:41,2026-08-09 17:00:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,599,RAN Monitor
+ALM-000753,CEL-00005,2026-08-07 21:13:52,2026-08-10 06:13:52,Radio,Alta,Cerrada,Interferencia,true,428,Energy Monitor
+ALM-000754,CEL-00022,2026-08-07 21:27:03,2026-08-10 19:27:03,Saturación,Media,Cerrada,Alta demanda,false,157,NMS
+ALM-000755,CEL-00039,2026-08-07 21:40:14,2026-08-08 08:40:14,Hardware,Media,Cerrada,Módulo degradado,false,186,RAN Monitor
+ALM-000756,CEL-00056,2026-08-07 21:53:25,2026-08-08 21:53:25,Software,Baja,Cerrada,Error de configuración,false,120,Energy Monitor
+ALM-000757,CEL-00073,2026-08-07 22:06:36,2026-08-09 11:06:36,Energía,Crítica,Cerrada,Falla de suministro,true,1024,NMS
+ALM-000758,CEL-00090,2026-08-07 22:19:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,573,RAN Monitor
+ALM-000759,CEL-00107,2026-08-07 22:32:58,,Radio,Alta,Reconocida,Interferencia,true,602,Energy Monitor
+ALM-000760,CEL-00124,2026-08-07 22:46:09,,Saturación,Media,Abierta,Alta demanda,false,131,NMS
+ALM-000761,CEL-00141,2026-08-07 22:59:20,2026-08-08 15:59:20,Hardware,Media,Cerrada,Módulo degradado,false,160,RAN Monitor
+ALM-000762,CEL-00158,2026-08-07 23:12:31,2026-08-09 05:12:31,Software,Baja,Cerrada,Error de configuración,false,94,Energy Monitor
+ALM-000763,CEL-00175,2026-08-07 23:25:42,2026-08-09 18:25:42,Energía,Crítica,Cerrada,Falla de suministro,true,998,NMS
+ALM-000764,CEL-00012,2026-08-07 23:38:53,2026-08-10 07:38:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,547,RAN Monitor
+ALM-000765,CEL-00029,2026-08-07 23:52:04,2026-08-10 20:52:04,Radio,Alta,Cerrada,Interferencia,true,576,Energy Monitor
+ALM-000766,CEL-00046,2026-08-01 00:05:15,2026-08-01 10:05:15,Saturación,Media,Cerrada,Alta demanda,false,305,NMS
+ALM-000767,CEL-00063,2026-08-01 00:18:26,2026-08-01 23:18:26,Hardware,Media,Cerrada,Módulo degradado,false,134,RAN Monitor
+ALM-000768,CEL-00080,2026-08-01 00:31:37,,Software,Baja,Reconocida,Error de configuración,false,68,Energy Monitor
+ALM-000769,CEL-00097,2026-08-01 00:44:48,,Energía,Crítica,Reconocida,Falla de suministro,true,972,NMS
+ALM-000770,CEL-00114,2026-08-01 00:57:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,521,RAN Monitor
+ALM-000771,CEL-00131,2026-08-01 01:11:10,2026-08-01 04:11:10,Radio,Alta,Cerrada,Interferencia,true,550,Energy Monitor
+ALM-000772,CEL-00148,2026-08-01 01:24:21,2026-08-01 17:24:21,Saturación,Media,Cerrada,Alta demanda,false,279,NMS
+ALM-000773,CEL-00165,2026-08-01 01:37:32,2026-08-02 06:37:32,Hardware,Media,Cerrada,Módulo degradado,false,308,RAN Monitor
+ALM-000774,CEL-00002,2026-08-01 01:50:43,2026-08-02 19:50:43,Software,Baja,Cerrada,Error de configuración,false,42,Energy Monitor
+ALM-000775,CEL-00019,2026-08-01 02:03:54,2026-08-03 09:03:54,Energía,Crítica,Cerrada,Falla de suministro,true,946,NMS
+ALM-000776,CEL-00036,2026-08-01 02:17:05,2026-08-03 22:17:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,495,RAN Monitor
+ALM-000777,CEL-00053,2026-08-01 02:30:16,2026-08-01 11:30:16,Radio,Alta,Cerrada,Interferencia,true,524,Energy Monitor
+ALM-000778,CEL-00070,2026-08-01 02:43:27,,Saturación,Media,Reconocida,Alta demanda,true,253,NMS
+ALM-000779,CEL-00087,2026-08-01 02:56:38,,Hardware,Media,Reconocida,Módulo degradado,false,282,RAN Monitor
+ALM-000780,CEL-00104,2026-08-01 03:09:49,,Software,Baja,Abierta,Error de configuración,false,216,Energy Monitor
+ALM-000781,CEL-00121,2026-08-01 03:23:00,2026-08-03 16:23:00,Energía,Crítica,Cerrada,Falla de suministro,true,920,NMS
+ALM-000782,CEL-00138,2026-08-01 03:36:11,2026-08-01 05:36:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,469,RAN Monitor
+ALM-000783,CEL-00155,2026-08-01 03:49:22,2026-08-01 18:49:22,Radio,Alta,Cerrada,Interferencia,true,498,Energy Monitor
+ALM-000784,CEL-00172,2026-08-01 04:02:33,2026-08-02 08:02:33,Saturación,Media,Cerrada,Alta demanda,false,227,NMS
+ALM-000785,CEL-00009,2026-08-01 04:15:44,2026-08-02 21:15:44,Hardware,Media,Cerrada,Módulo degradado,true,256,RAN Monitor
+ALM-000786,CEL-99999,2026-08-01 04:28:55,2026-08-03 10:28:55,Software,Baja,Cerrada,Error de configuración,false,190,Energy Monitor
+ALM-000787,CEL-00043,2026-08-01 04:42:06,2026-08-03 23:42:06,Energía,Crítica,Cerrada,Falla de suministro,true,1094,NMS
+ALM-000788,CEL-00060,2026-08-01 04:55:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,443,RAN Monitor
+ALM-000789,CEL-00077,2026-08-01 05:08:28,,Radio,Alta,Reconocida,Interferencia,true,472,Energy Monitor
+ALM-000790,CEL-00094,2026-08-01 05:21:39,,Saturación,Media,Abierta,Alta demanda,false,201,NMS
+ALM-000791,CEL-00111,2026-08-01 05:34:50,2026-08-03 04:34:50,Hardware,Media,Cerrada,Módulo degradado,false,230,RAN Monitor
+ALM-000792,CEL-00128,2026-08-01 05:48:01,2026-08-03 17:48:01,Software,Baja,Cerrada,Error de configuración,true,164,Energy Monitor
+ALM-000793,CEL-00145,2026-08-01 06:01:12,2026-08-01 07:01:12,Energía,Crítica,Cerrada,Falla de suministro,true,1068,NMS
+ALM-000794,CEL-00162,2026-08-01 06:14:23,2026-08-01 20:14:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,617,RAN Monitor
+ALM-000795,CEL-00179,2026-08-01 06:27:34,2026-08-02 09:27:34,Radio,Alta,Cerrada,Interferencia,true,446,Energy Monitor
+ALM-000796,CEL-00016,2026-08-01 06:40:45,2026-08-02 22:40:45,Saturación,Media,Cerrada,Alta demanda,false,175,NMS
+ALM-000797,CEL-00033,2026-08-01 06:53:56,2026-08-01 04:53:56,Hardware,Media,Cerrada,Módulo degradado,false,204,RAN Monitor
+ALM-000798,CEL-00050,2026-08-01 07:07:07,,Software,Baja,Reconocida,Error de configuración,false,138,Energy Monitor
+ALM-000799,CEL-00067,2026-08-01 07:20:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1042,NMS
+ALM-000800,CEL-00084,2026-08-01 07:33:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,591,RAN Monitor
+ALM-000801,CEL-00101,2026-08-01 07:46:40,2026-08-02 16:46:40,Radio,Alta,Cerrada,Interferencia,true,420,Energy Monitor
+ALM-000802,CEL-00118,2026-08-01 07:59:51,2026-08-03 05:59:51,Saturación,Media,Cerrada,Alta demanda,false,149,NMS
+ALM-000803,CEL-00135,2026-08-01 08:13:02,2026-08-03 19:13:02,Hardware,Media,Cerrada,Módulo degradado,false,178,RAN Monitor
+ALM-000804,CEL-00152,2026-08-01 08:26:13,2026-08-04 08:26:13,Software,Baja,Cerrada,Error de configuración,false,112,Energy Monitor
+ALM-000805,CEL-00169,2026-08-01 08:39:24,2026-08-01 21:39:24,Energía,Crítica,Cerrada,Falla de suministro,true,1016,NMS
+ALM-000806,CEL-00006,2026-08-01 08:52:35,2026-08-02 10:52:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,565,RAN Monitor
+ALM-000807,CEL-00023,2026-08-01 09:05:46,2026-08-03 00:05:46,Radio,Alta,Cerrada,Interferencia,true,594,Energy Monitor
+ALM-000808,CEL-00040,2026-08-01 09:18:57,,Saturación,Media,Reconocida,Alta demanda,false,123,NMS
+ALM-000809,CEL-00057,2026-08-01 09:32:08,,Hardware,Media,Reconocida,Módulo degradado,false,152,RAN Monitor
+ALM-000810,CEL-00074,2026-08-01 09:45:19,,Software,Baja,Abierta,Error de configuración,false,86,Energy Monitor
+ALM-000811,CEL-00091,2026-08-01 09:58:30,2026-08-02 04:58:30,Energía,Crítica,Cerrada,Falla de suministro,true,990,NMS
+ALM-000812,CEL-00108,2026-08-01 10:11:41,2026-08-02 18:11:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,539,RAN Monitor
+ALM-000813,CEL-00125,2026-08-01 10:24:52,2026-08-03 07:24:52,Radio,Alta,Cerrada,Interferencia,true,568,Energy Monitor
+ALM-000814,CEL-00142,2026-08-01 10:38:03,2026-08-03 20:38:03,Saturación,Media,Cerrada,Alta demanda,false,297,NMS
+ALM-000815,CEL-00159,2026-08-01 10:51:14,2026-08-04 09:51:14,Hardware,Media,Cerrada,Módulo degradado,false,126,RAN Monitor
+ALM-000816,CEL-00176,2026-08-01 11:04:25,2026-08-01 23:04:25,Software,Baja,Cerrada,Error de configuración,false,60,Energy Monitor
+ALM-000817,CEL-00013,2026-08-01 11:17:36,2026-08-02 12:17:36,Energía,Crítica,Cerrada,Falla de suministro,true,964,NMS
+ALM-000818,CEL-00030,2026-08-01 11:30:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,513,RAN Monitor
+ALM-000819,CEL-00047,2026-08-01 11:43:58,,Radio,Alta,Reconocida,Interferencia,true,542,Energy Monitor
+ALM-000820,CEL-00064,2026-08-01 11:57:09,,Saturación,Media,Abierta,Alta demanda,true,271,NMS
+ALM-000821,CEL-00081,2026-08-01 12:10:20,2026-08-01 17:10:20,Hardware,Media,Cerrada,Módulo degradado,false,300,RAN Monitor
+ALM-000822,CEL-00098,2026-08-01 12:23:31,2026-08-02 06:23:31,Software,Baja,Cerrada,Error de configuración,false,34,Energy Monitor
+ALM-000823,CEL-00115,2026-08-01 12:36:42,2026-08-02 19:36:42,Energía,Crítica,Cerrada,Falla de suministro,true,938,NMS
+ALM-000824,CEL-00132,2026-08-01 12:49:53,2026-08-03 08:49:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,487,RAN Monitor
+ALM-000825,CEL-00149,2026-08-01 13:03:04,2026-08-03 22:03:04,Radio,Alta,Cerrada,Interferencia,true,516,Energy Monitor
+ALM-000826,CEL-00166,2026-08-01 13:16:15,2026-08-04 11:16:15,Saturación,Media,Cerrada,Alta demanda,false,245,NMS
+ALM-000827,CEL-00003,2026-08-01 13:29:26,2026-08-02 00:29:26,Hardware,Media,Cerrada,Módulo degradado,true,274,RAN Monitor
+ALM-000828,CEL-00020,2026-08-01 13:42:37,,Software,Baja,Reconocida,Error de configuración,false,208,Energy Monitor
+ALM-000829,CEL-00037,2026-08-01 13:55:48,,Energía,Crítica,Reconocida,Falla de suministro,true,912,NMS
+ALM-000830,CEL-00054,2026-08-01 14:08:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,461,RAN Monitor
+ALM-000831,CEL-00071,2026-08-01 14:22:10,2026-08-04 05:22:10,Radio,Alta,Cerrada,Interferencia,true,490,Energy Monitor
+ALM-000832,CEL-00088,2026-08-01 14:35:21,2026-08-01 18:35:21,Saturación,Media,Cerrada,Alta demanda,false,219,NMS
+ALM-000833,CEL-00105,2026-08-01 14:48:32,2026-08-02 07:48:32,Hardware,Media,Cerrada,Módulo degradado,false,248,RAN Monitor
+ALM-000834,CEL-00122,2026-08-01 15:01:43,2026-08-02 21:01:43,Software,Baja,Cerrada,Error de configuración,true,182,Energy Monitor
+ALM-000835,CEL-00139,2026-08-01 15:14:54,2026-08-03 10:14:54,Energía,Crítica,Cerrada,Falla de suministro,true,1086,NMS
+ALM-000836,CEL-00156,2026-08-01 15:28:05,2026-08-03 23:28:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,435,RAN Monitor
+ALM-000837,CEL-00173,2026-08-01 15:41:16,2026-08-04 12:41:16,Radio,Alta,Cerrada,Interferencia,true,464,Energy Monitor
+ALM-000838,CEL-00010,2026-08-01 15:54:27,,Saturación,Media,Reconocida,Alta demanda,false,193,NMS
+ALM-000839,CEL-00027,2026-08-01 16:07:38,,Hardware,Media,Reconocida,Módulo degradado,false,222,RAN Monitor
+ALM-000840,CEL-00044,2026-08-01 16:20:49,,Software,Baja,Abierta,Error de configuración,false,156,Energy Monitor
+ALM-000841,CEL-00061,2026-08-01 16:34:00,2026-08-03 17:34:00,Energía,Crítica,Cerrada,Falla de suministro,true,1060,NMS
+ALM-000842,CEL-00078,2026-08-01 16:47:11,2026-08-04 06:47:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,609,RAN Monitor
+ALM-000843,CEL-00095,2026-08-01 17:00:22,2026-08-01 20:00:22,Radio,Alta,Cerrada,Interferencia,true,438,Energy Monitor
+ALM-000844,CEL-00112,2026-08-01 17:13:33,2026-08-02 09:13:33,Saturación,Media,Cerrada,Alta demanda,false,167,NMS
+ALM-000844,CEL-00129,2026-08-01 17:26:44,2026-08-02 22:26:44,Hardware,Media,Cerrada,Módulo degradado,false,196,RAN Monitor
+ALM-000846,CEL-00146,2026-08-01 17:39:55,2026-08-03 11:39:55,Software,Baja,Cerrada,Error de configuración,false,130,Energy Monitor
+ALM-000847,CEL-00163,2026-08-01 17:53:06,2026-08-04 00:53:06,Energía,Crítica,Cerrada,Falla de suministro,true,1034,NMS
+ALM-000848,CEL-00180,2026-08-01 18:06:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,583,RAN Monitor
+ALM-000849,CEL-00017,2026-08-01 18:19:28,,Radio,Alta,Reconocida,Interferencia,true,612,Energy Monitor
+ALM-000850,CEL-00034,2026-08-01 18:32:39,,Saturación,Media,Abierta,Alta demanda,false,141,NMS
+ALM-000851,CEL-00051,2026-08-01 18:45:50,2026-08-03 05:45:50,Hardware,Media,Cerrada,Módulo degradado,false,170,RAN Monitor
+ALM-000852,CEL-00068,2026-08-01 18:59:01,2026-08-03 18:59:01,Software,Baja,Cerrada,Error de configuración,false,104,Energy Monitor
+ALM-000853,CEL-00085,2026-08-01 19:12:12,2026-08-04 08:12:12,Energía,Crítica,Cerrada,Falla de suministro,true,1008,NMS
+ALM-000854,CEL-00102,2026-08-01 19:25:23,2026-08-01 21:25:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,557,RAN Monitor
+ALM-000855,CEL-00119,2026-08-01 19:38:34,2026-08-02 10:38:34,Radio,Alta,Cerrada,Interferencia,true,586,Energy Monitor
+ALM-000856,CEL-00136,2026-08-01 19:51:45,2026-08-02 23:51:45,Saturación,Media,Cerrada,Alta demanda,false,315,NMS
+ALM-000857,CEL-00153,2026-08-01 20:04:56,2026-08-03 13:04:56,Hardware,Media,Cerrada,Módulo degradado,false,144,RAN Monitor
+ALM-000858,CEL-00170,2026-08-01 20:18:07,,Software,Baja,Reconocida,Error de configuración,false,78,Energy Monitor
+ALM-000859,CEL-00007,2026-08-01 20:31:18,,Energía,Crítica,Reconocida,Falla de suministro,true,982,NMS
+ALM-000860,CEL-00024,2026-08-01 20:44:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,531,RAN Monitor
+ALM-000861,CEL-00041,2026-08-01 20:57:40,2026-08-02 17:57:40,Radio,Alta,Cerrada,Interferencia,true,560,Energy Monitor
+ALM-000862,CEL-00058,2026-08-01 21:10:51,2026-08-03 07:10:51,Saturación,Media,Cerrada,Alta demanda,true,289,NMS
+ALM-000863,CEL-00075,2026-08-01 21:24:02,2026-08-03 20:24:02,Hardware,Media,Cerrada,Módulo degradado,false,318,RAN Monitor
+ALM-000864,CEL-00092,2026-08-01 21:37:13,2026-08-04 09:37:13,Software,Baja,Cerrada,Error de configuración,false,52,Energy Monitor
+ALM-000865,CEL-00109,2026-08-01 21:50:24,2026-08-01 22:50:24,Energía,Crítica,Cerrada,Falla de suministro,true,956,NMS
+ALM-000866,CEL-00126,2026-08-01 22:03:35,2026-08-02 12:03:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,505,RAN Monitor
+ALM-000867,CEL-00143,2026-08-01 22:16:46,2026-08-03 01:16:46,Radio,Alta,Cerrada,Interferencia,true,534,Energy Monitor
+ALM-000868,CEL-00160,2026-08-01 22:29:57,,Saturación,Media,Reconocida,Alta demanda,false,263,NMS
+ALM-000869,CEL-00177,2026-08-01 22:43:08,,Hardware,Media,Reconocida,Módulo degradado,true,292,RAN Monitor
+ALM-000870,CEL-00014,2026-08-01 22:56:19,,Software,Baja,Abierta,Error de configuración,false,26,Energy Monitor
+ALM-000871,CEL-00031,2026-08-01 23:09:30,2026-08-02 06:09:30,Energía,Crítica,Cerrada,Falla de suministro,true,930,NMS
+ALM-000872,CEL-00048,2026-08-01 23:22:41,2026-08-02 19:22:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,479,RAN Monitor
+ALM-000873,CEL-00065,2026-08-01 23:35:52,2026-08-03 08:35:52,Radio,Alta,Cerrada,Interferencia,true,508,Energy Monitor
+ALM-000874,CEL-00082,2026-08-01 23:49:03,2026-08-03 21:49:03,Saturación,Media,Cerrada,Alta demanda,false,237,NMS
+ALM-000875,CEL-00099,2026-08-02 00:02:14,2026-08-04 11:02:14,Hardware,Media,Cerrada,Módulo degradado,false,266,RAN Monitor
+ALM-000876,CEL-00116,2026-08-02 00:15:25,2026-08-05 00:15:25,Software,Baja,Cerrada,Error de configuración,true,200,Energy Monitor
+ALM-000877,CEL-00133,2026-08-02 00:28:36,2026-08-02 13:28:36,Energía,Crítica,Cerrada,Falla de suministro,true,904,NMS
+ALM-000878,CEL-00150,2026-08-02 00:41:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,453,RAN Monitor
+ALM-000879,CEL-00167,2026-08-02 00:54:58,,Radio,Alta,Reconocida,Interferencia,true,482,Energy Monitor
+ALM-000880,CEL-00004,2026-08-02 01:08:09,,Saturación,Media,Abierta,Alta demanda,false,211,NMS
+ALM-000881,CEL-00021,2026-08-02 01:21:20,2026-08-04 18:21:20,Hardware,Media,Cerrada,Módulo degradado,false,240,RAN Monitor
+ALM-000882,CEL-00038,2026-08-02 01:34:31,2026-08-02 07:34:31,Software,Baja,Cerrada,Error de configuración,false,174,Energy Monitor
+ALM-000883,CEL-00055,2026-08-02 01:47:42,2026-08-02 20:47:42,Energía,Crítica,Cerrada,Falla de suministro,true,1078,NMS
+ALM-000884,CEL-00072,2026-08-02 02:00:53,2026-08-03 10:00:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,427,RAN Monitor
+ALM-000885,CEL-00089,2026-08-02 02:14:04,2026-08-03 23:14:04,Radio,Alta,Cerrada,Interferencia,true,456,Energy Monitor
+ALM-000886,CEL-00106,2026-08-02 02:27:15,2026-08-04 12:27:15,Saturación,Media,Cerrada,Alta demanda,false,185,NMS
+ALM-000887,CEL-00123,2026-08-02 02:40:26,2026-08-05 01:40:26,Hardware,Media,Cerrada,Módulo degradado,false,214,RAN Monitor
+ALM-000888,CEL-00140,2026-08-02 02:53:37,,Software,Baja,Reconocida,Error de configuración,false,148,Energy Monitor
+ALM-000889,CEL-00157,2026-08-02 03:06:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1052,NMS
+ALM-000890,CEL-00174,2026-08-02 03:19:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,601,RAN Monitor
+ALM-000891,CEL-00011,2026-08-02 03:33:10,2026-08-04 06:33:10,Radio,Alta,Cerrada,Interferencia,true,430,Energy Monitor
+ALM-000892,CEL-00028,2026-08-02 03:46:21,2026-08-04 19:46:21,Saturación,Media,Cerrada,Alta demanda,false,159,NMS
+ALM-000893,CEL-00045,2026-08-02 03:59:32,2026-08-02 08:59:32,Hardware,Urgente,Cerrada,Módulo degradado,false,188,RAN Monitor
+ALM-000894,CEL-00062,2026-08-02 04:12:43,2026-08-02 22:12:43,Software,Baja,Cerrada,Error de configuración,false,122,Energy Monitor
+ALM-000895,CEL-00079,2026-08-02 04:25:54,2026-08-03 11:25:54,Energía,Crítica,Cerrada,Falla de suministro,true,1026,NMS
+ALM-000896,CEL-00096,2026-08-02 04:39:05,2026-08-04 00:39:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,575,RAN Monitor
+ALM-000897,CEL-00113,2026-08-02 04:52:16,2026-08-04 13:52:16,Radio,Alta,Cerrada,Interferencia,true,604,Energy Monitor
+ALM-000898,CEL-00130,2026-08-02 05:05:27,,Saturación,Media,Reconocida,Alta demanda,false,133,NMS
+ALM-000899,CEL-00147,2026-08-02 05:18:38,,Hardware,Media,Reconocida,Módulo degradado,false,162,RAN Monitor
+ALM-000900,CEL-00164,2026-08-02 05:31:49,,Software,Baja,Abierta,Error de configuración,false,96,Energy Monitor
+ALM-000901,CEL-00001,2026-08-02 05:45:00,2026-08-03 18:45:00,Energía,Crítica,Cerrada,Falla de suministro,true,1000,NMS
+ALM-000902,CEL-00018,2026-08-02 05:58:11,2026-08-04 07:58:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,549,RAN Monitor
+ALM-000903,CEL-00035,2026-08-02 06:11:22,2026-08-04 21:11:22,Radio,Alta,Cerrada,Interferencia,true,578,Energy Monitor
+ALM-000904,CEL-00052,2026-08-02 06:24:33,2026-08-02 10:24:33,Saturación,Media,Cerrada,Alta demanda,true,307,NMS
+ALM-000905,CEL-00069,2026-08-02 06:37:44,2026-08-02 23:37:44,Hardware,Media,Cerrada,Módulo degradado,false,136,RAN Monitor
+ALM-000906,CEL-00086,2026-08-02 06:50:55,2026-08-03 12:50:55,Software,Baja,Cerrada,Error de configuración,false,70,Energy Monitor
+ALM-000907,CEL-00103,2026-08-02 07:04:06,2026-08-04 02:04:06,Energía,Crítica,Cerrada,Falla de suministro,true,974,NMS
+ALM-000908,CEL-00120,2026-08-02 07:17:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,523,RAN Monitor
+ALM-000909,CEL-00137,2026-08-02 07:30:28,,Radio,Alta,Reconocida,Interferencia,true,552,Energy Monitor
+ALM-000910,CEL-00154,2026-08-02 07:43:39,,Saturación,Media,Abierta,Alta demanda,false,281,NMS
+ALM-000911,CEL-00171,2026-08-02 07:56:50,2026-08-03 06:56:50,Hardware,Media,Cerrada,Módulo degradado,true,310,RAN Monitor
+ALM-000912,CEL-00008,2026-08-02 08:10:01,2026-08-03 20:10:01,Software,Baja,Cerrada,Error de configuración,false,44,Energy Monitor
+ALM-000913,CEL-00025,2026-08-02 08:23:12,2026-08-04 09:23:12,Energía,Crítica,Cerrada,Falla de suministro,true,948,NMS
+ALM-000914,CEL-00042,2026-08-02 08:36:23,2026-08-04 22:36:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,497,RAN Monitor
+ALM-000915,CEL-00059,2026-08-02 08:49:34,2026-08-02 11:49:34,Radio,Alta,Cerrada,Interferencia,true,526,Energy Monitor
+ALM-000916,CEL-00076,2026-08-02 09:02:45,2026-08-03 01:02:45,Saturación,Media,Cerrada,Alta demanda,false,255,NMS
+ALM-000917,CEL-00093,2026-08-02 09:15:56,2026-08-03 14:15:56,Hardware,Media,Cerrada,Módulo degradado,false,284,RAN Monitor
+ALM-000918,CEL-00110,2026-08-02 09:29:07,,Software,Baja,Reconocida,Error de configuración,true,218,Energy Monitor
+ALM-000919,CEL-00127,2026-08-02 09:42:18,,Energía,Crítica,Reconocida,Falla de suministro,true,922,NMS
+ALM-000920,CEL-00144,2026-08-02 09:55:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,471,RAN Monitor
+ALM-000921,CEL-00161,2026-08-02 10:08:40,2026-08-02 19:08:40,Radio,Alta,Cerrada,Interferencia,true,500,Energy Monitor
+ALM-000922,CEL-00178,2026-08-02 10:21:51,2026-08-03 08:21:51,Saturación,Media,Cerrada,Alta demanda,false,229,NMS
+ALM-000923,CEL-00015,2026-08-02 10:35:02,2026-08-03 21:35:02,Hardware,Media,Cerrada,Módulo degradado,false,258,RAN Monitor
+ALM-000924,CEL-00032,2026-08-02 10:48:13,2026-08-04 10:48:13,Software,Baja,Cerrada,Error de configuración,false,192,Energy Monitor
+ALM-000925,CEL-00049,2026-08-02 11:01:24,2026-08-05 00:01:24,Energía,Crítica,Cerrada,Falla de suministro,true,1096,NMS
+ALM-000926,CEL-00066,2026-08-02 11:14:35,2026-08-02 13:14:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,445,RAN Monitor
+ALM-000927,CEL-00083,2026-08-02 11:27:46,2026-08-03 02:27:46,Radio,Alta,Cerrada,Interferencia,true,474,Energy Monitor
+ALM-000928,CEL-00100,2026-08-02 11:40:57,,Saturación,Media,Reconocida,Alta demanda,false,203,NMS
+ALM-000929,CEL-00117,2026-08-02 11:54:08,,Hardware,Media,Reconocida,Módulo degradado,false,232,RAN Monitor
+ALM-000930,CEL-00134,2026-08-02 12:07:19,,Software,Baja,Abierta,Error de configuración,false,166,Energy Monitor
+ALM-000931,CEL-00151,2026-08-02 12:20:30,2026-08-05 07:20:30,Energía,Crítica,Cerrada,Falla de suministro,true,1070,NMS
+ALM-000932,CEL-00168,2026-08-02 12:33:41,2026-08-02 20:33:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,619,RAN Monitor
+ALM-000933,CEL-00005,2026-08-02 12:46:52,2026-08-03 09:46:52,Radio,Alta,Cerrada,Interferencia,true,448,Energy Monitor
+ALM-000934,CEL-00022,2026-08-02 13:00:03,2026-08-03 23:00:03,Saturación,Media,Cerrada,Alta demanda,false,177,NMS
+ALM-000935,CEL-00039,2026-08-02 13:13:14,2026-08-04 12:13:14,Hardware,Media,Cerrada,Módulo degradado,false,206,RAN Monitor
+ALM-000936,CEL-00056,2026-08-02 13:26:25,2026-08-05 01:26:25,Software,Baja,Cerrada,Error de configuración,false,140,Energy Monitor
+ALM-000937,CEL-00073,2026-08-02 13:39:36,2026-08-02 14:39:36,Energía,Crítica,Cerrada,Falla de suministro,true,1044,NMS
+ALM-000938,CEL-00090,2026-08-02 13:52:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,593,RAN Monitor
+ALM-000939,CEL-00107,2026-08-02 14:05:58,,Radio,Alta,Reconocida,Interferencia,true,422,Energy Monitor
+ALM-000940,CEL-00124,2026-08-02 14:19:09,,Saturación,Media,Abierta,Alta demanda,false,151,NMS
+ALM-000941,CEL-00141,2026-08-02 14:32:20,2026-08-04 19:32:20,Hardware,Media,Cerrada,Módulo degradado,false,180,RAN Monitor
+ALM-000942,CEL-00158,2026-08-02 14:45:31,2026-08-05 08:45:31,Software,Baja,Cerrada,Error de configuración,false,114,Energy Monitor
+ALM-000943,CEL-99999,2026-08-02 14:58:42,2026-08-02 21:58:42,Energía,Crítica,Cerrada,Falla de suministro,true,1018,NMS
+ALM-000944,CEL-00012,2026-08-02 15:11:53,2026-08-03 11:11:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,567,RAN Monitor
+ALM-000945,CEL-00029,2026-08-02 15:25:04,2026-08-04 00:25:04,Radio,Alta,Cerrada,Interferencia,true,596,Energy Monitor
+ALM-000946,CEL-00046,2026-08-02 15:38:15,2026-08-04 13:38:15,Saturación,Media,Cerrada,Alta demanda,true,125,NMS
+ALM-000947,CEL-00063,2026-08-02 15:51:26,2026-08-05 02:51:26,Hardware,Media,Cerrada,Módulo degradado,false,154,RAN Monitor
+ALM-000948,CEL-00080,2026-08-02 16:04:37,,Software,Baja,Reconocida,Error de configuración,false,88,Energy Monitor
+ALM-000949,CEL-00097,2026-08-02 16:17:48,,Energía,Crítica,Reconocida,Falla de suministro,true,992,NMS
+ALM-000950,CEL-00114,2026-08-02 16:30:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,541,RAN Monitor
+ALM-000951,CEL-00131,2026-08-02 16:44:10,2026-08-04 07:44:10,Radio,Alta,Cerrada,Interferencia,true,570,Energy Monitor
+ALM-000952,CEL-00148,2026-08-02 16:57:21,2026-08-04 20:57:21,Saturación,Media,Cerrada,Alta demanda,false,299,NMS
+ALM-000953,CEL-00165,2026-08-02 17:10:32,2026-08-05 10:10:32,Hardware,Media,Cerrada,Módulo degradado,true,128,RAN Monitor
+ALM-000954,CEL-00002,2026-08-02 17:23:43,2026-08-02 23:23:43,Software,Baja,Cerrada,Error de configuración,false,62,Energy Monitor
+ALM-000955,CEL-00019,2026-08-02 17:36:54,2026-08-03 12:36:54,Energía,Crítica,Cerrada,Falla de suministro,true,966,NMS
+ALM-000956,CEL-00036,2026-08-02 17:50:05,2026-08-04 01:50:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,515,RAN Monitor
+ALM-000957,CEL-00053,2026-08-02 18:03:16,2026-08-04 15:03:16,Radio,Alta,Cerrada,Interferencia,true,544,Energy Monitor
+ALM-000958,CEL-00070,2026-08-02 18:16:27,,Saturación,Media,Reconocida,Alta demanda,false,273,NMS
+ALM-000959,CEL-00087,2026-08-02 18:29:38,,Hardware,Media,Reconocida,Módulo degradado,false,302,RAN Monitor
+ALM-000960,CEL-00104,2026-08-02 18:42:49,,Software,Baja,Abierta,Error de configuración,true,36,Energy Monitor
+ALM-000961,CEL-00121,2026-08-02 18:56:00,2026-08-03 19:56:00,Energía,Crítica,Cerrada,Falla de suministro,true,940,NMS
+ALM-000962,CEL-00138,2026-08-02 19:09:11,2026-08-04 09:09:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,489,RAN Monitor
+ALM-000963,CEL-00155,2026-08-02 19:22:22,2026-08-04 22:22:22,Radio,Alta,Cerrada,Interferencia,true,518,Energy Monitor
+ALM-000964,CEL-00172,2026-08-02 19:35:33,2026-08-05 11:35:33,Saturación,Media,Cerrada,Alta demanda,false,247,NMS
+ALM-000965,CEL-00009,2026-08-02 19:48:44,2026-08-03 00:48:44,Hardware,Media,Cerrada,Módulo degradado,false,276,RAN Monitor
+ALM-000966,CEL-00026,2026-08-02 20:01:55,2026-08-03 14:01:55,Software,Baja,Cerrada,Error de configuración,false,210,Energy Monitor
+ALM-000967,CEL-00043,2026-08-02 20:15:06,2026-08-04 03:15:06,Energía,Crítica,Cerrada,Falla de suministro,true,914,NMS
+ALM-000968,CEL-00060,2026-08-02 20:28:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,463,RAN Monitor
+ALM-000969,CEL-00077,2026-08-02 20:41:28,,Radio,Alta,Reconocida,Interferencia,true,492,Energy Monitor
+ALM-000970,CEL-00094,2026-08-02 20:54:39,,Saturación,Media,Abierta,Alta demanda,false,221,NMS
+ALM-000971,CEL-00111,2026-08-02 21:07:50,2026-08-03 08:07:50,Hardware,Media,Cerrada,Módulo degradado,false,250,RAN Monitor
+ALM-000972,CEL-00128,2026-08-02 21:21:01,2026-08-03 21:21:01,Software,Baja,Cerrada,Error de configuración,false,184,Energy Monitor
+ALM-000973,CEL-00145,2026-08-02 21:34:12,2026-08-04 10:34:12,Energía,Crítica,Cerrada,Falla de suministro,true,1088,NMS
+ALM-000974,CEL-00162,2026-08-02 21:47:23,2026-08-04 23:47:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,437,RAN Monitor
+ALM-000975,CEL-00179,2026-08-02 22:00:34,2026-08-05 13:00:34,Radio,Alta,Cerrada,Interferencia,true,466,Energy Monitor
+ALM-000976,CEL-00016,2026-08-02 22:13:45,2026-08-03 02:13:45,Saturación,Media,Cerrada,Alta demanda,false,195,NMS
+ALM-000977,CEL-00033,2026-08-02 22:26:56,2026-08-03 15:26:56,Hardware,Media,Cerrada,Módulo degradado,false,224,RAN Monitor
+ALM-000978,CEL-00050,2026-08-02 22:40:07,,Software,Baja,Reconocida,Error de configuración,false,158,Energy Monitor
+ALM-000979,CEL-00067,2026-08-02 22:53:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1062,NMS
+ALM-000980,CEL-00084,2026-08-02 23:06:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,611,RAN Monitor
+ALM-000981,CEL-00101,2026-08-02 23:19:40,2026-08-05 20:19:40,Radio,Alta,Cerrada,Interferencia,true,440,Energy Monitor
+ALM-000982,CEL-00118,2026-08-02 23:32:51,2026-08-03 09:32:51,Saturación,Media,Cerrada,Alta demanda,false,169,NMS
+ALM-000983,CEL-00135,2026-08-02 23:46:02,2026-08-03 22:46:02,Hardware,Media,Cerrada,Módulo degradado,false,198,RAN Monitor
+ALM-000984,CEL-00152,2026-08-02 23:59:13,2026-08-04 11:59:13,Software,Baja,Cerrada,Error de configuración,false,132,Energy Monitor
+ALM-000985,CEL-00169,2026-08-03 00:12:24,2026-08-05 01:12:24,Energía,Crítica,Cerrada,Falla de suministro,true,1036,NMS
+ALM-000986,CEL-00006,2026-08-03 00:25:35,2026-08-05 14:25:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,585,RAN Monitor
+ALM-000987,CEL-00023,2026-08-03 00:38:46,2026-08-03 03:38:46,Radio,Alta,Cerrada,Interferencia,true,614,Energy Monitor
+ALM-000988,CEL-00040,2026-08-03 00:51:57,,Saturación,Media,Reconocida,Alta demanda,true,143,NMS
+ALM-000989,CEL-00057,2026-08-03 01:05:08,,Hardware,Media,Reconocida,Módulo degradado,false,172,RAN Monitor
+ALM-000990,CEL-00074,2026-08-03 01:18:19,,Software,Baja,Abierta,Error de configuración,false,106,Energy Monitor
+ALM-000991,CEL-00091,2026-08-03 01:31:30,2026-08-05 08:31:30,Energía,Crítica,Cerrada,Falla de suministro,true,1010,NMS
+ALM-000992,CEL-00108,2026-08-03 01:44:41,2026-08-05 21:44:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,559,RAN Monitor
+ALM-000993,CEL-00125,2026-08-03 01:57:52,2026-08-03 10:57:52,Radio,Alta,Cerrada,Interferencia,true,588,Energy Monitor
+ALM-000994,CEL-00142,2026-08-03 02:11:03,2026-08-04 00:11:03,Saturación,Media,Cerrada,Alta demanda,false,317,NMS
+ALM-000995,CEL-00159,2026-08-03 02:24:14,2026-08-04 13:24:14,Hardware,Media,Cerrada,Módulo degradado,true,146,RAN Monitor
+ALM-000996,CEL-00176,2026-08-03 02:37:25,2026-08-03 00:37:25,Software,Baja,Cerrada,Error de configuración,false,80,Energy Monitor
+ALM-000997,CEL-00013,2026-08-03 02:50:36,2026-08-05 15:50:36,Energía,Crítica,Cerrada,Falla de suministro,true,984,NMS
+ALM-000998,CEL-00030,2026-08-03 03:03:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,533,RAN Monitor
+ALM-000999,CEL-00047,2026-08-03 03:16:58,,Radio,Alta,Reconocida,Interferencia,true,562,Energy Monitor
+ALM-001000,CEL-00064,2026-08-03 03:30:09,,Saturación,Media,Abierta,Alta demanda,false,291,NMS
+ALM-001001,CEL-00081,2026-08-03 03:43:20,2026-08-04 20:43:20,Hardware,Media,Cerrada,Módulo degradado,false,120,RAN Monitor
+ALM-001002,CEL-00098,2026-08-03 03:56:31,2026-08-05 09:56:31,Software,Baja,Cerrada,Error de configuración,true,54,Energy Monitor
+ALM-001003,CEL-00115,2026-08-03 04:09:42,2026-08-05 23:09:42,Energía,Crítica,Cerrada,Falla de suministro,true,958,NMS
+ALM-001004,CEL-00132,2026-08-03 04:22:53,2026-08-03 12:22:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,507,RAN Monitor
+ALM-001005,CEL-00149,2026-08-03 04:36:04,2026-08-04 01:36:04,Radio,Alta,Cerrada,Interferencia,true,536,Energy Monitor
+ALM-001006,CEL-00166,2026-08-03 04:49:15,2026-08-04 14:49:15,Saturación,Media,Cerrada,Alta demanda,false,265,NMS
+ALM-001007,CEL-00003,2026-08-03 05:02:26,2026-08-05 04:02:26,Hardware,Media,Cerrada,Módulo degradado,false,294,RAN Monitor
+ALM-001008,CEL-00020,2026-08-03 05:15:37,,Software,Baja,Reconocida,Error de configuración,false,28,Energy Monitor
+ALM-001009,CEL-00037,2026-08-03 05:28:48,,Energía,Crítica,Reconocida,Falla de suministro,true,932,NMS
+ALM-001010,CEL-00054,2026-08-03 05:41:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,481,RAN Monitor
+ALM-001011,CEL-00071,2026-08-03 05:55:10,2026-08-04 08:55:10,Radio,Alta,Cerrada,Interferencia,true,510,Energy Monitor
+ALM-001012,CEL-00088,2026-08-03 06:08:21,2026-08-04 22:08:21,Saturación,Media,Cerrada,Alta demanda,false,239,NMS
+ALM-001013,CEL-00105,2026-08-03 06:21:32,2026-08-05 11:21:32,Hardware,Media,Cerrada,Módulo degradado,false,268,RAN Monitor
+ALM-001014,CEL-00122,2026-08-03 06:34:43,2026-08-06 00:34:43,Software,Baja,Cerrada,Error de configuración,false,202,Energy Monitor
+ALM-001015,CEL-00139,2026-08-03 06:47:54,2026-08-03 13:47:54,Energía,Crítica,Cerrada,Falla de suministro,true,906,NMS
+ALM-001016,CEL-00156,2026-08-03 07:01:05,2026-08-04 03:01:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,455,RAN Monitor
+ALM-001017,CEL-00173,2026-08-03 07:14:16,2026-08-04 16:14:16,Radio,Alta,Cerrada,Interferencia,true,484,Energy Monitor
+ALM-001018,CEL-00010,2026-08-03 07:27:27,,Saturación,Media,Reconocida,Alta demanda,false,213,NMS
+ALM-001019,CEL-00027,2026-08-03 07:40:38,,Hardware,Media,Reconocida,Módulo degradado,false,242,RAN Monitor
+ALM-001020,CEL-00044,2026-08-03 07:53:49,,Software,Baja,Abierta,Error de configuración,false,176,Energy Monitor
+ALM-001021,CEL-00061,2026-08-03 08:07:00,2026-08-03 21:07:00,Energía,Crítica,Cerrada,Falla de suministro,true,1080,NMS
+ALM-001022,CEL-00078,2026-08-03 08:20:11,2026-08-04 10:20:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,429,RAN Monitor
+ALM-001023,CEL-00095,2026-08-03 08:33:22,2026-08-04 23:33:22,Radio,Alta,Cerrada,Interferencia,true,458,Energy Monitor
+ALM-001024,CEL-00112,2026-08-03 08:46:33,2026-08-05 12:46:33,Saturación,Media,Cerrada,Alta demanda,false,187,NMS
+ALM-001025,CEL-00129,2026-08-03 08:59:44,2026-08-06 01:59:44,Hardware,Media,Cerrada,Módulo degradado,false,216,RAN Monitor
+ALM-001026,CEL-00146,2026-08-03 09:12:55,2026-08-03 15:12:55,Software,Baja,Cerrada,Error de configuración,false,150,Energy Monitor
+ALM-001027,CEL-00163,2026-08-03 09:26:06,2026-08-04 04:26:06,Energía,Crítica,Cerrada,Falla de suministro,true,1054,NMS
+ALM-001028,CEL-00180,2026-08-03 09:39:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,603,RAN Monitor
+ALM-001029,CEL-00017,2026-08-03 09:52:28,,Radio,Alta,Reconocida,Interferencia,true,432,Energy Monitor
+ALM-001030,CEL-00034,2026-08-03 10:05:39,,Saturación,Media,Abierta,Alta demanda,true,161,NMS
+ALM-001031,CEL-00051,2026-08-03 10:18:50,2026-08-06 09:18:50,Hardware,Media,Cerrada,Módulo degradado,false,190,RAN Monitor
+ALM-001032,CEL-00068,2026-08-03 10:32:01,2026-08-03 22:32:01,Software,Baja,Cerrada,Error de configuración,false,124,Energy Monitor
+ALM-001033,CEL-00085,2026-08-03 10:45:12,2026-08-04 11:45:12,Energía,Crítica,Cerrada,Falla de suministro,true,1028,NMS
+ALM-001034,CEL-00102,2026-08-03 10:58:23,2026-08-05 00:58:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,577,RAN Monitor
+ALM-001035,CEL-00119,2026-08-03 11:11:34,2026-08-05 14:11:34,Radio,Alta,Cerrada,Interferencia,true,606,Energy Monitor
+ALM-001036,CEL-00136,2026-08-03 11:24:45,2026-08-06 03:24:45,Saturación,Media,Cerrada,Alta demanda,false,135,NMS
+ALM-001037,CEL-00153,2026-08-03 11:37:56,2026-08-03 16:37:56,Hardware,Media,Cerrada,Módulo degradado,true,164,RAN Monitor
+ALM-001038,CEL-00170,2026-08-03 11:51:07,,Software,Baja,Reconocida,Error de configuración,false,98,Energy Monitor
+ALM-001039,CEL-00007,2026-08-03 12:04:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1002,NMS
+ALM-001040,CEL-00024,2026-08-03 12:17:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,551,RAN Monitor
+ALM-001041,CEL-00041,2026-08-03 12:30:40,2026-08-05 21:30:40,Radio,Alta,Cerrada,Interferencia,true,580,Energy Monitor
+ALM-001042,CEL-00058,2026-08-03 12:43:51,2026-08-06 10:43:51,Saturación,Media,Cerrada,Alta demanda,false,309,NMS
+ALM-001043,CEL-00075,2026-08-03 12:57:02,2026-08-03 23:57:02,Hardware,Media,Cerrada,Módulo degradado,false,138,RAN Monitor
+ALM-001044,CEL-00092,2026-08-03 13:10:13,2026-08-04 13:10:13,Software,Baja,Cerrada,Error de configuración,true,72,Energy Monitor
+ALM-001045,CEL-00109,2026-08-03 13:23:24,2026-08-05 02:23:24,Energía,Crítica,Cerrada,Falla de suministro,true,976,NMS
+ALM-001046,CEL-00126,2026-08-03 13:36:35,2026-08-05 15:36:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,525,RAN Monitor
+ALM-001047,CEL-00143,2026-08-03 13:49:46,2026-08-06 04:49:46,Radio,Alta,Cerrada,Interferencia,true,554,Energy Monitor
+ALM-001048,CEL-00160,2026-08-03 14:02:57,,Saturación,Media,Reconocida,Alta demanda,false,283,NMS
+ALM-001049,CEL-00177,2026-08-03 14:16:08,,Hardware,Media,Reconocida,Módulo degradado,false,312,RAN Monitor
+ALM-001050,CEL-00014,2026-08-03 14:29:19,,Software,Baja,Abierta,Error de configuración,false,46,Energy Monitor
+ALM-001051,CEL-00031,2026-08-03 14:42:30,2026-08-05 09:42:30,Energía,Crítica,Cerrada,Falla de suministro,true,950,NMS
+ALM-001052,CEL-00048,2026-08-03 14:55:41,2026-08-05 22:55:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,499,RAN Monitor
+ALM-001053,CEL-00065,2026-08-03 15:08:52,2026-08-06 12:08:52,Radio,Alta,Cerrada,Interferencia,true,528,Energy Monitor
+ALM-001054,CEL-00082,2026-08-03 15:22:03,2026-08-04 01:22:03,Saturación,Media,Cerrada,Alta demanda,false,257,NMS
+ALM-001055,CEL-00099,2026-08-03 15:35:14,2026-08-04 14:35:14,Hardware,Media,Cerrada,Módulo degradado,false,286,RAN Monitor
+ALM-001055,CEL-00116,2026-08-03 15:48:25,2026-08-05 03:48:25,Software,Baja,Cerrada,Error de configuración,false,220,Energy Monitor
+ALM-001057,CEL-00133,2026-08-03 16:01:36,2026-08-05 17:01:36,Energía,Crítica,Cerrada,Falla de suministro,true,924,NMS
+ALM-001058,CEL-00150,2026-08-03 16:14:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,473,RAN Monitor
+ALM-001059,CEL-00167,2026-08-03 16:27:58,,Radio,Alta,Reconocida,Interferencia,true,502,Energy Monitor
+ALM-001060,CEL-00004,2026-08-03 16:41:09,,Saturación,Media,Abierta,Alta demanda,false,231,NMS
+ALM-001061,CEL-00021,2026-08-03 16:54:20,2026-08-04 21:54:20,Hardware,Media,Cerrada,Módulo degradado,false,260,RAN Monitor
+ALM-001062,CEL-00038,2026-08-03 17:07:31,2026-08-05 11:07:31,Software,Baja,Cerrada,Error de configuración,false,194,Energy Monitor
+ALM-001063,CEL-00055,2026-08-03 17:20:42,2026-08-06 00:20:42,Energía,Crítica,Cerrada,Falla de suministro,true,1098,NMS
+ALM-001064,CEL-00072,2026-08-03 17:33:53,2026-08-06 13:33:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,447,RAN Monitor
+ALM-001065,CEL-00089,2026-08-03 17:47:04,2026-08-04 02:47:04,Radio,Alta,Cerrada,Interferencia,true,476,Energy Monitor
+ALM-001066,CEL-00106,2026-08-03 18:00:15,2026-08-04 16:00:15,Saturación,Media,Cerrada,Alta demanda,false,205,NMS
+ALM-001067,CEL-00123,2026-08-03 18:13:26,2026-08-05 05:13:26,Hardware,Media,Cerrada,Módulo degradado,false,234,RAN Monitor
+ALM-001068,CEL-00140,2026-08-03 18:26:37,,Software,Baja,Reconocida,Error de configuración,false,168,Energy Monitor
+ALM-001069,CEL-00157,2026-08-03 18:39:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1072,NMS
+ALM-001070,CEL-00174,2026-08-03 18:52:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,421,RAN Monitor
+ALM-001071,CEL-00011,2026-08-03 19:06:10,2026-08-04 10:06:10,Radio,Alta,Cerrada,Interferencia,true,450,Energy Monitor
+ALM-001072,CEL-00028,2026-08-03 19:19:21,2026-08-04 23:19:21,Saturación,Media,Cerrada,Alta demanda,true,179,NMS
+ALM-001073,CEL-00045,2026-08-03 19:32:32,2026-08-05 12:32:32,Hardware,Media,Cerrada,Módulo degradado,false,208,RAN Monitor
+ALM-001074,CEL-00062,2026-08-03 19:45:43,2026-08-06 01:45:43,Software,Baja,Cerrada,Error de configuración,false,142,Energy Monitor
+ALM-001075,CEL-00079,2026-08-03 19:58:54,2026-08-06 14:58:54,Energía,Crítica,Cerrada,Falla de suministro,true,1046,NMS
+ALM-001076,CEL-00096,2026-08-03 20:12:05,2026-08-04 04:12:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,595,RAN Monitor
+ALM-001077,CEL-00113,2026-08-03 20:25:16,2026-08-04 17:25:16,Radio,Alta,Cerrada,Interferencia,true,424,Energy Monitor
+ALM-001078,CEL-00130,2026-08-03 20:38:27,,Saturación,Media,Reconocida,Alta demanda,false,153,NMS
+ALM-001079,CEL-00147,2026-08-03 20:51:38,,Hardware,Media,Reconocida,Módulo degradado,true,182,RAN Monitor
+ALM-001080,CEL-00164,2026-08-03 21:04:49,,Software,Baja,Abierta,Error de configuración,false,116,Energy Monitor
+ALM-001081,CEL-00001,2026-08-03 21:18:00,2026-08-03 22:18:00,Energía,Crítica,Cerrada,Falla de suministro,true,1020,NMS
+ALM-001082,CEL-00018,2026-08-03 21:31:11,2026-08-04 11:31:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,569,RAN Monitor
+ALM-001083,CEL-00035,2026-08-03 21:44:22,2026-08-05 00:44:22,Radio,Alta,Cerrada,Interferencia,true,598,Energy Monitor
+ALM-001084,CEL-00052,2026-08-03 21:57:33,2026-08-05 13:57:33,Saturación,Media,Cerrada,Alta demanda,false,127,NMS
+ALM-001085,CEL-00069,2026-08-03 22:10:44,2026-08-06 03:10:44,Hardware,Media,Cerrada,Módulo degradado,false,156,RAN Monitor
+ALM-001086,CEL-00086,2026-08-03 22:23:55,2026-08-06 16:23:55,Software,Baja,Cerrada,Error de configuración,true,90,Energy Monitor
+ALM-001087,CEL-00103,2026-08-03 22:37:06,2026-08-04 05:37:06,Energía,Crítica,Cerrada,Falla de suministro,true,994,NMS
+ALM-001088,CEL-00120,2026-08-03 22:50:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,543,RAN Monitor
+ALM-001089,CEL-00137,2026-08-03 23:03:28,,Radio,Alta,Reconocida,Interferencia,true,572,Energy Monitor
+ALM-001090,CEL-00154,2026-08-03 23:16:39,,Saturación,Media,Abierta,Alta demanda,false,301,NMS
+ALM-001091,CEL-00171,2026-08-03 23:29:50,2026-08-06 10:29:50,Hardware,Media,Cerrada,Módulo degradado,false,130,RAN Monitor
+ALM-001092,CEL-00008,2026-08-03 23:43:01,2026-08-06 23:43:01,Software,Baja,Cerrada,Error de configuración,false,64,Energy Monitor
+ALM-001093,CEL-00025,2026-08-03 23:56:12,2026-08-04 12:56:12,Energía,Crítica,Cerrada,Falla de suministro,true,968,NMS
+ALM-001094,CEL-00042,2026-08-04 00:09:23,2026-08-05 02:09:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,517,RAN Monitor
+ALM-001095,CEL-00059,2026-08-04 00:22:34,2026-08-05 15:22:34,Radio,Alta,Cerrada,Interferencia,true,546,Energy Monitor
+ALM-001096,CEL-00076,2026-08-04 00:35:45,2026-08-06 04:35:45,Saturación,Media,Cerrada,Alta demanda,false,275,NMS
+ALM-001097,CEL-00093,2026-08-04 00:48:56,2026-08-06 17:48:56,Hardware,Media,Cerrada,Módulo degradado,false,304,RAN Monitor
+ALM-001098,CEL-00110,2026-08-04 01:02:07,,Software,Baja,Reconocida,Error de configuración,false,38,Energy Monitor
+ALM-001099,CEL-00127,2026-08-04 01:15:18,,Energía,Crítica,Reconocida,Falla de suministro,true,942,NMS
+ALM-001100,CEL-99999,2026-08-04 01:28:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,491,RAN Monitor
+ALM-001101,CEL-00161,2026-08-04 01:41:40,2026-08-05 22:41:40,Radio,Alta,Cerrada,Interferencia,true,520,Energy Monitor
+ALM-001102,CEL-00178,2026-08-04 01:54:51,2026-08-06 11:54:51,Saturación,Media,Cerrada,Alta demanda,false,249,NMS
+ALM-001103,CEL-00015,2026-08-04 02:08:02,2026-08-07 01:08:02,Hardware,Media,Cerrada,Módulo degradado,false,278,RAN Monitor
+ALM-001104,CEL-00032,2026-08-04 02:21:13,2026-08-04 14:21:13,Software,Baja,Cerrada,Error de configuración,false,212,Energy Monitor
+ALM-001105,CEL-00049,2026-08-04 02:34:24,2026-08-05 03:34:24,Energía,Crítica,Cerrada,Falla de suministro,true,916,NMS
+ALM-001106,CEL-00066,2026-08-04 02:47:35,2026-08-05 16:47:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,465,RAN Monitor
+ALM-001107,CEL-00083,2026-08-04 03:00:46,2026-08-06 06:00:46,Radio,Alta,Cerrada,Interferencia,true,494,Energy Monitor
+ALM-001108,CEL-00100,2026-08-04 03:13:57,,Saturación,Media,Reconocida,Alta demanda,false,223,NMS
+ALM-001109,CEL-00117,2026-08-04 03:27:08,,Hardware,Media,Reconocida,Módulo degradado,false,252,RAN Monitor
+ALM-001110,CEL-00134,2026-08-04 03:40:19,,Software,Baja,Abierta,Error de configuración,false,186,Energy Monitor
+ALM-001111,CEL-00151,2026-08-04 03:53:30,2026-08-05 10:53:30,Energía,Crítica,Cerrada,Falla de suministro,true,1090,NMS
+ALM-001112,CEL-00168,2026-08-04 04:06:41,2026-08-06 00:06:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,439,RAN Monitor
+ALM-001113,CEL-00005,2026-08-04 04:19:52,2026-08-06 13:19:52,Radio,Alta,Cerrada,Interferencia,true,468,Energy Monitor
+ALM-001114,CEL-00022,2026-08-04 04:33:03,2026-08-07 02:33:03,Saturación,Media,Cerrada,Alta demanda,true,197,NMS
+ALM-001115,CEL-00039,2026-08-04 04:46:14,2026-08-04 15:46:14,Hardware,Media,Cerrada,Módulo degradado,false,226,RAN Monitor
+ALM-001116,CEL-00056,2026-08-04 04:59:25,2026-08-05 04:59:25,Software,Urgente,Cerrada,Error de configuración,false,160,Energy Monitor
+ALM-001117,CEL-00073,2026-08-04 05:12:36,2026-08-05 18:12:36,Energía,Crítica,Cerrada,Falla de suministro,true,1064,NMS
+ALM-001118,CEL-00090,2026-08-04 05:25:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,613,RAN Monitor
+ALM-001119,CEL-00107,2026-08-04 05:38:58,,Radio,Alta,Reconocida,Interferencia,true,442,Energy Monitor
+ALM-001120,CEL-00124,2026-08-04 05:52:09,,Saturación,Media,Abierta,Alta demanda,false,171,NMS
+ALM-001121,CEL-00141,2026-08-04 06:05:20,2026-08-04 23:05:20,Hardware,Media,Cerrada,Módulo degradado,true,200,RAN Monitor
+ALM-001122,CEL-00158,2026-08-04 06:18:31,2026-08-05 12:18:31,Software,Baja,Cerrada,Error de configuración,false,134,Energy Monitor
+ALM-001123,CEL-00175,2026-08-04 06:31:42,2026-08-06 01:31:42,Energía,Crítica,Cerrada,Falla de suministro,true,1038,NMS
+ALM-001124,CEL-00012,2026-08-04 06:44:53,2026-08-06 14:44:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,587,RAN Monitor
+ALM-001125,CEL-00029,2026-08-04 06:58:04,2026-08-07 03:58:04,Radio,Alta,Cerrada,Interferencia,true,616,Energy Monitor
+ALM-001126,CEL-00046,2026-08-04 07:11:15,2026-08-04 17:11:15,Saturación,Media,Cerrada,Alta demanda,false,145,NMS
+ALM-001127,CEL-00063,2026-08-04 07:24:26,2026-08-05 06:24:26,Hardware,Media,Cerrada,Módulo degradado,false,174,RAN Monitor
+ALM-001128,CEL-00080,2026-08-04 07:37:37,,Software,Baja,Reconocida,Error de configuración,true,108,Energy Monitor
+ALM-001129,CEL-00097,2026-08-04 07:50:48,,Energía,Crítica,Reconocida,Falla de suministro,true,1012,NMS
+ALM-001130,CEL-00114,2026-08-04 08:03:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,561,RAN Monitor
+ALM-001131,CEL-00131,2026-08-04 08:17:10,2026-08-04 11:17:10,Radio,Alta,Cerrada,Interferencia,true,590,Energy Monitor
+ALM-001132,CEL-00148,2026-08-04 08:30:21,2026-08-05 00:30:21,Saturación,Media,Cerrada,Alta demanda,false,319,NMS
+ALM-001133,CEL-00165,2026-08-04 08:43:32,2026-08-05 13:43:32,Hardware,Media,Cerrada,Módulo degradado,false,148,RAN Monitor
+ALM-001134,CEL-00002,2026-08-04 08:56:43,2026-08-06 02:56:43,Software,Baja,Cerrada,Error de configuración,false,82,Energy Monitor
+ALM-001135,CEL-00019,2026-08-04 09:09:54,2026-08-06 16:09:54,Energía,Crítica,Cerrada,Falla de suministro,true,986,NMS
+ALM-001136,CEL-00036,2026-08-04 09:23:05,2026-08-07 05:23:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,535,RAN Monitor
+ALM-001137,CEL-00053,2026-08-04 09:36:16,2026-08-04 18:36:16,Radio,Alta,Cerrada,Interferencia,true,564,Energy Monitor
+ALM-001138,CEL-00070,2026-08-04 09:49:27,,Saturación,Media,Reconocida,Alta demanda,false,293,NMS
+ALM-001139,CEL-00087,2026-08-04 10:02:38,,Hardware,Media,Reconocida,Módulo degradado,false,122,RAN Monitor
+ALM-001140,CEL-00104,2026-08-04 10:15:49,,Software,Baja,Abierta,Error de configuración,false,56,Energy Monitor
+ALM-001141,CEL-00121,2026-08-04 10:29:00,2026-08-06 23:29:00,Energía,Crítica,Cerrada,Falla de suministro,true,960,NMS
+ALM-001142,CEL-00138,2026-08-04 10:42:11,2026-08-04 12:42:11,Transporte,Alta,Cerrada,Pérdida de enlace,true,509,RAN Monitor
+ALM-001143,CEL-00155,2026-08-04 10:55:22,2026-08-05 01:55:22,Radio,Alta,Cerrada,Interferencia,true,538,Energy Monitor
+ALM-001144,CEL-00172,2026-08-04 11:08:33,2026-08-05 15:08:33,Saturación,Media,Cerrada,Alta demanda,false,267,NMS
+ALM-001145,CEL-00009,2026-08-04 11:21:44,2026-08-06 04:21:44,Hardware,Media,Cerrada,Módulo degradado,false,296,RAN Monitor
+ALM-001146,CEL-00026,2026-08-04 11:34:55,2026-08-06 17:34:55,Software,Baja,Cerrada,Error de configuración,false,30,Energy Monitor
+ALM-001147,CEL-00043,2026-08-04 11:48:06,2026-08-07 06:48:06,Energía,Crítica,Cerrada,Falla de suministro,true,934,NMS
+ALM-001148,CEL-00060,2026-08-04 12:01:17,,Transporte,Alta,Reconocida,Pérdida de enlace,true,483,RAN Monitor
+ALM-001149,CEL-00077,2026-08-04 12:14:28,,Radio,Alta,Reconocida,Interferencia,true,512,Energy Monitor
+ALM-001150,CEL-00094,2026-08-04 12:27:39,,Saturación,Media,Abierta,Alta demanda,false,241,NMS
+ALM-001151,CEL-00111,2026-08-04 12:40:50,2026-08-06 11:40:50,Hardware,Media,Cerrada,Módulo degradado,false,270,RAN Monitor
+ALM-001152,CEL-00128,2026-08-04 12:54:01,2026-08-07 00:54:01,Software,Baja,Cerrada,Error de configuración,false,204,Energy Monitor
+ALM-001153,CEL-00145,2026-08-04 13:07:12,2026-08-04 14:07:12,Energía,Crítica,Cerrada,Falla de suministro,true,908,NMS
+ALM-001154,CEL-00162,2026-08-04 13:20:23,2026-08-05 03:20:23,Transporte,Alta,Cerrada,Pérdida de enlace,true,457,RAN Monitor
+ALM-001155,CEL-00179,2026-08-04 13:33:34,2026-08-05 16:33:34,Radio,Alta,Cerrada,Interferencia,true,486,Energy Monitor
+ALM-001156,CEL-00016,2026-08-04 13:46:45,2026-08-06 05:46:45,Saturación,Media,Cerrada,Alta demanda,true,215,NMS
+ALM-001157,CEL-00033,2026-08-04 13:59:56,2026-08-06 18:59:56,Hardware,Media,Cerrada,Módulo degradado,false,244,RAN Monitor
+ALM-001158,CEL-00050,2026-08-04 14:13:07,,Software,Baja,Reconocida,Error de configuración,false,178,Energy Monitor
+ALM-001159,CEL-00067,2026-08-04 14:26:18,,Energía,Crítica,Reconocida,Falla de suministro,true,1082,NMS
+ALM-001160,CEL-00084,2026-08-04 14:39:29,,Transporte,Alta,Abierta,Pérdida de enlace,true,431,RAN Monitor
+ALM-001161,CEL-00101,2026-08-04 14:52:40,2026-08-05 23:52:40,Radio,Alta,Cerrada,Interferencia,true,460,Energy Monitor
+ALM-001162,CEL-00118,2026-08-04 15:05:51,2026-08-06 13:05:51,Saturación,Media,Cerrada,Alta demanda,false,189,NMS
+ALM-001163,CEL-00135,2026-08-04 15:19:02,2026-08-07 02:19:02,Hardware,Media,Cerrada,Módulo degradado,true,218,RAN Monitor
+ALM-001164,CEL-00152,2026-08-04 15:32:13,2026-08-07 15:32:13,Software,Baja,Cerrada,Error de configuración,false,152,Energy Monitor
+ALM-001165,CEL-00169,2026-08-04 15:45:24,2026-08-05 04:45:24,Energía,Crítica,Cerrada,Falla de suministro,true,1056,NMS
+ALM-001166,CEL-00006,2026-08-04 15:58:35,2026-08-05 17:58:35,Transporte,Alta,Cerrada,Pérdida de enlace,true,605,RAN Monitor
+ALM-001167,CEL-00023,2026-08-04 16:11:46,2026-08-06 07:11:46,Radio,Alta,Cerrada,Interferencia,true,434,Energy Monitor
+ALM-001168,CEL-00040,2026-08-04 16:24:57,,Saturación,Media,Reconocida,Alta demanda,false,163,NMS
+ALM-001169,CEL-00057,2026-08-04 16:38:08,,Hardware,Media,Reconocida,Módulo degradado,false,192,RAN Monitor
+ALM-001170,CEL-00074,2026-08-04 16:51:19,,Software,Baja,Abierta,Error de configuración,true,126,Energy Monitor
+ALM-001171,CEL-00091,2026-08-04 17:04:30,2026-08-05 12:04:30,Energía,Crítica,Cerrada,Falla de suministro,true,1030,NMS
+ALM-001172,CEL-00108,2026-08-04 17:17:41,2026-08-06 01:17:41,Transporte,Alta,Cerrada,Pérdida de enlace,true,579,RAN Monitor
+ALM-001173,CEL-00125,2026-08-04 17:30:52,2026-08-06 14:30:52,Radio,Alta,Cerrada,Interferencia,true,608,Energy Monitor
+ALM-001174,CEL-00142,2026-08-04 17:44:03,2026-08-07 03:44:03,Saturación,Media,Cerrada,Alta demanda,false,137,NMS
+ALM-001175,CEL-00159,2026-08-04 17:57:14,2026-08-07 16:57:14,Hardware,Media,Cerrada,Módulo degradado,false,166,RAN Monitor
+ALM-001176,CEL-00176,2026-08-04 18:10:25,2026-08-05 06:10:25,Software,Baja,Cerrada,Error de configuración,false,100,Energy Monitor
+ALM-001177,CEL-00013,2026-08-04 18:23:36,2026-08-05 19:23:36,Energía,Crítica,Cerrada,Falla de suministro,true,1004,NMS
+ALM-001178,CEL-00030,2026-08-04 18:36:47,,Transporte,Alta,Reconocida,Pérdida de enlace,true,553,RAN Monitor
+ALM-001179,CEL-00047,2026-08-04 18:49:58,,Radio,Alta,Reconocida,Interferencia,true,582,Energy Monitor
+ALM-001180,CEL-00064,2026-08-04 19:03:09,,Saturación,Media,Abierta,Alta demanda,false,311,NMS
+ALM-001181,CEL-00081,2026-08-04 19:16:20,2026-08-05 00:16:20,Hardware,Media,Cerrada,Módulo degradado,false,140,RAN Monitor
+ALM-001182,CEL-00098,2026-08-04 19:29:31,2026-08-05 13:29:31,Software,Baja,Cerrada,Error de configuración,false,74,Energy Monitor
+ALM-001183,CEL-00115,2026-08-04 19:42:42,2026-08-06 02:42:42,Energía,Crítica,Cerrada,Falla de suministro,true,978,NMS
+ALM-001184,CEL-00132,2026-08-04 19:55:53,2026-08-06 15:55:53,Transporte,Alta,Cerrada,Pérdida de enlace,true,527,RAN Monitor
+ALM-001185,CEL-00149,2026-08-04 20:09:04,2026-08-07 05:09:04,Radio,Alta,Cerrada,Interferencia,true,556,Energy Monitor
+ALM-001186,CEL-00166,2026-08-04 20:22:15,2026-08-07 18:22:15,Saturación,Media,Cerrada,Alta demanda,false,285,NMS
+ALM-001187,CEL-00003,2026-08-04 20:35:26,2026-08-05 07:35:26,Hardware,Media,Cerrada,Módulo degradado,false,314,RAN Monitor
+ALM-001188,CEL-00020,2026-08-04 20:48:37,,Software,Baja,Reconocida,Error de configuración,false,48,Energy Monitor
+ALM-001189,CEL-00037,2026-08-04 21:01:48,,Energía,Crítica,Reconocida,Falla de suministro,true,952,NMS
+ALM-001190,CEL-00054,2026-08-04 21:14:59,,Transporte,Alta,Abierta,Pérdida de enlace,true,501,RAN Monitor
+ALM-001191,CEL-00071,2026-08-04 21:28:10,2026-08-07 12:28:10,Radio,Alta,Cerrada,Interferencia,true,530,Energy Monitor
+ALM-001192,CEL-00088,2026-08-04 21:41:21,2026-08-05 01:41:21,Saturación,Media,Cerrada,Alta demanda,false,259,NMS
+ALM-001193,CEL-00105,2026-08-04 21:54:32,2026-08-05 14:54:32,Hardware,Media,Cerrada,Módulo degradado,false,288,RAN Monitor
+ALM-001194,CEL-00122,2026-08-04 22:07:43,2026-08-06 04:07:43,Software,Baja,Cerrada,Error de configuración,false,222,Energy Monitor
+ALM-001195,CEL-00139,2026-08-04 22:20:54,2026-08-04 20:20:54,Energía,Crítica,Cerrada,Falla de suministro,true,926,NMS
+ALM-001196,CEL-00156,2026-08-04 22:34:05,2026-08-07 06:34:05,Transporte,Alta,Cerrada,Pérdida de enlace,true,475,RAN Monitor
+ALM-001197,CEL-00173,2026-08-04 22:47:16,2026-08-07 19:47:16,Radio,Alta,Cerrada,Interferencia,true,504,Energy Monitor
+ALM-001198,CEL-00010,2026-08-04 23:00:27,,Saturación,Media,Reconocida,Alta demanda,true,233,NMS
+ALM-001199,CEL-00027,2026-08-04 23:13:38,,Hardware,Media,Reconocida,Módulo degradado,false,262,RAN Monitor
+ALM-001200,CEL-00044,2026-08-04 23:26:49,,Software,Baja,Abierta,Error de configuración,false,196,Energy Monitor

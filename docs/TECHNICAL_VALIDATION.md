@@ -1,37 +1,51 @@
-# Premissas e validação técnica
+# Supuestos y validación técnica
 
-## Decisões adotadas
+## Decisiones adoptadas
 
-- Público iniciante, com SQL básico e conceitos de tabelas/schemas.
-- Ambiente recomendado: Unity Catalog, serverless quando disponível e catálogo
-  compartilhado. Os nomes padrão são `telco_workshop.red_calidad`.
-- Caso: qualidade e experiência de uma rede móvel chilena fictícia, sem dados pessoais.
-- Lakeflow: **Lakeflow Declarative Pipelines**, nome atual do produto anteriormente
-  conhecido como Delta Live Tables. O código usa `pyspark.pipelines as dp`.
-- DQX: **databricks-labs/dqx**, projeto Databricks Labs sem SLA. A API usada é
-  `DQEngine.apply_checks_by_metadata_and_split`.
-- “Genie Agent”: interpretado como **AI/BI Genie Space**, sem agente customizado.
-- App: **Databricks Apps** com Streamlit e Statement Execution API sobre SQL Warehouse.
+- Público inicial con SQL básico y conceptos de tablas y schemas.
+- Entorno recomendado: Unity Catalog, serverless cuando esté disponible y catálogo compartido.
+- Caso: calidad y experiencia de una red móvil chilena ficticia, sin datos personales.
+- Lakeflow: **Lakeflow Declarative Pipelines**, nombre actual del producto antes conocido
+  como Delta Live Tables. El código usa `pyspark.pipelines as dp`.
+- DQX: **databricks-labs/dqx**, proyecto de Databricks Labs sin SLA de soporte.
+- “Genie Agent”: interpretado como **AI/BI Genie Space**, sin agente personalizado.
+- App: **Databricks Apps** con una plantilla Streamlit inicial y Statement Execution
+  API sobre SQL Warehouse. La modernización visual es el reto posterior.
 
-## Arquitetura FY27
+## Causa raíz de la falla observada del SDP
 
-Não há no material fornecido uma referência oficial verificável chamada “arquitetura
-FY27”. A lâmina deve ser apresentada como visão conceitual provisória da Data
-Intelligence Platform. Antes de uma sessão externa, o responsável deve substituir ou
-validar essa lâmina com o material FY27 autorizado internamente. Nenhum componente
-novo deve ser apresentado como arquitetura oficial apenas com base no deck atual.
+Las ejecuciones fallidas del 22/09/2026 muestran `DLTAnalysisException`: las tablas
+MANAGED `tower_metrics_silver` y `support_tickets_silver` ya existían cuando el
+pipeline intentó materializarlas. Los notebooks de contingencia usaban los mismos
+nombres que el SDP.
 
-## Pontos que dependem do workspace
+La corrección reserva al pipeline los nombres de sus objetos. Las rutas alternativas
+crean objetos `_fallback`, y DQX/SQL reciben el nombre de la tabla fuente mediante
+widgets. Esto permite ejecutar la contingencia y luego volver al SDP sin borrar
+objetos. La validación posterior completó un full refresh del DAG ampliado con once
+Bronze, once Silver y Gold preliminares.
 
-- Genie e Apps variam por cloud, região, entitlement e plano.
-- Criação de catálogo costuma exigir privilégios administrativos; o fallback é catálogo compartilhado.
-- DQX exige acesso ao pacote ou biblioteca pré-instalada.
-- A API `pyspark.pipelines` requer runtime compatível com a versão atual de Lakeflow.
-- A App precisa de SQL Warehouse associado e grants de UC para seu service principal.
+Una segunda validación detectó que `input_file_name()` no está soportado en esta ruta
+de Unity Catalog. Las tablas Bronze ahora obtienen la procedencia desde
+`_metadata.file_path`, que es la interfaz compatible con Auto Loader y UC.
 
-## Correção do deck
+## Arquitectura FY27
 
-A agenda do HTML declara 96 minutos de Show, mas os valores por módulo somam 86.
-O roteiro deste repositório usa 100 minutos de Show, 45 de Tell e 5 de buffer: 66,7%
-de prática e exatamente 150 minutos.
+No existe en el material suministrado una referencia oficial verificable llamada
+“arquitectura FY27”. La lámina debe presentarse como una visión conceptual provisional
+de Data Intelligence Platform. Antes de una sesión externa, el responsable debe
+validarla con material FY27 autorizado internamente.
 
+## Puntos que dependen del workspace
+
+- Genie y Apps varían por nube, región, entitlement y plan.
+- Crear un catálogo suele exigir privilegios administrativos; use un catálogo compartido.
+- DQX requiere acceso al paquete o una biblioteca preinstalada.
+- `pyspark.pipelines` requiere un runtime compatible con la versión actual de Lakeflow.
+- La App necesita un SQL Warehouse asociado y grants de UC para su service principal.
+
+## Corrección del deck
+
+La agenda del HTML original declaraba 96 minutos de Show, pero sus valores por módulo
+sumaban 86. La guía corregida usa 97 minutos de Show/práctica, 48 de Tell y 5 de
+margen: 64,7 % de práctica y exactamente 150 minutos.

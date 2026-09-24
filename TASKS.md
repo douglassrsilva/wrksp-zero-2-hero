@@ -1,15 +1,28 @@
-# Estado do pacote
+# Estado del paquete
 
-- [x] Gerador PySpark determinístico e realista
-- [x] Notebook Unity Catalog e dados de contingência
-- [x] Pipeline Lakeflow e alternativa PySpark
-- [x] DQX atual e alternativa SQL
-- [x] Views SQL compartilhadas
-- [x] Guia AI/BI Dashboard
-- [x] Configuração Genie Space
-- [x] Databricks App com modo local
-- [x] Bundle parametrizado, sem profile ou workspace fixo
-- [x] Guia do instrutor, trial, checklist e validação técnica
-- [x] Gerar e validar os CSVs versionados
-- [x] Validar bundle contra workspace autenticado
-- [x] Publicar no repositório remoto
+- [x] Generador PySpark determinista y realista
+- [x] Notebook de Unity Catalog y datos de contingencia
+- [x] Pipeline Lakeflow y alternativa PySpark sin colisiones de nombres
+- [x] DQX actual y alternativa SQL
+- [x] Vistas SQL compartidas
+- [x] Guía del AI/BI Dashboard
+- [x] Configuración del Genie Space
+- [x] Databricks App con modo local
+- [x] Bundle parametrizado, sin perfil ni workspace fijo
+- [x] Datos, notebooks, App y documentación en español
+- [x] Ampliar el modelo a once fuentes y una arquitectura medallion completa
+- [x] Diseñar la ampliación a clientes, productos y dos Metric Views
+- [x] Obtener aprobación del plan detallado de generación sintética
+- [x] Generar once fuentes sintéticas sin PII y sus validaciones
+- [x] Implementar Bronze/Silver/Gold y cuarentenas DQX para el modelo ampliado
+- [x] Crear `mv_network_quality` y `mv_customer_product_experience`
+- [x] Diseñar el Genie Agent y cuatro preguntas de demostración
+- [x] Crear el Genie Space parametrizado con fuentes, instrucciones y benchmarks
+- [x] Validar dos preguntas Chat
+- [x] Documentar Deep Research como demostración dependiente de la interfaz
+- [x] Actualizar Dashboard y Genie para Customer 360 y productos
+- [x] Convertir la App en plantilla inicial y el reto en su modernización
+- [x] Revalidar el SDP corregido en el workspace
+- [x] Capturar e incorporar screenshots sanitizados de la App y del DAG Lakeflow
+- [x] Ejecutar la revisión final de seguridad
+- [ ] Publicar la revisión en GitHub

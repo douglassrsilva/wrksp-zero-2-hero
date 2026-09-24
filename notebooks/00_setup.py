@@ -1,14 +1,15 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # 00 — Preparacao e geracao dos dados sinteticos
+# MAGIC # 00 — Preparación y generación de datos sintéticos
 # MAGIC
-# MAGIC Gera 5.000 medicoes de rede e 500 tickets ficticios com PySpark nativo.
-# MAGIC O notebook cria um volume do Unity Catalog, grava CSVs para o Lakeflow e
-# MAGIC mantem tabelas Delta de contingencia. Execute uma vez antes da oficina.
+# MAGIC Genera once fuentes sintéticas con PySpark nativo: red, operaciones, clientes,
+# MAGIC productos, consumo y experiencia. El notebook crea un volumen de Unity Catalog,
+# MAGIC escribe los CSV para Lakeflow y mantiene checkpoints Delta de contingencia.
+# MAGIC Ninguna fuente contiene PII. Ejecútelo una vez antes del workshop.
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog", "telco_workshop", "Catalogo")
+dbutils.widgets.text("catalog", "telco_workshop", "Catálogo")
 dbutils.widgets.text("schema", "red_calidad", "Schema")
 dbutils.widgets.text("seed", "42", "Seed")
 
@@ -16,23 +17,25 @@ catalog = dbutils.widgets.get("catalog")
 schema = dbutils.widgets.get("schema")
 seed = int(dbutils.widgets.get("seed"))
 
-assert catalog.replace("_", "").isalnum(), "Nome de catalogo invalido"
-assert schema.replace("_", "").isalnum(), "Nome de schema invalido"
+assert catalog.replace("_", "").isalnum(), "Nombre de catálogo no válido"
+assert schema.replace("_", "").isalnum(), "Nombre de schema no válido"
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Unity Catalog
-# MAGIC Se voce nao tem `CREATE CATALOG`, troque o widget `catalog` pelo catalogo compartilhado do instrutor.
+# MAGIC El catálogo debe existir antes del workshop. El notebook crea solamente el
+# MAGIC schema y el volumen, si el participante tiene permisos. Esto evita que
+# MAGIC `CREATE CATALOG IF NOT EXISTS` falle en metastores sin storage root.
 
 # COMMAND ----------
 
-spark.sql(f"CREATE CATALOG IF NOT EXISTS `{catalog}`")
+spark.sql(f"DESCRIBE CATALOG EXTENDED `{catalog}`").limit(1).collect()
 spark.sql(f"CREATE SCHEMA IF NOT EXISTS `{catalog}`.`{schema}`")
 spark.sql(f"CREATE VOLUME IF NOT EXISTS `{catalog}`.`{schema}`.`raw_data`")
 
 volume_root = f"/Volumes/{catalog}/{schema}/raw_data"
-print(f"Volume de entrada: {volume_root}")
+print(f"Volumen de entrada: {volume_root}")
 
 # COMMAND ----------
 
@@ -44,62 +47,50 @@ for candidate in (Path.cwd() / "src", Path.cwd().parent / "src"):
         sys.path.insert(0, str(candidate))
         break
 
-from telco_workshop.generator import build_support_tickets, build_tower_metrics
+from telco_workshop.generator import DATASET_COUNTS, build_all_datasets
 
-metrics = build_tower_metrics(spark, seed=seed)
-tickets = build_support_tickets(spark, metrics, seed=seed)
+datasets = build_all_datasets(spark, seed=seed)
+for dataset_name, dataframe in datasets.items():
+    actual = dataframe.count()
+    expected = DATASET_COUNTS[dataset_name]
+    assert actual == expected, f"{dataset_name}: se esperaban {expected}; se obtuvieron {actual}"
 
-assert metrics.count() == 5_000
-assert tickets.count() == 500
-
-display(metrics.limit(10))
-display(tickets.limit(10))
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ## Landing zone em CSV
-# MAGIC Os diretórios abaixo sao lidos pelo Auto Loader no pipeline Lakeflow.
-
-# COMMAND ----------
-
-(
-    metrics.coalesce(1)
-    .write.mode("overwrite")
-    .option("header", True)
-    .option("timestampFormat", "yyyy-MM-dd HH:mm:ss")
-    .csv(f"{volume_root}/cell_tower_metrics")
-)
-(
-    tickets.coalesce(1)
-    .write.mode("overwrite")
-    .option("header", True)
-    .option("timestampFormat", "yyyy-MM-dd HH:mm:ss")
-    .csv(f"{volume_root}/support_tickets")
-)
+display(datasets["cell_tower_metrics"].limit(10))
+display(datasets["customers"].limit(10))
+display(datasets["products"])
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Checkpoint de contingencia
-# MAGIC Estas tabelas permitem continuar o workshop mesmo que Lakeflow nao esteja disponivel.
+# MAGIC ## Zona de aterrizaje en CSV
+# MAGIC Auto Loader lee los siguientes directorios en el pipeline de Lakeflow.
 
 # COMMAND ----------
 
-metrics.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(
-    f"{catalog}.{schema}.cell_tower_metrics_raw_checkpoint"
-)
-tickets.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(
-    f"{catalog}.{schema}.support_tickets_raw_checkpoint"
-)
+for dataset_name, dataframe in datasets.items():
+    (
+        dataframe.coalesce(1)
+        .write.mode("overwrite")
+        .option("header", True)
+        .option("timestampFormat", "yyyy-MM-dd HH:mm:ss")
+        .option("dateFormat", "yyyy-MM-dd")
+        .csv(f"{volume_root}/{dataset_name}")
+    )
+    print(f"CSV listo: {volume_root}/{dataset_name}")
 
-summary = spark.sql(
-    f"""
-    SELECT 'metricas' AS dataset, count(*) AS linhas
-      FROM `{catalog}`.`{schema}`.`cell_tower_metrics_raw_checkpoint`
-    UNION ALL
-    SELECT 'tickets', count(*)
-      FROM `{catalog}`.`{schema}`.`support_tickets_raw_checkpoint`
-    """
-)
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Punto de contingencia
+# MAGIC Estas tablas permiten continuar el workshop aunque Lakeflow no esté disponible.
+
+# COMMAND ----------
+
+for dataset_name, dataframe in datasets.items():
+    dataframe.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(
+        f"{catalog}.{schema}.{dataset_name}_raw_checkpoint"
+    )
+
+summary_rows = [(name, DATASET_COUNTS[name]) for name in DATASET_COUNTS]
+summary = spark.createDataFrame(summary_rows, "dataset string, filas long").orderBy("dataset")
 display(summary)

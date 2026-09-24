@@ -1,33 +1,114 @@
-# AI/BI Dashboard — roteiro de construção
+# AI/BI Dashboard — guía de construcción
 
-Nome: `Qualidade de Rede — <participante>`.
+Nombre sugerido: `Experiencia móvil 360 — <participante>`.
 
-O dashboard é criado pela UI porque o exercício ensina datasets, canvas, filtros e
-publicação. As views são preparadas por `05_sql_queries.sql`.
+El dashboard es la principal construcción visual del workshop. Se crea desde la
+interfaz para practicar datasets, canvas, filtros y publicación. Use el catálogo y
+el schema asignados al participante; no copie nombres fijos de otro entorno.
+
+## Antes de comenzar
+
+Compruebe que `05_sql_queries.sql` y `06_metric_views.sql` finalizaron. Deben existir:
+
+- `gold_network_hourly`
+- `gold_site_daily_360`
+- `gold_customer_product_daily`
+- `gold_customer_360`
+- `gold_incident_impact`
+- `mv_network_quality`
+- `mv_customer_product_experience`
 
 ## Datasets
 
-1. `network_kpis`: `SELECT * FROM telco_workshop.red_calidad.v_network_kpis`
-2. `tower_health`: `SELECT * FROM telco_workshop.red_calidad.v_tower_health`
-3. `hourly_trend`: `SELECT * FROM telco_workshop.red_calidad.v_hourly_network_trend`
-4. `quality_summary`: `SELECT * FROM telco_workshop.red_calidad.dqx_quality_summary`
+### 1. Calidad de red por región y tecnología
 
-## Canvas de referência
+```sql
+SELECT
+  `Región` AS region,
+  `Tecnología` AS technology,
+  MEASURE(`Sitios activos`) AS active_sites,
+  MEASURE(`Disponibilidad media`) AS availability_pct,
+  MEASURE(`Latencia media`) AS latency_ms,
+  MEASURE(`Downlink medio`) AS downlink_mbps,
+  MEASURE(`Cumplimiento SLA de red`) AS network_sla_pct
+FROM <catalog>.<schema>.mv_network_quality
+GROUP BY `Región`, `Tecnología`
+```
 
-1. Counter: média de `avg_latency_ms`, título “Latência média”.
-2. Counter: soma de `total_dropped_calls`, título “Chamadas derrubadas”.
-3. Barras: `region` no eixo X e média de `avg_throughput_mbps` no eixo Y; cor por `technology`.
-4. Tabela: `tower_id`, `commune`, `health_status`, `avg_latency_ms`, `open_tickets`.
-5. Linha: `metric_hour` e `avg_latency_ms`, cor por `technology`.
-6. Mapa opcional: `latitude`, `longitude`, cor por `health_status` e tamanho por `total_tickets`.
+### 2. Experiencia de clientes y productos
 
-Adicione filtros de `region`, `technology` e `health_status`. Publique e valide que
-alterar tecnologia de 4G para 5G atualiza counters e gráficos.
+```sql
+SELECT
+  `Región` AS region,
+  `Segmento` AS customer_segment,
+  `Producto` AS product_name,
+  MEASURE(`Clientes activos`) AS active_customers,
+  MEASURE(`ARPU`) AS arpu_clp,
+  MEASURE(`Tickets por 100 líneas`) AS tickets_per_100_lines,
+  MEASURE(`NPS`) AS nps,
+  MEASURE(`Clientes de alto riesgo`) AS high_risk_customers,
+  MEASURE(`Cumplimiento SLA de cliente`) AS customer_network_sla_pct
+FROM <catalog>.<schema>.mv_customer_product_experience
+GROUP BY `Región`, `Segmento`, `Producto`
+```
 
-## Atividade mínima viável
+### 3. Sitios prioritarios
 
-Se o tempo cair abaixo de oito minutos, o instrutor duplica um dashboard previamente
-preparado e cada participante cria apenas um filtro e uma visualização. Se AI/BI
-Dashboards estiver indisponível, execute os quatro datasets no SQL Editor e mostre o
-dashboard de referência do instrutor.
+```sql
+SELECT
+  event_date,
+  region,
+  commune,
+  site_id,
+  site_health_status,
+  avg_availability_pct,
+  avg_latency_ms,
+  avg_downlink_mbps,
+  open_tickets,
+  impacted_subscriptions
+FROM <catalog>.<schema>.gold_site_daily_360
+```
 
+### 4. Impacto de incidentes
+
+```sql
+SELECT
+  opened_date,
+  region,
+  commune,
+  severity,
+  business_impact,
+  impacted_customers,
+  impacted_subscriptions,
+  billed_revenue_at_risk_clp
+FROM <catalog>.<schema>.gold_incident_impact
+```
+
+Reemplace `<catalog>` y `<schema>` desde el selector del editor. No publique el
+nombre del entorno de validación en capturas o documentación compartida.
+
+## Canvas mínimo del ejercicio
+
+1. KPI: disponibilidad media.
+2. KPI: latencia media.
+3. KPI: clientes activos.
+4. Barras: SLA de red por región, color por tecnología.
+5. Dispersión: ARPU frente a NPS, tamaño por clientes activos y color por segmento.
+6. Tabla: sitios, estado, latencia, tickets y suscripciones impactadas.
+7. Filtros: región, tecnología y segmento.
+
+## Verificación
+
+- Cambiar la región actualiza KPI, gráficos y tabla aplicables.
+- Las medidas de las Metric Views coinciden con una consulta ejecutada en SQL Editor.
+- El dashboard no consulta Bronze, CSV ni datos de cuarentena.
+- La publicación no revela usuario, workspace, catálogo de validación ni IDs internos.
+
+## Actividad mínima viable
+
+Si quedan menos de ocho minutos, el instructor duplica un dashboard de referencia.
+Cada participante añade un filtro y una visualización. Si AI/BI Dashboards no está
+disponible, ejecute los cuatro datasets en SQL Editor y use las capturas sanitizadas.
+
+La captura del dashboard de referencia se añadirá únicamente después de validar el
+canvas en el workspace y comprobar que no contiene IDs ni nombres del entorno.

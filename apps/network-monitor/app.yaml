@@ -6,9 +6,9 @@ command:
   - --server.port=8000
   - --server.headless=true
 
+# El bundle sobrescribe estas variables con valores suministrados en el deploy.
+# `valueFrom` mantiene el ID del Warehouse fuera del repositorio en despliegues
+# manuales que asocian el recurso con el nombre `sql-warehouse`.
 env:
-  - name: TELCO_CATALOG
-    value: telco_workshop
-  - name: TELCO_SCHEMA
-    value: red_calidad
-
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse

@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 02 — Unity Catalog
--- MAGIC Sequencia Tell–Show–Tell: hierarquia, demonstracao, exercicio e verificacao.
+-- MAGIC Secuencia Tell–Show–Tell: jerarquía, demostración, ejercicio y verificación.
 
 -- COMMAND ----------
 
@@ -10,8 +10,9 @@ CREATE WIDGET TEXT schema DEFAULT "red_calidad";
 
 -- COMMAND ----------
 
--- Se CREATE CATALOG nao for permitido, informe no widget um catalogo compartilhado ja existente.
-CREATE CATALOG IF NOT EXISTS IDENTIFIER(:catalog);
+-- El catálogo debe ser preparado por el instructor. Crear catálogos dentro del
+-- workshop depende de storage root y privilegios de metastore.
+DESCRIBE CATALOG EXTENDED IDENTIFIER(:catalog);
 CREATE SCHEMA IF NOT EXISTS IDENTIFIER(:catalog || '.' || :schema);
 CREATE VOLUME IF NOT EXISTS IDENTIFIER(:catalog || '.' || :schema || '.raw_data');
 
@@ -30,7 +31,6 @@ SHOW VOLUMES IN IDENTIFIER(:catalog || '.' || :schema);
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC ## Verificacao
--- MAGIC Confirme no Catalog Explorer a hierarquia `catalogo > schema > volume raw_data`.
--- MAGIC Depois execute `00_setup.py` para preencher o volume e criar os checkpoints.
-
+-- MAGIC ## Verificación
+-- MAGIC Confirme en Catalog Explorer la jerarquía `catálogo > schema > volumen raw_data`.
+-- MAGIC Después ejecute `00_setup.py` para llenar el volumen y crear los puntos de contingencia.

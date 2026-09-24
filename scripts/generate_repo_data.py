@@ -1,4 +1,4 @@
-"""Gera os CSVs versionados usando exatamente o gerador PySpark do workshop."""
+"""Genera los once CSV versionados con el mismo PySpark del workshop."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ from pathlib import Path
 
 from pyspark.sql import SparkSession
 
-from telco_workshop.generator import build_support_tickets, build_tower_metrics
+from telco_workshop.generator import DATASET_COUNTS, build_all_datasets
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +18,7 @@ STAGING = ROOT / ".data_staging"
 def copy_single_csv(source_dir: Path, destination: Path) -> None:
     parts = list(source_dir.glob("part-*.csv"))
     if len(parts) != 1:
-        raise RuntimeError(f"Esperado um part CSV em {source_dir}; encontrados {len(parts)}")
+        raise RuntimeError(f"Se esperaba un archivo part CSV en {source_dir}; se encontraron {len(parts)}")
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(parts[0], destination)
 
@@ -32,18 +32,30 @@ def main() -> None:
     )
     spark.sparkContext.setLogLevel("WARN")
     try:
-        metrics = build_tower_metrics(spark, seed=42)
-        tickets = build_support_tickets(spark, metrics, seed=42)
-        assert metrics.count() == 5_000
-        assert tickets.count() == 500
+        datasets = build_all_datasets(spark, seed=42)
 
         if STAGING.exists():
             shutil.rmtree(STAGING)
-        metrics.coalesce(1).write.mode("overwrite").option("header", True).csv(str(STAGING / "metrics"))
-        tickets.coalesce(1).write.mode("overwrite").option("header", True).csv(str(STAGING / "tickets"))
-        copy_single_csv(STAGING / "metrics", OUTPUT / "cell_tower_metrics.csv")
-        copy_single_csv(STAGING / "tickets", OUTPUT / "support_tickets.csv")
-        print(f"Gerados {metrics.count()} registros de metricas e {tickets.count()} tickets em {OUTPUT}")
+        counts = {}
+        for dataset_name, dataframe in datasets.items():
+            count = dataframe.count()
+            expected = DATASET_COUNTS[dataset_name]
+            assert count == expected, f"{dataset_name}: se esperaban {expected}; se obtuvieron {count}"
+            counts[dataset_name] = count
+            staging_path = STAGING / dataset_name
+            (
+                dataframe.coalesce(1)
+                .write.mode("overwrite")
+                .option("header", True)
+                .option("timestampFormat", "yyyy-MM-dd HH:mm:ss")
+                .option("dateFormat", "yyyy-MM-dd")
+                .csv(str(staging_path))
+            )
+            copy_single_csv(staging_path, OUTPUT / f"{dataset_name}.csv")
+
+        print(f"Se generaron {sum(counts.values()):,} filas en {OUTPUT}")
+        for dataset_name, count in counts.items():
+            print(f"  - {dataset_name}: {count:,}")
     finally:
         spark.stop()
         if STAGING.exists():

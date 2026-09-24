@@ -1,46 +1,51 @@
-# Dados sintéticos
+# Datos sintéticos
 
-Os arquivos representam uma rede móvel chilena fictícia. Todos os IDs são gerados e
-não existe informação pessoal. As coordenadas são aproximações de centros urbanos,
-deslocadas deterministicamente para criar sites fictícios.
+Los archivos representan la red, los clientes y los productos de un operador móvil
+chileno ficticio. Son deterministas y no contienen nombres, RUT, teléfonos, correos,
+direcciones ni IDs reales. Las coordenadas parten de referencias geográficas públicas
+y reciben desplazamientos reproducibles para crear sitios ficticios.
 
-## `cell_tower_metrics.csv` — 5.000 linhas
+## Fuentes y volumen
 
-| Coluna | Tipo | Uso |
-|---|---|---|
-| `tower_id` | string | Site fictício `TWR-001` a `TWR-050` |
-| `timestamp` | timestamp | Cem medições por site em sete dias |
-| `region`, `commune` | string | Localização operacional |
-| `latitude`, `longitude` | double | Coordenadas aproximadas do site fictício |
-| `environment` | string | Urbano, costeiro, rural, industrial, desértico etc. |
-| `frequency_band` | string | `B28-700`, `B3-1800`, `B7-2600` ou `n78-3500` |
-| `signal_strength_dbm` | double | Proxy simplificada de RSRP, em dBm |
-| `sinr_db` | double | Relação sinal-interferência-ruído |
-| `latency_ms` | double | Latência estimada |
-| `throughput_mbps` | double | Vazão estimada |
-| `packet_loss_pct` | double | Percentual de perda de pacotes |
-| `dropped_calls` | integer | Quedas no intervalo |
-| `active_users` | integer | Contagem agregada sintética |
-| `technology` | string | 4G ou 5G |
+| Archivo | Filas | Contenido |
+|---|---:|---|
+| `network_sites.csv` | 60 | Sitios, ubicación aproximada, tipo y entorno |
+| `radio_cells.csv` | 180 | Celdas, tecnología, banda y capacidad |
+| `cell_tower_metrics.csv` | 30.240 | Calidad, tráfico y disponibilidad por celda/hora |
+| `network_alarms.csv` | 1.200 | Alarmas, causa probable e impacto estimado |
+| `maintenance_orders.csv` | 400 | Órdenes, prioridad, tiempo fuera de servicio y costo |
+| `customers.csv` | 3.000 | Perfil sintético sin PII, segmento y región |
+| `products.csv` | 18 | Planes prepago, postpago, datos y empresa |
+| `subscriptions.csv` | 4.200 | Relación anónima cliente–producto–línea |
+| `usage_daily.csv` | 58.800 | Uso, facturación y celda principal por día |
+| `support_tickets.csv` | 1.500 | Atención, motivo, estado y resolución |
+| `customer_surveys.csv` | 800 | NPS y CSAT sintéticos |
+| **Total** | **100.398** | Once fuentes relacionadas |
 
-Há falhas controladas: IDs nulos, sinal fora de faixa, latência negativa/acima do
-limite e throughput nulo. Elas existem para Lakeflow expectations e DQX.
+El esquema completo, las distribuciones y las relaciones están documentados en
+[`docs/DATA_GENERATION_PLAN.md`](../docs/DATA_GENERATION_PLAN.md).
 
-## `support_tickets.csv` — 500 linhas
+## Impurezas intencionales para DQX
 
-| Coluna | Tipo | Uso |
-|---|---|---|
-| `ticket_id` | string | Ticket fictício |
-| `tower_id` | string | FK para torre |
-| `region`, `commune` | string | Área afetada |
-| `created_at` | timestamp | Abertura |
-| `category` | string | Señal, Velocidad, Llamadas ou Cobertura |
-| `severity` | string | Baja, Media, Alta ou Critica |
-| `status` | string | Abierto, En progreso ou Resuelto |
-| `channel` | string | App, call center, web ou tienda |
-| `customer_segment` | string | Prepago, Postpago ou Empresas |
-| `resolution_hours` | double | Preenchido para tickets resolvidos |
+Una fracción pequeña y reproducible contiene problemas como claves nulas o
+duplicadas, fechas inconsistentes, región ausente, métricas fuera de rango, valores
+negativos o relaciones inválidas. Las impurezas permiten demostrar:
 
-Sites com maior risco técnico recebem entre 5 e 15 tickets; assim, a correlação é
-perceptível em SQL, dashboard, Genie e App.
+- observación con expectations en Lakeflow;
+- reglas declarativas de DQX;
+- separación entre `validated` y `quarantine`;
+- construcción de Gold exclusivamente con registros confiables.
 
+Las anomalías nunca contienen información personal ni secretos. No deben corregirse
+manualmente en los CSV antes del workshop.
+
+## Generación y validación
+
+Desde la raíz del repositorio:
+
+```bash
+uv run --extra dev python scripts/generate_repo_data.py
+uv run --extra dev python scripts/validate_local.py
+```
+
+Use `seed=42` para conservar los resultados esperados del material del instructor.

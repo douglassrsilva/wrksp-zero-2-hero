@@ -1,4 +1,4 @@
-"""Smoke test headless da App Streamlit com os CSVs locais."""
+"""Smoke test headless de la App Streamlit con los CSV locales."""
 
 from pathlib import Path
 
@@ -10,8 +10,16 @@ app = AppTest.from_file(str(ROOT / "apps/network-monitor/app.py"), default_timeo
 app.run()
 
 assert not app.exception, [str(item.value) for item in app.exception]
-assert app.title[0].value == "📡 Monitor de qualidade de rede"
-assert len(app.metric) == 4
-assert app.metric[0].label == "Latencia media"
-print("Smoke test da App concluido com sucesso.")
-
+assert app.title[0].value == "📡 Monitor de experiencia móvil"
+assert len(app.tabs) == 0
+assert len(app.selectbox) == 1
+assert app.selectbox[0].label == "Región"
+assert len(app.metric) == 3
+assert [metric.label for metric in app.metric] == [
+    "Disponibilidad media",
+    "Latencia media",
+    "Clientes activos",
+]
+assert len(app.dataframe) == 1
+assert "Esta versión es intencionalmente simple" in app.info[0].value
+print("Smoke test de la App inicial finalizado correctamente.")

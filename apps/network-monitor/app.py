@@ -1,220 +1,149 @@
-"""Databricks App: monitor anonimo de qualidade de rede movel."""
+"""App inicial y deliberadamente simple para el workshop Databricks Zero to Hero.
+
+El objetivo didáctico es que los participantes entiendan primero el acceso a las
+tablas Gold. La experiencia visual moderna se construye después, como reto final.
+"""
 
 from __future__ import annotations
 
 import os
-from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-
-st.set_page_config(page_title="Monitor de qualidade de rede", page_icon="📡", layout="wide")
-
-
-def _statement_to_dataframe(statement: str) -> pd.DataFrame:
-    from databricks.sdk import WorkspaceClient
-
-    warehouse_id = os.environ["DATABRICKS_WAREHOUSE_ID"]
-    client = WorkspaceClient()
-    response = client.statement_execution.execute_statement(
-        warehouse_id=warehouse_id,
-        statement=statement,
-        wait_timeout="30s",
-        row_limit=10_000,
-    )
-    if response.status and response.status.state and response.status.state.value != "SUCCEEDED":
-        raise RuntimeError(f"Falha na consulta: {response.status}")
-    columns = [column.name for column in response.manifest.schema.columns]
-    rows = response.result.data_array or []
-    return pd.DataFrame(rows, columns=columns)
+from data_access import load_local_gold, load_remote_gold, remote_configuration
 
 
-@st.cache_data(ttl=120, show_spinner="Consultando indicadores...")
-def load_remote_data(catalog: str, schema: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    kpis = _statement_to_dataframe(f"SELECT * FROM `{catalog}`.`{schema}`.`v_network_kpis`")
-    towers = _statement_to_dataframe(f"SELECT * FROM `{catalog}`.`{schema}`.`v_tower_health`")
-    return kpis, towers
+st.set_page_config(page_title="Monitor de experiencia móvil", page_icon="📡", layout="wide")
+
+
+def _mean(frame: pd.DataFrame, column: str) -> float:
+    """Calcula una media segura para columnas numéricas."""
+
+    if column not in frame:
+        return 0.0
+    values = pd.to_numeric(frame[column], errors="coerce").dropna()
+    return float(values.mean()) if not values.empty else 0.0
+
+
+def _format_integer(value: float) -> str:
+    return f"{int(value):,}".replace(",", ".")
+
+
+@st.cache_data(ttl=120, show_spinner="Consultando la capa Gold...")
+def _load_remote(catalog: str, schema: str, warehouse_id: str) -> dict[str, pd.DataFrame]:
+    return load_remote_gold(catalog, schema, warehouse_id)
 
 
 @st.cache_data(show_spinner=False)
-def load_demo_data() -> tuple[pd.DataFrame, pd.DataFrame]:
-    data_dir = Path(__file__).resolve().parents[2] / "data" / "generated"
-    metrics = pd.read_csv(data_dir / "cell_tower_metrics.csv", parse_dates=["timestamp"])
-    tickets = pd.read_csv(data_dir / "support_tickets.csv", parse_dates=["created_at"])
-
-    valid = metrics[
-        metrics["tower_id"].notna()
-        & metrics["signal_strength_dbm"].between(-120, -40)
-        & metrics["latency_ms"].between(0, 500)
-        & metrics["throughput_mbps"].notna()
-    ].copy()
-
-    kpis = (
-        valid.groupby(["region", "technology"], as_index=False)
-        .agg(
-            total_towers=("tower_id", "nunique"),
-            avg_signal_dbm=("signal_strength_dbm", "mean"),
-            avg_latency_ms=("latency_ms", "mean"),
-            avg_throughput_mbps=("throughput_mbps", "mean"),
-            total_dropped_calls=("dropped_calls", "sum"),
-            avg_active_users=("active_users", "mean"),
-        )
-        .round(1)
-    )
-
-    tower_dimensions = [
-        "region",
-        "commune",
-        "latitude",
-        "longitude",
-        "environment",
-        "technology",
-        "frequency_band",
-    ]
-    towers = (
-        valid.groupby("tower_id", as_index=False)
-        .agg(
-            **{column: (column, "first") for column in tower_dimensions},
-            avg_signal_dbm=("signal_strength_dbm", "mean"),
-            avg_latency_ms=("latency_ms", "mean"),
-            avg_throughput_mbps=("throughput_mbps", "mean"),
-            total_dropped_calls=("dropped_calls", "sum"),
-            avg_active_users=("active_users", "mean"),
-        )
-        .round(1)
-    )
-    ticket_kpis = (
-        tickets.groupby("tower_id", as_index=False)
-        .agg(
-            total_tickets=("ticket_id", "count"),
-            open_tickets=("status", lambda values: (values == "Abierto").sum()),
-            critical_tickets=("severity", lambda values: (values == "Critica").sum()),
-        )
-    )
-    towers = towers.merge(ticket_kpis, on="tower_id", how="left").fillna(0)
-    towers["health_status"] = "Saudavel"
-    towers.loc[
-        (towers.avg_latency_ms > 80)
-        | (towers.avg_throughput_mbps < 30)
-        | (towers.total_dropped_calls > 400),
-        "health_status",
-    ] = "Atencao"
-    towers.loc[
-        (towers.avg_latency_ms > 120)
-        | (towers.avg_throughput_mbps < 15)
-        | (towers.total_dropped_calls > 700),
-        "health_status",
-    ] = "Critico"
-    return kpis, towers
+def _load_local() -> dict[str, pd.DataFrame]:
+    return load_local_gold()
 
 
-catalog = os.getenv("TELCO_CATALOG", "telco_workshop")
-schema = os.getenv("TELCO_SCHEMA", "red_calidad")
-remote_enabled = bool(os.getenv("DATABRICKS_WAREHOUSE_ID"))
+remote_enabled, missing_remote_variables = remote_configuration()
+remote_error = ""
 
 try:
-    kpis_df, towers_df = load_remote_data(catalog, schema) if remote_enabled else load_demo_data()
-    data_source = "Unity Catalog" if remote_enabled else "dados sinteticos locais"
-except Exception as exc:
-    st.warning(f"Consulta remota indisponivel; usando amostra local. Detalhe: {exc}")
-    kpis_df, towers_df = load_demo_data()
-    data_source = "dados sinteticos locais"
+    if remote_enabled:
+        datasets = _load_remote(
+            os.environ["TELCO_CATALOG"],
+            os.environ["TELCO_SCHEMA"],
+            os.environ["DATABRICKS_WAREHOUSE_ID"],
+        )
+        data_source = "tablas Gold gobernadas por Unity Catalog"
+    else:
+        datasets = _load_local()
+        data_source = "datos sintéticos locales de contingencia"
+except Exception as exc:  # noqa: BLE001 - la contingencia es intencional para el workshop.
+    remote_error = str(exc)
+    datasets = _load_local()
+    data_source = "datos sintéticos locales de contingencia"
 
-numeric_columns = [
-    "latitude",
-    "longitude",
-    "avg_signal_dbm",
-    "avg_latency_ms",
-    "avg_throughput_mbps",
-    "total_dropped_calls",
-    "total_tickets",
-    "open_tickets",
-    "critical_tickets",
+
+network = datasets["network_hourly"]
+sites = datasets["site_daily"]
+customers = datasets["customer_360"]
+products = datasets["customer_product_daily"]
+
+
+st.title("📡 Monitor de experiencia móvil")
+st.caption(
+    f"Aplicación inicial del workshop · Fuente: {data_source} · "
+    "Solo contiene identificadores y datos sintéticos."
+)
+
+if remote_error:
+    st.warning("La consulta remota no estuvo disponible; se activó la contingencia local.")
+elif not remote_enabled and any(
+    os.getenv(name) for name in ("DATABRICKS_WAREHOUSE_ID", "TELCO_CATALOG", "TELCO_SCHEMA")
+):
+    st.info(f"Configuración remota incompleta. Faltan: {', '.join(missing_remote_variables)}.")
+
+
+region_series = [
+    frame["region"].dropna().astype(str)
+    for frame in (network, sites, customers, products)
+    if "region" in frame
 ]
-for column in numeric_columns:
-    if column in towers_df:
-        towers_df[column] = pd.to_numeric(towers_df[column], errors="coerce")
+regions = sorted(pd.concat(region_series, ignore_index=True).unique()) if region_series else []
+selected_region = st.selectbox("Región", ["Todas", *regions])
 
-st.title("📡 Monitor de qualidade de rede")
-st.caption(f"Visao operacional de uma rede movel chilena ficticia · Fonte: {data_source}")
 
-with st.sidebar:
-    st.header("Filtros")
-    region_options = sorted(towers_df["region"].dropna().unique())
-    selected_regions = st.multiselect("Regiao", region_options, default=region_options)
-    technology_options = sorted(towers_df["technology"].dropna().unique())
-    selected_technologies = st.multiselect("Tecnologia", technology_options, default=technology_options)
-    status_options = sorted(towers_df["health_status"].dropna().unique())
-    selected_status = st.multiselect("Status", status_options, default=status_options)
+def _filter_region(frame: pd.DataFrame) -> pd.DataFrame:
+    if selected_region == "Todas" or "region" not in frame:
+        return frame.copy()
+    return frame[frame["region"].astype(str) == selected_region].copy()
 
-filtered = towers_df[
-    towers_df["region"].isin(selected_regions)
-    & towers_df["technology"].isin(selected_technologies)
-    & towers_df["health_status"].isin(selected_status)
-].copy()
 
-if filtered.empty:
-    st.info("Nenhuma torre corresponde aos filtros escolhidos.")
-    st.stop()
+network_filtered = _filter_region(network)
+sites_filtered = _filter_region(sites)
+customers_filtered = _filter_region(customers)
+products_filtered = _filter_region(products)
 
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Latencia media", f"{filtered.avg_latency_ms.mean():.1f} ms")
-col2.metric("Throughput medio", f"{filtered.avg_throughput_mbps.mean():.1f} Mbps")
-col3.metric("Chamadas derrubadas", f"{int(filtered.total_dropped_calls.sum()):,}".replace(",", "."))
-col4.metric("Tickets abertos", f"{int(filtered.open_tickets.sum())}")
 
-left, right = st.columns([1.15, 1])
-with left:
-    st.subheader("Distribuicao geografica")
-    map_figure = px.scatter_map(
-        filtered,
-        lat="latitude",
-        lon="longitude",
-        color="health_status",
-        size="total_tickets",
-        hover_name="tower_id",
-        hover_data=["commune", "technology", "frequency_band", "avg_latency_ms", "avg_throughput_mbps"],
-        color_discrete_map={"Saudavel": "#00A972", "Atencao": "#FFAB00", "Critico": "#D32F2F"},
-        zoom=3.2,
-        height=470,
+metric_1, metric_2, metric_3 = st.columns(3)
+metric_1.metric("Disponibilidad media", f"{_mean(network_filtered, 'avg_availability_pct'):.2f}%")
+metric_2.metric("Latencia media", f"{_mean(network_filtered, 'avg_latency_ms'):.1f} ms")
+metric_3.metric("Clientes activos", _format_integer(customers_filtered["customer_id"].nunique()))
+
+
+st.subheader("Ingresos observados por familia de producto")
+product_summary = (
+    products_filtered.groupby("product_family", as_index=False)
+    .agg(ingresos_clp=("billed_revenue_clp", "sum"))
+    .sort_values("ingresos_clp", ascending=False)
+)
+figure = px.bar(
+    product_summary,
+    x="product_family",
+    y="ingresos_clp",
+    labels={"product_family": "Familia", "ingresos_clp": "Ingresos observados (CLP)"},
+)
+st.plotly_chart(figure, width="stretch")
+
+
+st.subheader("Sitios que requieren atención")
+site_columns = [
+    column
+    for column in (
+        "site_id",
+        "region",
+        "commune",
+        "health_status",
+        "avg_availability_pct",
+        "avg_latency_ms",
+        "avg_downlink_mbps",
+        "open_tickets",
     )
-    map_figure.update_layout(map_style="open-street-map", margin=dict(l=0, r=0, t=0, b=0))
-    st.plotly_chart(map_figure, width="stretch")
-
-with right:
-    st.subheader("Torres com maior latencia")
-    worst = filtered.nlargest(12, "avg_latency_ms").sort_values("avg_latency_ms")
-    bar_figure = px.bar(
-        worst,
-        x="avg_latency_ms",
-        y="tower_id",
-        color="health_status",
-        orientation="h",
-        labels={"avg_latency_ms": "Latencia media (ms)", "tower_id": "Torre"},
-        color_discrete_map={"Saudavel": "#00A972", "Atencao": "#FFAB00", "Critico": "#D32F2F"},
-        height=470,
-    )
-    st.plotly_chart(bar_figure, width="stretch")
-
-st.subheader("Fila de priorizacao operacional")
-priority_columns = [
-    "tower_id",
-    "region",
-    "commune",
-    "environment",
-    "technology",
-    "frequency_band",
-    "health_status",
-    "avg_signal_dbm",
-    "avg_latency_ms",
-    "avg_throughput_mbps",
-    "total_dropped_calls",
-    "open_tickets",
+    if column in sites_filtered
 ]
-st.dataframe(
-    filtered.sort_values(["health_status", "avg_latency_ms"], ascending=[True, False])[priority_columns],
-    hide_index=True,
-    width="stretch",
+sort_columns = [column for column in ("avg_latency_ms", "open_tickets") if column in sites_filtered]
+attention_sites = sites_filtered.sort_values(sort_columns, ascending=False).drop_duplicates("site_id")
+st.dataframe(attention_sites[site_columns].head(15), hide_index=True, width="stretch")
+
+
+st.info(
+    "Esta versión es intencionalmente simple. El reto final consiste en convertirla "
+    "en una experiencia moderna con navegación, diseño visual y nuevas interacciones."
 )

@@ -1,25 +1,24 @@
-# Segurança e privacidade
+# Seguridad y privacidad
 
-Este repositório contém somente dados sintéticos. Não inclua exports de produção,
-credenciais, tokens, URLs privadas de workspace ou identificadores reais de clientes.
+Este repositorio contiene únicamente datos sintéticos. No incluya exports de producción,
+credenciales, tokens, URL privadas del workspace ni identificadores reales de clientes.
 
-## Valores intencionalmente públicos
+## Valores públicos intencionales
 
-- `telco_workshop`: catálogo fictício usado como padrão didático.
-- `red_calidad`: schema fictício usado como padrão didático.
-- `DATABRICKS_WAREHOUSE_ID`: nome de variável; nenhum valor real é versionado.
-- Regiões/comunas e coordenadas aproximadas: informações geográficas públicas usadas
-  para gerar sites fictícios.
+- `telco_workshop`: catálogo ficticio usado como valor didáctico predeterminado.
+- `red_calidad`: schema ficticio usado como valor didáctico predeterminado.
+- `DATABRICKS_WAREHOUSE_ID`: nombre de variable; no se versiona ningún valor real.
+- Regiones, comunas y coordenadas aproximadas: información geográfica pública usada
+  para generar sitios ficticios.
 
-## Configuração segura
+## Configuración segura
 
-Use Databricks CLI profiles locais, variáveis de ambiente e recursos associados a
-Databricks Apps. Nunca grave tokens ou IDs de recursos reais nos arquivos versionados.
-O arquivo `databricks.yml` não fixa profile, host ou workspace.
+Use perfiles locales de Databricks CLI, variables de entorno y recursos asociados a
+Databricks Apps. Nunca guarde tokens ni IDs reales en archivos versionados.
+`databricks.yml` no fija perfil, host ni workspace.
 
-Antes de publicar alterações, execute:
+Antes de publicar cambios, ejecute:
 
 ```bash
 uv run --extra dev python scripts/validate_local.py
 ```
-

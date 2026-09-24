@@ -1,41 +1,43 @@
-# Checklist pré-workshop
+# Checklist previo al workshop
 
-## Instrutor — 1 a 2 dias antes
+## Instructor — uno o dos días antes
 
-- [ ] Validar acesso ao workspace e registrar cloud/região utilizada.
-- [ ] Confirmar Unity Catalog e um catálogo gravável; preferir catálogo compartilhado.
-- [ ] Conceder `USE CATALOG`, `USE SCHEMA`, `CREATE TABLE`, `CREATE VOLUME` e `SELECT`.
-- [ ] Confirmar permissão para criar/gerenciar Lakeflow Declarative Pipelines.
-- [ ] Provisionar SQL Warehouse Serverless ou Pro tamanho Small e conceder `CAN USE`.
-- [ ] Confirmar AI/BI Dashboards, Genie e Databricks Apps na região e no plano contratado.
-- [ ] Executar `00_setup.py` e verificar 5.000 métricas e 500 tickets.
-- [ ] Executar o pipeline e conferir bronze, silver e `tower_kpis_pipeline`.
-- [ ] Instalar/testar DQX e materializar validated, quarantine e quality summary.
-- [ ] Executar `05_sql_queries.sql` no warehouse.
-- [ ] Preparar dashboard, Genie Space e App de referência.
-- [ ] Associar o SQL Warehouse à App e conceder acesso ao service principal da App.
-- [ ] Testar os notebooks alternativos e o checkpoint de recuperação.
-- [ ] Fazer um dry-run cronometrado com outra conta sem privilégios administrativos.
-- [ ] Iniciar compute 30 minutos antes e pausar recursos depois da sessão.
+- [ ] Validar el acceso al workspace y registrar la nube/región utilizada.
+- [ ] Confirmar Unity Catalog y un catálogo con escritura; preferir un catálogo compartido.
+- [ ] Conceder `USE CATALOG`, `USE SCHEMA`, `CREATE TABLE`, `CREATE VOLUME` y `SELECT`.
+- [ ] Confirmar permiso para crear y administrar Lakeflow Declarative Pipelines.
+- [ ] Provisionar un SQL Warehouse Serverless o Pro Small y conceder `CAN USE`.
+- [ ] Confirmar AI/BI Dashboards, Genie y Databricks Apps en la región y el plan contratado.
+- [ ] Ejecutar `00_setup.py` y verificar 11 fuentes y 100.398 filas sintéticas.
+- [ ] Confirmar que no existen tablas MANAGED con nombres reservados para el SDP.
+- [ ] Ejecutar full refresh del pipeline y verificar 11 Bronze, 11 Silver y Gold preliminares.
+- [ ] Instalar/probar DQX y materializar validated, quarantine y quality summary.
+- [ ] Ejecutar `05_sql_queries.sql` y `06_metric_views.sql` en el warehouse.
+- [ ] Consultar `mv_network_quality` y `mv_customer_product_experience` con `MEASURE()`.
+- [ ] Preparar Dashboard, Genie Space y la App inicial.
+- [ ] Validar dos preguntas Chat y preparar capturas para Deep Research.
+- [ ] Asociar el SQL Warehouse a la App y conceder acceso a su service principal.
+- [ ] Probar los notebooks alternativos y confirmar que solo crean tablas `_fallback`.
+- [ ] Realizar un dry run cronometrado con una cuenta sin privilegios administrativos.
+- [ ] Iniciar el compute 30 minutos antes y pausar los recursos después de la sesión.
 
-## Participantes — antes da sessão
+## Participantes — antes de la sesión
 
-- [ ] Acesso ao workspace confirmado em navegador atualizado.
-- [ ] Repo disponível no workspace ou arquivos importados.
-- [ ] SQL básico: `SELECT`, `WHERE`, `GROUP BY` e `JOIN`.
-- [ ] Conceitos básicos de tabela, schema e CSV.
-- [ ] Familiaridade com Python é desejável, não obrigatória.
-- [ ] Sem necessidade de instalação local quando todo o trabalho ocorre no workspace.
+- [ ] Acceso al workspace confirmado en un navegador actualizado.
+- [ ] Repositorio disponible en el workspace o archivos importados.
+- [ ] SQL básico: `SELECT`, `WHERE`, `GROUP BY` y `JOIN`.
+- [ ] Conceptos básicos de tabla, schema, clave y CSV.
+- [ ] Familiaridad con Python deseable, no obligatoria.
+- [ ] Sin instalación local cuando todo el trabajo ocurre en el workspace.
 
-## Verificação objetiva
-
-Execute antes de abrir a sala:
+## Verificación objetiva
 
 ```sql
 SELECT current_user(), current_catalog(), current_schema();
-SELECT count(*) FROM telco_workshop.red_calidad.cell_tower_metrics_raw_checkpoint;
-SELECT count(*) FROM telco_workshop.red_calidad.support_tickets_raw_checkpoint;
+SHOW TABLES;
+SELECT count(*) FROM cell_tower_metrics_validated;
+SELECT count(*) FROM gold_customer_360;
 ```
 
-Resultados esperados: 5.000 e 500.
-
+Resultados esperados: ambas consultas responden, las tablas de cuarentena contienen
+las impurezas intencionales y las Gold no presentan regiones nulas.

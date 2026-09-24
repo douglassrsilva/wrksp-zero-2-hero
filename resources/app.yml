@@ -1,0 +1,26 @@
+resources:
+  apps:
+    network_monitor:
+      name: "telco-zero-to-hero-${bundle.target}"
+      source_code_path: ../apps/network-monitor
+      description: "Plantilla inicial sintética de red, clientes y productos para el workshop"
+      config:
+        command:
+          - streamlit
+          - run
+          - app.py
+          - --server.address=0.0.0.0
+          - --server.port=8000
+          - --server.headless=true
+        env:
+          - name: DATABRICKS_WAREHOUSE_ID
+            value: ${var.warehouse_id}
+          - name: TELCO_CATALOG
+            value: ${var.catalog}
+          - name: TELCO_SCHEMA
+            value: ${var.schema}
+      resources:
+        - name: sql-warehouse
+          sql_warehouse:
+            id: ${var.warehouse_id}
+            permission: CAN_USE

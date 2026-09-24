@@ -1,0 +1,61 @@
+site_id,region,commune,latitude,longitude,environment,site_type,ownership_type,commissioned_date,backup_power_hours,site_status
+SIT-0001,Región Metropolitana de Santiago,Santiago,-33.4569,-70.6593,Urbano denso,Azotea,Propio,2017-05-18,5.1,Activo
+SIT-0002,Región Metropolitana de Santiago,Puente Alto,-33.6117,-70.5758,Urbano,Torre,Propio,2017-10-02,4.5,Activo
+SIT-0003,Valparaíso,Valparaíso,-33.0392,-71.6227,Costero,Torre,Propio,2018-02-16,6.2,Activo
+SIT-0004,Valparaíso,Viña del Mar,-32.9993,-71.57,Costero,Torre,Compartido,2018-07-03,3.3,Activo
+SIT-0005,Biobío,Concepción,-36.8361,-73.0244,Urbano,Torre,Propio,2018-11-17,5.4,Activo
+SIT-0006,Biobío,Talcahuano,-36.7329,-73.1068,Costero,Torre,Propio,2019-04-03,4.6,Activo
+SIT-0007,La Araucanía,Temuco,-38.7359,-72.5904,Urbano,Interior,Propio,2019-08-18,7.0,Activo
+SIT-0008,Antofagasta,Antofagasta,-23.6429,-70.4075,Minero,Torre,Compartido,2020-01-02,6.3,Activo
+SIT-0009,Antofagasta,Calama,-22.4384,-68.9494,Minero,Poste,Propio,2020-05-18,10.8,Activo
+SIT-0010,Coquimbo,La Serena,-29.9187,-71.2319,Costero,Torre,Propio,2020-10-02,6.0,Activo
+SIT-0011,Maule,Talca,-35.4344,-71.6454,Periurbano,Torre,Propio,2021-02-16,8.2,Activo
+SIT-0012,Los Lagos,Puerto Montt,-41.4693,-72.9424,Costero,Torre,Compartido,2021-07-03,5.4,Activo
+SIT-0013,Región Metropolitana de Santiago,Santiago,-33.4409,-70.6793,Urbano denso,Azotea,Propio,2021-11-17,3.9,Activo
+SIT-0014,Región Metropolitana de Santiago,Puente Alto,-33.5957,-70.5958,Urbano,Interior,Propio,2022-04-03,6.2,Activo
+SIT-0015,Valparaíso,Valparaíso,-33.0632,-71.5927,Costero,Torre,Propio,2022-08-18,5.7,Activo
+SIT-0016,Valparaíso,Viña del Mar,-33.0233,-71.54,Costero,Torre,Compartido,2023-01-02,5.6,Activo
+SIT-0017,Biobío,Concepción,-36.8201,-73.0444,Urbano,Torre,Propio,2023-05-19,2.1,Mantenimiento
+SIT-0018,Biobío,Talcahuano,-36.7169,-73.1268,Costero,Torre,Propio,2023-10-03,5.2,Activo
+SIT-0019,La Araucanía,Temuco,-38.7199,-72.6104,Urbano,Torre,Propio,2024-02-17,2.4,Activo
+SIT-0020,Antofagasta,Antofagasta,-23.6669,-70.3775,Minero,Torre,Compartido,2024-07-03,10.2,Activo
+SIT-0021,Antofagasta,Calama,-22.4624,-68.9194,Minero,Interior,Propio,2024-11-17,8.4,Activo
+SIT-0022,Coquimbo,La Serena,-29.9027,-71.2519,Costero,Torre,Propio,2025-04-03,5.7,Activo
+SIT-0023,Maule,Talca,-35.4184,-71.6654,Periurbano,Torre,Propio,2025-08-18,8.7,Activo
+SIT-0024,Los Lagos,Puerto Montt,-41.4533,-72.9624,Costero,Torre,Compartido,2026-01-02,6.5,Activo
+SIT-0025,Región Metropolitana de Santiago,Santiago,-33.4649,-70.6493,Urbano denso,Azotea,Propio,2026-05-19,5.7,Activo
+SIT-0026,Región Metropolitana de Santiago,Puente Alto,-33.6197,-70.5658,Urbano,Torre,Propio,2017-04-13,3.5,Activo
+SIT-0027,Valparaíso,Valparaíso,-33.0472,-71.6127,Costero,Torre,Propio,2017-08-28,2.9,Activo
+SIT-0028,Valparaíso,Viña del Mar,-33.0073,-71.56,Costero,Torre,Compartido,2018-01-12,3.2,Activo
+SIT-0029,Biobío,Concepción,-36.8041,-73.0644,Urbano,Torre,Propio,2018-05-29,5.5,Activo
+SIT-0030,Biobío,Talcahuano,-36.7409,-73.0968,Costero,Torre,Propio,2018-10-13,6.1,Activo
+SIT-0031,La Araucanía,Temuco,-38.7439,-72.5804,Urbano,Torre,Propio,2019-02-27,6.0,Fuera de servicio
+SIT-0032,Antofagasta,Antofagasta,-23.6509,-70.3975,Minero,Torre,Compartido,2019-07-14,9.3,Activo
+SIT-0033,Antofagasta,Calama,-22.4464,-68.9394,Minero,Poste,Propio,2019-11-28,7.3,Activo
+SIT-0034,Coquimbo,La Serena,-29.8867,-71.2719,Costero,Torre,Propio,2020-04-13,3.0,Mantenimiento
+SIT-0035,Maule,Talca,-35.4424,-71.6354,Periurbano,Interior,Propio,2020-08-28,9.2,Activo
+SIT-0036,Los Lagos,Puerto Montt,-41.4773,-72.9324,Costero,Torre,Compartido,2021-01-12,6.3,Activo
+SIT-0037,Región Metropolitana de Santiago,Santiago,-33.4489,-70.6693,Urbano denso,Azotea,Propio,2021-05-29,6.1,Activo
+SIT-0038,Región Metropolitana de Santiago,Puente Alto,-33.6037,-70.5858,Urbano,Torre,Propio,2021-10-13,5.8,Activo
+SIT-0039,Valparaíso,Valparaíso,-33.0312,-71.6327,Costero,Torre,Propio,2022-02-27,3.7,Activo
+SIT-0040,Valparaíso,Viña del Mar,-33.0313,-71.53,Costero,Torre,Compartido,2022-07-14,2.4,Activo
+SIT-0041,Biobío,Concepción,-36.8281,-73.0344,Urbano,Torre,Propio,2022-11-28,5.3,Activo
+SIT-0042,Biobío,Talcahuano,-36.7249,-73.1168,Costero,Torre,Propio,2023-04-14,5.4,Activo
+SIT-0043,La Araucanía,Temuco,-38.7279,-72.6004,Urbano,Torre,Propio,2023-08-29,5.2,Activo
+SIT-0044,Antofagasta,Antofagasta,-23.6349,-70.4175,Minero,Torre,Compartido,2024-01-13,9.0,Activo
+SIT-0045,Antofagasta,Calama,-22.4704,-68.9094,Minero,Poste,Propio,2024-05-29,10.8,Activo
+SIT-0046,Coquimbo,La Serena,-29.9107,-71.2419,Costero,Torre,Propio,2024-10-13,2.6,Activo
+SIT-0047,Maule,Talca,-35.4264,-71.6554,Periurbano,Torre,Propio,2025-02-27,9.5,Activo
+SIT-0048,Los Lagos,Puerto Montt,-41.4613,-72.9524,Costero,Torre,Compartido,2025-07-14,2.3,Activo
+SIT-0049,Región Metropolitana de Santiago,Santiago,-33.4329,-70.6893,Urbano denso,Azotea,Propio,2025-11-28,6.2,Activo
+SIT-0050,Región Metropolitana de Santiago,Puente Alto,-33.6277,-70.5558,Urbano,Torre,Propio,2026-04-14,2.3,Activo
+SIT-0051,Valparaíso,Valparaíso,-33.0552,-71.6027,Costero,Torre,Propio,2017-03-09,5.6,Mantenimiento
+SIT-0052,Valparaíso,Viña del Mar,-33.0153,-71.55,Costero,Torre,Compartido,2017-07-24,6.9,Activo
+SIT-0053,Biobío,Concepción,-36.8121,-73.0544,Urbano,Torre,Propio,2017-12-08,5.2,Activo
+SIT-0054,Biobío,Talcahuano,-36.7089,-73.1368,Costero,Torre,Propio,2018-04-24,4.4,Activo
+SIT-0055,La Araucanía,Temuco,-38.7519,-72.5704,Urbano,Torre,Propio,2018-09-08,2.6,Activo
+SIT-0056,Antofagasta,Antofagasta,-23.6589,-70.3875,Minero,Interior,Compartido,2019-01-23,9.9,Activo
+SIT-0057,Antofagasta,Calama,-22.4544,-68.9294,Minero,Poste,Propio,2019-06-09,6.0,Activo
+SIT-0058,Coquimbo,La Serena,-29.8947,-71.2619,Costero,Torre,Propio,2019-10-24,4.7,Activo
+SIT-0059,Maule,Talca,-35.4104,-71.6754,Periurbano,Torre,Propio,2020-03-09,-2.0,Activo
+SIT-0001,Los Lagos,Puerto Montt,-41.4853,-72.9224,Costero,Torre,Compartido,2020-07-24,4.5,Activo

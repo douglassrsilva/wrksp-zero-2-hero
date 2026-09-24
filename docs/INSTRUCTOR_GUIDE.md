@@ -1,199 +1,281 @@
-# Guia do instrutor — Databricks do Zero ao Herói
+# Guía del instructor — Databricks de cero a héroe
 
-## Resumo do workshop
+## Resumen del workshop
 
-Público: engenheiros de dados, analistas e arquitetos iniciantes em Databricks. O
-participante precisa saber navegar em aplicações web e entender SQL básico, tabelas e
-schemas. Python é desejável, mas todas as alterações são pequenas e guiadas.
+**Público.** Ingenieros de datos, analistas y arquitectos que se inician en
+Databricks. Los participantes deben saber navegar en aplicaciones web y comprender
+SQL básico, tablas y schemas. Python es deseable, pero las modificaciones están
+guiadas y son pequeñas.
 
-Objetivo: construir em 150 minutos uma solução de monitoramento de qualidade de rede
-móvel, desde CSVs sintéticos até indicadores governados, dashboard, exploração em
-linguagem natural e App. Ao final existirão catálogo/schema/volume, pipeline
-bronze/silver/gold preliminar, quarentena DQX, views SQL, dashboard, Genie Space e App.
+**Objetivo.** Construir en 150 minutos una solución de experiencia móvil de punta
+a punta: datos sintéticos, arquitectura medallion, gobierno, calidad, indicadores,
+AI/BI Dashboard, Genie Space y una Databricks App inicial.
 
-Os dados representam 50 sites fictícios em regiões chilenas, com ambientes urbanos,
-costeiros, industriais, rurais, desérticos e de mineração. Coordenadas são aproximadas
-e públicas. Não existem nomes, telefones, endereços ou identificadores de clientes.
+**Caso.** Analizar la relación entre calidad de red, incidentes, consumo, productos
+y experiencia de clientes sintéticos de un operador móvil chileno ficticio. No se
+utilizan nombres, RUT, teléfonos, correos, domicilios ni identificadores reales.
 
-## Agenda de 150 minutos
+**Resultado.** Los participantes recorren once fuentes Bronze, once tablas Silver,
+cinco tablas Gold, dos Metric Views, resultados `validated/quarantine`, un dashboard,
+un Genie Space y una App simple. La modernización de la App es el reto posterior.
 
-| # | Módulo | Min | Tell inicial | Show/prática | Tell final | Resultado |
+## Premisas y puntos de validación
+
+- El catálogo existe antes de la sesión; los participantes no crean catálogos.
+- Cada participante o grupo tiene permiso para crear un schema aislado.
+- El componente utilizado es **Lakeflow Spark Declarative Pipelines** con Auto
+  Loader, tablas declarativas y un DAG Bronze–Silver–Gold.
+- DQX es **Databricks Labs DQX**; el entorno y la dependencia se preparan antes.
+- “Genie Agent” se implementa como **AI/BI Genie Space**. Deep Research se muestra
+  desde la interfaz cuando esté disponible; no se presupone una API pública
+  equivalente para configurarlo.
+- “Arquitectura FY27” no se presenta como arquitectura oficial sin un material
+  corporativo validado. El workshop utiliza provisionalmente una visión conceptual:
+  fuentes → UC → Lakeflow medallion → DQX → SQL/Metric Views → AI/BI, Genie y Apps.
+- La disponibilidad de Genie, Apps, Metric Views y Deep Research depende de nube,
+  región, plan, preview y permisos. Se valida antes de la sesión.
+
+## Agenda exacta de 150 minutos
+
+| # | Módulo | Min | Tell inicial | Show/práctica | Tell final | Resultado esperado |
 |---:|---|---:|---:|---:|---:|---|
-| 1 | Introdução | 15 | 8 | 5 | 2 | Componentes e fluxo identificados |
-| 2 | Unity Catalog | 18 | 3 | 13 | 2 | Schema e volume verificados |
-| 3 | Lakeflow | 20 | 3 | 15 | 2 | Bronze, silver e KPI preliminar |
-| 4 | DQX | 15 | 2 | 11 | 2 | Validated, quarantine e resumo |
-| 5 | SQL Warehouse | 18 | 2 | 14 | 2 | Quatro views de negócio |
-| 6 | AI/BI Dashboard | 18 | 2 | 14 | 2 | Dashboard com filtro e 4+ visuais |
-| 7 | Genie Space | 15 | 2 | 11 | 2 | Três perguntas respondidas |
-| 8 | Databricks Apps | 18 | 2 | 14 | 2 | App adaptada e publicada |
-| 9 | Desafio e fechamento | 8 | 5 | 3 | 0 | Critérios e exemplo demonstrados |
-|  | Buffer distribuído | 5 |  |  |  | Dúvidas e imprevistos |
-|  | **Total** | **150** | **29** | **100** | **16** | **66,7% prático** |
+| 1 | Introducción | 15 | 8 | 5 | 2 | Componentes y flujo identificados |
+| 2 | Unity Catalog | 18 | 3 | 13 | 2 | Objetos, permisos y volumen verificados |
+| 3 | Lakeflow SDP | 20 | 3 | 15 | 2 | DAG Bronze–Silver–Gold ejecutado |
+| 4 | DQX | 15 | 2 | 11 | 2 | Registros válidos y cuarentena separados |
+| 5 | SQL Warehouse y Metric Views | 19 | 2 | 15 | 2 | Cinco Gold y dos Metric Views consultadas |
+| 6 | AI/BI Dashboard | 21 | 2 | 17 | 2 | Dashboard filtrable con KPI de negocio |
+| 7 | Genie Space | 15 | 2 | 11 | 2 | Preguntas en lenguaje natural verificadas |
+| 8 | Databricks App inicial | 12 | 2 | 8 | 2 | Plantilla simple modificada y ejecutada |
+| 9 | Reto y cierre | 10 | 7 | 2 | 1 | Reto de modernización seleccionado |
+|  | Margen distribuido | 5 |  |  |  | Dudas, transiciones e imprevistos |
+|  | **Total** | **150** | **31** | **97** | **17** | **64,7 % práctico** |
 
-O buffer não é um intervalo; guarde um minuto após UC, Lakeflow, SQL, Dashboard e App.
+El margen no es un intervalo separado: reserve un minuto después de Unity Catalog,
+Lakeflow, SQL, Dashboard y App. No elimine el lanzamiento del reto para recuperar
+tiempo.
 
-## 1. Introdução — 15 min
+## 1. Introducción — 15 minutos
 
-**Objetivo.** Explicar plataforma, fluxo do caso e papéis dos componentes.
+**Objetivo de aprendizaje.** Explicar qué problemas resuelve la plataforma y cómo
+se conectan sus componentes.
 
-**Slides/Tell.** Silos de dados; Lakehouse/Data Intelligence Platform; UC, Lakeflow,
-SQL, AI/BI, Genie e Apps; caso de qualidade de rede. Apresente FY27 como visão
-conceitual pendente de validação, conforme `TECHNICAL_VALIDATION.md`.
+**Tell — slides (8).** Silos de datos, Lakehouse/Data Intelligence Platform,
+Unity Catalog, Lakeflow, SQL Warehouse, AI/BI, Genie y Apps. Presente el caso de
+experiencia móvil y la visión conceptual FY27, marcándola como pendiente de la
+referencia corporativa del cliente.
 
-**Show.** Tour de cinco minutos: Workspace, Catalog Explorer, SQL Editor, Workflows e
-Apps. Abra `00_setup.py`, mostre widgets e duas amostras sem executar tudo.
+**Show (5).** Recorra Workspace, Catalog Explorer, SQL Editor, Workflows y Apps.
+Muestre el diagrama medallion y las once fuentes, sin ejecutar aún la preparación.
 
-**Participantes.** Localizam catálogo compartilhado, SQL Warehouse e pasta do repo.
+**Tell final (2).** Pida a dos participantes que indiquen dónde se gobierna, procesa,
+valida y consume el dato.
 
-**Verificação.** Peça que apontem onde governança, transformação e consumo ocorrerão.
+**Artefacto y verificación.** Ninguno; todos deben localizar catálogo, warehouse y
+repositorio.
 
-**Falha.** Use capturas do instrutor e prossiga; nenhum artefato depende deste tour.
+**Contingencia.** Use las capturas sanitizadas del repositorio si una pantalla no
+está disponible.
 
-## 2. Unity Catalog — 18 min
+## 2. Unity Catalog — 18 minutos
 
-**Objetivo.** Entender metastore → catálogo → schema → tabela/volume e permissões.
+**Objetivo de aprendizaje.** Comprender metastore → catálogo → schema → tabla/volume,
+permisos, descubrimiento y lineage.
 
-**Slides (3).** Hierarquia, grants, lineage e por que governança importa em telecom.
+**Tell — slides (3).** Jerarquía, `USE CATALOG`, `USE SCHEMA`, `SELECT`, ownership y
+la importancia de gobernar datos operacionales y de clientes.
 
-**Demo (3).** Catalog Explorer, propriedades de uma tabela e grants do schema.
+**Show — consola (3).** Abra Catalog Explorer, propiedades de una tabla sintética,
+permisos y lineage.
 
-**Exercício (10).** Abrir `02_unity_catalog.sql`; ajustar widgets; criar/verificar
-schema e volume; executar `00_setup.py`; abrir `02_read_csvs.py`; ler os dois diretórios
-CSV, conferir schemas, amostras e contagens; localizar arquivos e checkpoints no Explorer.
+**Ejercicio guiado (10).** Abra `02_unity_catalog.sql`, defina un schema aislado,
+verifique el volume y ejecute consultas `SHOW`. Luego abra `02_read_csvs.py`, lea los
+CSV con schema explícito y compare una muestra con el contrato de datos.
 
-**Recap (2).** `SHOW VOLUMES` deve retornar `raw_data`; a leitura dos CSVs e os
-checkpoints devem retornar 5.000 métricas, 500 tickets e 50 torres.
+**Tell final (2).** Confirme que catálogo, schema y volume son visibles y que no se
+creó ningún catálogo desde el notebook.
 
-**Artefato.** Volume e duas tabelas de checkpoint.
+**Artefacto y verificación.** Schema del workshop y acceso a los archivos sintéticos;
+`SHOW VOLUMES` y los conteos de las once fuentes deben responder.
 
-**Falha.** Sem `CREATE CATALOG`, use catálogo compartilhado. Sem upload, checkpoints
-permitem continuar. UC ausente é incompatível com o hands-on completo; faça demo.
+**Contingencia.** Use un schema compartido preparado. Sin acceso a volumes, continúe
+con las tablas checkpoint. Sin Unity Catalog, convierta el módulo en demostración.
 
-## 3. Lakeflow — 20 min
+## 3. Lakeflow Spark Declarative Pipelines — 20 minutos
 
-**Objetivo.** Ingerir CSV com Auto Loader e construir bronze/silver/KPI declarativamente.
+**Objetivo de aprendizaje.** Comparar una canalización declarativa con una secuencia
+Spark imperativa y recorrer un DAG medallion completo.
 
-**Slides (3).** Lakeflow Declarative Pipelines, arquitetura medallion, DAG e expectations.
+**Tell — slides (3).** Auto Loader, `dp.table`, dependencias declarativas,
+expectations, observabilidad, recomputación y operación administrada. Explique que
+Spark sigue siendo el motor: SDP reduce el código operacional y hace explícito el
+grafo, pero no “reemplaza PySpark”.
 
-**Demo (4).** Abra `03_lakeflow_pipeline.py`, mostre `dp.table`, schema explícito e
-expectations. Explique que elas observam anomalias sem removê-las, preservando o DQX.
+**Show (4).** Abra `03_lakeflow_pipeline.py`. Compare una transformación declarativa
+con el bloque equivalente de `03_alt_spark_etl.py`; muestre cómo el framework infiere
+el DAG y centraliza métricas.
 
-**Exercício (11).** Abrir pipeline pré-criado; conferir catálogo/schema; executar update;
-acompanhar DAG; abrir métricas das expectations; modificar `latencia_faixa_fisica` de
-500 para 200; executar novo update se houver tempo.
+![DAG Lakeflow Bronze–Silver–Gold](images/lakeflow-dag.png)
 
-**Recap (2).** Confirmar `tower_metrics_bronze`, `support_tickets_bronze`, duas silver
-e `tower_kpis_pipeline`.
+**Ejercicio guiado (11).** Abra el pipeline preparado, compruebe destino y parámetros,
+ejecute un update y recorra las once Bronze, once Silver y Gold preliminares. Abra
+las métricas de expectations y el detalle de una dependencia.
 
-**Falha.** Execute `03_alt_spark_etl.py`. Se dados faltarem, rode `00_setup.py`.
+**Tell final (2).** Los participantes explican una ventaja operacional y un caso en
+que ejecutar Spark tradicional como contingencia es suficiente.
 
-## 4. DQX — 15 min
+**Artefacto y verificación.** Update exitoso y DAG Bronze–Silver–Gold sin nodos
+fallidos.
 
-**Objetivo.** Aplicar regras declarativas e separar dados válidos de quarentena.
+**Contingencia.** Ejecute `03_alt_spark_etl.py`. Si Auto Loader no accede al volume,
+use las tablas checkpoint ya creadas.
 
-**Slides (2).** Dimensões de qualidade, criticality error/warn e posição do DQX no fluxo.
+## 4. DQX — 15 minutos
 
-**Demo (3).** Mostre YAML, valide regras e execute uma célula do `04_dqx_quality.py`.
+**Objetivo de aprendizaje.** Aplicar reglas declarativas y separar datos confiables
+de registros que requieren corrección.
 
-**Exercício (8).** Executar o notebook; examinar `_errors` e `_warnings`; mudar
-`min_throughput` de 1 para 10; comparar o resumo; abrir quarantine no Catalog Explorer.
+**Tell — slides (2).** Completitud, validez, unicidad, consistencia, severidades y
+la diferencia entre observación en SDP y cuarentena detallada con DQX.
 
-**Recap (2).** Erros são quarentenados; warnings acompanham registros válidos.
+**Show (3).** Muestre `config/dqx_rules.yml`, la carga de reglas y las columnas de
+diagnóstico producidas por DQX.
 
-**Artefato.** `tower_metrics_validated`, `tower_metrics_quarantine`, `dqx_quality_summary`.
+**Ejercicio guiado (8).** Ejecute `04_dqx_quality.py`, compare `validated` y
+`quarantine`, inspeccione tres impurezas intencionales y cambie un umbral de warning.
 
-**Falha.** Use `04_alt_sql_quality.sql`; as expectations continuam visíveis no pipeline.
+**Tell final (2).** Confirme que errores se aíslan, warnings permanecen observables
+y Gold consume exclusivamente registros validados.
 
-## 5. SQL Warehouse — 18 min
+**Artefacto y verificación.** Tablas de calidad y resumen DQX con registros en ambas
+rutas.
 
-**Objetivo.** Criar uma camada semântica pequena para todos os consumidores.
+**Contingencia.** Ejecute `04_alt_sql_quality.sql` si la dependencia no carga en dos
+minutos. Mantenga visibles las expectations del pipeline.
 
-**Slides (2).** Warehouse, Photon, views e diferença entre dado técnico e KPI.
+## 5. SQL Warehouse y Metric Views — 19 minutos
 
-**Demo (4).** Selecione warehouse, rode um `SELECT`, mostre histórico e perfil.
+**Objetivo de aprendizaje.** Transformar datos técnicos en objetos analíticos y una
+semántica reutilizable.
 
-**Exercício (10).** Execute `05_sql_queries.sql`; inspecione `v_network_kpis`;
-identifique três torres problemáticas; altere o SLA de throughput de 20 para 25 em uma
-consulta ad hoc; salve a consulta.
+**Tell — slides (2).** SQL Warehouse, Photon, tablas Gold y Metric Views con
+dimensiones y medidas gobernadas.
 
-**Recap (2).** Dashboard, Genie e App devem consumir as mesmas views.
+**Show (4).** Ejecute una consulta en `05_sql_queries.sql`, abra el perfil y muestre
+una medida de `mv_network_quality`.
 
-**Falha.** Execute SQL em notebook conectado a compute. Se etapas anteriores falharam,
-rode `05_checkpoint_if_needed.sql` e depois as views.
+**Ejercicio guiado (11).** Cree o consulte las cinco Gold y las dos Metric Views.
+Obtenga calidad por región, sitios críticos, clientes de alto riesgo, ingresos y
+experiencia por producto. Cambie un filtro sin alterar la definición semántica.
 
-## 6. AI/BI Dashboard — 18 min
+**Tell final (2).** Dashboard y Genie consumirán Gold/Metric Views; la App inicial
+consume Gold por un contrato separado de acceso a datos.
 
-**Objetivo.** Construir uma visão operacional filtrável.
+**Artefacto y verificación.** Cinco tablas Gold y dos Metric Views consultables.
 
-**Slides (2).** Datasets, canvas, filtros, publicação e permissões.
+**Contingencia.** Ejecute Spark SQL en un notebook. Si las etapas anteriores fallaron,
+use `05_checkpoint_if_needed.sql`.
 
-**Demo (4).** Crie o dataset `network_kpis` e uma barra de throughput por região.
+## 6. AI/BI Dashboard — 21 minutos
 
-**Exercício (10).** Siga `DASHBOARD_GUIDE.md`: dois counters, barras, tabela e filtro
-por tecnologia. Participantes rápidos adicionam tendência ou mapa.
+**Objetivo de aprendizaje.** Construir la principal experiencia visual del hands-on.
 
-**Recap (2).** Trocar o filtro 4G/5G deve atualizar todos os componentes relacionados.
+**Tell — slides (2).** Datasets, canvas, filtros, publicación y permisos.
 
-**Falha.** Duplique dashboard de referência ou apresente os resultados no SQL Editor.
+**Show (4).** Cree un dataset sobre una Gold o Metric View y añada un KPI y una barra
+por región.
 
-## 7. Genie Space — 15 min
+**Ejercicio guiado (13).** Siga `DASHBOARD_GUIDE.md`: cree indicadores de red y
+clientes, tendencia, comparación regional, tabla de sitios y filtros. Verifique que
+los filtros actualicen todos los elementos relacionados.
 
-**Objetivo.** Explorar dados em linguagem natural com semântica controlada.
+**Tell final (2).** Compare el dashboard con las consultas SQL y publique solo si los
+permisos del grupo están listos.
 
-**Slides (2).** AI/BI Genie Space, tabelas confiáveis, instruções e SQL gerado. Esclareça
-que não é um agente customizado neste workshop.
+**Artefacto y verificación.** Dashboard filtrable con al menos cuatro visualizaciones.
 
-**Demo (3).** Vincule as quatro views e cole as instruções de `genie_space_instructions.md`.
+**Contingencia.** Duplique el dashboard de referencia y cada participante añade un
+filtro y una visualización. Sin AI/BI, ejecute los datasets en SQL Editor.
 
-**Exercício (8).** Faça três perguntas sugeridas; abra o SQL gerado; refine uma instrução
-ou sinônimo quando a resposta não usar a view correta.
+## 7. Genie Space — 15 minutos
 
-**Recap (2).** Compare pergunta, SQL e resultado. Registre cinco perguntas úteis.
+**Objetivo de aprendizaje.** Explorar los mismos datos en lenguaje natural y validar
+el SQL generado.
 
-**Falha.** Demonstração pelo instrutor; participantes executam as consultas certificadas no SQL Editor.
+**Tell — slides (2).** Fuentes confiables, instrucciones, sinónimos, ejemplos y
+diferencia entre Chat y Deep Research.
 
-## 8. Databricks Apps — 18 min
+**Show (3).** Abra el Genie Space preparado y sus instrucciones. Ejecute una pregunta
+de red en modo Chat.
 
-**Objetivo.** Adaptar e publicar uma interface operacional sobre as views.
+**Ejercicio guiado (8).** Ejecute dos preguntas Chat documentadas, inspeccione el SQL
+y refine una consulta. El instructor muestra dos ejemplos de Deep Research cuando la
+funcionalidad esté habilitada; esta parte es demostrativa por disponibilidad.
 
-**Slides (2).** Apps, service principal, recurso SQL Warehouse e grants UC.
+**Tell final (2).** Compare pregunta, SQL, resultado y fuente. Una respuesta fluida no
+dispensa la verificación del SQL.
 
-**Demo (4).** Abra `apps/network-monitor`, mostre `app.py`, `app.yaml` e fallback local.
-Inicie o deploy no começo do módulo para absorver latência.
+**Artefacto y verificación.** Conversación con dos respuestas Chat correctas y cuatro
+prompts de referencia documentados.
 
-**Exercício (10).** Duplicar template; mudar título; adicionar filtro de banda ou
-comuna; publicar; validar mapa, KPIs e tabela. Participantes não provisionam App do zero.
+**Contingencia.** Use capturas sanitizadas y las consultas certificadas del SQL Editor.
 
-**Recap (2).** Confirme URL e explique compartilhamento/permissões.
+## 8. Databricks App inicial — 12 minutos
 
-**Falha.** Use a app local/amostra do instrutor. Se o deploy demorar, continue com a URL
-pré-publicada e deixe o deploy do participante finalizar em segundo plano.
+**Objetivo de aprendizaje.** Entender la estructura mínima de una App que consulta
+Gold, sin resolver el reto visual.
 
-## 9. Desafio final — 8 min
+**Tell — slides (2).** `app.py`, `app.yaml`, recurso SQL Warehouse, service principal
+y grants de Unity Catalog.
 
-Apresente níveis e critérios em cinco minutos. Nos três minutos práticos, demonstre onde
-alterar filtro, gráfico e consulta, e peça que cada participante escolha um nível. A
-execução completa é pós-workshop.
+**Show (3).** Abra `apps/network-monitor`: muestre la separación entre `data_access.py`
+y presentación. Ejecute la plantilla de una página con un filtro, tres KPI, un gráfico
+y una tabla.
 
-**Critério mínimo.** Dashboard com quatro visuais e filtro de data; App com dois filtros
-e um gráfico modificado; Genie Space com cinco perguntas documentadas.
+![Plantilla inicial de la App](images/app-starter.png)
 
-**Extensões.** SLA por região; mapa hora/comuna; correlação de tickets; alerta; pipeline
-incremental; previsão de anomalias; job programado.
+**Ejercicio guiado (5).** Cambie el título; seleccione una región; añada una cuarta
+métrica sencilla; ejecute localmente o vuelva a desplegar la App preparada. Los participantes
+no crean el recurso Databricks App desde cero.
 
-## Riscos e controle de tempo
+**Tell final (2).** Confirme que la fuente es Gold y explique que simplicidad visual
+es intencional: el reto es transformarla en un producto moderno.
 
-| Risco | Contingência | Gatilho de decisão |
+**Artefacto y verificación.** Plantilla funcional con el cambio del participante.
+
+**Contingencia.** Use la App prepublicada o el modo local. Si el deploy tarda más de
+tres minutos, continúe y deje la actualización en segundo plano.
+
+## 9. Reto final y cierre — 10 minutos
+
+**Tell inicial (7).** Presente el reto posterior al workshop: convertir la plantilla simple en
+una App moderna. Muestre solo el objetivo visual, no una solución completa.
+
+**Show (2).** Señale dónde agregar navegación, filtros y componentes; cada participante
+elige un nivel en `apps/network-monitor/README.md`.
+
+**Tell final (1).** Recapitule el flujo de las fuentes hasta las experiencias de
+consumo y acuerde cómo compartir evidencias.
+
+**Criterio mínimo del reto.** Tres secciones de negocio, cuatro visualizaciones,
+filtros consistentes, diseño legible, Gold como única fuente remota y ausencia de PII.
+
+**Extensiones.** Mapa de sitios, riesgo por segmento, portafolio de productos,
+responsividad, accesibilidad, estados vacíos, registro de actualización y observabilidad.
+
+## Riesgos y control del tiempo
+
+| Riesgo | Contingencia | Criterio de decisión |
 |---|---|---|
-| Permissão UC | Catálogo compartilhado e checkpoints | Primeira falha de `CREATE` |
-| Compute atrasado | Serverless/warehouse e demo | Não disponível no minuto 10 |
-| Lakeflow indisponível | `03_alt_spark_etl.py` | Erro de entitlement/provisionamento |
-| DQX não instala | `04_alt_sql_quality.sql` | Instalação excede 2 minutos |
-| Warehouse indisponível | Notebook Spark SQL | Startup excede 3 minutos |
-| Dashboard/Genie indisponível | Artefato do instrutor + SQL | Recurso ausente na UI |
-| App indisponível/lenta | Fallback local ou App publicada | Deploy excede 3 minutos |
-| Atraso geral | Próximo módulo vira demo guiada | Módulo excede 3 minutos |
+| Permiso de UC | Schema compartido y checkpoints | Primera denegación de creación |
+| Compute atrasado | Serverless/warehouse y demo | No disponible en el minuto 10 |
+| Lakeflow no disponible | `03_alt_spark_etl.py` | Error de entitlement o provisionamiento |
+| DQX no instala | `04_alt_sql_quality.sql` | Instalación supera dos minutos |
+| Warehouse no disponible | Notebook Spark SQL | Inicio supera tres minutos |
+| Dashboard o Genie no disponible | Artefacto del instructor y SQL | Función ausente en la interfaz |
+| Deep Research no disponible | Capturas y prompts preparados | Opción ausente en el Genie Space |
+| App lenta o no disponible | Modo local o App prepublicada | Deploy supera tres minutos |
+| Atraso general | Próximo ejercicio se convierte en demo | Módulo supera tres minutos |
 
-Não corte o lançamento do desafio. Use os checkpoints para saltar etapas técnicas sem
-quebrar a narrativa ponta a ponta.
+Use checkpoints para saltar una implementación sin romper la narrativa. No recorte
+el Dashboard, que es la principal construcción visual, ni el lanzamiento del reto.
