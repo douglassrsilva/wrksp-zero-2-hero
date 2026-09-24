@@ -25,4 +25,4 @@
 - [x] Revalidar el SDP corregido en el workspace
 - [x] Capturar e incorporar screenshots sanitizados de la App y del DAG Lakeflow
 - [x] Ejecutar la revisión final de seguridad
-- [ ] Publicar la revisión en GitHub
+- [x] Publicar la revisión en GitHub
